@@ -47,6 +47,8 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERTS_IMAP_USER: ${{ secrets.ALERTS_IMAP_USER }}
+          ALERTS_IMAP_PASSWORD: ${{ secrets.ALERTS_IMAP_PASSWORD }}
           TRACKER_URL: ${{ vars.TRACKER_URL }}
         run: python -m jobsearch --check-links ${{ (github.event_name == 'schedule' || inputs.send_alert) && '--send-alert' || '' }}
 

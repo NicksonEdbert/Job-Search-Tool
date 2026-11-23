@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from datetime import datetime, timezone
 
-from .filter import location_match
+from .filter import location_match, remote_eligibility, work_mode
 from .models import parse_iso
 
 CYBER_TITLE = [
@@ -142,7 +142,13 @@ def score(job, profile: dict, now: datetime = None) -> None:
     job.flags = list(dict.fromkeys(job.flags + timing_flags))
 
     s = {"cyber": 50, "tech": 30, "other": 0}[job.category]
-    s += 10 if location_match(job.location, tuple(profile.get("extra_places", []))) == "jakarta" else 5
+    job.where = location_match(job.location, tuple(profile.get("extra_places", [])))
+    job.work_mode = work_mode(job.location, job.where)
+    if job.where == "remote":
+        status, reason = remote_eligibility(job)
+        if status != "open" and reason and reason not in job.flags:
+            job.flags.append(reason)
+    s += {"jakarta": 10, "remote": 6, "indonesia": 5}.get(job.where, 0)
     s += {"good": 12, "unknown": 4, "check": 0, "later": -10, "long": -15}[job.timing]
     age = days_since(job.posted_at or job.first_seen, now)
     if age is not None:

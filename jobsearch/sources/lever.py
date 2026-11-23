@@ -13,6 +13,9 @@ def fetch(company: dict, get_json) -> list:
         locs = [cats.get("location") or ""] + list(cats.get("allLocations") or [])
         if j.get("country"):
             locs.append(j["country"])
+        mode = (j.get("workplaceType") or "").lower()
+        if mode in ("remote", "hybrid"):
+            locs.append(mode.title())
         location = "; ".join(dict.fromkeys(x for x in locs if x))
         parts = [j.get("descriptionPlain") or ""]
         for lst in j.get("lists") or []:

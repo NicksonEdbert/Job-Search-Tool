@@ -11,7 +11,8 @@ from pathlib import Path
 
 from . import digest, ghost, history
 from .filter import keep
-from .http import FetchError, get_json as live_get_json, link_status, offline_get_json
+from .http import Client, FetchError, OfflineClient, link_status
+from .sources.email_alerts import NotConfigured
 from .score import score
 from .sources import SOURCES
 
@@ -34,7 +35,12 @@ def fetch_all(companies: list, get_json, workers: int = 8) -> tuple:
         if mod is None:
             return c, [], f"unknown hiring system '{c['ats']}'"
         try:
-            return c, mod.fetch(c, get_json), None
+            found = mod.fetch(c, get_json)
+            for j in found:
+                j.origin = c["name"]
+            return c, found, None
+        except NotConfigured as e:
+            return c, [], str(e)
         except FetchError as e:
             return c, [], f"HTTP {e.status}" if e.status else str(e)
         except Exception as e:  # malformed response etc.
@@ -42,7 +48,7 @@ def fetch_all(companies: list, get_json, workers: int = 8) -> tuple:
 
     with cf.ThreadPoolExecutor(workers) as ex:
         for c, found, err in ex.map(one, companies):
-            report.append({"company": c["name"], "ats": c["ats"], "slug": c["slug"],
+            report.append({"company": c["name"], "ats": c["ats"], "slug": c.get("slug", ""),
                            "ok": err is None, "postings": len(found), "error": err})
             jobs.extend(found)
     return jobs, report
@@ -98,15 +104,16 @@ def run(args, now: datetime = None, get_json=None) -> dict:
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
     if get_json is None:
-        get_json = offline_get_json() if args.offline else live_get_json
+        get_json = OfflineClient() if args.offline else Client()
     companies_path = Path(args.companies or (ROOT / ("tests/fixtures/companies.json" if args.offline else "config/companies.json")))
     companies = [c for c in load_json(companies_path, {"companies": []})["companies"] if c.get("enabled", True)]
     profile = load_json(Path(args.profile), {}) or {}
     extra = tuple(profile.get("extra_places", []))
+    include_remote = bool(profile.get("include_remote", True))
 
     print(f"Fetching {len(companies)} company boards…")
     raw, report = fetch_all(companies, get_json)
-    jobs = dedupe([j for j in raw if keep(j, extra)])
+    jobs = dedupe([j for j in raw if keep(j, extra, include_remote)])
     load_details(jobs, get_json)
 
     hist_path = out_dir / "history.json"
@@ -126,6 +133,8 @@ def run(args, now: datetime = None, get_json=None) -> dict:
         "counts": {"postings_scanned": len(raw), "internships": len(rows),
                    "cyber": sum(r["category"] == "cyber" for r in rows),
                    "tech": sum(r["category"] == "tech" for r in rows),
+                   "jakarta": sum(r["where"] in ("jakarta", "indonesia") for r in rows),
+                   "remote": sum(r["where"] == "remote" for r in rows),
                    "new": sum(r["is_new"] for r in rows)},
         "sources": sorted(report, key=lambda r: r["company"].lower()),
         "jobs": rows,
@@ -146,12 +155,12 @@ def run(args, now: datetime = None, get_json=None) -> dict:
 
     bad = [r for r in report if not r["ok"]]
     print(f"Scanned {len(raw)} postings from {len(report) - len(bad)}/{len(report)} boards → "
-          f"{len(rows)} Jakarta internships ({result['counts']['cyber']} cyber, {result['counts']['tech']} tech, "
-          f"{result['counts']['new']} new)")
+          f"{len(rows)} internships ({result['counts']['jakarta']} Jakarta, {result['counts']['remote']} remote; "
+          f"{result['counts']['cyber']} cyber, {result['counts']['tech']} tech, {result['counts']['new']} new)")
     for r in bad:
         print(f"  ! {r['company']} ({r['ats']}/{r['slug']}): {r['error']}")
     for r in rows[:args.top]:
-        print(f"  {r['score']:>3}  {r['category']:<5} {r['ghost_risk']:<6} {r['title']} — {r['company']}  {r['url']}")
+        print(f"  {r['score']:>3}  {r['category']:<5} {r['where']:<9} {r['ghost_risk']:<6} {r['title']} — {r['company']}  {r['url']}")
     return result
 
 

@@ -1,0 +1,40 @@
+{
+ "jobs": [
+  {
+   "id": 9001,
+   "title": "Security Engineering Intern",
+   "company_name": "Global Sec",
+   "candidate_required_location": "Worldwide",
+   "publication_date": "2026-11-20T10:00:00",
+   "url": "https://remotive.com/remote-jobs/9001",
+   "description": "<p>Threat detection.</p>"
+  },
+  {
+   "id": 9002,
+   "title": "Software Engineer Intern",
+   "company_name": "US Startup",
+   "candidate_required_location": "USA Only",
+   "publication_date": "2026-11-20T10:00:00",
+   "url": "https://remotive.com/remote-jobs/9002",
+   "description": ""
+  },
+  {
+   "id": 9003,
+   "title": "Data Analyst Intern",
+   "company_name": "Vague Co",
+   "candidate_required_location": "",
+   "publication_date": "2026-11-19T10:00:00",
+   "url": "https://remotive.com/remote-jobs/9003",
+   "description": "<p>SQL.</p>"
+  },
+  {
+   "id": 9004,
+   "title": "Frontend Intern",
+   "company_name": "Strict Co",
+   "candidate_required_location": "",
+   "publication_date": "2026-11-19T10:00:00",
+   "url": "https://remotive.com/remote-jobs/9004",
+   "description": "<p>You must be authorized to work in the United States.</p>"
+  }
+ ]
+}

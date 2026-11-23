@@ -1,0 +1,6 @@
+<html><head><script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "JobPosting", "title": "Security Intern", "identifier": {"value": "123"},
+ "datePosted": "2026-11-20", "description": "<p>Pentest and OWASP basics. Start immediately.</p>",
+ "hiringOrganization": {"@type": "Organization", "name": "Example Startup"},
+ "jobLocation": {"@type": "Place", "address": {"addressLocality": "Jakarta Selatan", "addressCountry": "ID"}}}
+</script></head><body>Security Intern</body></html>

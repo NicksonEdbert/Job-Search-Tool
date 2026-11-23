@@ -1,0 +1,16 @@
+{
+ "offers": [
+  {
+   "id": 77,
+   "title": "QA Intern",
+   "status": "published",
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "remote": false,
+   "careers_url": "https://examplehr.recruitee.com/o/qa-intern",
+   "published_at": "2026-11-19 08:00:00 UTC",
+   "description": "<p>Manual and automated testing.</p>",
+   "requirements": "<p>Basic JavaScript.</p>"
+  }
+ ]
+}

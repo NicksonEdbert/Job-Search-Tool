@@ -1,0 +1,12 @@
+
+<table id="searchresults"><tbody>
+<tr class="data-row"><td class="colTitle"><span class="jobTitle hidden-phone">
+  <a href="/job/Jakarta-IT-Risk-&amp;-Cybersecurity-Intern-ID/1111/" class="jobTitle-link">IT Risk &amp; Cybersecurity Intern</a></span></td>
+  <td class="colLocation"><span class="jobLocation">Jakarta, ID</span></td><td class="colDate"><span class="jobDate">Nov 19, 2026</span></td></tr>
+<tr class="data-row"><td class="colTitle"><span class="jobTitle hidden-phone">
+  <a href="/job/Jakarta-Audit-Intern-ID/2222/" class="jobTitle-link">Audit Intern</a></span></td>
+  <td class="colLocation"><span class="jobLocation">Jakarta, ID</span></td><td class="colDate"><span class="jobDate">Oct 1, 2026</span></td></tr>
+<tr class="data-row"><td class="colTitle"><span class="jobTitle hidden-phone">
+  <a href="/job/Jakarta-Tax-Manager-ID/3333/" class="jobTitle-link">Tax Manager</a></span></td>
+  <td class="colLocation"><span class="jobLocation">Jakarta, ID</span></td><td class="colDate"><span class="jobDate">Nov 20, 2026</span></td></tr>
+</tbody></table>

@@ -1,0 +1,23 @@
+{
+ "total": 3,
+ "jobPostings": [
+  {
+   "title": "Cyber Security Intern",
+   "externalPath": "/job/Jakarta/Cyber-Security-Intern_R100",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 2 Days Ago"
+  },
+  {
+   "title": "Software Engineer Intern",
+   "externalPath": "/job/Singapore/Software-Engineer-Intern_R101",
+   "locationsText": "Singapore",
+   "postedOn": "Posted Today"
+  },
+  {
+   "title": "Senior Risk Analyst",
+   "externalPath": "/job/Jakarta/Senior-Risk-Analyst_R102",
+   "locationsText": "Jakarta",
+   "postedOn": "Posted 30+ Days Ago"
+  }
+ ]
+}
