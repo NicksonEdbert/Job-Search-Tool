@@ -1,0 +1,22 @@
+{
+ "checked_at": "2026-11-23T12:48:07+00:00",
+ "status": {
+  "https://picoctf.org/": "unknown",
+  "https://ctftime.org/event/list/upcoming": "unknown",
+  "https://tryhackme.com/": "unknown",
+  "https://www.hackthebox.com/": "unknown",
+  "https://overthewire.org/wargames/": "unknown",
+  "https://portswigger.net/web-security": "unknown",
+  "https://hackerone.com/": "unknown",
+  "https://www.bugcrowd.com/": "unknown",
+  "https://www.intigriti.com/": "unknown",
+  "https://www.isc2.org/certifications/cc": "unknown",
+  "https://www.coursera.org/professional-certificates/google-cybersecurity": "unknown",
+  "https://www.netacad.com/": "unknown",
+  "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/": "unknown",
+  "https://www.comptia.org/certifications/security": "unknown",
+  "https://digitalent.komdigi.go.id/": "unknown",
+  "https://owasp.org/www-chapter-jakarta/": "unknown",
+  "https://wazuh.com/": "unknown"
+ }
+}

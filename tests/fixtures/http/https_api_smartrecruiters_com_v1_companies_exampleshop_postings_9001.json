@@ -1,0 +1,16 @@
+{
+ "postingUrl": "https://jobs.smartrecruiters.com/ExampleShop/9001-intern-data-analytics",
+ "active": true,
+ "jobAd": {
+  "sections": {
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p>Internship from Jan - Mar 2027.</p>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<ul><li>SQL, Python, Excel, Power BI</li><li>Surat pengantar dari kampus</li></ul>"
+   }
+  }
+ }
+}

@@ -1,0 +1,351 @@
+{
+ "generated_at": "2026-11-23T12:48:02+00:00",
+ "counts": {
+  "postings_scanned": 2369,
+  "internships": 7,
+  "cyber": 0,
+  "tech": 3,
+  "new": 0
+ },
+ "sources": [
+  {
+   "company": "Agoda",
+   "ats": "greenhouse",
+   "slug": "agoda",
+   "ok": true,
+   "postings": 331,
+   "error": null
+  },
+  {
+   "company": "Airwallex",
+   "ats": "ashby",
+   "slug": "airwallex",
+   "ok": true,
+   "postings": 498,
+   "error": null
+  },
+  {
+   "company": "Alodokter",
+   "ats": "smartrecruiters",
+   "slug": "alodokter",
+   "ok": true,
+   "postings": 9,
+   "error": null
+  },
+  {
+   "company": "Binance",
+   "ats": "greenhouse",
+   "slug": "binance",
+   "ok": true,
+   "postings": 224,
+   "error": null
+  },
+  {
+   "company": "Biznet",
+   "ats": "smartrecruiters",
+   "slug": "biznet",
+   "ok": true,
+   "postings": 3,
+   "error": null
+  },
+  {
+   "company": "Blibli",
+   "ats": "smartrecruiters",
+   "slug": "bliblicom",
+   "ok": true,
+   "postings": 2,
+   "error": null
+  },
+  {
+   "company": "GDP Venture / GDP Labs",
+   "ats": "smartrecruiters",
+   "slug": "gdp",
+   "ok": true,
+   "postings": 2,
+   "error": null
+  },
+  {
+   "company": "Grab",
+   "ats": "smartrecruiters",
+   "slug": "grab",
+   "ok": true,
+   "postings": 438,
+   "error": null
+  },
+  {
+   "company": "HM Sampoerna",
+   "ats": "smartrecruiters",
+   "slug": "hmsampoerna",
+   "ok": true,
+   "postings": 9,
+   "error": null
+  },
+  {
+   "company": "JULO",
+   "ats": "smartrecruiters",
+   "slug": "julo",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Lalamove",
+   "ats": "lever",
+   "slug": "lalamove",
+   "ok": true,
+   "postings": 154,
+   "error": null
+  },
+  {
+   "company": "Lamudi",
+   "ats": "lever",
+   "slug": "lamudi",
+   "ok": true,
+   "postings": 11,
+   "error": null
+  },
+  {
+   "company": "Ninja Van",
+   "ats": "lever",
+   "slug": "ninjavan",
+   "ok": true,
+   "postings": 137,
+   "error": null
+  },
+  {
+   "company": "Nium",
+   "ats": "lever",
+   "slug": "nium",
+   "ok": true,
+   "postings": 31,
+   "error": null
+  },
+  {
+   "company": "OKX",
+   "ats": "greenhouse",
+   "slug": "okx",
+   "ok": true,
+   "postings": 391,
+   "error": null
+  },
+  {
+   "company": "PasarPolis",
+   "ats": "smartrecruiters",
+   "slug": "pasarpolis",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Sayurbox",
+   "ats": "smartrecruiters",
+   "slug": "sayurbox",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "SEEK / JobStreet",
+   "ats": "smartrecruiters",
+   "slug": "seek",
+   "ok": true,
+   "postings": 41,
+   "error": null
+  },
+  {
+   "company": "Sophos",
+   "ats": "ashby",
+   "slug": "sophos",
+   "ok": true,
+   "postings": 64,
+   "error": null
+  },
+  {
+   "company": "Stockbit / Bibit",
+   "ats": "smartrecruiters",
+   "slug": "stockbit",
+   "ok": true,
+   "postings": 2,
+   "error": null
+  },
+  {
+   "company": "Xendit",
+   "ats": "greenhouse",
+   "slug": "xendit",
+   "ok": true,
+   "postings": 19,
+   "error": null
+  }
+ ],
+ "jobs": [
+  {
+   "id": "smartrecruiters:grab:744000163097869",
+   "title": "Intern [GIP] - Product Management & Product Design",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097869-intern-gip-product-management-product-design",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:17:41+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Please note that the work placement for this position is based at our South Jakarta office.\n Get to Know the Role \n In this role, you will leverage data and metrics to drive product improvements and foster cross-functional collaboration toward delivering impactful solutions. You will partner closely with diverse teams across Engineering (Backend, Frontend, Mobile, QA), Product Design, and Product Development to build and enhance our technology.\n The Critical Tasks You Will Perform \n User & Market Discovery: Conduct user research, competitor teardowns, and data analyses to uncover pain points and evaluate product opportunities.\n Cross-Functional Collaboration: Partner closely with Software Engineers, QA, and Business Operations throughout sprint cycles to ensure seamless delivery and implementation.\n Experimentation & Iteration: Assist in tracking post-launch feature adoption, user feedback, and funnel metrics to drive continuous iterations.\n For Product Management Track: \n Draft structured Product Requirement Documents (PRDs) and user stories with clear acceptance criteria and success metrics.\n Work with analytics to analyze funnels, define business logic, and prioritize feature backlogs.\n Prepare product briefs, roadmap updates, and release notes for cross-functional stakeholders.\n For Product Design Track: \n Map user flows and design wireframes, high-fidelity UI screens, and interactive clickable prototypes in Figma.\n Apply and contribute to Grab's design system, ensuring visual consistency, accessibility (WCAG), and responsive layout standards.\n Plan and support usability testing sessions, synthesize qualitative feedback, and prepare design specs for engineering handoff.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Computer Science, Information Systems, Human-Computer Interaction (HCI), Visual Communication Design (DKV), Industrial Engineering, Business, or a related field.\n Demonstrated structured problem-solving, product intuition, and familiarity with data interpretation / spreadsheet modeling.\n Proficiency in Figma (components, auto-layout, prototyping).\n Strong proficiency in Google Sheets / Microsoft Excel; familiarity with Jira/Confluence is a plus.\n Excellent written and verbal communication skills in both English and Bahasa Indonesia; ability to articulate concepts clearly.\n High curiosity, adaptability to fast-paced agile environments, and commitment to a full-time onsite internship\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable wo",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 40
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097849",
+   "title": "Intern [GIP] - Tech Engineering",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097849-intern-gip-tech-engineering",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:16:48+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Please note that the work placement for this position is based at our South Jakarta office\n Get to Know the Role \n In this role, you will contribute directly to the software development lifecycle (SDLC) across our platform. Whether working on high-throughput backend services, interactive user interfaces, or core foundational infrastructure, you will design, implement, test, and deploy features under the mentorship of experienced software engineers. You will gain first-hand exposure to building resilient, scalable, and secure systems operating at regional scale.\n The Critical Tasks You Will Perform \n Feature Design & Development: Write clean, maintainable, testable, and well-documented code for backend microservices, web applications, or mobile features.\n System Architecture & Code Review: Participate in technical design discussions, requirement scoping, and peer code reviews to uphold Grab's high standards for code quality and reliability.\n Testing & Quality Assurance: Develop unit, integration, and end-to-end automated tests to ensure high test coverage and fault-tolerant releases.\n Troubleshooting & Performance Tuning: Assist in diagnosing bugs, investigating system bottlenecks, and optimizing query or service performance.\n CI/CD & Operational Hygiene: Learn and leverage modern deployment pipelines, monitoring systems (e.g., alerts, dashboards, logging), and containerized environments.\n Cross-Functional Collaboration: Partner closely with Product Managers, Quality Assurance (QA) engineers, and UI/UX designers to translate product specifications into robust technical implementations.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Computer Science, Software Engineering, Information Technology, Computer Engineering, or a related technical discipline\n Strong grasp of Data Structures, Algorithms, Object-Oriented Programming (OOP), concurrency concepts, and system design basics.\n Solid coding skills in at least one modern programming language (such as Go, Java, Python, C++, TypeScript, Swift, or Kotlin).\n Working knowledge of relational databases (e.g., MySQL, PostgreSQL) and SQL query writing.\n Ability to break down complex algorithmic problems logically and debug issues methodically.\n High curiosity, willingness to learn new technologies quickly, and commitment to a full-time onsite internship.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all can",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 40
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097779",
+   "title": "Intern [GIP] - Research & Data Analytics",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097779-intern-gip-research-data-analytics",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:12:11+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n In this role, you will bridge market reality and data-driven product strategy. You will conduct primary and secondary market research, analyze large-scale datasets, and evaluate program performance across our core verticals (Mobility, Deliveries, and Financial Services). Your insights will directly influence upcoming feature developments, pilot launches, and business operations.\n The Critical Tasks You Will Perform \n Market & Product Research: Design and run qualitative and quantitative research studies (surveys, user interviews, competitive benchmarking) to identify user needs and market opportunities.\n Data Exploration & Analysis: Extract, clean, and analyze datasets to monitor key performance metrics, spot operational trends, and diagnose business anomalies.\n Actionable Insights & Recommendations: Translate raw findings into clear, structured reports, decks, and recommendations for product managers and business leads.\n Experimentation & Program Support: Support the pilot rollout of new product features or operational programs by tracking feedback and evaluating post-launch adoption.\n Dashboard & Reporting Hygiene: Assist in maintaining team tracking dashboards and data spreadsheets to keep business metrics transparent and accessible.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Economics, Statistics, Mathematics, Industrial Engineering, Business/Management, Computer Science, or a related quantitative field.\n Demonstrated ability to structure ambiguous business questions, interpret numbers, and draw logical conclusions from data.\n Strong hands-on capabilities in Microsoft Excel or Google Sheets (e.g., Pivot Tables, complex lookup formulas, data aggregation).\n Hands-on experience or coursework with SQL, Python, or R for data analysis.\n Familiarity with data visualization platforms (e.g., Tableau, Power BI, Looker Studio, Metabase).\n Strong written and verbal communication skills in both English and Bahasa Indonesia, with the ability to summarize findings clearly in slides/documents.\n Proactive mindset, eager to learn on the ground, comfortable collaborating across cross-functional teams, and committed to a full-time onsite internship\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nation",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 40
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097879",
+   "title": "Intern [GIP] - Creative Marketing, Campaign, & Communications",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097879-intern-gip-creative-marketing-campaign-communications",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:19:16+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n In this role, you will help bring marketing campaigns to life from concept to execution. You will support end-to-end campaign planning, social media storytelling, copywriting, and PR/communications for Grab's core services (Mobility, Food, Mart, and Fintech). Working closely with creative leads, brand managers, and external partners (agencies, KOLs), you will ensure our messaging is engaging, culturally relevant, and aligned with Grab's brand voice.\n The Critical Tasks You Will Perform \n Campaign Ideation & Execution: Support the end-to-end rollout of integrated seasonal and tactical marketing campaigns across offline and online touchpoints.\n Creative Copywriting & Content Creation: Draft compelling, brand-aligned copy for social media posts, push notifications, in-app banners, collateral, and marketing emails.\n Social Media & Community Engagement: Monitor trending topics, social conversations, and pop culture moments to identify creative hijack opportunities and community engagement hooks.\n KOL & Influencer Coordination: Assist in shortlisting, briefing, and coordinating with content creators and Key Opinion Leaders (KOLs) to support campaign launches.\n PR & Brand Communications: Assist in preparing press releases, media kits, internal announcements, and executive speaking materials for brand storytelling.\n Cross-Functional Collaboration: Partner with internal brand designers, performance marketers, agency partners, and local city teams to ensure timely delivery of creative assets.\n Campaign Reporting: Track campaign reach, engagement, and post-campaign sentiment to gather actionable insights for future marketing initiatives.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00.\n Final-year student or fresh graduate with a Bachelor's degree in Communications, Marketing, Advertising, Public Relations, Creative Writing, Journalism, Visual Communication Design (DKV), or a related field.\n Exceptional written and verbal communication skills in both Bahasa Indonesia and English, with an innate ability to craft engaging, audience-centric copy.\n Strong interest in digital media, consumer behavior, and social media trends (TikTok, Instagram, X, etc.) in Indonesia.\n Ability to think outside the box, generate original ideas, and translate business briefs into creative concepts.\n High attention to detail, strong time-management skills to handle concurrent projects, and commitment to a full-time onsite internship\n Basic knowledge of design or video editing tools (e.g., Canva, Figma, Adobe Photoshop/Illustrator, CapCut).\n Prior experience managing brand social media accounts, student club marketing, campus events, or PR campaigns.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive en",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 10
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097839",
+   "title": "Intern [GIP] - Commercial & Business Development",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097839-intern-gip-commercial-business-development",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:15:18+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are seeking energetic, relationship-oriented, and commercially savvy interns to join our Commercial & Business Development talent pool. In this role, you will support teams responsible for acquiring, onboarding, and growing our partner ecosystem (merchants, corporate clients, advertisers, and strategic brand partners). You will assist in market research, lead generation, partner pitch preparations, and campaign execution to help drive top-line business growth across Grab's verticals.\n The Critical Tasks You Will Perform \n Find New Business Opportunities (Lead Generation): Research market trends and competitors to identify potential partners and business leads across various industries.\n Pitch & Proposal Support: Support the team in building presentation decks and partnership proposals for prospective clients and merchant partners.\n Coordinate Partner Onboarding: Help guide new partners through the signup process, manage basic contract paperwork, and ensure their accounts get set up smoothly.\n Track Campaign Performance: Monitor promotional campaigns, track key numbers (like sales, voucher redemptions, and ROI), and compile summary reports on how campaigns performed.\n Keep Data & Pipelines Organized: Maintain up-to-date records of leads, meeting notes, and deal progress in our internal tracking sheets and CRM tools.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's or Master's degree in Business, Management, Economics, Marketing, Communications, International Relations, or a related field.\n Strong interpersonal, negotiation, and verbal/written communication skills (both in English and Bahasa Indonesia).\n Commercial curiosity with an analytical approach to evaluating business numbers and customer trends.\n High resilience, self-motivation, and comfort in reaching out to internal and external stakeholders.\n Proficiency in presentation and spreadsheet tools (Google Slides/Sheets or MS PowerPoint/Excel).\n Available for a full-time commitment during the internship period\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or disabilities, and other attributes that make them",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "medium",
+   "ghost_reasons": [
+    "Mentions a talent pool: may collect CVs rather than fill one role"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 2
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097829",
+   "title": "Intern [GIP] - Corporate Functions",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097829-intern-gip-corporate-functions",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:14:41+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are looking for proactive, detail-oriented, and communicative interns to join our Corporate Functions talent pool. In this role, you will be placed within one of our core corporate teams—such as People Operations / HR, Finance & Procurement, Corporate Affairs / Public Relations, Legal and Data Privacy Office. You will partner closely with business leaders and internal stakeholders to support administrative excellence, project coordination, and the smooth execution of organizational initiatives that keep Grab running effectively.\n The Critical Tasks You Will Perform \n Operational & Administrative Suppor t: Assist in day-to-day corporate operations, record keeping, workflow documentation, and vendor/contract administration within your assigned function.\n Data & Reporting Assistance: Help compile, track, and update internal databases, headcount trackers, budget sheets, or departmental performance dashboards.\n Cross-Functional Project Coordination: Support departmental projects, town halls, internal campaigns, or employee engagement initiatives by tracking action items and timelines.\n Stakeholder Communication: Draft internal memos, briefing decks, FAQs, or email communications tailored to internal Grabbers or external partners.\n Process Optimization Support: Identify opportunities to streamline administrative routines, reduce turnaround times, and improve internal service delivery.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's or Master's degree in Business Administration, Human Resources, Accounting, Finance, Law, Communications, Psychology, or a related discipline.\n Strong interpersonal and organizational skills with high attention to detail.\n Clear and professional verbal and written communication skills (in English and Bahasa Indonesia).\n Strong sense of discretion and integrity when handling sensitive or confidential corporate data.\n Proficiency in standard productivity tools (Google Workspace: Docs, Sheets, Slides, or Microsoft Office).\n Available for a full-time commitment during the internship period\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or dis",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "medium",
+   "ghost_reasons": [
+    "Mentions a talent pool: may collect CVs rather than fill one role"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 2
+  },
+  {
+   "id": "smartrecruiters:grab:744000163097819",
+   "title": "Intern [GIP] - Operations, Project & Process Management",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163097819-intern-gip-operations-project-process-management",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-22T17:13:31+00:00",
+   "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are seeking proactive, structured, and curious interns to join our Operations, Project & Process Management talent pool. In this role, you will support teams in optimizing daily operational workflows, driving project milestones, and identifying opportunities to enhance efficiency across business units (e.g., Deliveries, Mobility, Merchant Operations, or Central Operations). You will help transform data and operational observations into structured processes and actionable improvements.\n The Critical Tasks You Will Perform \n Project Tracking & Execution: Assist project leads in coordinating timelines, tracking deliverables, and monitoring project milestones across cross-functional stakeholders.\n Process Review & Mapping: Document current standard operating procedures (SOPs), map end-to-end workflows, and help identify operational bottlenecks or inefficiencies.\n Operational Data Support: Collect, clean, and organize operational performance metrics to track baseline SLAs, KPI health, and process turnaround times.\n Continuous Improvement Support: Support the rollout of operational enhancement initiatives, pilot programs, or operational tools designed to improve user or partner experiences.\n Stakeholder Coordination: Coordinate regular check-ins, prepare meeting notes, track action items, and synthesize operational updates into structured decks or summaries.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Business Administration, Industrial Engineering, Operations Management, Management Information Systems, or a related field.\n Strong structured thinking and problem-solving mindset with high attention to detail.\n Solid written and verbal communication skills to work effectively with diverse teams.\n Proficiency in productivity and collaboration tools (Google Workspace: Sheets/Docs/Slides, or MS Excel/PowerPoint).\n Familiarity with data analysis tools or visualization platforms (e.g., basic SQL, Tableau, Power BI).\n Adaptability and eagerness to learn fast in a dynamic, fast-paced environment.\n Available for a full-time commitment during the internship period .\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, f",
+   "first_seen": "2026-11-23T12:47:05+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "medium",
+   "ghost_reasons": [
+    "Mentions a talent pool: may collect CVs rather than fill one role"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 2
+  }
+ ],
+ "closed": []
+}

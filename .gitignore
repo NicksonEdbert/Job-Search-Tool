@@ -1,0 +1,19 @@
+# Personal files: never commit (this repo is meant to be public)
+*.pdf
+*.docx
+*.doc
+*-skills.json
+*skills*.json
+!tracker/skills.js
+profile.local.json
+internship-tracker-backup-*.json
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local site build
+_site/

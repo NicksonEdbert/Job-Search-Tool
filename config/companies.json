@@ -1,0 +1,26 @@
+{
+  "_help": "Companies whose public hiring boards are checked every day. ats = greenhouse | lever | ashby | smartrecruiters. slug = the name in the board's URL (e.g. jobs.lever.co/<slug>, boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, jobs.smartrecruiters.com/<slug>). Set \"enabled\": false to pause one. Boards that don't exist are reported and skipped.",
+  "companies": [
+    {"name": "Grab", "ats": "smartrecruiters", "slug": "grab", "note": "Runs the Grab Internship Programme (GIP) in Jakarta"},
+    {"name": "Xendit", "ats": "greenhouse", "slug": "xendit", "note": "Payments; Jakarta HQ"},
+    {"name": "Stockbit / Bibit", "ats": "smartrecruiters", "slug": "stockbit", "note": "Investing app; Jakarta"},
+    {"name": "JULO", "ats": "smartrecruiters", "slug": "julo", "note": "Fintech lending; Jakarta"},
+    {"name": "Alodokter", "ats": "smartrecruiters", "slug": "alodokter", "note": "Health tech; Jakarta"},
+    {"name": "Sayurbox", "ats": "smartrecruiters", "slug": "sayurbox", "note": "Grocery e-commerce; Jakarta"},
+    {"name": "PasarPolis", "ats": "smartrecruiters", "slug": "pasarpolis", "note": "Insurtech; Jakarta"},
+    {"name": "Blibli", "ats": "smartrecruiters", "slug": "bliblicom", "note": "E-commerce; Jakarta"},
+    {"name": "GDP Venture / GDP Labs", "ats": "smartrecruiters", "slug": "gdp", "note": "Tech group; Jakarta"},
+    {"name": "HM Sampoerna", "ats": "smartrecruiters", "slug": "hmsampoerna", "note": "Large employer with IT and digital internships"},
+    {"name": "Biznet", "ats": "smartrecruiters", "slug": "biznet", "note": "Internet provider; network roles"},
+    {"name": "SEEK / JobStreet", "ats": "smartrecruiters", "slug": "seek", "note": "Has a Jakarta office"},
+    {"name": "Binance", "ats": "greenhouse", "slug": "binance", "note": "Crypto; security-heavy hiring"},
+    {"name": "OKX", "ats": "greenhouse", "slug": "okx", "note": "Crypto; security-heavy hiring"},
+    {"name": "Lalamove", "ats": "lever", "slug": "lalamove", "note": "Logistics; Jakarta office"},
+    {"name": "Ninja Van", "ats": "lever", "slug": "ninjavan", "note": "Logistics; Indonesia operations"},
+    {"name": "Lamudi", "ats": "lever", "slug": "lamudi", "note": "Property portal; Jakarta"},
+    {"name": "Nium", "ats": "lever", "slug": "nium", "note": "Payments; Jakarta office"},
+    {"name": "Airwallex", "ats": "ashby", "slug": "airwallex", "note": "Payments; APAC hiring"},
+    {"name": "Sophos", "ats": "ashby", "slug": "sophos", "note": "Cybersecurity vendor; APAC roles"},
+    {"name": "Agoda", "ats": "greenhouse", "slug": "agoda", "note": "Large intern programme (mostly Bangkok); Jakarta roles appear sometimes"}
+  ]
+}

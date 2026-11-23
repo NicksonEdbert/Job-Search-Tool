@@ -1,0 +1,24 @@
+{
+ "jobs": [
+  {
+   "id": "s-1",
+   "title": "SOC Analyst Intern",
+   "location": "Jakarta, Indonesia",
+   "secondaryLocations": [],
+   "publishedAt": "2026-09-10T00:00:00.000+00:00",
+   "isListed": true,
+   "jobUrl": "https://jobs.ashbyhq.com/examplesec/s-1",
+   "descriptionPlain": "Monitor alerts in our SIEM (Splunk) and help with incident response."
+  },
+  {
+   "id": "s-2",
+   "title": "Security Engineer Intern",
+   "location": "Sydney",
+   "secondaryLocations": [],
+   "publishedAt": "2026-11-20T00:00:00.000+00:00",
+   "isListed": true,
+   "jobUrl": "https://jobs.ashbyhq.com/examplesec/s-2",
+   "descriptionPlain": ""
+  }
+ ]
+}

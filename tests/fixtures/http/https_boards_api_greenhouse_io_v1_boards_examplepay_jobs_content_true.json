@@ -1,0 +1,53 @@
+{
+ "jobs": [
+  {
+   "id": 101,
+   "title": "Cyber Security Intern",
+   "absolute_url": "https://job-boards.greenhouse.io/examplepay/jobs/101",
+   "location": {
+    "name": "Jakarta, Indonesia"
+   },
+   "offices": [
+    {
+     "name": "Jakarta"
+    }
+   ],
+   "first_published": "2026-11-18T09:00:00-05:00",
+   "updated_at": "2026-11-20T09:00:00-05:00",
+   "content": "&lt;p&gt;A 3-month internship starting December 2026 in our security team.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Linux and Python basics&lt;/li&gt;&lt;li&gt;Wireshark, SIEM, OWASP Top 10&lt;/li&gt;&lt;li&gt;CTF experience is a plus&lt;/li&gt;&lt;/ul&gt;"
+  },
+  {
+   "id": 102,
+   "title": "Senior Backend Engineer",
+   "absolute_url": "https://job-boards.greenhouse.io/examplepay/jobs/102",
+   "location": {
+    "name": "Jakarta"
+   },
+   "offices": [],
+   "first_published": "2026-11-10T00:00:00Z",
+   "content": "5 years of experience"
+  },
+  {
+   "id": 103,
+   "title": "Software Engineer Intern",
+   "absolute_url": "https://job-boards.greenhouse.io/examplepay/jobs/103",
+   "location": {
+    "name": "Singapore"
+   },
+   "offices": [],
+   "first_published": "2026-11-15T00:00:00Z",
+   "content": ""
+  },
+  {
+   "id": 104,
+   "title": "Talent Pool - Internship (Technology)",
+   "absolute_url": "https://job-boards.greenhouse.io/examplepay/jobs/104",
+   "location": {
+    "name": "Jakarta"
+   },
+   "offices": [],
+   "first_published": "2026-11-01T00:00:00Z",
+   "content": "Send us your CV for future opportunities in software engineering."
+  }
+ ]
+}

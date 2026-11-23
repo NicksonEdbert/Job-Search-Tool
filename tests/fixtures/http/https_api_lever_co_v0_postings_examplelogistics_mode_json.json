@@ -1,0 +1,35 @@
+[
+ {
+  "id": "aaa-1",
+  "text": "Magang IT Support",
+  "hostedUrl": "https://jobs.lever.co/examplelogistics/aaa-1",
+  "categories": {
+   "location": "Jakarta Selatan",
+   "allLocations": [
+    "Jakarta Selatan"
+   ]
+  },
+  "country": "ID",
+  "createdAt": 1795143600000,
+  "descriptionPlain": "Program magang selama 6 bulan di tim IT.",
+  "lists": [
+   {
+    "text": "Requirements",
+    "content": "<li>Networking basics (TCP/IP)</li><li>Windows, Excel</li>"
+   }
+  ],
+  "additionalPlain": ""
+ },
+ {
+  "id": "aaa-2",
+  "text": "Marketing Intern",
+  "hostedUrl": "https://jobs.lever.co/examplelogistics/aaa-2",
+  "categories": {
+   "location": "Jakarta"
+  },
+  "country": "ID",
+  "createdAt": 1795057200000,
+  "descriptionPlain": "Help run social media campaigns.",
+  "lists": []
+ }
+]
