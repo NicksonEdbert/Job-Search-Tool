@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T14:04:33+00:00",
+ "checked_at": "2026-11-23T16:47:31+00:00",
  "status": {
   "https://picoctf.org/": "ok",
   "https://ctftime.org/event/list/upcoming": "ok",
@@ -17,6 +17,33 @@
   "https://www.comptia.org/certifications/security": "ok",
   "https://digitalent.komdigi.go.id/": "ok",
   "https://owasp.org/www-chapter-jakarta/": "ok",
-  "https://wazuh.com/": "ok"
+  "https://wazuh.com/": "ok",
+  "https://www.monash.edu/jobs/student-jobs": "unknown",
+  "https://www.monash.edu/career-connect/find-a-job": "unknown",
+  "https://www.monash.edu/students/careers/jobs-board": "unknown",
+  "https://msa.monash.edu/jobs": "ok",
+  "https://www.volunteer.com.au/": "unknown",
+  "https://probonoaustralia.com.au/": "ok",
+  "https://www.redcross.org.au/volunteer/": "ok",
+  "https://beconnected.esafety.gov.au/": "ok",
+  "https://owasp.org/www-chapter-melbourne/": "ok",
+  "https://www.aisa.org.au/": "ok",
+  "https://cybercx.com.au/careers/": "unknown",
+  "https://www.data3.com/careers/": "ok",
+  "https://interactive.com.au/careers/": "ok",
+  "https://www.nexon.com.au/careers": "unknown",
+  "https://relawantik.or.id/": "ok",
+  "https://www.indorelawan.org/": "ok",
+  "https://siberkreasi.id/": "ok",
+  "https://itsec.asia/": "ok",
+  "https://www.defenxor.com/": "ok",
+  "https://spentera.id/": "ok",
+  "https://www.xynexis.com/": "ok",
+  "https://www.telkomsigma.co.id/": "ok",
+  "https://www.lintasarta.net/": "ok",
+  "https://www.datacomm.co.id/": "ok",
+  "https://www.mii.co.id/": "ok",
+  "https://karir.bca.co.id/": "ok",
+  "https://kpmg.com/id/en/home/careers.html": "ok"
  }
 }
