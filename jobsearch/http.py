@@ -46,11 +46,9 @@ def link_status(url: str, timeout: float = 15) -> str:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return "ok" if resp.status < 400 else "unknown"
         except urllib.error.HTTPError as e:
-            if e.code in (404, 410):
-                return "dead"
-            if e.code in (405, 403) and method == "HEAD":
-                continue  # some sites refuse HEAD; retry with GET
-            return "unknown"
+            if method == "HEAD":
+                continue  # many sites answer HEAD with 403/404/405; only trust a GET
+            return "dead" if e.code in (404, 410) else "unknown"
         except Exception:
             return "unknown"
     return "unknown"
