@@ -1,13 +1,39 @@
 {
- "generated_at": "2026-11-23T13:06:44+00:00",
+ "generated_at": "2026-11-23T14:04:15+00:00",
  "counts": {
-  "postings_scanned": 2369,
-  "internships": 7,
+  "postings_scanned": 4777,
+  "internships": 28,
   "cyber": 0,
-  "tech": 3,
-  "new": 0
+  "tech": 5,
+  "jakarta": 28,
+  "remote": 0,
+  "new": 21
  },
  "sources": [
+  {
+   "company": "3M",
+   "ats": "workday",
+   "slug": "3m|wd1|Search",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "99 Group (Rumah123)",
+   "ats": "smartrecruiters",
+   "slug": "99group",
+   "ok": true,
+   "postings": 4,
+   "error": null
+  },
+  {
+   "company": "Abbott",
+   "ats": "workday",
+   "slug": "abbott|wd5|abbottcareers",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
   {
    "company": "Agoda",
    "ats": "greenhouse",
@@ -17,11 +43,27 @@
    "error": null
   },
   {
+   "company": "AIA",
+   "ats": "workday",
+   "slug": "aia|wd3|External",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
    "company": "Airwallex",
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 498,
+   "postings": 497,
+   "error": null
+  },
+  {
+   "company": "Ajaib",
+   "ats": "workable",
+   "slug": "ajaib",
+   "ok": true,
+   "postings": 89,
    "error": null
   },
   {
@@ -30,6 +72,38 @@
    "slug": "alodokter",
    "ok": true,
    "postings": 9,
+   "error": null
+  },
+  {
+   "company": "Amazon / AWS",
+   "ats": "amazon",
+   "slug": "amazon",
+   "ok": true,
+   "postings": 87,
+   "error": null
+  },
+  {
+   "company": "Arbeitnow",
+   "ats": "remoteboard",
+   "slug": "arbeitnow",
+   "ok": true,
+   "postings": 114,
+   "error": null
+  },
+  {
+   "company": "BCA",
+   "ats": "smartrecruiters",
+   "slug": "bankbca",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Bibit",
+   "ats": "smartrecruiters",
+   "slug": "bibitid",
+   "ok": true,
+   "postings": 6,
    "error": null
   },
   {
@@ -57,6 +131,46 @@
    "error": null
   },
   {
+   "company": "Bobobox",
+   "ats": "teamtailor",
+   "slug": "bobobox",
+   "ok": true,
+   "postings": 45,
+   "error": null
+  },
+  {
+   "company": "Bosch",
+   "ats": "smartrecruiters",
+   "slug": "BoschGroup",
+   "ok": true,
+   "postings": 2000,
+   "error": null
+  },
+  {
+   "company": "Deloitte (SEA)",
+   "ats": "successfactors",
+   "slug": "jobs.sea.deloitte.com",
+   "ok": true,
+   "postings": 2,
+   "error": null
+  },
+  {
+   "company": "EY",
+   "ats": "successfactors",
+   "slug": "careers.ey.com",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Fuse",
+   "ats": "teamtailor",
+   "slug": "fuse",
+   "ok": true,
+   "postings": 29,
+   "error": null
+  },
+  {
    "company": "GDP Venture / GDP Labs",
    "ats": "smartrecruiters",
    "slug": "gdp",
@@ -73,6 +187,22 @@
    "error": null
   },
   {
+   "company": "Group-IB",
+   "ats": "greenhouse",
+   "slug": "groupib",
+   "ok": true,
+   "postings": 17,
+   "error": null
+  },
+  {
+   "company": "GSK",
+   "ats": "workday",
+   "slug": "gsk|wd5|GSKCareers",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
    "company": "HM Sampoerna",
    "ats": "smartrecruiters",
    "slug": "hmsampoerna",
@@ -81,11 +211,27 @@
    "error": null
   },
   {
+   "company": "Job-alert emails",
+   "ats": "email",
+   "slug": "imap.gmail.com",
+   "ok": false,
+   "postings": 0,
+   "error": "not set up yet (add ALERTS_IMAP_USER / ALERTS_IMAP_PASSWORD secrets, see README)"
+  },
+  {
    "company": "JULO",
    "ats": "smartrecruiters",
    "slug": "julo",
    "ok": true,
    "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Kyndryl",
+   "ats": "workday",
+   "slug": "kyndryl|wd5|KyndrylProfessionalCareers",
+   "ok": true,
+   "postings": 0,
    "error": null
   },
   {
@@ -102,6 +248,30 @@
    "slug": "lamudi",
    "ok": true,
    "postings": 11,
+   "error": null
+  },
+  {
+   "company": "Manulife",
+   "ats": "workday",
+   "slug": "manulife|wd3|MFCJH_Jobs",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Mastercard",
+   "ats": "workday",
+   "slug": "mastercard|wd1|CorporateCareers",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Motorola Solutions",
+   "ats": "workday",
+   "slug": "motorolasolutions|wd5|Careers",
+   "ok": true,
+   "postings": 0,
    "error": null
   },
   {
@@ -129,11 +299,91 @@
    "error": null
   },
   {
+   "company": "P&G",
+   "ats": "workday",
+   "slug": "pg|wd5|1000",
+   "ok": true,
+   "postings": 5,
+   "error": null
+  },
+  {
+   "company": "Pahamify",
+   "ats": "smartrecruiters",
+   "slug": "pahamify",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
    "company": "PasarPolis",
    "ats": "smartrecruiters",
    "slug": "pasarpolis",
    "ok": true,
    "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Pfizer",
+   "ats": "workday",
+   "slug": "pfizer|wd1|PfizerCareers",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "PwC (campus)",
+   "ats": "workday",
+   "slug": "pwc|wd3|Global_Campus_Careers",
+   "ok": true,
+   "postings": 7,
+   "error": null
+  },
+  {
+   "company": "PwC (experienced)",
+   "ats": "workday",
+   "slug": "pwc|wd3|Global_Experienced_Careers",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Reckitt",
+   "ats": "successfactors",
+   "slug": "careers.reckitt.com",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "RemoteOK",
+   "ats": "remoteboard",
+   "slug": "remoteok",
+   "ok": true,
+   "postings": 1,
+   "error": null
+  },
+  {
+   "company": "Remotive",
+   "ats": "remoteboard",
+   "slug": "remotive",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Salesforce",
+   "ats": "workday",
+   "slug": "salesforce|wd12|External_Career_Site",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "SAP",
+   "ats": "successfactors",
+   "slug": "careers.sap.com",
+   "ok": true,
+   "postings": 0,
    "error": null
   },
   {
@@ -169,6 +419,22 @@
    "error": null
   },
   {
+   "company": "Unilever",
+   "ats": "workday",
+   "slug": "unilever|wd3|Unilever_Experienced_Professionals",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
+   "company": "Visa",
+   "ats": "workday",
+   "slug": "visa|wd5|Visa",
+   "ok": true,
+   "postings": 0,
+   "error": null
+  },
+  {
    "company": "Xendit",
    "ats": "greenhouse",
    "slug": "xendit",
@@ -179,6 +445,56 @@
  ],
  "jobs": [
   {
+   "id": "workday:pg:R000160622",
+   "title": "PRIMA Internship Program",
+   "company": "P&G",
+   "location": "JAKARTA PLANT",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/PRIMA-Internship-Program_R000160622",
+   "source": "workday",
+   "posted_at": "2026-11-19T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA PLANT \n Job Description \n Are you ready to develop new skills by mastering the latest production technology for the world’s biggest brands? We invite you to join PRIMA (Plant Technician Ready Makers Academy) Internship Program at PT Procter & Gamble Operations Indonesia.\n This program is designed to equip aspiring plant technicians like you with the essential skills, knowledge, and hands-on experience required for success career in the industry. At P&G, we are committed to investing in and nurturing talented individuals, providing invaluable theoretical and practical experiences right within our plant.\n As a participant in the PRIMA program, you will gain extensive work competencies through a balanced approach: 70% hands-on experience in production operations, 20% guided mentorship from the experts, and 10% engaging classroom training and workshop. You will immerse yourself in P&G’s high standards and methods, enhancing your capabilities and preparing you for future challenges. Plus, you will have the opportunity to lead impactful projects that directly contribute to our business objectives.\n Are you ready to take on this challenge? \n You may be placed in one of the packing or making operations. Your mission will include:\n Supporting the operation as an area operator while following high standards of P&G Jakarta Plant's Foundation (safety, quality, stewardship, and citizenship) to deliver the perfect quality product to our consumers and maintain high performance of production lines\n Contributing to the daily management system\n Leading one or more key projects aimed at eliminating losses in operations\n Job Qualifications \n We are seeking candidates who possess the following qualification and we will prioritize the candidate from Karawang City. \n Willingness to complete a 1-year PRIMA program\n Willingness to follow rotating shift schedule at Jakarta Plant\n Currently enrolled in the penultimate year of a diploma program or a recent graduate in Electrical Engineering, Mechanical Engineering, or Mechatronic Engineering\n Strong academic performance (minimum GPA of 3.2 out of 4.0)\n Active participation in campus activities or external organization\n Proficient in English (writing, reading, and speaking)\n Computer literacy\n Willingness to be based at PT P&G Operations Indonesia in the Karawang Industrial Area, West Java\n ABOUT US \n We produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\n Visit http://www.pg.com to know more.\n Our consumers are diverse and our talents - internally - mirror this diversity to best serve it. That is why we’re committed to building a winning culture based on Inclusion and our ideal candidate is passionate about the same principle: you will join our daily effort of being “in touch” so we craft brands and products to improve the lives of the world’s consumers now and in the future. We want you to inspire us with your unrivaled ideas.\n We are committed to providing equal opportunities in employment. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, veteran status, HIV/AIDS status, or any other legally protected factor.\n Job Schedule \nFull time \n Job Number \nR000160622 \n Job Segmentation \nPlant Technicians",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 59
+  },
+  {
+   "id": "workable:ajaib:F9B5CD37E4",
+   "title": "Product Manager Internship",
+   "company": "Ajaib",
+   "location": "Central Jakarta, Central Jakarta City, Indonesia",
+   "url": "https://apply.workable.com/j/F9B5CD37E4",
+   "source": "workable",
+   "posted_at": "2026-10-30T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n Role Overview \n As a Product Manager Intern focused on our Money team, you'll dive into the exciting world of financial technology. At Ajaib, our mission is to make stock trading accessible for everyone, and you'll play an essential role in shaping our financial products and enhancing the user experience.\n You'll work closely with Product Managers, Engineers, and other stakeholders, gaining hands-on experience in product development, market research, and user testing. This is a fantastic opportunity to learn from passionate professionals and contribute to innovative solutions in the fintech space.\n Responsibilities\n Assist in conducting market research to identify trends, opportunities, and user needs in the financial technology space.\n Aid in defining product requirements and creating documentation for new features.\n Participate in brainstorming sessions and contribute ideas for product improvements and new offerings.\n Support user testing and gather feedback to understand user behavior and preferences.\n Collaborate with cross-functional teams to support product development and ensure successful execution.\n Requirements \n Currently pursuing a Bachelor's degree in Business, Finance, Economics, or a related field.\n Strong interest in fintech, investment products, and financial markets.\n Detail-oriented, proactive, and eager to learn about product management.\n Excellent communication and interpersonal skills.\n Familiarity with data analysis and visualization tools is a plus.\n Available for a minimum 3-month internship period.\n Benefits \n Hybrid Work Arrangement - Enjoy the flexibility of working both remotely and from the office.\n Collaborative & High-Ownership Culture - Work with smart, driven people in cross-functional teams, take ownership, and make a meaningful impact for our users.",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "good",
+   "flags": [],
+   "score": 57
+  },
+  {
    "id": "smartrecruiters:grab:744000163097869",
    "title": "Intern [GIP] - Product Management & Product Design",
    "company": "Grab",
@@ -187,6 +503,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:17:41+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Please note that the work placement for this position is based at our South Jakarta office.\n Get to Know the Role \n In this role, you will leverage data and metrics to drive product improvements and foster cross-functional collaboration toward delivering impactful solutions. You will partner closely with diverse teams across Engineering (Backend, Frontend, Mobile, QA), Product Design, and Product Development to build and enhance our technology.\n The Critical Tasks You Will Perform \n User & Market Discovery: Conduct user research, competitor teardowns, and data analyses to uncover pain points and evaluate product opportunities.\n Cross-Functional Collaboration: Partner closely with Software Engineers, QA, and Business Operations throughout sprint cycles to ensure seamless delivery and implementation.\n Experimentation & Iteration: Assist in tracking post-launch feature adoption, user feedback, and funnel metrics to drive continuous iterations.\n For Product Management Track: \n Draft structured Product Requirement Documents (PRDs) and user stories with clear acceptance criteria and success metrics.\n Work with analytics to analyze funnels, define business logic, and prioritize feature backlogs.\n Prepare product briefs, roadmap updates, and release notes for cross-functional stakeholders.\n For Product Design Track: \n Map user flows and design wireframes, high-fidelity UI screens, and interactive clickable prototypes in Figma.\n Apply and contribute to Grab's design system, ensuring visual consistency, accessibility (WCAG), and responsive layout standards.\n Plan and support usability testing sessions, synthesize qualitative feedback, and prepare design specs for engineering handoff.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Computer Science, Information Systems, Human-Computer Interaction (HCI), Visual Communication Design (DKV), Industrial Engineering, Business, or a related field.\n Demonstrated structured problem-solving, product intuition, and familiarity with data interpretation / spreadsheet modeling.\n Proficiency in Figma (components, auto-layout, prototyping).\n Strong proficiency in Google Sheets / Microsoft Excel; familiarity with Jira/Confluence is a plus.\n Excellent written and verbal communication skills in both English and Bahasa Indonesia; ability to articulate concepts clearly.\n High curiosity, adaptability to fast-paced agile environments, and commitment to a full-time onsite internship\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable wo",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -211,6 +530,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:16:48+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Please note that the work placement for this position is based at our South Jakarta office\n Get to Know the Role \n In this role, you will contribute directly to the software development lifecycle (SDLC) across our platform. Whether working on high-throughput backend services, interactive user interfaces, or core foundational infrastructure, you will design, implement, test, and deploy features under the mentorship of experienced software engineers. You will gain first-hand exposure to building resilient, scalable, and secure systems operating at regional scale.\n The Critical Tasks You Will Perform \n Feature Design & Development: Write clean, maintainable, testable, and well-documented code for backend microservices, web applications, or mobile features.\n System Architecture & Code Review: Participate in technical design discussions, requirement scoping, and peer code reviews to uphold Grab's high standards for code quality and reliability.\n Testing & Quality Assurance: Develop unit, integration, and end-to-end automated tests to ensure high test coverage and fault-tolerant releases.\n Troubleshooting & Performance Tuning: Assist in diagnosing bugs, investigating system bottlenecks, and optimizing query or service performance.\n CI/CD & Operational Hygiene: Learn and leverage modern deployment pipelines, monitoring systems (e.g., alerts, dashboards, logging), and containerized environments.\n Cross-Functional Collaboration: Partner closely with Product Managers, Quality Assurance (QA) engineers, and UI/UX designers to translate product specifications into robust technical implementations.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Computer Science, Software Engineering, Information Technology, Computer Engineering, or a related technical discipline\n Strong grasp of Data Structures, Algorithms, Object-Oriented Programming (OOP), concurrency concepts, and system design basics.\n Solid coding skills in at least one modern programming language (such as Go, Java, Python, C++, TypeScript, Swift, or Kotlin).\n Working knowledge of relational databases (e.g., MySQL, PostgreSQL) and SQL query writing.\n Ability to break down complex algorithmic problems logically and debug issues methodically.\n High curiosity, willingness to learn new technologies quickly, and commitment to a full-time onsite internship.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all can",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -235,6 +557,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:12:11+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n In this role, you will bridge market reality and data-driven product strategy. You will conduct primary and secondary market research, analyze large-scale datasets, and evaluate program performance across our core verticals (Mobility, Deliveries, and Financial Services). Your insights will directly influence upcoming feature developments, pilot launches, and business operations.\n The Critical Tasks You Will Perform \n Market & Product Research: Design and run qualitative and quantitative research studies (surveys, user interviews, competitive benchmarking) to identify user needs and market opportunities.\n Data Exploration & Analysis: Extract, clean, and analyze datasets to monitor key performance metrics, spot operational trends, and diagnose business anomalies.\n Actionable Insights & Recommendations: Translate raw findings into clear, structured reports, decks, and recommendations for product managers and business leads.\n Experimentation & Program Support: Support the pilot rollout of new product features or operational programs by tracking feedback and evaluating post-launch adoption.\n Dashboard & Reporting Hygiene: Assist in maintaining team tracking dashboards and data spreadsheets to keep business metrics transparent and accessible.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Economics, Statistics, Mathematics, Industrial Engineering, Business/Management, Computer Science, or a related quantitative field.\n Demonstrated ability to structure ambiguous business questions, interpret numbers, and draw logical conclusions from data.\n Strong hands-on capabilities in Microsoft Excel or Google Sheets (e.g., Pivot Tables, complex lookup formulas, data aggregation).\n Hands-on experience or coursework with SQL, Python, or R for data analysis.\n Familiarity with data visualization platforms (e.g., Tableau, Power BI, Looker Studio, Metabase).\n Strong written and verbal communication skills in both English and Bahasa Indonesia, with the ability to summarize findings clearly in slides/documents.\n Proactive mindset, eager to learn on the ground, comfortable collaborating across cross-functional teams, and committed to a full-time onsite internship\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nation",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -251,6 +576,286 @@
    "score": 40
   },
   {
+   "id": "workable:ajaib:1A67D61CEA",
+   "title": "Multimedia Designer Intern",
+   "company": "Ajaib",
+   "location": "Jakarta, Indonesia",
+   "url": "https://apply.workable.com/j/1A67D61CEA",
+   "source": "workable",
+   "posted_at": "2026-11-20T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n Job Description \n Produce multimedia (audio/video) content for social media & various marketing videos\n Conceptualize and develop design plan, concept, and layout for motion graphic project\n Record, sync, edit video and sound projects\n Collaborate with Creative team and marketing associate to coordinate brand awareness and marketing efforts\n Requirements \n Fresh graduate or final year student in Art/Design/Creative Multimedia or equivalent\n Experienced in Video Editing/Motion Graphics\n Proficiency using Premiere Pro, After Effects, Illustrator & CapCut\n Good understanding of the video & motion graphic process and a good sense of style\n Available for a minimum of 3 months\n Benefits \n Hybrid Work Arrangement - Enjoy the flexibility of working both remotely and from the office\n Career Growth - Work closely with experienced leaders and take on meaningful ownership as we scale\n Collaborative & High-Ownership Culture - Work with smart, driven people in cross-functional teams, take ownership, and make a meaningful impact for our users.",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 37
+  },
+  {
+   "id": "workday:pg:R000162972",
+   "title": "PEAKathon 2026 – Business Case Competition & Management Internship Pathway",
+   "company": "P&G",
+   "location": "JAKARTA GENERAL OFFICE",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/PEAKathon-2026---Business-Case-Competition---Management-Internship-Pathway_R000162972",
+   "source": "workday",
+   "posted_at": "2026-11-18T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA GENERAL OFFICE \n Job Description \n PEAKathon 2026 – Business Case Competition & Management Internship Pathway \n Location: Jakarta (Local Round); \n Regional Stage in Singapore for selected winners \n Open to: 3rd-year or final-year university students \n Apply by: 1 December 2026 at PGCAREERS.COM \n About the Opportunity \n PEAKathon is a business case competition where you team up to tackle a real business challenge, develop your skills, and get a taste of life at P&G. It is a fast-track route into the P&G Management Internship. The Top 3 Local Winners go directly to the final panel interview for internship path. \n What You Will Do \n Work on a real business challenge in a team. \n Bring your point of view, challenge assumptions, and show your thinking. \n Apply individually and get teamed up with new people, so you learn from different perspectives. \n Develop your skills through coaching and mentorship from P&G professionals. \n Pitch your ideas at the Local Round. Local winners may be selected to compete on the regional stage in Singapore. \n The Journey \n Individual Registration \n Online Assessment \n Team Formation \n Team Video Submission \n Local Round \n Regional Selection, Singapore \n Job Qualifications \n Who You Are (Eligibility) \n You are a 3rd-year or final-year university student. \n You are still enrolled at university when you apply. \n You are happy to apply individually. You don't need a pre-formed team. \n You are willing to bring your own point of view, challenge assumptions, and show your thinking. \n What's in It for You \n Fast-track your career: the Top 3 Local Winners go directly to the final panel interview for the P&G Management Internship path. \n Regional exposure: local winners may pitch on the Regional Stage in Singapore for the selected team. \n Learning: coaching and mentorship from P&G professionals. \n Network: you sign up on your own and meet new teammates. \n How to Apply \n Register individually at PGCAREERS.COM before 1 December 2026 . \n Job Schedule \nFull time \n Job Number \nR000162972 \n Job Segmentation \nInternships",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 37
+  },
+  {
+   "id": "smartrecruiters:BoschGroup:744000161985250",
+   "title": "Finance, Accounting & Tax Intern",
+   "company": "Bosch",
+   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161985250-finance-accounting-tax-intern",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-17T02:21:10+00:00",
+   "text": "Job Description\nCheck submission status, advances, payment requisitions, and travel requests in PowerApps\n Check and verify documents in SmartFix\n Post all invoices and tax invoices to SAP\n Follow up on INAP SIIM\n Assist with IDS payments/Swift payment\n Reconcile FEBAN (Bank Statements)\n Prepare monthly listings of sales tax invoices for Trading Goods (TG) and Customer Services (CS)\n Daily check price settings\n Handling transaction invoices for BSH Hausgeräte GmbH and Robert Bosch GmbH\nQualifications\nStrong knowledge and hands-on experience in SAP\n Able to support and assist team members effectively\n Available to work five days per week\n Detail-oriented with strong accuracy\n Fast learner and highly reliable\n Proficient in Microsoft Excel (formulas, VLOOKUP/XLOOKUP, Pivot Tables, SUMIF)\n Ability to handle data entry accurately\n Eager to learn and highly inquisitive\nAdditional Information\nFull-time paid internship.\n Will not graduate during the internship program.\n Open for COLLEGE STUDENTS ONLY.\n HR Contact Person: Aqila Shekina Putri",
+   "origin": "Bosch",
+   "where": "jakarta",
+   "work_mode": "hybrid",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
+   "id": "workable:ajaib:4C891418D5",
+   "title": "Community Partnership Intern",
+   "company": "Ajaib",
+   "location": "Jakarta, Indonesia",
+   "url": "https://apply.workable.com/j/4C891418D5",
+   "source": "workable",
+   "posted_at": "2026-11-19T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n We are looking for a proactive and detail-oriented Community Partnership Intern to support our team in managing community partner relationships, monitoring performance, and coordinating various community activities. In this role, you will gain hands-on experience in partnership operations, performance reporting, and community engagement while supporting the execution of content campaigns, live trading sessions, webinars, and other activations.\n Requirements \n Currently pursuing or recently graduated with a degree in Business, Marketing, Communications, or a related field.\n Able to use in Microsoft Excel or Google Sheets for data tracking, reporting, and maintaining trackers.\n Interested in financial markets, trading, investment, and community engagement.\n Detail-oriented and organized, with the ability to manage partnership documents and administrative tasks accurately.\n Good communication and coordination skills to work with community partners and internal teams.\n Proactive, eager to learn, and willing to support recurring operational tasks and community activities.\n Key Responsibilities \n Compile and maintain regular reports on community business performance, including key metrics and trends.\n Track and recap content and live trading performance across community partners.\n Coordinate and communicate content and live trading briefs to community partners.\n Maintain and organize partnership documents, agreements, trackers, and other administrative records.\n Distribute relevant market updates and campaign information to community groups.\n Support the preparation and execution of webinars, live trading sessions, offline events, and other community activations.\n Support coordination with relevant internal teams for community-related operational needs.\n Assist with other recurring operational and administrative tasks required to support the Community Partnership team.\n Benefits \n Join us as we make magic happen to increase Indonesia’s financial inclusion!",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 29
+  },
+  {
+   "id": "successfactors:jobs.sea.deloitte.com:1367043266",
+   "title": "A&A - Internal Audit - Intern",
+   "company": "Deloitte (SEA)",
+   "location": "Jakarta, ID",
+   "url": "https://jobs.sea.deloitte.com/job/Jakarta-A&A-Internal-Audit-Intern/1367043266/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "Title: Service Line (based in ) – Intern \n Are you ready to unleash your potential? \nAt Deloitte, our purpose is to make an impact that matters for our clients, our people, and the communities we serve. \nWe believe we have a responsibility to be a force for good, and WorldImpact is our portfolio of initiatives focused on making a tangible impact on society’s biggest challenges and creating a better future. We strive to advise clients on how to deliver purpose-led growth and embed more equitable, inclusive as well as sustainable business practices. \nHence, we seek talented individuals driven to excel and innovate, working together to achieve our shared goals. \nWe are committed to creating positive work experiences that foster a culture of respect and inclusion, where diverse perspectives are celebrated, and everyone is recognised for their contributions.\nReady to unleash your potential with us? Join the winning team now!\n Work you’ll do \n Internal Control over Financial Reporting \n Deliver Internal Control over Financial Reporting (ICOFR) engagement to a diverse portfolio of clients.\n  Support client in designing robust internal control, as well ass documenting the required documentation referring to applicable regulation and best practices.\n Identify risk and control of client’s process, as well as providing clear and actionable recommendation for any identified deficiencies.\n Conduct interim and yead-end testing for the ICOFR implementation.\n Support client in providing clear and comprehensive report of ICOFR effectiveness.\n Supporting the implementation financial and management reporting system\n IT General Control \n Perform IT controls assessment based on Risk Control Matrices (RCM) in ITGC area.\n Support team in identifying updates required for the existing RCM.\n Proactively assist the team in various aspects of the project.\n Prepare workpapers and deliverables.\n Contribute to the development of your own and team’s technical skill.\n Keep up to date with local and national technology, business and economic issues.\n Adhere to compliance and IT risk management matters.\n Your role as a leader \nAt Deloitte, we believe in the importance of empowering our people to be leaders at all levels. We connect our purpose and shared values to identify issues as well as to make an impact that matters to our clients, people and the communities. Additionally, Intern  across our Firm are expected to:\n Demonstrate a strong commitment to personal learning and development.\n Understand how our daily work contributes to the priorities of the team and business.\n Understand the set expectations and demonstrate accountability in keeping personal performance on track.\n Actively focus on developing effective communications and relationship-building skills with stakeholders, clients and team.\n Demonstrate an appreciation for working with others.\n Understand what is fundamental to Deloitte’s success as a business.\n Demonstrate integrity and an awareness of strengths, differences, and personal impact.\n Develop their understanding of Deloitte and offer a fresh perspective.\n Requirements \n - Bachelor Degree in Accounting/Computer Science/Information Technology or equivalent (min. GPA 3.00)\n- Strong understanding of COSO Internal Control Framework, PCAOB 2201 ICOFR, and Risk Management\n - Have interest in IT audit/IT assurance/IT assessment and familiar with general IT controls (GITC) \n - Excellent analytical skill\n - Fluent in English\n - Have interest in IT audit/IT assurance/IT assessment and familiar with general IT controls (GITC) \n Due to volume of applications, we regret only shortlisted candidates will be notified. Candidates will only be contacted by authorized Deloitte Recruiters via firm’s business contact number or business email address.",
+   "origin": "Deloitte (SEA)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
+   "id": "successfactors:jobs.sea.deloitte.com:1369912066",
+   "title": "A&A - Intern - Audit",
+   "company": "Deloitte (SEA)",
+   "location": "Jakarta, ID",
+   "url": "https://jobs.sea.deloitte.com/job/Jakarta-A&A-Intern-Audit/1369912066/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "What impact will you make? \nAt Deloitte, we offer a unique and exceptional career experience to inspire and empower talents like you to make an impact that matters for our clients, people and community. Whatever your aspirations, Deloitte offers you a highly inclusive, collaborative workplace and unrivalled opportunities to realize your full potential. We are always looking for people with the relentless energy to push themselves further, and to find new avenues and unique ways to reach our shared goals.\nSo what are you waiting for? Join the winning team now.\n Work you’ll do \n Assisting audit staff in performing vouching procedures and preparing audit working papers in accordance with the firm’s audit methodology;\n Performing basic analytical reviews and documentation of audit evidence under supervision;\n Supporting the team in administrative tasks, including working paper filing, documentation management, and audit file organization;\n Assisting in data compilation and reconciliation from client-provided information;\n Participating in internal discussions and learning sessions related to audit methodology, accounting standards, and firm procedures; and\n Maintaining confidentiality and professional conduct throughout the engagement.\n Requirements \n A final year Accountancy student from a reputable university \n Excellent academic result (minimum GPA 3.00) \n Strong initiative and motivation \n Good analytical and problem solving ability \n Ability to prioritize tasks and work on multiple assignment under tight time deadlines \n Able to work in team \n Good interpersonal skill \n Proficient in English, both spoken and written \n Computer literate; Microsoft Office, internet, etc \n Available to join January 4, 2027 - April 30, 2027 \n Due to volume of applications, we regret only shortlisted candidates will be notified.",
+   "origin": "Deloitte (SEA)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 29
+  },
+  {
+   "id": "successfactors:careers.reckitt.com:1457859133",
+   "title": "Marketing - Content Creator Intern",
+   "company": "Reckitt",
+   "location": "Jakarta Raya, Jawa, ID, N/A",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/",
+   "source": "successfactors",
+   "posted_at": "2026-11-17T00:00:00+00:00",
+   "text": "Marketing - Content Creator Intern, Placement Head Office Jakarta. \n We're looking for an Intern to join our team and create engaging contents across our various segments.\n In Summary, you will :\n Idea generation :\n You are expected to gather current trends and insights in TikTok and social commerce space.\n You are then expected to use collected trends and insight to create short video brief after discussion and approval with line manager.\n Video Creation :\n You are expected to create 15 videos / week for Dettol segments.\n Quantity of each segment is subject to be approved according to business needs.\n Video Review :\n You are expected to review and analyse created video with KPI that was set by the supervisor.\n KPI include: GMV, Impression, view rate (subject to be discussed).\n The experience we're looking for :\n Final-year student (6th semester or above) from any major.\n Passionate about content creation and social media trends.\n Familiar with basic video editing tools (e.g., Canva, In Shot, Cap Cut, etc.).\n Creative, proactive, and eager to experiment new ideas.Comfortable working in a hybrid set up (must be able to work from the office periodically).\n Strong communication skills and a collaborative mindset.\n Learning & Benefit:Experience working in a multinational company with diverse teams and global standards.\n Exposure to how a global brand is built and managed in real world markets.\n Opportunity to present your ideas and results directly to the Marketing Director.\n Be part of a team that contributes to shaping a global brand’s presence.\n Hands on exposure to creative marketing strategies and digital content trends.\n Here's a little bonus : if you have a cat or dog at home, even better! some of the contents you'll work on will be around pet related products, so having a furry friend could make the experience even more engaging! no pets? absolutely no problem! we're looking for creativity, curiosity and a passion for content creation.\n Recruitment Process: CV Screening -> HR Interview -> Video Submission -> User Interview (Brand Manager) -> Offering",
+   "origin": "Reckitt",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 29
+  },
+  {
+   "id": "workday:pg:R000162236",
+   "title": "P&G Indonesia Management Internship - BRAND",
+   "company": "P&G",
+   "location": "JAKARTA GENERAL OFFICE",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/P-G-Indonesia-Management-Internship---BRAND_R000162236",
+   "source": "workday",
+   "posted_at": "2026-11-04T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA GENERAL OFFICE \n Job Description \n How would you like to apply your education in exciting and meaningful ways from day one? Are you passionate about crunching the numbers to drive strategy in a substantial way? If so, we have the perfect chance for you. Internship in P&G finance function is a unique opportunity to obtain insights into the world of finance through a fast-moving consumer goods company and benefit from business topics at the heart of today’s news – Evolving, competition, and customers’ reality makes working in a consumer good’s business dynamic every single day! \n What we offer you: \n You will have business responsibilities from Day 1 – You will work on at least one or two big projects. \n You will receive continuous coaching & mentorship– We are passionate about our work. We will make sure you receive both formal training and as regular mentorship from your manager and others. \n You will join our dynamic and respectful team and work closely with colleagues from other functions – We live our Purpose, Values, and Principles daily. We value every individual and encourage initiatives promoting agility and work/life balance. \n You will work in flexible work arrangements. \n Internship Information \n Our interns are considered the best pipeline of talent for our permanent positions. Based on your performance, you may get full time job offer from P&G \n Job Qualifications \n Open to all fields of study, but majors/having experience with finance/business/related field are preferred.\n You are 3rd year or last year student \n You are still university students (haven't graduated yet) as of 18 January 2027 \n Committed to do a full-time internship for 3-month/12-week (18 January - 30 April 2027). \n Have base analytical thinking for insights-based decision making.\n Born leaders and are passionate to make things happen.\n Have an external focus and a real passion for finance.\n Like to bring creativity & innovation to their work.\n Have strong analytical thinking and skills.\n Collaborate well with diverse groups of people.\n Willing to relocate\n About Us \n We produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\n Visit http://www.pg.com to know more.\n Our consumers are diverse and our talents - internally - mirror this diversity to best serve it. That is why we’re committed to building a winning culture based on Inclusion and our ideal candidate is passionate about the same principle: you will join our daily effort of being “in touch” so we craft brands and products to improve the lives of the world’s consumers now and in the future. We want you to inspire us with your unrivaled ideas.\nWe are committed to providing equal opportunities in employment. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, veteran status, HIV/AIDS status, or any other legally protected factor.\nP&G is improving everyday life as a Force for Growth and a Force for Good — for you, for the world, and for generations to come.\n Job Schedule \nFull time \n Job Number \nR000162236 \n Job Segmentation \nInternships",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 27
+  },
+  {
+   "id": "workday:pg:R000162235",
+   "title": "P&G Indonesia Management Internship - SALES",
+   "company": "P&G",
+   "location": "JAKARTA GENERAL OFFICE",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/P-G-Indonesia-Management-Internship---SALES_R000162235",
+   "source": "workday",
+   "posted_at": "2026-11-04T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA GENERAL OFFICE \n Job Description \n Do you want to be in the driver's seat, selling our global leading brands? Are you intrigued by the idea of building long-term business relationships with our customers? Would you like to develop and negotiate plans which provide mutual benefit for our shoppers, our customers, and our Company? We want people who can bring their best selves to work every single day as a part of our best-in-class sales organization.\n What we offer: \nAs a Sales Intern, you'll need to be highly motivated, results-oriented, and comfortable in drawing insights from data. For all the work we put into creating the world's leading consumer products, it means nothing if we can't sell them to our customers. You can help us there!\n During three months of internship, you will be externally focused, emphasizing efforts on national key customers and retailers. You'll get an understanding of the customers and shoppers needs. Your contributions to negotiations on prices, assortment, merchandising and promotions will be essential to our success. You'll have to collaborate with the whole customer team to prepare business plans and external negotiations.\n Internship Information \n Our interns are considered the best pipeline of talent for our permanent positions. Based on your performance, you may get full-time job offer from P&G.\n Job Qualifications \n You are 3rd or last-year student. \n You are still an active university student (haven't attended graduation ceremony yet) as of 18th January 2027 \n Committed to do a full-time internship for 3-month/12-week (18th January - 30 April 2027). This duration is extended by 1-week to accommodate the Lebaran holiday.\n Have base analytical thinking for insights-based decision making.\n Born leaders and are passionate to make things happen.\n Have an external focus and a real passion for sales.\n Like to bring creativity & innovation to their work.\n Have strong analytical thinking and skills.\n Collaborate well with diverse groups of people.\n Willing to be relocated.\n About us \n We produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\n Visit http://www.pg.com to know more.\n We are an equal opportunity employer and value diversity at our company. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, HIV/AIDS status, or any other legally protected factor.\n Job Schedule \nFull time \n Job Number \nR000162235 \n Job Segmentation \nInternships",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [],
+   "score": 27
+  },
+  {
+   "id": "workday:pg:R000162231",
+   "title": "P&G Indonesia Management Internship - PRODUCT SUPPLY",
+   "company": "P&G",
+   "location": "JAKARTA PLANT",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/P-G-Indonesia-Management-Internship---PRODUCT-SUPPLY_R000162231",
+   "source": "workday",
+   "posted_at": "2026-11-04T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA PLANT \n Job Description \n Job Description \nDid you know that at P&G we consider Product Supply (PS) as the engine that accelerates value creation? Getting thousands of different products onto the shelves in our customer's stores in the right quantities with precise quality in a timely manner really does present meaningful work every single day.\n Description of the Role \nYou will be working with line engineers and multi-functional teams within the department to drive operation results and loss elimination for the site. You will discover our leading technologies which are world renowned. All these missions require strong multi-functional work, which means that you'll work with other functions both internally and externally and you will be responsible for ensuring we have the right product at the right place at the right cost.\n What We Offer \n You will have business responsibilities from Day 1 – You will work on at least one or two big projects.\n You will receive continuous coaching & mentorship– We are passionate about our work. We will make sure you receive both formal training and regular mentorship from your manager and others.\n You will join our dynamic and respectful Sales teams and work closely with colleagues from other functions – We live our Purpose, Values, and Principles daily. We value every individual and encourage initiatives promoting agility and work/life balance.\n You will focus in outcome-based project.\n Internship Information \nOur interns are considered the best pipeline of talent for our Permanent positions. Based on your performance, you may get full-time job offer from P&G.\n Job Qualifications \n You are 3rd year or last year students in all engineering majors and/or science-related fields of study.\n You are still university students (haven't graduated yet) as of 18 January 2027 \n Committed to do a full-time internship for 3-month/12-week (18 January 2027 - 30 April 2027). \n Have basic analytical thinking for insights-based decision-making and learning to use various data-centric and digital technologies.\n Born leaders who are passionate about making things happen.\n Have an external focus and a real passion for product supply.\n Like to bring creativity & innovation to their work.\n Have strong analytical thinking and skills.\n Collaborate well with diverse groups of people.\n Willing to be relocated.\n About Us \nWe produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\nVisit http://www.pg.com to know more.\nOur consumers are diverse and our talents - internally - mirror this diversity to best serve it. That is why we’re committed to building a winning culture based on Inclusion and our ideal candidate is passionate about the same principle: you will join our daily effort of being “in touch” so we craft brands and products to improve the lives of the world’s consumers now and in the future. We want you to inspire us with your unrivaled ideas.\nWe are committed to providing equal opportunities in employment. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, veteran status, HIV/AIDS status, or any other legally protected factor.\nP&G is improving everyday life as a Force for Growth and a Force for Good — for you, for the world, and for generations to come.\n Job Schedule \nFull time \n Job Number \nR000162231 \n Job Segmentation \nInternships",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 27
+  },
+  {
+   "id": "teamtailor:bobobox:1f855918-0387-4c2c-a67d-d8f9d8b5f670",
+   "title": "On The Job Training - Trainee Staff Bobopod Malioboro",
+   "company": "Bobobox",
+   "location": "Gedong Tengen, Indonesia",
+   "url": "https://bobobox.teamtailor.com/jobs/8620732-on-the-job-training-trainee-staff-bobopod-malioboro",
+   "source": "teamtailor",
+   "posted_at": "2026-10-27T08:41:37+07:00",
+   "text": "Our On the Job Training (OJT) programme at Bobopod Malioboro gives SMA/SMK students and recent graduates hands-on experience in both Front Office and Housekeeping, working alongside our hosts in a tech-driven capsule hotel.\n What you will do: \n Front Office: Guest Experience & Hospitality \n Assist the main host in welcoming guests during check-in and check-out using the Bobobox HCS system.\n Support the main host in greeting guests and verifying reservations in a professional and courteous manner.\n Help respond promptly and professionally to guest inquiries, complaints and special requests, under supervision.\n Operate guest-facing technology (self check-in, smart door access, room control system) with help from the main host.\n Help guests use the Bobobox app and digital platforms for booking, payment and feedback, and encourage them to share feedback.\n Housekeeping: Room & Facility Care \n Clean and prepare pods to Bobobox cleanliness and hygiene standards.\n Deep-clean pods as scheduled (including walls, flooring, air vents and control panels).\n Keep public areas (communal spaces, hallways, reception, bathrooms) clean and tidy, and restock toiletries, tissues and other guest supplies.\n Handle pod interiors and control panels with care, and follow sanitisation procedures, especially for high-touch surfaces.\n Use cleaning chemicals and tools safely and follow all health, safety and hygiene rules.\n Greet and assist guests during cleaning rounds, and respond to requests for extra amenities, linens or urgent cleaning.\n You will fit in this job if you: \n Are an SMA/SMK student or recent graduate, ideally from a Hospitality or Tourism programme.\n Have basic computer skills and can use hospitality software, mobile apps and smart devices.\n Communicate clearly in Bahasa Indonesia and have basic English; other languages are a plus.\n Are friendly, professional and guest-oriented.\n Are flexible, proactive and willing to work shifts, weekends and public holidays.\n Adapt quickly to new procedures and technology, and are eager to learn.\n What we offer: \n Pocket allowance of Rp500,000/month\n Certificate on completion of the programme\n Mentorship\n Career opportunities\n Placement: Bobopod Malioboro, Yogyakarta",
+   "origin": "Bobobox",
+   "where": "indonesia",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 14
+  },
+  {
    "id": "smartrecruiters:grab:744000163097879",
    "title": "Intern [GIP] - Creative Marketing, Campaign, & Communications",
    "company": "Grab",
@@ -259,6 +864,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:19:16+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n In this role, you will help bring marketing campaigns to life from concept to execution. You will support end-to-end campaign planning, social media storytelling, copywriting, and PR/communications for Grab's core services (Mobility, Food, Mart, and Fintech). Working closely with creative leads, brand managers, and external partners (agencies, KOLs), you will ensure our messaging is engaging, culturally relevant, and aligned with Grab's brand voice.\n The Critical Tasks You Will Perform \n Campaign Ideation & Execution: Support the end-to-end rollout of integrated seasonal and tactical marketing campaigns across offline and online touchpoints.\n Creative Copywriting & Content Creation: Draft compelling, brand-aligned copy for social media posts, push notifications, in-app banners, collateral, and marketing emails.\n Social Media & Community Engagement: Monitor trending topics, social conversations, and pop culture moments to identify creative hijack opportunities and community engagement hooks.\n KOL & Influencer Coordination: Assist in shortlisting, briefing, and coordinating with content creators and Key Opinion Leaders (KOLs) to support campaign launches.\n PR & Brand Communications: Assist in preparing press releases, media kits, internal announcements, and executive speaking materials for brand storytelling.\n Cross-Functional Collaboration: Partner with internal brand designers, performance marketers, agency partners, and local city teams to ensure timely delivery of creative assets.\n Campaign Reporting: Track campaign reach, engagement, and post-campaign sentiment to gather actionable insights for future marketing initiatives.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00.\n Final-year student or fresh graduate with a Bachelor's degree in Communications, Marketing, Advertising, Public Relations, Creative Writing, Journalism, Visual Communication Design (DKV), or a related field.\n Exceptional written and verbal communication skills in both Bahasa Indonesia and English, with an innate ability to craft engaging, audience-centric copy.\n Strong interest in digital media, consumer behavior, and social media trends (TikTok, Instagram, X, etc.) in Indonesia.\n Ability to think outside the box, generate original ideas, and translate business briefs into creative concepts.\n High attention to detail, strong time-management skills to handle concurrent projects, and commitment to a full-time onsite internship\n Basic knowledge of design or video editing tools (e.g., Canva, Figma, Adobe Photoshop/Illustrator, CapCut).\n Prior experience managing brand social media accounts, student club marketing, campus events, or PR campaigns.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive en",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -275,6 +883,109 @@
    "score": 10
   },
   {
+   "id": "smartrecruiters:BoschGroup:744000162475699",
+   "title": "Sales and Business Development Intern",
+   "company": "Bosch",
+   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162475699-sales-and-business-development-intern",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-19T09:54:12+00:00",
+   "text": "Job Description\n1. Order & Delivery Monitoring\n Monitor dealer order and delivery status.\n Act as the contact point for promoters and dealer staff regarding order status.\n Coordinate with internal teams to ensure timely delivery.\n 2. Daily Free Stock Report\n Prepare and update the free stock list report.\n 3. Brand Store Event Support\n Checklist all preparation and attendees of routine brand store events to ensure the event run smoothly.\n Willing to support or be on-site during Saturday events when needed.\n 4. Employee Purchase Handling\n Assist in managing the employee purchase (EP) process—from request and approval to follow-ups.\n Ensure proper documentation and coordination with all related party\n 5. Update Sell Out and PO Tracker & Administration Support\n Update sell out data in the sell-out tracker regularly\n Update and maintain the PO Tracker regularly.\n Support in other related sales administration topic.\nQualifications\nActive university student from Business, Management, Marketing, Supply Chain, or related fields.\n Comfortable working with numbers and administrative tasks.\n Organized, responsible, and willing to learn.\n Able to work with multiple stakeholders.\n Willing to support weekend events when required.\n Good communication and coordination skills.\n Strong attention to detail and accuracy.\n Basic data management skills (Excel/Google Sheets).\n Able to multitask and manage timelines.\n Proactive, willing to follow up, and problem-solving oriented.\nAdditional Information\nFor Desember 2026 - June 2027 period\n Open for COLLEGE STUDENTS ONLY (will not graduate during the internship program)\n Contact Person: Aqila Shekina Putri",
+   "origin": "Bosch",
+   "where": "jakarta",
+   "work_mode": "hybrid",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 7 months; he's free about 3"
+   ],
+   "score": 10
+  },
+  {
+   "id": "workable:ajaib:19D8AD74B2",
+   "title": "Business Growth Intern",
+   "company": "Ajaib",
+   "location": "Jakarta, Indonesia",
+   "url": "https://apply.workable.com/j/19D8AD74B2",
+   "source": "workable",
+   "posted_at": "2026-11-20T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n Role Overview \n We’re looking for Business Growth Intern to join our team! In this role, you’ll support various business growth initiatives through data analysis, market research, and campaign execution. This is a great opportunity for those who are passionate about fintech, investments, and scaling products through data-driven strategies\n Data Analysis & Insights: Supporting deep-dive analysis related to overall business growth initiatives\n Market Research & Analysis: Conduct deep-dive research on market trends.\n Campaign Execution: Assist in the end-to-end execution of growth campaigns.\n Competitor Benchmarking: Monitor and report on the product features and promotional activities of local and global wealth-tech competitors.\n Reporting: Track and report on Key Performance Indicators (KPIs) such as TPV, growth rate, etc.\n Requirements \n Education: Final year student or recent graduate from Finance, Economics, Business, Management, or a related quantitative field.\n Investment Literacy: A strong fundamental understanding of how ID Stocks, US Stocks, and Mutual Funds work.\n Analytical Mindset: Proficiency in Microsoft Excel/Google Sheets (vlookup, pivot tables, data visualization).\n Growth Curiosity: A \"growth hacker\" mindset—you enjoy testing hypotheses and are obsessed with finding ways to scale a product.\n Communication: Excellent written and verbal communication skills in both Indonesian and English.\n Adaptability: Ability to thrive in a fast-paced fintech environment and manage multiple projects across different asset classes simultaneously.\n Available for 3-6 months internship period\n Benefits \n Hybrid Work Arrangement - Enjoy the flexibility of working both remotely and from the office\n Career Growth - Work closely with experienced leaders and take on meaningful ownership as we scale\n Collaborative & High-Ownership Culture - Work with smart, driven people in cross-functional teams, take ownership, and make a meaningful impact for our users.",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 10
+  },
+  {
+   "id": "teamtailor:bobobox:fafed43e-04b3-4e75-8f4f-f96339c09b53",
+   "title": "Barista Trainee (OJT) - CRiB Kuningan, Jakarta",
+   "company": "Bobobox",
+   "location": "Kecamatan Setiabudi, Indonesia, Kecamatan Sawah Besar, Kecamatan Kebayoran Baru, Kecamatan Taman Sari, Kecamatan Pancoran, Kecamatan Gambir, Kecamatan Menteng, Kecamatan Bekasi Selatan, Kecamatan Benda",
+   "url": "https://bobobox.teamtailor.com/jobs/8531441-barista-trainee-ojt-crib-kuningan-jakarta",
+   "source": "teamtailor",
+   "posted_at": "2026-10-12T17:51:48+07:00",
+   "text": "Join our On the Job Training (OJT) programme at CRiB Kuningan and learn the day-to-day of a café: making coffee and non-coffee drinks, preparing simple food, running the cashier and serving guests, with guidance from a mentor.\n Benefits for Trainees: \n Pocket allowance of Rp1,000,000/month\n Certificate upon completing the OJT programme\n Hands-on training and mentoring\n Career opportunities at Bobobox\n What you will do: \n Food & Beverage Preparation \n Help prepare and serve coffee and non-coffee drinks according to recipes and quality standards.\n Prepare and cook simple food, including frozen food, using the available kitchen equipment and SOPs.\n Learn food and beverage presentation standards to keep quality and consistency.\n Learn to check product freshness, expiry dates and correct storage of ingredients.\n Keep the kitchen and drink-making area clean and tidy, and apply food safety and sanitation procedures.\n Cashier & Customer Service \n Learn to use the cashier (POS) system to take orders and process transactions.\n Practise handling cash and cashless payments according to procedure.\n Make sure customer orders are recorded correctly and passed to the right team.\n Serve customers in a friendly, professional way, answer their questions and recommend menu items.\n Stock & F&B Operations \n Help monitor stock of food, drinks, ingredients and operational supplies.\n Learn correct stock storage and handling to maintain product quality.\n Help restock items and minimise waste.\n Follow F&B operating procedures and coordinate with the team for smooth service.\n You will fit in this job if you: \n Are a Senior High School/Vocational High School (SMA/SMK) student or recent graduate, preferably in Culinary Arts, Hospitality or a related field.\n Are interested in learning Food & Beverage, especially drink-making, simple food preparation and cashier service.\n Have basic experience or knowledge of operating a coffee machine (a plus).\n Communicate well and are friendly when serving customers.\n Care about cleanliness, tidiness and food safety.\n Are disciplined, proactive, eager to learn and open to direction and feedback.\n Work well in a team and adapt easily to a dynamic environment.\n Placement: CRiB Bobopod Kuningan, Jakarta",
+   "origin": "Bobobox",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "medium",
+   "ghost_reasons": [
+    "Posted 42 days ago"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 6
+  },
+  {
+   "id": "workday:pwc:637601WD",
+   "title": "Intern - IFS - Human Capital (Talent Pool)",
+   "company": "PwC (campus)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Intern---IFS---Human-Capital--Talent-Pool-_637601WD",
+   "source": "workday",
+   "posted_at": "2026-11-12T00:00:00+00:00",
+   "text": "Line of Service \nInternal Firm Services \n Industry/Sector \nNot Applicable \n Specialism \nIFS - Human Capital (HC) \n Management Level \nIntern/Trainee \n Job Description & Summary \nAt PwC, our people in talent and development focus on finding, deploying, training and enabling talent through talent identification and enhancing employee skills and knowledge, fostering a culture of continuous learning and professional growth. These individuals collaborate with subject matter specialists and project teams to strategize effective ways to locate, assess, educate and train employees, in line with market developments and firm strategy.\nIn recruitment and talent acquisition at PwC, you will focus on attracting and selecting top talent to join the organisation. You will play a crucial role in identifying and hiring individuals who align with PwC's values and contribute to its success. \n Driven by curiosity, you are a reliable, contributing member of a team. In our fast-paced environment, you will have the chance to work on a variety of assignments, each presenting varying challenges and scope. Every experience is an opportunity to learn and grow. You are encouraged to ask questions, take initiative, and produce quality work that adds value for our clients and contributes to our team’s success. During your time at the Firm, you start to establish your personal brand, paving the way to more opportunities.\n Examples of the skills, knowledge, and experiences you need to lead and deliver value at this level include but are not limited to:\n Apply a learning mindset and take ownership for your own development.\n Appreciate diverse perspectives, needs, and feelings of others.\n Adopt habits to sustain high performance and develop your potential.\n Actively listen, ask questions to check understanding, and clearly express ideas.\n Seek, reflect, act on, and give feedback.\n Gather information from a range of sources to analyse facts and discern patterns.\n Commit to understanding how the business works and building commercial awareness.\n Learn and apply professional and technical standards (e.g. refer to specific PwC tax and audit guidance), uphold the Firm's code of conduct and independence requirements.\n Talent Acquisition: \n Currently pursuing a Bachelor’s or Master’s degree in Human Resources, Psychology, Business Administration, Communications, or related fields.\n Strong interest in recruitment, talent acquisition, and employer branding within a professional services environment.\n Excellent verbal and written communication skills in English and Bahasa Indonesia.\n Proficient with Microsoft Office Suite (Word, Excel, PowerPoint); familiarity with Applicant Tracking Systems (Workday) or HRIS is a plus.\n Strong interpersonal skills with an ability to engage and build relationships with candidates and internal stakeholders.\n Detail-oriented, organized, and able to manage multiple tasks with a proactive attitude.\n Ability to work collaboratively in a fast-paced, team-oriented environment.\n Analytical mindset with the ability to assist in data collection and reporting to support recruitment strategy.\n Enthusiastic about learning and developing new skills within talent acquisition and HR operations.\n Employer Branding: \n Currently enrolled in a Bachelor’s or Master’s degree program in Marketing, Communications, or a related field.\n Strong passion and interest in employer branding, recruitment marketing, and talent engagement.\n Excellent written and verbal communication skills in English and Bahasa Indonesia.\n Creative mindset with the ability to support the development of engaging content for social media, career sites, and other employer branding activities (roadshow, company visit, etc.).\n Proficiency in Microsoft Office; familiarity with graphic design tools (e.g., Canva, Adobe Creative Suite) or video editing software is a plus.\n Understanding of social media platforms and ability to assist in managing content calendars or campaigns.\n Strong organization",
+   "origin": "PwC (campus)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "high",
+   "ghost_reasons": [
+    "Title says talent pool / future openings: likely collecting CVs"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 4
+  },
+  {
    "id": "smartrecruiters:grab:744000163097839",
    "title": "Intern [GIP] - Commercial & Business Development",
    "company": "Grab",
@@ -283,6 +994,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:15:18+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are seeking energetic, relationship-oriented, and commercially savvy interns to join our Commercial & Business Development talent pool. In this role, you will support teams responsible for acquiring, onboarding, and growing our partner ecosystem (merchants, corporate clients, advertisers, and strategic brand partners). You will assist in market research, lead generation, partner pitch preparations, and campaign execution to help drive top-line business growth across Grab's verticals.\n The Critical Tasks You Will Perform \n Find New Business Opportunities (Lead Generation): Research market trends and competitors to identify potential partners and business leads across various industries.\n Pitch & Proposal Support: Support the team in building presentation decks and partnership proposals for prospective clients and merchant partners.\n Coordinate Partner Onboarding: Help guide new partners through the signup process, manage basic contract paperwork, and ensure their accounts get set up smoothly.\n Track Campaign Performance: Monitor promotional campaigns, track key numbers (like sales, voucher redemptions, and ROI), and compile summary reports on how campaigns performed.\n Keep Data & Pipelines Organized: Maintain up-to-date records of leads, meeting notes, and deal progress in our internal tracking sheets and CRM tools.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's or Master's degree in Business, Management, Economics, Marketing, Communications, International Relations, or a related field.\n Strong interpersonal, negotiation, and verbal/written communication skills (both in English and Bahasa Indonesia).\n Commercial curiosity with an analytical approach to evaluating business numbers and customer trends.\n High resilience, self-motivation, and comfort in reaching out to internal and external stakeholders.\n Proficiency in presentation and spreadsheet tools (Google Slides/Sheets or MS PowerPoint/Excel).\n Available for a full-time commitment during the internship period\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or disabilities, and other attributes that make them",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -307,6 +1021,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:14:41+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are looking for proactive, detail-oriented, and communicative interns to join our Corporate Functions talent pool. In this role, you will be placed within one of our core corporate teams—such as People Operations / HR, Finance & Procurement, Corporate Affairs / Public Relations, Legal and Data Privacy Office. You will partner closely with business leaders and internal stakeholders to support administrative excellence, project coordination, and the smooth execution of organizational initiatives that keep Grab running effectively.\n The Critical Tasks You Will Perform \n Operational & Administrative Suppor t: Assist in day-to-day corporate operations, record keeping, workflow documentation, and vendor/contract administration within your assigned function.\n Data & Reporting Assistance: Help compile, track, and update internal databases, headcount trackers, budget sheets, or departmental performance dashboards.\n Cross-Functional Project Coordination: Support departmental projects, town halls, internal campaigns, or employee engagement initiatives by tracking action items and timelines.\n Stakeholder Communication: Draft internal memos, briefing decks, FAQs, or email communications tailored to internal Grabbers or external partners.\n Process Optimization Support: Identify opportunities to streamline administrative routines, reduce turnaround times, and improve internal service delivery.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's or Master's degree in Business Administration, Human Resources, Accounting, Finance, Law, Communications, Psychology, or a related discipline.\n Strong interpersonal and organizational skills with high attention to detail.\n Clear and professional verbal and written communication skills (in English and Bahasa Indonesia).\n Strong sense of discretion and integrity when handling sensitive or confidential corporate data.\n Proficiency in standard productivity tools (Google Workspace: Docs, Sheets, Slides, or Microsoft Office).\n Available for a full-time commitment during the internship period\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or dis",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -331,6 +1048,9 @@
    "source": "smartrecruiters",
    "posted_at": "2026-11-22T17:13:31+00:00",
    "text": "Job Description\nGrab Internship Program Overview: \n The Grab Internship Program offers students and recent graduates the opportunity to work alongside teams driving Southeast Asia's leading everyday superapp. As an intern, you will not just observe—you will actively contribute to real business challenges, partner with cross-functional teams, and gain hands-on experience in how large-scale, tech-enabled operations run. Throughout the program, you will receive mentorship, project ownership, and exposure to Grab's culture of problem-solving and social impact.\n Be a part of an exciting internship from Jan - June 2027. Work placement may vary across Indonesia, ie, Jakarta, Medan, Surabaya, Bali, Semarang, Yogyakarta or where Grab operates.\n Get to Know the Role \n We are seeking proactive, structured, and curious interns to join our Operations, Project & Process Management talent pool. In this role, you will support teams in optimizing daily operational workflows, driving project milestones, and identifying opportunities to enhance efficiency across business units (e.g., Deliveries, Mobility, Merchant Operations, or Central Operations). You will help transform data and operational observations into structured processes and actionable improvements.\n The Critical Tasks You Will Perform \n Project Tracking & Execution: Assist project leads in coordinating timelines, tracking deliverables, and monitoring project milestones across cross-functional stakeholders.\n Process Review & Mapping: Document current standard operating procedures (SOPs), map end-to-end workflows, and help identify operational bottlenecks or inefficiencies.\n Operational Data Support: Collect, clean, and organize operational performance metrics to track baseline SLAs, KPI health, and process turnaround times.\n Continuous Improvement Support: Support the rollout of operational enhancement initiatives, pilot programs, or operational tools designed to improve user or partner experiences.\n Stakeholder Coordination: Coordinate regular check-ins, prepare meeting notes, track action items, and synthesize operational updates into structured decks or summaries.\nQualifications\nWhat Essential Skills You Will Need \n Minimum GPA of 3.25/4.00\n Final-year student or fresh graduate with a Bachelor's degree in Business Administration, Industrial Engineering, Operations Management, Management Information Systems, or a related field.\n Strong structured thinking and problem-solving mindset with high attention to detail.\n Solid written and verbal communication skills to work effectively with diverse teams.\n Proficiency in productivity and collaboration tools (Google Workspace: Sheets/Docs/Slides, or MS Excel/PowerPoint).\n Familiarity with data analysis tools or visualization platforms (e.g., basic SQL, Tableau, Power BI).\n Adaptability and eagerness to learn fast in a dynamic, fast-paced environment.\n Available for a full-time commitment during the internship period .\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer our Interns:\n Comprehensive training and personal development programs: You will develop your soft skills and hard skills curated for you\n Mentoring by the Grab Leaders: You will be accompanied by a team of experienced leaders during the internship program\n Government Medical benefit: We have you covered with 3 BPJAMSOSTEK programs\n Engagement and networking activities: You will participate in fun & interactive engagements that not only entertain but also provide valuable networking opportunities\n Balancing personal commitments and life's demands are made easier with our Flex Work arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, f",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "is_new": false,
    "reposts": 0,
@@ -345,6 +1065,113 @@
     "Mentions final-year students or graduates; check eligibility"
    ],
    "score": 2
+  },
+  {
+   "id": "workday:pwc:736569WD",
+   "title": "FY 27 - Internship Broader Assurance Services - Talent Pool",
+   "company": "PwC (campus)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY-27---Internship-Broader-Assurance-Services---Talent-Pool_736569WD",
+   "source": "workday",
+   "posted_at": "2026-09-18T00:00:00+00:00",
+   "text": "Line of Service \nAssurance \n Industry/Sector \nNot Applicable \n Specialism \nAssurance \n Management Level \nIntern/Trainee \n Job Description & Summary \nPwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be treated fairly and assessed solely based on job requirements and competencies.\nA career within Information Technology Risk Assurance services, will allow you to develop and apply strategies that help clients leverage enterprise technologies so they can get a higher return on their investment, mitigate risks, streamline processes, and find operational inefficiencies. Our clients are often well known brands and many have broad international reach. We focus on using the latest technology to reduce the level of manual testing ensuring you’ll focus on the most valuable areas of client service and on enhancing corporate governance and the reliability of our clients’ information. \n To really stand out and make us ﬁt for the future in a constantly changing world, each and every one of us at PwC needs to be an authentic and inclusive leader, at all grades/levels and in all lines of service. To help us achieve this we have the PwC Professional; our global leadership development framework. It gives us a single set of expectations across our lines, geographies and career paths, and provides transparency on the skills we need as individuals to be successful and progress in our careers, now and in the future.\nAs an Intern / Trainee, you’ll work as part of a team of problem solvers, helping to solve complex business issues from strategy to execution. PwC Professional skills and responsibilities for this management level include but are not limited to:\n- Learn about how PwC works as a business and adds value to clients.\n- Think broadly and ask questions about data, facts and other information.\n- Use tools, techniques and firm standard methodologies to support research, analysis and problem solving.\n- Produce high quality work which adheres to the relevant professional standards.\n- Keep up-to-date with technical developments for business area.\n- Communicate confidently in a clear, concise and articulate manner - verbally and in written form.\n- Embrace diverse perspectives and welcome opposing and conflicting ideas.\n- Uphold the firm’s code of ethics and business conduct.\n Requirements \n Final year students (S1) majoring in Accounting, Statistic, Industrial Engineering, Business Administration, dan Finance (for CMAAS), Computer Science, Computer Engineering, Information System, or Information Technology (for IT Governance/Data Analytics/Cyber) from reputable universities with no classes left to attend during internship period\n Have a minimum GPA of 3.00 out of 4.00\n Familiar with/experienced in SQL and ACL skills (for IT related) \n Proficient in English, both written and spoken\n Willing to come to the office or to client's premises when needed\n Available to join immediately for a minimum period of 3 months\n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: Bachelor Degree - Accounting, Bachelor Degree - Information Technology, Bachelor Degree - Accounting Information Systems \n Certifications (if blank, certifications not specified) \n Required Skills \n Optional Skills \nAccepting Feedback, Accepting Feedback, Accounting Advisory, Accounting Modeling, Accounting Policies, Active Listening, AI Fluency, AI-Human Collaboration, Alteryx (Automation Platform), Benchmarking, Capital Market Engagement, Capital Markets Transactions, Capital Raising, Carve-Out Financial Statements, Communication, Corporate Governance, Deal Structures, Debt Raising, Digital Tooling, Emotional Regulation, Empathy, Equity Compensation, Financial Accounting, Financial Modeling, Financial Reporting {+ 27 more} \n Desired Languages (If blank, desired languages not specified) \n ",
+   "origin": "PwC (campus)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "high",
+   "ghost_reasons": [
+    "Posted 66 days ago",
+    "Title says talent pool / future openings: likely collecting CVs"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 2
+  },
+  {
+   "id": "teamtailor:bobobox:45712f63-10d0-4493-817d-7d65ccd67e87",
+   "title": "On the Job Training - Trainee Staff (Jakarta)",
+   "company": "Bobobox",
+   "location": "Kecamatan Setiabudi, Indonesia, Kecamatan Sawah Besar, Kecamatan Kebayoran Baru, Kecamatan Taman Sari, Kecamatan Pancoran, Kecamatan Gambir, Kecamatan Menteng, Kecamatan Bekasi Selatan, Kecamatan Benda",
+   "url": "https://bobobox.teamtailor.com/jobs/6598857-on-the-job-training-trainee-staff-jakarta",
+   "source": "teamtailor",
+   "posted_at": "2025-10-13T07:40:49+07:00",
+   "text": "Our On the Job Training (OJT) programme at our Jakarta branches gives SMA/SMK students and recent graduates hands-on experience in both Front Office and Housekeeping, working alongside our hosts in a tech-driven capsule hotel.\n What you will do: \n Front Office: Guest Experience & Hospitality \n Assist the main host in welcoming guests during check-in and check-out using the Bobobox HCS system.\n Support the main host in greeting guests and verifying reservations in a professional and courteous manner.\n Help respond promptly and professionally to guest inquiries, complaints and special requests, under supervision.\n Operate guest-facing technology (self check-in, smart door access, room control system) with help from the main host.\n Help guests use the Bobobox app and digital platforms for booking, payment and feedback, and encourage them to share feedback.\n Housekeeping: Room & Facility Care \n Clean and prepare pods to Bobobox cleanliness and hygiene standards.\n Deep-clean pods as scheduled (including walls, flooring, air vents and control panels).\n Keep public areas (communal spaces, hallways, reception, bathrooms) clean and tidy, and restock toiletries, tissues and other guest supplies.\n Handle pod interiors and control panels with care, and follow sanitisation procedures, especially for high-touch surfaces.\n Use cleaning chemicals and tools safely and follow all health, safety and hygiene rules.\n Greet and assist guests during cleaning rounds, and respond to requests for extra amenities, linens or urgent cleaning.\n You will fit in this job if you: \n Are an SMA/SMK student or recent graduate, ideally from a Hospitality or Tourism programme.\n Have basic computer skills and can use hospitality software, mobile apps and smart devices.\n Communicate clearly in Bahasa Indonesia and have basic English; other languages are a plus.\n Are friendly, professional and guest-oriented.\n Are flexible, proactive and willing to work shifts, weekends and public holidays.\n Adapt quickly to new procedures and technology, and are eager to learn.\n What we offer: \n Pocket allowance of Rp1,000,000/month\n Certificate on completion of the programme\n Mentorship\n Career opportunities\n Placement: One of: Bobopod Juanda, Bobopod Kota Tua, Bobopod Tanah Abang, Bobopod Kebayoran Baru, Bobopod ITC Kuningan, Bobopod Thamrin, Bobopod Pancoran, Bobopod CBC Airport, CRiB Kuningan, Bobopod Mega Mall Bekasi",
+   "origin": "Bobobox",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "high",
+   "ghost_reasons": [
+    "Posted 406 days ago"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 0
+  },
+  {
+   "id": "workday:pwc:763900WD",
+   "title": "FY27 - Intern - Team Assistant/Secretary",
+   "company": "PwC (campus)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY27---Intern---Team-Assistant-Secretary_763900WD",
+   "source": "workday",
+   "posted_at": "2026-09-23T00:00:00+00:00",
+   "text": "Line of Service \nAdvisory \n Industry/Sector \nNot Applicable \n Specialism \nIFS - Administration \n Management Level \nIntern/Trainee \n Job Description & Summary \nAt PwC, our people in business services and support focus on providing efficient and effective administrative support to enable smooth operations within the organisation. This includes managing schedules, coordinating meetings, and handling confidential information.\nThose working as assistants and office support at PwC will provide high-level administrative support to senior executives, including managing their schedules, coordinating meetings, and handling confidential information. You will play a crucial role in maintaining smooth operations and effective communication within the organisation. \n Driven by curiosity, you are a reliable, contributing member of a team. In our fast-paced environment, you will have the chance to work on a variety of assignments, each presenting varying challenges and scope. Every experience is an opportunity to learn and grow. You are encouraged to ask questions, take initiative, and produce quality work that adds value for our clients and contributes to our team’s success. During your time at the Firm, you start to establish your personal brand, paving the way to more opportunities.\n Examples of the skills, knowledge, and experiences you need to lead and deliver value at this level include but are not limited to:\n Apply a learning mindset and take ownership for your own development.\n Appreciate diverse perspectives, needs, and feelings of others.\n Adopt habits to sustain high performance and develop your potential.\n Actively listen, ask questions to check understanding, and clearly express ideas.\n Seek, reflect, act on, and give feedback.\n Gather information from a range of sources to analyse facts and discern patterns.\n Commit to understanding how the business works and building commercial awareness.\n Learn and apply professional and technical standards (e.g. refer to specific PwC tax and audit guidance), uphold the Firm's code of conduct and independence requirements.\n Requirements: \n Final year/recent graduates in Secretary, Office Administration, or related field\n 0 - 1 year of relevant experience (internship or organizational experience is a plus)\n Proficient in both written and spoken English and Bahasa Indonesia\n Strong organizational and interpersonal skills\n Ability to work independently with minimal supervision\n Effective team player with good collaboration skills\n Proficient in computer applications, including MS Office (Word, Excel, PowerPoint), Microsoft 365, and familiarity with other supporting technologies such as AI tools\n Presents a neat and professional personal appearance\n Demonstrates tact, discretion, and professionalism in handling sensitive information and interactions\n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: \n Certifications (if blank, certifications not specified) \n Required Skills \n Optional Skills \nAccepting Feedback, Accepting Feedback, Active Listening, Administrative Support, Agile Database Administration, Business Process Improvement, Calendar Management, Clerical Support, Collaborative Forecasting, Communication, Communications Management, Concur Travel, Conducting Research, Confidential Information Handling, Corporate Records Management, Correspondence Management, Credentialing Database, Customer Relationship Management, Customer Service Excellence, Customer Service Management, Data Entry, Deployment Coordination, Electronic Billing, Electronic Filing, Electronic Records Management {+ 31 more} \n Desired Languages (If blank, desired languages not specified) \n Travel Requirements \nNot Specified \n Available for Work Visa Sponsorship? \nNo \n Government Clearance Required? \nNo \n Job Posting End Date",
+   "origin": "PwC (campus)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "high",
+   "ghost_reasons": [
+    "Posted 61 days ago"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Asks for 1+ years of experience",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 0
+  },
+  {
+   "id": "workday:pwc:722995WD",
+   "title": "FY27 - Internship - Tax Services (Talent Pool)",
+   "company": "PwC (campus)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY27---Internship---Tax-Services--Talent-Pool-_722995WD",
+   "source": "workday",
+   "posted_at": "2026-08-10T00:00:00+00:00",
+   "text": "Line of Service \nTax \n Industry/Sector \nNot Applicable \n Specialism \nGeneral Tax Consulting \n Management Level \nIntern/Trainee \n Job Description & Summary \nPwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be assessed fairly and solely on job requirements and competencies.\nAt PwC, our people in tax services focus on providing advice and guidance to clients on tax planning, compliance, and strategy. These individuals help businesses navigate complex tax regulations and optimise their tax positions.\nThose in tax compliance at PwC will focus on validating clients' compliance with tax laws and regulations. You will review and analyse financial data, prepare and file tax returns, and assist businesses in meeting their tax obligations while minimising risks of non-compliance. \n PwC Indonesia is building a talent pool for future opportunities within our Tax Services team. If you are passionate about tax consultancy and eager to develop your career in a dynamic, fast-paced environment, this is your chance to join PwC Indonesia’s Tax Services family.\n Available units:\n Corporate Tax \nProvides advisory and compliance services in relation to corporate income tax, including tax planning, risk management, and assistance in navigating complex tax regulations to support effective business operations.\n Tax Reporting & Strategy \nSupports organisations in managing tax reporting, data governance, and technology-enabled tax processes to enhance accuracy, efficiency, and compliance in an increasingly digital regulatory environment.\n International Assignment Services \nSupports companies and their employees in addressing the tax and mobility implications of cross-border assignments, including expatriate tax compliance, planning, and broader global mobility considerations.\n Customs \nAdvises businesses on customs and international trade matters, including import and export regulations, duty management, trade compliance, and customs planning to help mitigate risk and optimise supply chain efficiency.\n Investment Accounting & Payroll \nProvides support in accounting, payroll administration, and related compliance matters, helping businesses maintain accurate financial records and meet applicable statutory and regulatory obligations.\n Investment Regulatory \nAssists investors and businesses with regulatory, licensing, and compliance matters associated with establishing, structuring, and operating investments in Indonesia.\n Transfer Pricing \nAdvises multinational and domestic groups on transfer pricing matters, including policy design, documentation, compliance, and dispute management, in accordance with Indonesian regulations and international standards.\n Tax Technical \n Assisting in compiling, reviewing, and organizing tax documentation and data for projects such as the Tax Big Book. Helping to ensure accuracy and compliance with Indonesian tax regulations through detailed administrative tasks, preliminary data validation, and maintaining organized records. \n Requirements:\n Undergraduate students (S1) majoring in Accounting, Fiscal Administration, Taxation, Law (Investment Regulatory), Computer Science (TR&S) and other relevant majors from reputable universities with no classes left to attend (fresh graduate are welcomed to apply)\n Have a minimum 3.0 GPA out of 4.0\n Willing to come to the office or to client's premises when needed\n Proficient in English, both written and spoken\n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: Bachelor Degree - Accounting, Bachelor Degree - Taxation \nDegrees/Field of Study preferred: \n Certifications (if blank, certifications not specified) \n Required Skills \n Optional Skills \nAccepting Feedback, Accepting Feedback, Accounting Practices, Active Listening, Communication, Corporate Tax Planning, Drafting Tax Documents, Emotional Regulation, Empathy, Fin",
+   "origin": "PwC (campus)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "high",
+   "ghost_reasons": [
+    "Posted 105 days ago",
+    "Title says talent pool / future openings: likely collecting CVs"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 0
   }
  ],
  "closed": []

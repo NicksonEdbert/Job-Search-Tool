@@ -1,12 +1,133 @@
 {
  "roles": {
+  "ajaib|business growth intern": {
+   "company": "Ajaib",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workable:ajaib:19D8AD74B2"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Business Growth Intern",
+   "url": "https://apply.workable.com/j/19D8AD74B2"
+  },
+  "ajaib|community partnership intern": {
+   "company": "Ajaib",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workable:ajaib:4C891418D5"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Community Partnership Intern",
+   "url": "https://apply.workable.com/j/4C891418D5"
+  },
+  "ajaib|multimedia designer intern": {
+   "company": "Ajaib",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workable:ajaib:1A67D61CEA"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Multimedia Designer Intern",
+   "url": "https://apply.workable.com/j/1A67D61CEA"
+  },
+  "ajaib|product manager internship": {
+   "company": "Ajaib",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workable:ajaib:F9B5CD37E4"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Product Manager Internship",
+   "url": "https://apply.workable.com/j/F9B5CD37E4"
+  },
+  "bobobox|barista trainee ojt crib kuningan jakarta": {
+   "company": "Bobobox",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "teamtailor:bobobox:fafed43e-04b3-4e75-8f4f-f96339c09b53"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Barista Trainee (OJT) - CRiB Kuningan, Jakarta",
+   "url": "https://bobobox.teamtailor.com/jobs/8531441-barista-trainee-ojt-crib-kuningan-jakarta"
+  },
+  "bobobox|on the job training trainee staff bobopod malioboro": {
+   "company": "Bobobox",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "teamtailor:bobobox:1f855918-0387-4c2c-a67d-d8f9d8b5f670"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "On The Job Training - Trainee Staff Bobopod Malioboro",
+   "url": "https://bobobox.teamtailor.com/jobs/8620732-on-the-job-training-trainee-staff-bobopod-malioboro"
+  },
+  "bobobox|on the job training trainee staff jakarta": {
+   "company": "Bobobox",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "teamtailor:bobobox:45712f63-10d0-4493-817d-7d65ccd67e87"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "On the Job Training - Trainee Staff (Jakarta)",
+   "url": "https://bobobox.teamtailor.com/jobs/6598857-on-the-job-training-trainee-staff-jakarta"
+  },
+  "bosch|finance accounting tax intern": {
+   "company": "Bosch",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "smartrecruiters:BoschGroup:744000161985250"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Finance, Accounting & Tax Intern",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161985250-finance-accounting-tax-intern"
+  },
+  "bosch|sales and business development intern": {
+   "company": "Bosch",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "smartrecruiters:BoschGroup:744000162475699"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Sales and Business Development Intern",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162475699-sales-and-business-development-intern"
+  },
+  "deloitte (sea)|a a intern audit": {
+   "company": "Deloitte (SEA)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "successfactors:jobs.sea.deloitte.com:1369912066"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "A&A - Intern - Audit",
+   "url": "https://jobs.sea.deloitte.com/job/Jakarta-A&A-Intern-Audit/1369912066/"
+  },
+  "deloitte (sea)|a a internal audit intern": {
+   "company": "Deloitte (SEA)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "successfactors:jobs.sea.deloitte.com:1367043266"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "A&A - Internal Audit - Intern",
+   "url": "https://jobs.sea.deloitte.com/job/Jakarta-A&A-Internal-Audit-Intern/1367043266/"
+  },
   "grab|intern gip commercial business development": {
    "company": "Grab",
    "first_seen": "2026-11-23T12:47:05+00:00",
    "ids": [
     "smartrecruiters:grab:744000163097839"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Commercial & Business Development",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097839-intern-gip-commercial-business-development"
@@ -17,7 +138,7 @@
    "ids": [
     "smartrecruiters:grab:744000163097829"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Corporate Functions",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097829-intern-gip-corporate-functions"
@@ -28,7 +149,7 @@
    "ids": [
     "smartrecruiters:grab:744000163097879"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Creative Marketing, Campaign, & Communications",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097879-intern-gip-creative-marketing-campaign-communications"
@@ -39,7 +160,7 @@
    "ids": [
     "smartrecruiters:grab:744000163097819"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Operations, Project & Process Management",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097819-intern-gip-operations-project-process-management"
@@ -50,7 +171,7 @@
    "ids": [
     "smartrecruiters:grab:744000163097869"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Product Management & Product Design",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097869-intern-gip-product-management-product-design"
@@ -61,7 +182,7 @@
    "ids": [
     "smartrecruiters:grab:744000163097779"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Research & Data Analytics",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097779-intern-gip-research-data-analytics"
@@ -72,11 +193,121 @@
    "ids": [
     "smartrecruiters:grab:744000163097849"
    ],
-   "last_seen": "2026-11-23T13:06:44+00:00",
+   "last_seen": "2026-11-23T14:04:15+00:00",
    "reposts": 0,
    "title": "Intern [GIP] - Tech Engineering",
    "url": "https://jobs.smartrecruiters.com/Grab/744000163097849-intern-gip-tech-engineering"
+  },
+  "p&g|p g indonesia management internship brand": {
+   "company": "P&G",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pg:R000162236"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "P&G Indonesia Management Internship - BRAND",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/P-G-Indonesia-Management-Internship---BRAND_R000162236"
+  },
+  "p&g|p g indonesia management internship product supply": {
+   "company": "P&G",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pg:R000162231"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "P&G Indonesia Management Internship - PRODUCT SUPPLY",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/P-G-Indonesia-Management-Internship---PRODUCT-SUPPLY_R000162231"
+  },
+  "p&g|p g indonesia management internship sales": {
+   "company": "P&G",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pg:R000162235"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "P&G Indonesia Management Internship - SALES",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/P-G-Indonesia-Management-Internship---SALES_R000162235"
+  },
+  "p&g|peakathon 2026 business case competition management internship pathway": {
+   "company": "P&G",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pg:R000162972"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "PEAKathon 2026 \u2013 Business Case Competition & Management Internship Pathway",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-GENERAL-OFFICE/PEAKathon-2026---Business-Case-Competition---Management-Internship-Pathway_R000162972"
+  },
+  "p&g|prima internship program": {
+   "company": "P&G",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pg:R000160622"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "PRIMA Internship Program",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/PRIMA-Internship-Program_R000160622"
+  },
+  "pwc (campus)|fy 27 internship broader assurance services talent pool": {
+   "company": "PwC (campus)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pwc:736569WD"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "FY 27 - Internship Broader Assurance Services - Talent Pool",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY-27---Internship-Broader-Assurance-Services---Talent-Pool_736569WD"
+  },
+  "pwc (campus)|fy27 intern team assistant secretary": {
+   "company": "PwC (campus)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pwc:763900WD"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "FY27 - Intern - Team Assistant/Secretary",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY27---Intern---Team-Assistant-Secretary_763900WD"
+  },
+  "pwc (campus)|fy27 internship tax services talent pool": {
+   "company": "PwC (campus)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pwc:722995WD"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "FY27 - Internship - Tax Services (Talent Pool)",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/FY27---Internship---Tax-Services--Talent-Pool-_722995WD"
+  },
+  "pwc (campus)|intern ifs human capital talent pool": {
+   "company": "PwC (campus)",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "workday:pwc:637601WD"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Intern - IFS - Human Capital (Talent Pool)",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Intern---IFS---Human-Capital--Talent-Pool-_637601WD"
+  },
+  "reckitt|marketing content creator intern": {
+   "company": "Reckitt",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "ids": [
+    "successfactors:careers.reckitt.com:1457859133"
+   ],
+   "last_seen": "2026-11-23T14:04:15+00:00",
+   "reposts": 0,
+   "title": "Marketing - Content Creator Intern",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/"
   }
  },
- "updated_at": "2026-11-23T13:06:44+00:00"
+ "updated_at": "2026-11-23T14:04:15+00:00"
 }
