@@ -26,9 +26,12 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          # Latest commit on the branch, not the one that triggered the run, so re-runs work.
+          ref: ${{ github.ref_name }}
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -54,7 +57,8 @@ jobs:
           git add data/
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Update internship listings"
-          git push || (git pull --rebase && git push)
+          # If main moved meanwhile, replay on top of it; this run's fresh data wins any clash.
+          git push || (git pull --rebase -X theirs && git push)
 
       - name: Build tracker site
         run: |
@@ -64,7 +68,7 @@ jobs:
           cp config/experience.json _site/config/
           printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=tracker/"><title>Internship Finder</title><a href="tracker/">Open the tracker</a>\n' > _site/index.html
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
