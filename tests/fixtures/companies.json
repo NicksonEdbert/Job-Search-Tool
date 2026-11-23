@@ -26,6 +26,11 @@
    "slug": "missingco"
   },
   {
+   "name": "Example Melbourne Co",
+   "ats": "greenhouse",
+   "slug": "examplemelb"
+  },
+  {
    "name": "Example Bank",
    "ats": "workday",
    "slug": "examplebank|wd3|Careers"

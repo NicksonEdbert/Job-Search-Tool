@@ -1,6 +1,6 @@
-# Internship Finder: Jakarta + remote · cybersecurity first, then any tech role
+# Work Experience Finder: Jakarta + Melbourne · cybersecurity first, then any tech role
 
-Finds internships in Jakarta and remote internships open to Indonesia, puts cybersecurity roles first and other tech roles next, flags likely **ghost listings**, and gives you a phone-friendly tracker with **skill matching**, **follow-up reminders**, and a daily **Telegram/email alert** of new roles.
+Finds **real-world work experience** for a cybersecurity student in Jakarta or Melbourne (or remote): internships, entry-level and casual IT jobs (service desk, IT support, junior security), student jobs and volunteer roles. It ranks cyber roles first, flags likely **ghost listings** and roles a student visa can't take, and gives you a phone-friendly tracker with **skill matching**, **follow-up reminders**, a **WhatsApp "send to him" button** and an **Opportunities** tab for things that aren't on job boards.
 
 Where listings come from (all checked once a day):
 
@@ -8,7 +8,7 @@ Where listings come from (all checked once a day):
 |---|---|
 | **Company career pages** | Public job data behind each company's own careers site: Greenhouse, Lever, Ashby, SmartRecruiters, Workable, Recruitee, Teamtailor, **Workday** (P&G, PwC, Mastercard, Visa…), **SAP SuccessFactors** (EY, Deloitte, Reckitt…), Amazon, and any career page that publishes Google-for-Jobs data. Read politely: `robots.txt` honoured, one request per second per site. |
 | **Remote job boards** | Remotive, Arbeitnow, Remote OK (internships only, kept only if open to someone in Indonesia/Asia/worldwide). |
-| **Job-alert emails** | Your LinkedIn, JobStreet, Glints, Kalibrr and Indeed alerts, read from a dedicated Gmail (setup below). This is how listings from those sites get in: they don't allow tools to read their websites. |
+| **Job-alert emails** | Your LinkedIn, SEEK, JobStreet, Glints, Kalibrr and Indeed alerts, read from a dedicated Gmail (setup below). SEEK alerts are the best source of Melbourne casual IT jobs. This is how listings from those sites get in: they don't allow tools to read their websites. |
 | **By hand** | One-click pre-filtered searches on the *Other job sites* tab, and **“+ Add a job from a link”**. |
 
 Nothing personal is stored in this repo. Skills, statuses and notes stay in the browser of whoever uses the tracker (export/import to move them).
@@ -53,7 +53,7 @@ Job-alert results come from the **search filters** (keywords, Jakarta, internshi
 1. **Create a new Gmail just for alerts** (e.g. `yourname.jobalerts@gmail.com`). Turn on **2-Step Verification** for it, then **Security → App passwords → create** one and copy the 16-letter password.
 2. **Create job alerts on your own accounts** (daily; location *Jakarta*; keywords like `cyber security intern`, `SOC intern`, `IT intern`, `software engineer intern`, `magang IT`):
    - **LinkedIn:** Jobs → search → **Set alert** → email, daily.
-   - **JobStreet, Glints, Kalibrr, Indeed:** save the search / turn on the job alert.
+   - **SEEK (Melbourne), JobStreet, Glints, Kalibrr, Indeed:** save the search / turn on the job alert.
 3. **Forward only the alert emails** to the new Gmail. In your own Gmail: **Settings → Filters → Create filter**, put the **exact sender** in *From*, then choose *Forward to* the new Gmail (Gmail asks the new inbox to confirm once).
    - LinkedIn alerts come from `jobalerts-noreply@linkedin.com`.
    - For the other sites, wait for the first alert email and copy its exact sender address into a filter.
@@ -81,6 +81,20 @@ Put their WhatsApp number (with country code) under **Backup & settings**; it's 
 
 When they want to use it themselves: open the tracker link on their phone (Share → *Add to Home Screen*). A short "How to use this" card appears the first time. To give them everything you've tracked, tap **Export backup**, send them the file, and they tap **Import backup**. Their alerts can move to their own accounts the same way as step 2–3 above; nothing in the tool changes.
 
+## Real-world work this break (Opportunities tab)
+
+Advertised internships are scarce in December, so the tracker also covers the other ways students get experience:
+
+- **Student jobs (Melbourne):** Monash Jobs for Students, Career Connect, the student jobs board and the Monash Student Association.
+- **Volunteering:** SEEK Volunteer, Pro Bono Australia, Red Cross IT service desk, Be Connected digital mentors; in Jakarta Relawan TIK, Indorelawan, Siberkreasi.
+- **Companies to contact directly:** managed IT and cyber firms in both cities, plus **+ Add** for family contacts.
+- **Small paid jobs:** a ready "IT & security check-up" offer for small businesses, a checklist, and a CV line.
+- **Ready messages** (English / Bahasa): cold email (Melbourne asks for paid work, Jakarta says unpaid is fine), LinkedIn note, volunteer enquiry, WhatsApp to family, follow-ups.
+
+Each item has a status (Contacted / Applied / Replied / Doing it), notes and a 7-day follow-up reminder. Everything is saved in the browser and included in **Export backup**. Edit `config/opportunities.json` to add more; links are checked daily.
+
+**Rules worth knowing in Australia:** on a student visa he can usually work **unlimited hours during official course breaks** (check VEVO / Monash's visa page). Internships should be **paid** unless they're part of his course; volunteering for genuine non-profits is fine. Roles that need Australian citizenship, permanent residency or a security clearance are hidden; "full working rights" ones are flagged.
+
 ## How ranking works
 
 | Signal | Effect |
@@ -88,7 +102,8 @@ When they want to use it themselves: open the tracker link on their phone (Share
 | Cybersecurity role (SOC, pentest, GRC, IT audit, incident response, AppSec, …) | biggest boost |
 | Other tech role (software, data, QA, DevOps, network, IT support, …) | boost |
 | Fits a Dec–Feb break (`max_months` in `config/profile.json`) | boost; 6+ months is labelled *Longer than his break*, later programmes *Starts later* |
-| In Jakarta (on-site or hybrid) / remote | Jakarta ranks a little above remote |
+| In Jakarta or Melbourne (on-site or hybrid) / remote | both cities rank the same, remote a little lower |
+| Permanent full-time "junior" job | flagged: ask if casual or summer-only work is possible |
 | Posted in the last 7/14/30 days | boost |
 | Asks for years of experience | penalty |
 | Ghost risk medium / high | penalty |
@@ -99,7 +114,7 @@ When they want to use it themselves: open the tracker link on their phone (Share
 
 ## Tracker features
 
-- **Jobs:** filters (cyber only, Jakarta / remote, fits the break, new since last visit, hide high ghost risk), statuses (Saved → Applied → Interview → Offer / Rejected), notes.
+- **Jobs:** filters (cyber only, Jakarta / Melbourne / remote, type: internship / entry-level & casual / student job / volunteer, fits the break, new since last visit, hide high ghost risk), statuses (Saved → Applied → Interview → Offer / Rejected), notes.
 - **Follow-up reminders:** 7 days after *Applied* with no update, the job shows a follow-up prompt with a ready-to-copy message in English and Bahasa Indonesia. It's also listed under *Needs action*.
 - **My skills:** type the skills or import a `{"skills": [...]}` file. Each job then shows ✓ matched and ✗ missing skills, and *Skills to learn next* lists the most-requested gaps.
 - **Experience:** CTFs, bug bounty, free courses and certifications, Jakarta communities. Edit `config/experience.json`; links are checked daily.

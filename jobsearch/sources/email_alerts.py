@@ -1,4 +1,4 @@
-"""Job-alert emails: LinkedIn, JobStreet, Glints, Kalibrr and Indeed alerts sent to a dedicated Gmail inbox.
+"""Job-alert emails: LinkedIn, SEEK, JobStreet, Glints, Kalibrr and Indeed alerts sent to a dedicated Gmail inbox.
 
 Setup (README): make a Gmail just for alerts, create an app password, point the job sites' alerts at it
 (or auto-forward them there), and add the GitHub secrets ALERTS_IMAP_USER / ALERTS_IMAP_PASSWORD.
@@ -29,6 +29,7 @@ SITES = [
      "https://www.linkedin.com/jobs/view/{id}/"),
     ("JobStreet", re.compile(r"jobstreet\.(?:com|co\.id)/(?:[a-z]{2}/)?(?:job|lowongan)/(?:[^/?\s\"']*?-)?(\d{6,})", re.I),
      "https://id.jobstreet.com/job/{id}"),
+    ("SEEK", re.compile(r"seek\.com\.au/job/(\d{6,})", re.I), "https://www.seek.com.au/job/{id}"),
     ("Glints", re.compile(r"glints\.com/(?:[a-z]{2}/)*opportunities/jobs/[^/?\s\"']+/([0-9a-f]{8}-[0-9a-f-]{27})", re.I),
      "https://glints.com/id/opportunities/jobs/job/{id}"),
     ("Kalibrr", re.compile(r"kalibrr\.(?:com|id)/(?:[a-zA-Z-]+/)*c/[^/?\s\"']+/jobs/(\d+)", re.I),
@@ -36,6 +37,9 @@ SITES = [
     ("Indeed", re.compile(r"indeed\.com/(?:rc/clk|viewjob|pagead/clk|m/viewjob)[^\s\"']*?[?&](?:amp;)?jk=([0-9a-f]{16})", re.I),
      "https://id.indeed.com/viewjob?jk={id}"),
 ]
+# Where a site's alerts are for when the email itself doesn't say (SEEK = Australia, JobStreet/Glints/Kalibrr = Indonesia).
+SITE_CITY = {"SEEK": "Melbourne (from alert search)", "JobStreet": "Jakarta (from alert search)",
+             "Glints": "Jakarta (from alert search)", "Kalibrr": "Jakarta (from alert search)"}
 GENERIC_TEXT = re.compile(
     r"^(view( job| details)?|apply( now)?|lihat( lowongan| detail)?|lamar( sekarang)?|see (job|more)|"
     r"easy apply|more|details|open|\W*)$", re.I)
@@ -182,7 +186,7 @@ def to_jobs(found: list, company: dict) -> list:
         received = f["received"].astimezone(timezone.utc).isoformat(timespec="seconds") if f["received"] else None
         job = Job(id=f"alert:{f['site'].lower()}:{f['id']}", title=f["title"],
                   company=f["company"] or f"(see {f['site']})",
-                  location=f["location"] or company.get("assume_location", "Jakarta (from alert search)"),
+                  location=f["location"] or SITE_CITY.get(f["site"], company.get("assume_location", "Jakarta (from alert search)")),
                   url=f["url"], source=f"{f['site'].lower()}-alert", posted_at=received)
         if not f["location"]:
             job.flags.append(f"Location not in the {f['site']} email; assumed from the alert's search")

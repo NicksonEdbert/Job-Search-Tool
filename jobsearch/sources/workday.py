@@ -10,13 +10,14 @@ Config slug: "<tenant>|<wdN>|<site>", e.g. "mastercard|wd1|CorporateCareers".
 import re
 from datetime import datetime, timedelta, timezone
 
-from ..filter import is_internship
+from ..filter import relevant_title
 from ..models import Job, html_to_text, to_iso
 
 PAGE = 20
 MAX_PAGES = 5
 MAX_DETAILS = 40
-PROMISING = re.compile(r"indonesia|jakarta|tangerang|bekasi|remote|anywhere|\d+\s+locations", re.I)
+PROMISING = re.compile(r"indonesia|jakarta|tangerang|bekasi|melbourne|victoria|\bvic\b|australia|remote|anywhere|\d+\s+locations", re.I)
+CITY_SEARCH = {"jakarta": "intern Indonesia", "melbourne": "Melbourne"}
 
 
 def _base(slug: str):
@@ -43,14 +44,27 @@ def posted_from_text(text: str, now: datetime = None):
 
 def fetch(company: dict, client) -> list:
     host, api, site = _base(company["slug"])
-    postings = []
-    for page in range(MAX_PAGES):
-        body = {"appliedFacets": {}, "limit": PAGE, "offset": page * PAGE, "searchText": company.get("search", "intern Indonesia")}
-        data = client.post_json(f"{api}/jobs", body)
-        batch = data.get("jobPostings") or []
-        postings += batch
-        if len(batch) < PAGE or len(postings) >= (data.get("total") or 0):
-            break
+    searches = company.get("searches") or [CITY_SEARCH[c] for c in company.get("_cities", ("jakarta",)) if c in CITY_SEARCH]
+    postings, seen, errors = [], set(), []
+    for text in searches:
+        got = 0
+        for page in range(MAX_PAGES):
+            body = {"appliedFacets": {}, "limit": PAGE, "offset": page * PAGE, "searchText": text}
+            try:
+                data = client.post_json(f"{api}/jobs", body)
+            except Exception as e:  # one failing search shouldn't lose the others
+                errors.append(e)
+                break
+            batch = data.get("jobPostings") or []
+            got += len(batch)
+            for p in batch:
+                if p.get("externalPath") not in seen:
+                    seen.add(p.get("externalPath"))
+                    postings.append(p)
+            if len(batch) < PAGE or got >= (data.get("total") or 0):
+                break
+    if errors and not postings:
+        raise errors[0]
 
     jobs = []
     details = 0
@@ -58,7 +72,7 @@ def fetch(company: dict, client) -> list:
         title = (p.get("title") or "").strip()
         path = p.get("externalPath") or ""
         loc = p.get("locationsText") or ""
-        if not path or not is_internship(title):
+        if not path or not relevant_title(title):
             continue
         job = Job(
             id=f"workday:{company['slug'].split('|')[0]}:{path.rsplit('_', 1)[-1] or path}",

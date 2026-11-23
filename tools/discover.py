@@ -21,8 +21,16 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from jobsearch.filter import is_internship  # noqa: E402
 
-UA = "internship-finder/0.2 (job search helper; contact via GitHub)"
-IDN = re.compile(r"jakarta|indonesia|tangerang|bekasi|depok|bogor|\bjkt\b|\bID\b", re.I)
+UA = "internship-finder/0.2 (job search helper)"
+WIDE = False
+PLACES = {
+    "indonesia": r"jakarta|indonesia|tangerang|bekasi|depok|bogor|\bjkt\b|\bID\b",
+    "melbourne": r"melbourne|victoria|\bVIC\b|docklands|southbank|richmond|cremorne|clayton|collingwood",
+}
+IDN = re.compile(PLACES["indonesia"], re.I)
+ENTRY = re.compile(r"\b(intern|internship|graduate|junior|entry|trainee|casual|student|support|service desk|help ?desk|"
+                   r"analyst|associate|volunteer)\b", re.I)
+SENIOR = re.compile(r"\b(senior|sr\.?|lead|principal|manager|head|director|staff|architect)\b", re.I)
 
 
 def req(url, data=None, timeout=20):
@@ -45,7 +53,7 @@ def req(url, data=None, timeout=20):
 def summarize(kind, name, items):
     """items: list of (title, location)."""
     idn = [(t, l) for t, l in items if IDN.search(l or "")]
-    interns = [(t, l) for t, l in idn if is_internship(t)]
+    interns = [(t, l) for t, l in idn if is_internship(t) or (WIDE and ENTRY.search(t) and not SENIOR.search(t))]
     remote_interns = [(t, l) for t, l in items if is_internship(t) and re.search(r"remote|anywhere|worldwide", l or "", re.I)]
     return {"kind": kind, "name": name, "total": len(items), "indonesia": len(idn), "intern_id": len(interns),
             "intern_remote": len(remote_interns), "samples": [t for t, _ in (interns + remote_interns)[:4]]}
@@ -150,7 +158,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("names", nargs="*")
     ap.add_argument("--file")
+    ap.add_argument("--where", default="indonesia", help="indonesia | melbourne | any regex")
+    ap.add_argument("--wide", action="store_true", help="count entry-level/casual/student roles, not just internships")
     a = ap.parse_args()
+    global IDN, WIDE
+    IDN = re.compile(PLACES.get(a.where, a.where), re.I)
+    WIDE = a.wide
     cand = {"slugs": [], "successfactors": [], "workday": [], "urls": [], "workday_tenants": []}
     if a.file:
         cand.update(json.loads(Path(a.file).read_text()))

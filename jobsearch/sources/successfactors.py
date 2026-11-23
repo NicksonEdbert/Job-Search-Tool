@@ -13,7 +13,7 @@ import re
 from datetime import datetime
 from urllib.parse import quote, urljoin
 
-from ..filter import is_internship
+from ..filter import relevant_title
 from ..models import Job, html_to_text, to_iso
 
 PAGE_SIZE = 25
@@ -66,19 +66,28 @@ def parse_results(html: str, base: str) -> list:
 def fetch(company: dict, client) -> list:
     domain = company["slug"]
     base = f"https://{domain}{company.get('path_prefix', '')}"
-    q, where = quote(company.get("search", "intern")), quote(company.get("location", "Indonesia"))
-    results = []
-    for page in range(MAX_PAGES):
-        url = f"{base}/search/?q={q}&locationsearch={where}&sortColumn=referencedate&sortDirection=desc&startrow={page * PAGE_SIZE}"
-        batch = parse_results(client.get_text(url), f"https://{domain}")
-        new = [r for r in batch if r["url"] not in {x["url"] for x in results}]
-        results += new
-        if len(batch) < PAGE_SIZE or not new:
-            break
+    city_search = {"jakarta": ("intern", "Indonesia"), "melbourne": ("", "Melbourne")}
+    searches = company.get("searches") or [city_search[c] for c in company.get("_cities", ("jakarta",)) if c in city_search]
+    results, errors = [], []
+    for q, where in searches:
+        for page in range(MAX_PAGES):
+            url = (f"{base}/search/?q={quote(q)}&locationsearch={quote(where)}&sortColumn=referencedate"
+                   f"&sortDirection=desc&startrow={page * PAGE_SIZE}")
+            try:
+                batch = parse_results(client.get_text(url), f"https://{domain}")
+            except Exception as e:  # one failing search shouldn't lose the others
+                errors.append(e)
+                break
+            new = [r for r in batch if r["url"] not in {x["url"] for x in results}]
+            results += new
+            if len(batch) < PAGE_SIZE or not new:
+                break
+    if errors and not results:
+        raise errors[0]
 
     jobs, details = [], 0
     for r in results:
-        if not is_internship(r["title"]):
+        if not relevant_title(r["title"]):
             continue
         job = Job(id=f"successfactors:{domain}:{r['url'].rstrip('/').rsplit('/', 1)[-1]}", title=r["title"],
                   company=company["name"], location=r["location"], url=r["url"], source="successfactors",

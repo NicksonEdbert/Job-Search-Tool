@@ -1,9 +1,19 @@
 {
-  "_help": "Search settings. include_remote: also list remote internships open to someone in Indonesia. Nothing personal goes here (this file is public). The student's own skills are entered in the tracker page and stay in their browser.",
+  "_help": "Search settings. cities: jakarta and/or melbourne. role_types: internship, entry (entry-level/casual IT), student (student jobs), volunteer. include_remote: also list remote roles open to someone in Indonesia or Australia. Nothing personal goes here (this file is public).",
   "max_months": 3,
   "include_remote": true,
   "available": "Now (December) to about February",
   "extra_places": [],
   "cyber_keywords": [],
-  "tech_keywords": []
+  "tech_keywords": [],
+  "cities": [
+    "jakarta",
+    "melbourne"
+  ],
+  "role_types": [
+    "internship",
+    "entry",
+    "student",
+    "volunteer"
+  ]
 }

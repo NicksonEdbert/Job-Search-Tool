@@ -23,6 +23,7 @@ class Job:
     origin: str = ""  # which configured board/company this came from (for "closed" detection)
     where: str = ""  # "jakarta" | "indonesia" | "remote"
     work_mode: str = "onsite"  # "onsite" | "hybrid" | "remote"
+    role_type: str = "internship"  # "internship" | "entry" | "student" | "volunteer"
     # Filled in later by history / ghost / score:
     first_seen: Optional[str] = None
     is_new: bool = False

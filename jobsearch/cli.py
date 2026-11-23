@@ -89,8 +89,10 @@ def write_csv(path: Path, jobs: list) -> None:
 
 
 def check_experience_links(out_dir: Path) -> dict:
-    items = (load_json(ROOT / "config" / "experience.json", {}) or {}).get("items", [])
-    urls = [i["url"] for i in items if i.get("url")]
+    items = []
+    for name in ("experience.json", "opportunities.json"):  # one status file covers both tabs
+        items += (load_json(ROOT / "config" / name, {}) or {}).get("items", [])
+    urls = list(dict.fromkeys(i["url"] for i in items if i.get("url")))
     with cf.ThreadPoolExecutor(8) as ex:
         status = dict(zip(urls, ex.map(link_status, urls)))
     (out_dir / "experience_status.json").write_text(json.dumps(
@@ -110,10 +112,14 @@ def run(args, now: datetime = None, get_json=None) -> dict:
     profile = load_json(Path(args.profile), {}) or {}
     extra = tuple(profile.get("extra_places", []))
     include_remote = bool(profile.get("include_remote", True))
+    cities = tuple(c.lower() for c in profile.get("cities", ["jakarta", "melbourne"]))
+    role_types = tuple(profile.get("role_types", ["internship", "entry", "student", "volunteer"]))
+    for c in companies:  # per-city searches for readers that search by text/location
+        c.setdefault("_cities", cities)
 
     print(f"Fetching {len(companies)} company boards…")
     raw, report = fetch_all(companies, get_json)
-    jobs = dedupe([j for j in raw if keep(j, extra, include_remote)])
+    jobs = dedupe([j for j in raw if keep(j, extra, include_remote, cities, role_types)])
     load_details(jobs, get_json)
 
     hist_path = out_dir / "history.json"
@@ -134,7 +140,9 @@ def run(args, now: datetime = None, get_json=None) -> dict:
                    "cyber": sum(r["category"] == "cyber" for r in rows),
                    "tech": sum(r["category"] == "tech" for r in rows),
                    "jakarta": sum(r["where"] in ("jakarta", "indonesia") for r in rows),
+                   "melbourne": sum(r["where"] == "melbourne" for r in rows),
                    "remote": sum(r["where"] == "remote" for r in rows),
+                   "by_type": {t: sum(r["role_type"] == t for r in rows) for t in ("internship", "entry", "student", "volunteer")},
                    "new": sum(r["is_new"] for r in rows)},
         "sources": sorted(report, key=lambda r: r["company"].lower()),
         "jobs": rows,
@@ -155,12 +163,13 @@ def run(args, now: datetime = None, get_json=None) -> dict:
 
     bad = [r for r in report if not r["ok"]]
     print(f"Scanned {len(raw)} postings from {len(report) - len(bad)}/{len(report)} boards → "
-          f"{len(rows)} internships ({result['counts']['jakarta']} Jakarta, {result['counts']['remote']} remote; "
+          f"{len(rows)} roles ({result['counts']['jakarta']} Jakarta, {result['counts']['melbourne']} Melbourne, "
+          f"{result['counts']['remote']} remote; {result['counts']['by_type']}; "
           f"{result['counts']['cyber']} cyber, {result['counts']['tech']} tech, {result['counts']['new']} new)")
     for r in bad:
         print(f"  ! {r['company']} ({r['ats']}/{r['slug']}): {r['error']}")
     for r in rows[:args.top]:
-        print(f"  {r['score']:>3}  {r['category']:<5} {r['where']:<9} {r['ghost_risk']:<6} {r['title']} — {r['company']}  {r['url']}")
+        print(f"  {r['score']:>3}  {r['category']:<5} {r['where']:<9} {r['role_type']:<10} {r['ghost_risk']:<6} {r['title']} — {r['company']}  {r['url']}")
     return result
 
 

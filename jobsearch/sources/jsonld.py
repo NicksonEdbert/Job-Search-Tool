@@ -15,7 +15,7 @@ import json
 import re
 from urllib.parse import urljoin
 
-from ..filter import INTERN_RE
+from ..filter import relevant_title
 from ..models import Job, html_to_text, to_iso
 
 MAX_PAGES = 40
@@ -23,7 +23,8 @@ LD_RE = re.compile(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)<
 HREF_RE = re.compile(r'href=["\']([^"\'#]+)["\']', re.I)
 LOC_RE = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>", re.I)
 JOBISH = re.compile(r"/(jobs?|careers?|vacanc|lowongan|karir|position|opening|requisition)", re.I)
-INTERNISH = re.compile(r"intern|magang|trainee|graduate|apprentice|pkl", re.I)
+INTERNISH = re.compile(r"intern|magang|trainee|graduate|apprentice|pkl|junior|entry|casual|student|volunteer|support|"
+                       r"service-?desk|help-?desk|associate", re.I)
 
 
 def _walk(node):
@@ -117,7 +118,7 @@ def fetch(company: dict, client) -> list:
     # De-duplicate by id, keep internship-looking titles only (listing pages can embed every job).
     seen, out = set(), []
     for j in jobs:
-        if j.id not in seen and INTERN_RE.search(j.title):
+        if j.id not in seen and relevant_title(j.title):
             seen.add(j.id)
             out.append(j)
     return out

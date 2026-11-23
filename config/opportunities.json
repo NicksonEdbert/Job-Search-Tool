@@ -1,0 +1,201 @@
+{
+ "_help": "Real-world work that isn't on job boards: student jobs, volunteering, companies to contact directly, communities. Shown in the tracker's Opportunities tab. city: melbourne | jakarta | any. kind: student | volunteer | company | community. Links are checked by the daily run; dead ones are flagged.",
+ "items": [
+  {
+   "city": "melbourne",
+   "kind": "student",
+   "title": "Monash Jobs for Students",
+   "url": "https://www.monash.edu/jobs/student-jobs",
+   "why": "Casual jobs inside the university for registered Monash students. Sign up once, then get offered shifts."
+  },
+  {
+   "city": "melbourne",
+   "kind": "student",
+   "title": "Monash Career Connect: find a job",
+   "url": "https://www.monash.edu/career-connect/find-a-job",
+   "why": "Casual, part-time and vacation work, plus internships, posted for Monash students."
+  },
+  {
+   "city": "melbourne",
+   "kind": "student",
+   "title": "Monash student jobs board",
+   "url": "https://www.monash.edu/students/careers/jobs-board",
+   "why": "The student jobs board (log in with his Monash account)."
+  },
+  {
+   "city": "melbourne",
+   "kind": "student",
+   "title": "Monash Student Association jobs (Clayton)",
+   "url": "https://msa.monash.edu/jobs",
+   "why": "MSA hires students on campus; shifts fit around study."
+  },
+  {
+   "city": "melbourne",
+   "kind": "volunteer",
+   "title": "SEEK Volunteer: IT & tech roles",
+   "url": "https://www.volunteer.com.au/",
+   "why": "Australia's biggest volunteer board. Search 'IT' or 'digital' in Melbourne: IT support, websites and digital-skills roles at charities."
+  },
+  {
+   "city": "melbourne",
+   "kind": "volunteer",
+   "title": "Pro Bono Australia: volunteer roles",
+   "url": "https://probonoaustralia.com.au/",
+   "why": "Use its volunteer-role search: skilled volunteering for non-profits, often IT support or web projects, some remote."
+  },
+  {
+   "city": "melbourne",
+   "kind": "volunteer",
+   "title": "Australian Red Cross: volunteer",
+   "url": "https://www.redcross.org.au/volunteer/",
+   "why": "Has advertised IT service desk volunteer roles in Melbourne: real help-desk experience."
+  },
+  {
+   "city": "melbourne",
+   "kind": "volunteer",
+   "title": "Be Connected (digital mentors)",
+   "url": "https://beconnected.esafety.gov.au/",
+   "why": "Government programme where local groups need volunteers to teach older people online safety and tech skills."
+  },
+  {
+   "city": "melbourne",
+   "kind": "community",
+   "title": "OWASP Melbourne",
+   "url": "https://owasp.org/www-chapter-melbourne/",
+   "why": "Melbourne's application-security community. Go to a meetup and offer to help run events: the fastest way to meet people who hire."
+  },
+  {
+   "city": "melbourne",
+   "kind": "community",
+   "title": "AISA (Australian Information Security Association)",
+   "url": "https://www.aisa.org.au/",
+   "why": "Australia's cyber professional body: student membership, Victorian branch events, and volunteers at its conference."
+  },
+  {
+   "city": "melbourne",
+   "kind": "company",
+   "title": "CyberCX",
+   "url": "https://cybercx.com.au/careers/",
+   "why": "Australia's largest cyber consultancy, with a Melbourne office."
+  },
+  {
+   "city": "melbourne",
+   "kind": "company",
+   "title": "Data#3",
+   "url": "https://www.data3.com/careers/",
+   "why": "IT services and security provider with a Melbourne office; hires service-desk and junior roles."
+  },
+  {
+   "city": "melbourne",
+   "kind": "company",
+   "title": "Interactive",
+   "url": "https://interactive.com.au/careers/",
+   "why": "Melbourne-founded IT services and managed-security company."
+  },
+  {
+   "city": "melbourne",
+   "kind": "company",
+   "title": "Nexon Asia Pacific",
+   "url": "https://www.nexon.com.au/careers",
+   "why": "Managed IT and cyber services provider; MSPs like this take juniors for help-desk work."
+  },
+  {
+   "city": "jakarta",
+   "kind": "volunteer",
+   "title": "Relawan TIK Indonesia",
+   "url": "https://relawantik.or.id/",
+   "why": "National ICT-volunteer network (digital literacy, community tech help) with Jakarta activities."
+  },
+  {
+   "city": "jakarta",
+   "kind": "volunteer",
+   "title": "Indorelawan",
+   "url": "https://www.indorelawan.org/",
+   "why": "Indonesia's volunteer-matching platform: search for IT, web and digital roles in Jakarta."
+  },
+  {
+   "city": "jakarta",
+   "kind": "volunteer",
+   "title": "Siberkreasi",
+   "url": "https://siberkreasi.id/",
+   "why": "National digital-literacy movement; runs online-safety education with volunteers."
+  },
+  {
+   "city": "jakarta",
+   "kind": "community",
+   "title": "OWASP Jakarta",
+   "url": "https://owasp.org/www-chapter-jakarta/",
+   "why": "Jakarta's application-security community: meetups and people who hire security interns."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "ITSEC Asia",
+   "url": "https://itsec.asia/",
+   "why": "Indonesian cybersecurity company (pentest, SOC); has taken security research interns."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Defenxor",
+   "url": "https://www.defenxor.com/",
+   "why": "Jakarta managed-security (SOC) provider."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Spentera",
+   "url": "https://spentera.id/",
+   "why": "Jakarta penetration-testing and security consultancy."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Xynexis",
+   "url": "https://www.xynexis.com/",
+   "why": "Indonesian cybersecurity consultancy (GRC, SOC, pentest)."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Telkomsigma",
+   "url": "https://www.telkomsigma.co.id/",
+   "why": "Large IT services and data-centre company (Telkom group) with security services."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Lintasarta",
+   "url": "https://www.lintasarta.net/",
+   "why": "IT, cloud and managed-security provider."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Datacomm Diangraha",
+   "url": "https://www.datacomm.co.id/",
+   "why": "IT infrastructure and security services company."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "Mitra Integrasi Informatika (MII)",
+   "url": "https://www.mii.co.id/",
+   "why": "IT services company (Metrodata group); takes interns and juniors."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "BCA careers",
+   "url": "https://karir.bca.co.id/",
+   "why": "Bank Central Asia's careers site: IT and security teams, internship programmes."
+  },
+  {
+   "city": "jakarta",
+   "kind": "company",
+   "title": "KPMG Indonesia careers",
+   "url": "https://kpmg.com/id/en/home/careers.html",
+   "why": "Big 4 with IT-risk and cyber teams."
+  }
+ ]
+}
