@@ -94,6 +94,18 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
 .toast.show { opacity: 1; }
 .addform { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 10px; }
 .chiplist { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pick { display: inline-flex; align-items: center; gap: 6px; font-size: .88rem; padding: 5px 10px; border: 1px solid var(--border); border-radius: 7px; cursor: pointer; background: var(--surface); }
+.pick input { width: 18px; height: 18px; margin: 0; accent-color: var(--accent); }
+.pick.on { border-color: var(--accent); background: var(--tech-bg); }
+.sendbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--surface); border-top: 1px solid var(--border); box-shadow: 0 -4px 16px rgba(0,0,0,.08); }
+.sendbar .inner { max-width: 980px; margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.sendbar .count { font-weight: 600; margin-right: auto; }
+.btn.wa { background: #1f8f4e; border-color: #1f8f4e; color: #fff; font-weight: 600; }
+body.has-sendbar main { padding-bottom: 110px; }
+body.has-sendbar .toast { bottom: 84px; }
+.intro { border-left: 4px solid var(--accent); }
+.intro ol { margin: 6px 0 8px; padding-left: 20px; }
+.intro li { margin: 3px 0; }
 @media (max-width: 520px) {
   .score { float: none; display: inline-block; margin: 0 0 4px; } .score b { display: inline; margin-right: 4px; }
   .filters { grid-template-columns: 1fr 1fr; gap: 6px; }
@@ -104,6 +116,10 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
   .stat { white-space: nowrap; padding: 4px 8px; }
   .checks { gap: 4px 12px; font-size: .85rem; }
   header { padding-top: 14px; }
+  .sendbar .inner { gap: 6px; padding: 8px 12px; flex-wrap: nowrap; }
+  .sendbar .btn { padding: 7px 9px; }
+  .sendbar .wide { display: none; }
+  .sendbar .count { font-size: .9rem; white-space: nowrap; }
 }
 </style>
 </head>
@@ -122,6 +138,16 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
 <main>
   <!-- JOBS -->
   <section id="tab-jobs">
+    <div class="panel intro" id="intro" hidden>
+      <b>How to use this (1 minute)</b>
+      <ol>
+        <li>Pick a job → <b>Open posting</b> → apply on the company's site.</li>
+        <li>Set the job to <b>Applied</b>. After 7 days you'll get a reminder with a ready follow-up message.</li>
+        <li>Helping someone find a job? Tick <b>Send</b> on good jobs, then tap <b>Send on WhatsApp</b> at the bottom.</li>
+        <li>Add this page to your home screen (Share → <i>Add to Home Screen</i>).</li>
+      </ol>
+      <button class="btn primary" id="introOk">Got it</button>
+    </div>
     <div class="stats" id="stats"></div>
     <div class="panel">
       <div class="filters">
@@ -132,7 +158,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
           <select id="status">
             <option value="active">Active (hide rejected/closed)</option><option value="untracked">Not yet saved</option>
             <option value="Saved">Saved</option><option value="Applied">Applied</option><option value="Interview">Interview</option>
-            <option value="Offer">Offer</option><option value="action">Needs action (follow up)</option>
+            <option value="Offer">Offer</option><option value="action">Needs action (follow up)</option><option value="sent">Sent to him</option>
             <option value="Rejected">Rejected</option><option value="Closed">Closed</option><option value="any">Any</option>
           </select></div>
         <div><label for="where">Where</label>
@@ -207,13 +233,23 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
       </div>
     </div>
     <div class="panel">
-      <div class="field" style="max-width:260px"><label for="fuDays">Remind to follow up after (days)</label><input id="fuDays" type="number" min="2" max="30" value="7"></div>
+      <div class="field" style="max-width:320px"><label for="waNumber">His WhatsApp number, with country code (saved only in this browser)</label>
+        <input id="waNumber" type="tel" inputmode="tel" placeholder="e.g. 61 4xx xxx xxx or 62 8xx xxxx xxxx" autocomplete="off"></div>
+      <div class="field" style="max-width:320px;margin-top:10px"><label for="msgLang">WhatsApp message language</label>
+        <select id="msgLang"><option value="EN">English</option><option value="ID">Bahasa Indonesia</option></select></div>
+      <div class="field" style="max-width:260px;margin-top:10px"><label for="fuDays">Remind to follow up after (days)</label><input id="fuDays" type="number" min="2" max="30" value="7"></div>
       <div class="field" style="max-width:260px;margin-top:10px"><label for="theme">Theme</label>
         <select id="theme"><option value="">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
     </div>
     <div class="panel note" id="sourcesInfo"></div>
   </section>
 </main>
+<div class="sendbar" id="sendbar" hidden><div class="inner">
+  <span class="count" id="pickCount"></span>
+  <button class="btn wa" id="sendWa">Send on WhatsApp</button>
+  <button class="btn" id="sendCopy">Copy<span class="wide"> text</span></button>
+  <button class="btn" id="sendClear" aria-label="Clear picks">✕<span class="wide"> Clear</span></button>
+</div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="skills.js"></script>
@@ -231,8 +267,9 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     try { const s = JSON.parse(localStorage.getItem(KEY) || "{}"); return s && typeof s === "object" ? s : {}; }
     catch (e) { return {}; }
   }
-  const state = Object.assign({ tracked: {}, manual: [], skills: [], done: {}, settings: { followUpDays: 7 }, lastVisit: null }, loadState());
-  state.settings = Object.assign({ followUpDays: 7, theme: "" }, state.settings);
+  const state = Object.assign({ tracked: {}, manual: [], skills: [], done: {}, picks: [], settings: { followUpDays: 7 }, lastVisit: null }, loadState());
+  state.settings = Object.assign({ followUpDays: 7, theme: "", waNumber: "", msgLang: "EN", introDismissed: false }, state.settings);
+  if (!Array.isArray(state.picks)) state.picks = [];
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode: keep in memory */ } }
   const prevVisit = state.lastVisit;
   state.lastVisit = new Date().toISOString();
@@ -314,6 +351,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
       if (status === "active" && j.gone && !j.st) return false;
       if (status === "untracked" && j.st) return false;
       if (status === "action" && followUpDue(j) == null) return false;
+      if (status === "sent" && !j.t.sentAt) return false;
       if (STATUSES.includes(status) && status && j.st !== status) return false;
       if (q && !(j.title + " " + j.company + " " + j.location + " " + (j.text || "")).toLowerCase().includes(q)) return false;
       return true;
@@ -330,11 +368,13 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
       ["Remote", all.filter((j) => j.where === "remote" && !j.gone && j.category !== "other").length],
       ["Applied", all.filter((j) => ["Applied", "Interview", "Offer"].includes(j.st)).length],
       ["Needs follow-up", action],
+      ["Sent to him", all.filter((j) => j.t.sentAt).length],
     ].map(([k, v]) => `<div class="stat">${k} <b>${v}</b></div>`).join("");
 
     $("#jobs").innerHTML = list.length ? list.map(card).join("") :
       `<div class="empty panel">No jobs match these filters.<br>Try <b>Everything</b>, untick <b>Hide high ghost risk</b>, or check the <b>Other job sites</b> tab.</div>`;
     renderGaps(all);
+    updateSendbar();
   }
 
   function timingBadge(j) {
@@ -385,13 +425,16 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
       <div class="meta">${esc(j.company)} · ${esc(placeText(j.location))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
       <div class="badges">${catB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
         <button class="badge ${gr[0]}" data-act="why" data-id="${esc(j.id)}" aria-expanded="false" title="Why?">${gr[1]} ▾</button>
-        ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${modeBadge(j)}${sourceBadge(j)}${gone}</div>
+        ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${modeBadge(j)}${sourceBadge(j)}${gone}
+        ${j.t.sentAt ? `<span class="badge ok">Sent to him ${esc(ago(j.t.sentAt))}</span>` : ""}</div>
       <ul class="reasons" id="why-${esc(j.id)}" hidden>${(j.ghost_reasons || []).map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
       ${(j.flags || []).length ? `<ul class="flags">${j.flags.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
       ${skillsHtml}
       <div class="row">
         <select data-act="status" data-id="${esc(j.id)}" aria-label="Status">${opts}</select>${applied}
         <a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener" style="text-decoration:none">Open posting ↗</a>
+        <label class="pick ${state.picks.includes(j.id) ? "on" : ""}"><input type="checkbox" data-act="pick" data-id="${esc(j.id)}" ${state.picks.includes(j.id) ? "checked" : ""}> Send</label>
+        <button class="btn" data-act="share" data-id="${esc(j.id)}" title="Send just this job on WhatsApp">Share ↗</button>
         ${j.source === "manual" ? `<button class="btn" data-act="delete" data-id="${esc(j.id)}">Remove</button>` : ""}
       </div>
       ${fu}
@@ -413,8 +456,8 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     if (lang === "ID") return `Halo [Nama recruiter],\n\nSemoga sehat selalu. Saya telah melamar posisi ${role} di ${company}${date ? " pada " + date : ""} dan ingin menindaklanjuti lamaran tersebut. Saya sangat tertarik dengan posisi ini dan siap mengirimkan informasi tambahan jika diperlukan. Saya bisa mulai segera di Jakarta.\n\nTerima kasih atas waktunya,\n[Nama Anda]`;
     return `Hi [Recruiter name],\n\nI hope you're well. I applied for the ${role} position at ${company}${date ? " on " + date : ""} and wanted to follow up. I'm very interested in the role and happy to share anything else you need. I'm available to start right away in Jakarta.\n\nThank you for your time,\n[Your name]`;
   }
-  async function copy(text) {
-    try { await navigator.clipboard.writeText(text); toast("Copied. Paste it into email or LinkedIn"); }
+  async function copy(text, msg) {
+    try { await navigator.clipboard.writeText(text); toast(msg || "Copied. Paste it into email or LinkedIn"); }
     catch (e) { window.prompt("Copy this message:", text); }
   }
 
@@ -424,11 +467,20 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     if (act === "why") { const u = document.getElementById("why-" + id); u.hidden = !u.hidden; el.setAttribute("aria-expanded", String(!u.hidden)); return; }
     const j = allJobs().find((x) => x.id === id); if (!j) return;
     if (act === "copyEN" || act === "copyID") copy(template(act === "copyID" ? "ID" : "EN", j));
+    if (act === "share") sendJobs([j], "wa");
     if (act === "followed") { track(id).followedUpAt = today(); save(); render(); toast("Nice. Next reminder in " + state.settings.followUpDays + " days"); }
     if (act === "delete") { state.manual = state.manual.filter((m) => m.id !== id); delete state.tracked[id]; save(); render(); }
   });
   $("#jobs").addEventListener("change", (e) => {
     const el = e.target.closest("[data-act]"); if (!el) return;
+    if (el.dataset.act === "pick") {
+      const id = el.dataset.id;
+      state.picks = state.picks.filter((x) => x !== id);
+      if (el.checked) state.picks.push(id);
+      el.closest(".pick").classList.toggle("on", el.checked);
+      save(); updateSendbar();
+      return;
+    }
     const id = el.dataset.id, t = track(id);
     if (el.dataset.act === "status") {
       t.status = el.value;
@@ -451,6 +503,114 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     e.target.reset(); $("#aLoc").value = "Jakarta"; $("#addBox").open = false;
     render(); toast("Added and saved");
   });
+
+  // ---------- send jobs to him on WhatsApp ----------
+  const CHUNK = 8; // WhatsApp links get unreliable when very long
+  const T = {
+    EN: { hi: (n) => `Hi! ${n} internship${n > 1 ? "s" : ""} for you to apply to:`, part: "Part", why: "Why", note: "Note", apply: "Apply",
+      tip: "Tip: apply today, early applicants get more replies. Reply \"done\" when you've applied 🙂",
+      cyber: "cybersecurity role", tech: "tech role", fits: "fits your break (Dec–Feb)", remote: "remote",
+      hybrid: "hybrid", fresh: (d) => d === 0 ? "posted today" : d === 1 ? "posted yesterday" : `posted ${d} days ago`,
+      real: "on the company's own site" },
+    ID: { hi: (n) => `Halo! Ada ${n} lowongan magang untuk kamu lamar:`, part: "Bagian", why: "Kenapa", note: "Catatan", apply: "Lamar",
+      tip: "Tips: lamar hari ini, pelamar awal lebih sering dibalas. Balas \"done\" kalau sudah melamar 🙂",
+      cyber: "posisi cyber security", tech: "posisi IT", fits: "cocok dengan liburanmu (Des–Feb)", remote: "remote",
+      hybrid: "hybrid", fresh: (d) => d === 0 ? "baru diposting hari ini" : d === 1 ? "diposting kemarin" : `diposting ${d} hari lalu`,
+      real: "di situs resmi perusahaan" },
+  };
+  const COMPANY_SITES = new Set(["greenhouse", "lever", "ashby", "smartrecruiters", "workable", "recruitee", "teamtailor",
+    "workday", "successfactors", "careerpage", "amazon"]);
+  function toYou(text) {
+    return String(text).replace(/\bhe's\b/gi, "you're").replace(/\bhe is\b/gi, "you are").replace(/\bhis\b/gi, "your").replace(/\bhim\b/gi, "you").replace(/\bhe\b/gi, "you");
+  }
+  function jobLines(j, i, t) {
+    const where = [placeText(j.location).split(",")[0], j.work_mode === "remote" ? t.remote : j.work_mode === "hybrid" ? t.hybrid : ""]
+      .filter(Boolean).join(", ");
+    const why = [];
+    if (j.category === "cyber") why.push(t.cyber); else if (j.category === "tech") why.push(t.tech);
+    if (j.timing === "good") why.push(t.fits);
+    const d = daysAgo(j.posted_at || j.first_seen);
+    if (d != null && d <= 14) why.push(t.fresh(d));
+    if (j.ghost_risk === "low" && COMPANY_SITES.has(j.source)) why.push(t.real);
+    const lines = [`${i}) ${j.title}, ${j.company}${where ? ` (${where})` : ""}`];
+    if (why.length) lines.push(`   ${t.why}: ${why.join(", ")}`);
+    if ((j.flags || []).length) lines.push(`   ${t.note}: ${toYou(j.flags[0])}`);
+    lines.push(`   ${t.apply}: ${j.url}`);
+    return lines.join("\n");
+  }
+  function buildMessages(jobs, lang) {
+    const t = T[lang] || T.EN;
+    const parts = [];
+    for (let k = 0; k < jobs.length; k += CHUNK) parts.push(jobs.slice(k, k + CHUNK));
+    return parts.map((group, p) => {
+      const head = parts.length > 1 ? `${t.hi(jobs.length)} (${t.part} ${p + 1}/${parts.length})` : t.hi(jobs.length);
+      const body = group.map((j, n) => jobLines(j, p * CHUNK + n + 1, t)).join("\n\n");
+      return { jobs: group, text: `${head}\n\n${body}${p === parts.length - 1 ? "\n\n" + t.tip : ""}` };
+    });
+  }
+  function waNumber() { return String(state.settings.waNumber || "").replace(/\D/g, ""); }
+  function waLink(text) {
+    const n = waNumber();
+    return `https://wa.me/${n}?text=${encodeURIComponent(text)}`;
+  }
+  function markSent(jobs) {
+    const now = new Date().toISOString();
+    for (const j of jobs) {
+      const t = track(j.id);
+      t.sentAt = now;
+      if (!t.status) t.status = "Saved";
+      state.picks = state.picks.filter((x) => x !== j.id);
+    }
+    save();
+  }
+  let queue = []; // remaining WhatsApp messages when a pick list is split into parts
+  function sendJobs(jobs, how) {
+    if (!jobs.length) return;
+    if (how === "wa" && waNumber().startsWith("0")) { toast("Add the country code to his number (e.g. 61… or 62…) in Backup & settings"); }
+    const msgs = buildMessages(jobs, state.settings.msgLang);
+    if (how === "copy") {
+      copy(msgs.map((m) => m.text).join("\n\n"), "Copied. Paste it into WhatsApp");
+      markSent(jobs); render();
+      return;
+    }
+    queue = msgs.slice(1);
+    window.open(waLink(msgs[0].text), "_blank", "noopener");
+    markSent(msgs[0].jobs);
+    render();
+    if (queue.length) toast(`Sent part 1 of ${msgs.length}. Tap "Send part 2" for the rest`);
+  }
+  function pickedJobs() {
+    const byId = new Map(allJobs().map((j) => [j.id, j]));
+    return state.picks.map((id) => byId.get(id)).filter(Boolean);
+  }
+  function updateSendbar() {
+    const picked = pickedJobs();
+    const show = picked.length > 0 || queue.length > 0;
+    $("#sendbar").hidden = !show;
+    document.body.classList.toggle("has-sendbar", show);
+    if (queue.length) {
+      $("#pickCount").textContent = `${queue.length} more message${queue.length > 1 ? "s" : ""} to send`;
+      $("#sendWa").textContent = "Send next part on WhatsApp";
+    } else {
+      $("#pickCount").textContent = `${picked.length} picked`;
+      $("#sendWa").textContent = "Send on WhatsApp";
+    }
+  }
+  $("#sendWa").addEventListener("click", () => {
+    if (queue.length) {
+      const m = queue.shift();
+      window.open(waLink(m.text), "_blank", "noopener");
+      markSent(m.jobs); render();
+      return;
+    }
+    sendJobs(pickedJobs(), "wa");
+  });
+  $("#sendCopy").addEventListener("click", () => sendJobs(queue.length ? queue.splice(0).flatMap((m) => m.jobs) : pickedJobs(), "copy"));
+  $("#sendClear").addEventListener("click", () => { state.picks = []; queue = []; save(); render(); });
+
+  // ---------- first-visit card ----------
+  $("#intro").hidden = !!state.settings.introDismissed;
+  $("#introOk").addEventListener("click", () => { state.settings.introDismissed = true; save(); $("#intro").hidden = true; });
 
   // ---------- tabs ----------
   document.querySelectorAll("nav [data-tab]").forEach((b) => b.addEventListener("click", () => {
@@ -542,6 +702,10 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     } catch (err) { toast("That file isn't a tracker backup"); }
     e.target.value = "";
   });
+  $("#waNumber").value = state.settings.waNumber || "";
+  $("#waNumber").addEventListener("change", (e) => { state.settings.waNumber = e.target.value.trim(); save(); toast("Saved in this browser only"); });
+  $("#msgLang").value = state.settings.msgLang || "EN";
+  $("#msgLang").addEventListener("change", (e) => { state.settings.msgLang = e.target.value; save(); });
   $("#fuDays").value = state.settings.followUpDays;
   $("#fuDays").addEventListener("change", (e) => { state.settings.followUpDays = Math.max(2, Math.min(30, Number(e.target.value) || 7)); save(); render(); });
   function applyTheme() { if (state.settings.theme) document.documentElement.dataset.theme = state.settings.theme; else delete document.documentElement.dataset.theme; }

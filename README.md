@@ -48,17 +48,38 @@ The alert lists only roles that are **new since yesterday**, cyber and tech only
 
 ## Job-alert emails: LinkedIn, JobStreet, Glints, Kalibrr, Indeed (about 15 minutes)
 
-1. **Create a new Gmail just for alerts** (e.g. `yourname.jobalerts@gmail.com`). Using a separate inbox means the tool never sees anyone's personal email.
-2. In that account: **Google Account → Security → 2-Step Verification → on**, then **App passwords → create** one (name it "internship finder"). Copy the 16-letter password.
-3. **Create job alerts** (daily, location *Jakarta*, keywords like `cyber security intern`, `SOC intern`, `IT intern`, `software engineer intern`, `magang IT`):
-   - **JobStreet, Glints, Kalibrr, Indeed:** sign up / set the alert email to the new Gmail.
-   - **LinkedIn:** create the alerts on his LinkedIn (Jobs → search → *Set alert*, choose *Email*, daily). They go to his main email, so in **that** Gmail add a filter: *From* `jobalerts-noreply@linkedin.com` → *Forward to* the new Gmail (Gmail asks the new inbox to confirm forwarding once).
+Job-alert results come from the **search filters** (keywords, Jakarta, internship), not from whose profile they're on. So the person running the tool can set them up on **their own** accounts, and the student doesn't need to do anything.
+
+1. **Create a new Gmail just for alerts** (e.g. `yourname.jobalerts@gmail.com`). Turn on **2-Step Verification** for it, then **Security → App passwords → create** one and copy the 16-letter password.
+2. **Create job alerts on your own accounts** (daily; location *Jakarta*; keywords like `cyber security intern`, `SOC intern`, `IT intern`, `software engineer intern`, `magang IT`):
+   - **LinkedIn:** Jobs → search → **Set alert** → email, daily.
+   - **JobStreet, Glints, Kalibrr, Indeed:** save the search / turn on the job alert.
+3. **Forward only the alert emails** to the new Gmail. In your own Gmail: **Settings → Filters → Create filter**, put the **exact sender** in *From*, then choose *Forward to* the new Gmail (Gmail asks the new inbox to confirm once).
+   - LinkedIn alerts come from `jobalerts-noreply@linkedin.com`.
+   - For the other sites, wait for the first alert email and copy its exact sender address into a filter.
+   - **Don't forward a whole domain** (e.g. everything from `jobstreet.com`): that would also send password-reset and login-code emails into the alert inbox.
 4. In this repo: **Settings → Secrets and variables → Actions → New repository secret**:
    - `ALERTS_IMAP_USER` = the new Gmail address
    - `ALERTS_IMAP_PASSWORD` = the app password
-5. **Actions → Daily internship refresh → Run workflow.** Jobs from the alerts show up in the tracker with a *via LinkedIn alert* (etc.) label.
+5. **Actions → Daily internship refresh → Run workflow.** Jobs from the alerts show up with a *via LinkedIn alert* (etc.) label.
+
+Please don't create an extra LinkedIn account for this (LinkedIn allows one account per person), and don't make the alerts Gmail the main email on anyone's LinkedIn (their recruiter messages and login codes would go there).
 
 The inbox is opened **read-only**: nothing is deleted, moved or marked as read. Only each job's title, company, location and a clean link are kept; no email text goes into the repo. Until the secrets are added, the tracker just says this source isn't set up.
+
+## Running it for someone else (WhatsApp)
+
+If you're helping a family member or friend, they don't need to use the tool at all:
+
+1. In the tracker, tick **Send** on the good jobs. A bar appears at the bottom.
+2. Tap **Send on WhatsApp**. WhatsApp opens with a ready message: each job's title, company, *why it fits* (cyber/tech, fits the break, fresh posting), any warning (e.g. "asks for 6 months"), and the apply link. **Share ↗** on a card sends just that one job.
+3. Sent jobs get a *Sent to him* badge and their own filter, so nothing is sent twice.
+
+Put their WhatsApp number (with country code) under **Backup & settings**; it's saved only in your browser, never in the repo. The message can be in English or Bahasa Indonesia.
+
+### Handing it over later
+
+When they want to use it themselves: open the tracker link on their phone (Share → *Add to Home Screen*). A short "How to use this" card appears the first time. To give them everything you've tracked, tap **Export backup**, send them the file, and they tap **Import backup**. Their alerts can move to their own accounts the same way as step 2–3 above; nothing in the tool changes.
 
 ## How ranking works
 
