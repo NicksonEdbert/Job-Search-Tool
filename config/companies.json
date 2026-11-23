@@ -308,6 +308,90 @@
       "slug": "remoteok"
     },
     {
+      "name": "Culture Amp",
+      "ats": "greenhouse",
+      "slug": "cultureamp",
+      "note": "Melbourne HQ"
+    },
+    {
+      "name": "carsales",
+      "ats": "smartrecruiters",
+      "slug": "carsales",
+      "note": "Melbourne HQ"
+    },
+    {
+      "name": "Xero",
+      "ats": "ashby",
+      "slug": "xero",
+      "note": "Melbourne office"
+    },
+    {
+      "name": "Canva",
+      "ats": "smartrecruiters",
+      "slug": "canva",
+      "note": "Sydney/Melbourne"
+    },
+    {
+      "name": "Block (Afterpay, Square)",
+      "ats": "greenhouse",
+      "slug": "block",
+      "note": "Melbourne office"
+    },
+    {
+      "name": "Judo Bank",
+      "ats": "smartrecruiters",
+      "slug": "judobank",
+      "note": "Melbourne HQ"
+    },
+    {
+      "name": "Kogan",
+      "ats": "lever",
+      "slug": "kogan",
+      "note": "Melbourne HQ; posts graduate and junior roles"
+    },
+    {
+      "name": "KPMG Australia",
+      "ats": "smartrecruiters",
+      "slug": "kpmgaustralia",
+      "note": "Cyber and IT-risk teams in Melbourne"
+    },
+    {
+      "name": "Versent",
+      "ats": "smartrecruiters",
+      "slug": "versent",
+      "note": "Cloud/security consultancy, Melbourne"
+    },
+    {
+      "name": "Redbubble",
+      "ats": "smartrecruiters",
+      "slug": "redbubble",
+      "note": "Melbourne HQ"
+    },
+    {
+      "name": "PEXA",
+      "ats": "smartrecruiters",
+      "slug": "pexa",
+      "note": "Melbourne HQ"
+    },
+    {
+      "name": "Stripe",
+      "ats": "greenhouse",
+      "slug": "stripe",
+      "note": "Melbourne office"
+    },
+    {
+      "name": "Datadog",
+      "ats": "greenhouse",
+      "slug": "datadog",
+      "note": "Melbourne office"
+    },
+    {
+      "name": "MongoDB",
+      "ats": "greenhouse",
+      "slug": "mongodb",
+      "note": "Melbourne office"
+    },
+    {
       "name": "Job-alert emails",
       "ats": "email",
       "slug": "imap.gmail.com"

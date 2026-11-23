@@ -198,7 +198,54 @@ put("https://remoteok.com/api", [{"legal": "attribution required"},
     {"id": "77", "position": "Cybersecurity Intern", "company": "APAC Shield", "location": "Asia",
      "date": "2026-11-21T00:00:00+00:00", "url": "https://remoteok.com/remote-jobs/77", "description": "SOC work"}])
 
+# ---- Melbourne ----------------------------------------------------------------------------------
+put(f"{wd_api}/jobs", {"total": 2, "jobPostings": [
+    {"title": "IT Support Officer (Casual)", "externalPath": "/job/Melbourne/IT-Support-Officer--Casual-_R200",
+     "locationsText": "Melbourne, VIC", "postedOn": "Posted 3 Days Ago"},
+    {"title": "Senior Cloud Engineer", "externalPath": "/job/Melbourne/Senior-Cloud-Engineer_R201",
+     "locationsText": "Melbourne, VIC", "postedOn": "Posted 3 Days Ago"},
+]}, body={"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": "Melbourne"})
+put(f"{wd_api}/job/Melbourne/IT-Support-Officer--Casual-_R200", {"jobPostingInfo": {
+    "title": "IT Support Officer (Casual)", "location": "Melbourne, VIC, Australia", "startDate": "2026-11-20",
+    "jobDescription": "<p>Casual role over summer helping staff with laptops, Microsoft 365 and MFA.</p>",
+    "externalUrl": "https://examplebank.wd3.myworkdayjobs.com/Careers/job/Melbourne/IT-Support-Officer--Casual-_R200"}})
+put_text(f"https://{sf}/search/?q=&locationsearch=Melbourne&sortColumn=referencedate&sortDirection=desc&startrow=0", """
+<table><tbody>
+<tr class="data-row"><td><a href="/job/Melbourne-Graduate-Cyber-Consultant-VIC/4444/" class="jobTitle-link">Graduate Cyber Consultant</a></td>
+  <td><span class="jobLocation">Melbourne, VIC, AU</span></td><td><span class="jobDate">Nov 18, 2026</span></td></tr>
+<tr class="data-row"><td><a href="/job/Melbourne-Service-Desk-Analyst-VIC/5555/" class="jobTitle-link">Service Desk Analyst</a></td>
+  <td><span class="jobLocation">Melbourne, VIC, AU</span></td><td><span class="jobDate">Nov 21, 2026</span></td></tr>
+</tbody></table>""")
+put_text(f"https://{sf}/job/Melbourne-Graduate-Cyber-Consultant-VIC/4444/",
+         '<html><span class="jobdescription"><div><p>You must be an Australian citizen and able to obtain a '
+         'Baseline security clearance.</p></div></span></html>')
+put_text(f"https://{sf}/job/Melbourne-Service-Desk-Analyst-VIC/5555/",
+         '<html><span class="jobdescription"><div><p>Part-time service desk role. Candidates need full working '
+         'rights in Australia.</p></div></span></html>')
+put("https://www.amazon.jobs/en/search.json?base_query=&loc_query=Melbourne&result_limit=100&sort=recent", {"jobs": [
+    {"id_icims": "300010", "title": "IT Support Associate", "company_name": "Amazon Web Services Australia",
+     "normalized_location": "Melbourne, VIC, AUS", "posted_date": "November 19, 2026",
+     "job_path": "/en/jobs/300010/it-support-associate", "description": "Temporary summer role supporting the Melbourne office."}]})
+put(greenhouse.API.format(slug="examplemelb"), {"jobs": [
+    {"id": 701, "title": "Student IT Support (Summer)", "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/701",
+     "location": {"name": "Clayton, Victoria, Australia"}, "offices": [], "first_published": "2026-11-20T00:00:00Z",
+     "content": "Help students and staff with Wi-Fi, accounts and devices during summer."},
+    {"id": 702, "title": "Volunteer Cyber Awareness Educator", "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/702",
+     "location": {"name": "Melbourne, VIC"}, "offices": [], "first_published": "2026-11-15T00:00:00Z",
+     "content": "Run online-safety sessions for community groups."},
+    {"id": 703, "title": "Junior SOC Analyst", "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/703",
+     "location": {"name": "Melbourne, VIC"}, "offices": [], "first_published": "2026-11-15T00:00:00Z",
+     "content": "Requires 4+ years of experience in a SOC."},
+    {"id": 704, "title": "IT Support Officer", "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/704",
+     "location": {"name": "Richmond, VIC"}, "offices": [], "first_published": "2026-11-21T00:00:00Z",
+     "content": "This is a permanent full-time position."},
+    {"id": 705, "title": "IT Support Officer", "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/705",
+     "location": {"name": "Richmond, VA, United States"}, "offices": [], "first_published": "2026-11-21T00:00:00Z",
+     "content": ""},
+]})
+
 companies += [
+    {"name": "Example Melbourne Co", "ats": "greenhouse", "slug": "examplemelb"},
     {"name": "Example Bank", "ats": "workday", "slug": "examplebank|wd3|Careers"},
     {"name": "Example Audit", "ats": "successfactors", "slug": sf},
     {"name": "Example Startup", "ats": "jsonld", "slug": f"{cp}/jobs"},

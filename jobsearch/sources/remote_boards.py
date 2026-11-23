@@ -7,7 +7,7 @@
 Only internship titles are kept here; the remote-eligibility check happens in filter.py.
 """
 
-from ..filter import is_internship
+from ..filter import relevant_title as is_internship
 from ..models import Job, html_to_text, to_iso
 
 

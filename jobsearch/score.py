@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from datetime import datetime, timezone
 
-from .filter import location_match, remote_eligibility, work_mode
+from .filter import au_work_rights, is_australian, location_match, remote_eligibility, role_type, work_mode
 from .models import parse_iso
 
 CYBER_TITLE = [
@@ -138,17 +138,31 @@ def score(job, profile: dict, now: datetime = None) -> None:
     """Fill job.category, job.timing, job.flags and job.score (0-100)."""
     now = now or datetime.now(timezone.utc)
     job.category = categorize(job, profile)
+    job.role_type = role_type(job.title) or job.role_type
     job.timing, timing_flags = timing(job, profile)
+    if job.role_type in ("entry", "student") and job.timing in ("unknown", "good"):
+        # Ongoing jobs: a permanent full-time role doesn't fit a student; casual/part-time does.
+        text = f"{job.title}\n{job.text}"
+        if re.search(r"\b(casual|part[- ]time|temporary|temp|contract|fixed[- ]term|summer|holiday)\b", text, re.I):
+            job.timing = "good"
+        elif re.search(r"\bpermanent\b.{0,40}\bfull[- ]time\b|\bfull[- ]time\b.{0,40}\bpermanent\b", text, re.I):
+            job.timing = "check"
+            timing_flags.append("Permanent full-time job: ask if casual or summer-only work is possible")
     job.flags = list(dict.fromkeys(job.flags + timing_flags))
 
     s = {"cyber": 50, "tech": 30, "other": 0}[job.category]
-    job.where = location_match(job.location, tuple(profile.get("extra_places", [])))
+    job.where = location_match(job.location, tuple(profile.get("extra_places", [])),
+                               tuple(profile.get("cities", ["jakarta", "melbourne"])))
     job.work_mode = work_mode(job.location, job.where)
     if job.where == "remote":
         status, reason = remote_eligibility(job)
         if status != "open" and reason and reason not in job.flags:
             job.flags.append(reason)
-    s += {"jakarta": 10, "remote": 6, "indonesia": 5}.get(job.where, 0)
+    if job.where == "melbourne" or is_australian(job):
+        status, reason = au_work_rights(job)
+        if status == "flag" and reason not in job.flags:
+            job.flags.append(reason)
+    s += {"jakarta": 10, "melbourne": 10, "remote": 6, "indonesia": 5}.get(job.where, 0)
     s += {"good": 12, "unknown": 4, "check": 0, "later": -10, "long": -15}[job.timing]
     age = days_since(job.posted_at or job.first_seen, now)
     if age is not None:

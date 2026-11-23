@@ -1,0 +1,59 @@
+{
+ "jobs": [
+  {
+   "id": 701,
+   "title": "Student IT Support (Summer)",
+   "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/701",
+   "location": {
+    "name": "Clayton, Victoria, Australia"
+   },
+   "offices": [],
+   "first_published": "2026-11-20T00:00:00Z",
+   "content": "Help students and staff with Wi-Fi, accounts and devices during summer."
+  },
+  {
+   "id": 702,
+   "title": "Volunteer Cyber Awareness Educator",
+   "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/702",
+   "location": {
+    "name": "Melbourne, VIC"
+   },
+   "offices": [],
+   "first_published": "2026-11-15T00:00:00Z",
+   "content": "Run online-safety sessions for community groups."
+  },
+  {
+   "id": 703,
+   "title": "Junior SOC Analyst",
+   "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/703",
+   "location": {
+    "name": "Melbourne, VIC"
+   },
+   "offices": [],
+   "first_published": "2026-11-15T00:00:00Z",
+   "content": "Requires 4+ years of experience in a SOC."
+  },
+  {
+   "id": 704,
+   "title": "IT Support Officer",
+   "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/704",
+   "location": {
+    "name": "Richmond, VIC"
+   },
+   "offices": [],
+   "first_published": "2026-11-21T00:00:00Z",
+   "content": "This is a permanent full-time position."
+  },
+  {
+   "id": 705,
+   "title": "IT Support Officer",
+   "absolute_url": "https://job-boards.greenhouse.io/examplemelb/jobs/705",
+   "location": {
+    "name": "Richmond, VA, United States"
+   },
+   "offices": [],
+   "first_published": "2026-11-21T00:00:00Z",
+   "content": ""
+  }
+ ]
+}

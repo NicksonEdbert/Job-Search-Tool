@@ -3,7 +3,7 @@
 from datetime import datetime
 from urllib.parse import quote
 
-from ..filter import is_internship
+from ..filter import relevant_title
 from ..models import Job, html_to_text
 
 API = "https://www.amazon.jobs/en/search.json?base_query={q}&loc_query={loc}&result_limit=100&sort=recent"
@@ -17,12 +17,18 @@ def _date(s):
 
 
 def fetch(company: dict, get_json) -> list:
-    jobs = {}
-    for q in company.get("queries", ["intern"]):
-        data = get_json(API.format(q=quote(q), loc=quote(company.get("location", "Indonesia"))))
+    city_search = {"jakarta": ("intern", "Indonesia"), "melbourne": ("", "Melbourne")}
+    searches = company.get("searches") or [city_search[c] for c in company.get("_cities", ("jakarta",)) if c in city_search]
+    jobs, errors = {}, []
+    for q, loc in searches:
+        try:
+            data = get_json(API.format(q=quote(q), loc=quote(loc)))
+        except Exception as e:  # one failing search shouldn't lose the others
+            errors.append(e)
+            continue
         for j in data.get("jobs", []):
             title = (j.get("title") or "").strip()
-            if not is_internship(title):
+            if not relevant_title(title):
                 continue
             jid = j.get("id_icims") or j.get("id")
             jobs[jid] = Job(
@@ -33,4 +39,6 @@ def fetch(company: dict, get_json) -> list:
                 text=html_to_text(" ".join(j.get(k) or "" for k in ("description", "basic_qualifications",
                                                                      "preferred_qualifications"))),
             )
+    if errors and not jobs:
+        raise errors[0]
     return list(jobs.values())

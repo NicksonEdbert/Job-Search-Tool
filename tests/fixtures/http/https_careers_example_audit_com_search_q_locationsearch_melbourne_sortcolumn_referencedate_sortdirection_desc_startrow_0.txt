@@ -1,0 +1,7 @@
+
+<table><tbody>
+<tr class="data-row"><td><a href="/job/Melbourne-Graduate-Cyber-Consultant-VIC/4444/" class="jobTitle-link">Graduate Cyber Consultant</a></td>
+  <td><span class="jobLocation">Melbourne, VIC, AU</span></td><td><span class="jobDate">Nov 18, 2026</span></td></tr>
+<tr class="data-row"><td><a href="/job/Melbourne-Service-Desk-Analyst-VIC/5555/" class="jobTitle-link">Service Desk Analyst</a></td>
+  <td><span class="jobLocation">Melbourne, VIC, AU</span></td><td><span class="jobDate">Nov 21, 2026</span></td></tr>
+</tbody></table>
