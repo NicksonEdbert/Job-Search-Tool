@@ -1,0 +1,29 @@
+{
+ "companies": [
+  {
+   "name": "Example Pay",
+   "ats": "greenhouse",
+   "slug": "examplepay"
+  },
+  {
+   "name": "Example Logistics",
+   "ats": "lever",
+   "slug": "examplelogistics"
+  },
+  {
+   "name": "Example Security",
+   "ats": "ashby",
+   "slug": "examplesec"
+  },
+  {
+   "name": "Example Shop",
+   "ats": "smartrecruiters",
+   "slug": "exampleshop"
+  },
+  {
+   "name": "Missing Co",
+   "ats": "lever",
+   "slug": "missingco"
+  }
+ ]
+}

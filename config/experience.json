@@ -1,0 +1,23 @@
+{
+  "_help": "Ways to build real cybersecurity experience while job hunting. Shown in the tracker's Experience tab. Links are checked by the daily run; dead ones are flagged.",
+  "items": [
+    {"group": "Practice & CTFs", "title": "picoCTF", "url": "https://picoctf.org/", "why": "Beginner-friendly CTF by Carnegie Mellon; practice gym is open all year."},
+    {"group": "Practice & CTFs", "title": "CTFtime event calendar", "url": "https://ctftime.org/event/list/upcoming", "why": "Find online CTFs to join this month; good placings are strong CV lines."},
+    {"group": "Practice & CTFs", "title": "TryHackMe", "url": "https://tryhackme.com/", "why": "Guided rooms for SOC analyst and pentesting paths; free tier available."},
+    {"group": "Practice & CTFs", "title": "Hack The Box", "url": "https://www.hackthebox.com/", "why": "Hands-on machines; the Academy has free modules."},
+    {"group": "Practice & CTFs", "title": "OverTheWire wargames", "url": "https://overthewire.org/wargames/", "why": "Bandit teaches Linux/shell skills job ads keep asking for."},
+    {"group": "Practice & CTFs", "title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "why": "Free web security labs (OWASP Top 10) and Burp Suite practice."},
+    {"group": "Bug bounty & disclosure", "title": "HackerOne", "url": "https://hackerone.com/", "why": "Public programmes and vulnerability disclosure programmes; even one valid report counts."},
+    {"group": "Bug bounty & disclosure", "title": "Bugcrowd", "url": "https://www.bugcrowd.com/", "why": "Another large platform with beginner-friendly disclosure programmes."},
+    {"group": "Bug bounty & disclosure", "title": "Intigriti", "url": "https://www.intigriti.com/", "why": "Bug bounty platform with monthly challenges that teach real techniques."},
+    {"group": "Courses & entry certifications", "title": "ISC2 Certified in Cybersecurity (CC)", "url": "https://www.isc2.org/certifications/cc", "why": "Entry-level certification; ISC2 has offered free training and exam for it."},
+    {"group": "Courses & entry certifications", "title": "Google Cybersecurity Certificate", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity", "why": "Covers SIEM, Linux, SQL and Python for security; Coursera financial aid available."},
+    {"group": "Courses & entry certifications", "title": "Cisco Networking Academy", "url": "https://www.netacad.com/", "why": "Free networking and cybersecurity courses; networking is the most common gap for cyber roles."},
+    {"group": "Courses & entry certifications", "title": "Microsoft SC-900", "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/", "why": "Security, compliance and identity fundamentals; free learning path."},
+    {"group": "Courses & entry certifications", "title": "CompTIA Security+", "url": "https://www.comptia.org/certifications/security", "why": "The best-known entry security certification (paid); good target for mid-2027."},
+    {"group": "Indonesia programmes & communities", "title": "Digital Talent Scholarship (Komdigi)", "url": "https://digitalent.komdigi.go.id/", "why": "Government-funded digital and cybersecurity training for Indonesians; check open intakes."},
+    {"group": "Indonesia programmes & communities", "title": "OWASP Jakarta chapter", "url": "https://owasp.org/www-chapter-jakarta/", "why": "Local meetups: the fastest way to meet people who hire security interns in Jakarta."},
+    {"group": "Projects for the CV", "title": "Build a home SOC lab with Wazuh", "url": "https://wazuh.com/", "why": "Free SIEM/XDR; a write-up of a home lab shows the SIEM skills many SOC internships ask for."},
+    {"group": "Projects for the CV", "title": "Volunteer security check-ups", "url": "", "why": "Offer a basic security check (passwords, MFA, backups) to a club, school or small business. Real experience that fits on a CV."}
+  ]
+}

@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Internship Finder</title>
+<meta name="description" content="Jakarta tech and cybersecurity internships, ranked, with ghost-listing checks and an application tracker.">
+<style>
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --text: #17202a; --muted: #5b6673;
+  --border: #dde2e8; --accent: #1f5fbf; --accent-text: #ffffff;
+  --cyber: #6b3fbf; --cyber-bg: #efe8fb; --tech: #1f6f8b; --tech-bg: #e3f2f7; --other-bg: #eceff2;
+  --ok: #1e7b45; --ok-bg: #e3f4ea; --warn: #8a5a00; --warn-bg: #fdf1d8; --bad: #b3261e; --bad-bg: #fbe5e3;
+  --shadow: 0 1px 2px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1419; --surface: #171d24; --surface-2: #1f2731; --text: #e6eaef; --muted: #9aa5b1;
+    --border: #2b3440; --accent: #6ea8ff; --accent-text: #0b1220;
+    --cyber: #c4a8ff; --cyber-bg: #2a2140; --tech: #7fd0ea; --tech-bg: #15303a; --other-bg: #252d36;
+    --ok: #7fd6a0; --ok-bg: #17321f; --warn: #f2c46b; --warn-bg: #3a2e12; --bad: #ff9b93; --bad-bg: #3d1c1a;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1419; --surface: #171d24; --surface-2: #1f2731; --text: #e6eaef; --muted: #9aa5b1;
+  --border: #2b3440; --accent: #6ea8ff; --accent-text: #0b1220;
+  --cyber: #c4a8ff; --cyber-bg: #2a2140; --tech: #7fd0ea; --tech-bg: #15303a; --other-bg: #252d36;
+  --ok: #7fd6a0; --ok-bg: #17321f; --warn: #f2c46b; --warn-bg: #3a2e12; --bad: #ff9b93; --bad-bg: #3d1c1a;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+header { padding: 20px 16px 8px; max-width: 980px; margin: 0 auto; }
+h1 { font-size: 1.45rem; margin: 0 0 2px; }
+.sub { color: var(--muted); margin: 0; font-size: .9rem; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--border); }
+nav .inner { max-width: 980px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
+nav button { background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 10px; font: inherit; white-space: nowrap; cursor: pointer; }
+nav button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+main { max-width: 980px; margin: 0 auto; padding: 14px 16px 60px; }
+section[hidden] { display: none; }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; box-shadow: var(--shadow); margin-bottom: 12px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: .88rem; }
+.stat b { font-size: 1.05rem; }
+.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; align-items: end; }
+.filters label, .field label { display: block; font-size: .78rem; color: var(--muted); margin-bottom: 2px; }
+input[type=text], input[type=url], input[type=date], input[type=number], select, textarea {
+  width: 100%; padding: 7px 9px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface); color: var(--text); font: inherit; }
+textarea { min-height: 70px; resize: vertical; }
+.checks { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: .9rem; }
+.checks label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+button.btn { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 6px 11px; font: inherit; font-size: .88rem; cursor: pointer; }
+button.btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+button.btn:hover { filter: brightness(.97); }
+.job { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; box-shadow: var(--shadow); }
+.job.dim { opacity: .65; }
+.job h3 { margin: 0; font-size: 1.02rem; line-height: 1.35; }
+.job h3 a { color: var(--text); text-decoration: none; }
+.job h3 a:hover { text-decoration: underline; }
+.meta { color: var(--muted); font-size: .87rem; margin-top: 2px; }
+.badges { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0 4px; }
+.badge { font-size: .76rem; padding: 2px 8px; border-radius: 999px; background: var(--other-bg); color: var(--text); white-space: nowrap; border: 0; font-family: inherit; }
+.badge.cyber { background: var(--cyber-bg); color: var(--cyber); font-weight: 600; }
+.badge.tech { background: var(--tech-bg); color: var(--tech); font-weight: 600; }
+.badge.ok { background: var(--ok-bg); color: var(--ok); }
+.badge.warn { background: var(--warn-bg); color: var(--warn); }
+.badge.bad { background: var(--bad-bg); color: var(--bad); }
+button.badge { cursor: pointer; }
+.flags { margin: 4px 0 0; padding-left: 18px; font-size: .84rem; color: var(--warn); }
+.reasons { font-size: .84rem; color: var(--muted); margin: 4px 0 0; padding-left: 18px; }
+.skills { font-size: .85rem; margin-top: 6px; }
+.skills .have { color: var(--ok); }
+.skills .miss { color: var(--muted); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.row select { width: auto; min-width: 140px; }
+.row input[type=date] { width: auto; }
+.followup { margin-top: 10px; padding: 8px 10px; border-radius: 8px; background: var(--warn-bg); color: var(--warn); font-size: .88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
+.empty { text-align: center; color: var(--muted); padding: 30px 10px; }
+.score { float: right; font-size: .8rem; color: var(--muted); margin-left: 8px; text-align: right; }
+.score b { display: block; font-size: 1.1rem; color: var(--text); }
+.sites h3 { font-size: .95rem; margin: 14px 0 6px; }
+.sites .links { display: flex; flex-wrap: wrap; gap: 6px; }
+.sites .links a { font-size: .86rem; padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); text-decoration: none; }
+.exp-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--border); }
+.exp-item:first-of-type { border-top: 0; }
+.exp-item p { margin: 2px 0 0; color: var(--muted); font-size: .86rem; }
+.exp-item.done .t { text-decoration: line-through; color: var(--muted); }
+.note { font-size: .85rem; color: var(--muted); }
+.toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: .9rem; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.show { opacity: 1; }
+.addform { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 10px; }
+.chiplist { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+@media (max-width: 520px) {
+  .score { float: none; display: inline-block; margin: 0 0 4px; } .score b { display: inline; margin-right: 4px; }
+  .filters { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .filters > div:first-child { grid-column: 1 / -1; }
+  .filters label { display: none; }
+  .filters select, .filters input { padding: 6px 7px; font-size: .88rem; }
+  .stats { flex-wrap: nowrap; overflow-x: auto; gap: 6px; }
+  .stat { white-space: nowrap; padding: 4px 8px; }
+  .checks { gap: 4px 12px; font-size: .85rem; }
+  header { padding-top: 14px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Internship Finder</h1>
+  <p class="sub" id="subtitle">Jakarta · cybersecurity first, then any tech role · loading…</p>
+</header>
+<nav><div class="inner" role="tablist">
+  <button role="tab" data-tab="jobs" aria-selected="true">Jobs</button>
+  <button role="tab" data-tab="sites" aria-selected="false">Other job sites</button>
+  <button role="tab" data-tab="exp" aria-selected="false">Experience</button>
+  <button role="tab" data-tab="skills" aria-selected="false">My skills</button>
+  <button role="tab" data-tab="backup" aria-selected="false">Backup &amp; settings</button>
+</div></nav>
+<main>
+  <!-- JOBS -->
+  <section id="tab-jobs">
+    <div class="stats" id="stats"></div>
+    <div class="panel">
+      <div class="filters">
+        <div><label for="q">Search</label><input id="q" type="text" placeholder="title, company, skill…"></div>
+        <div><label for="cat">Field</label>
+          <select id="cat"><option value="ct">Cyber + tech</option><option value="cyber">Cyber only</option><option value="all">Everything (incl. non-tech)</option></select></div>
+        <div><label for="status">Status</label>
+          <select id="status">
+            <option value="active">Active (hide rejected/closed)</option><option value="untracked">Not yet saved</option>
+            <option value="Saved">Saved</option><option value="Applied">Applied</option><option value="Interview">Interview</option>
+            <option value="Offer">Offer</option><option value="action">Needs action (follow up)</option>
+            <option value="Rejected">Rejected</option><option value="Closed">Closed</option><option value="any">Any</option>
+          </select></div>
+        <div><label for="sort">Sort</label>
+          <select id="sort"><option value="best">Best match</option><option value="new">Newest</option><option value="company">Company</option></select></div>
+      </div>
+      <div class="checks">
+        <label><input type="checkbox" id="hideGhost" checked> Hide high ghost risk</label>
+        <label><input type="checkbox" id="fitsBreak"> Fits his break only (Dec–Feb)</label>
+        <label><input type="checkbox" id="newOnly"> New since last visit</label>
+      </div>
+      <details id="addBox" style="margin-top:10px">
+        <summary>+ Add a job from a link (LinkedIn, Glints, JobStreet…)</summary>
+        <form id="addForm" class="addform">
+          <div class="field"><label for="aUrl">Link</label><input id="aUrl" type="url" required placeholder="https://www.linkedin.com/jobs/view/…"></div>
+          <div class="field"><label for="aTitle">Job title</label><input id="aTitle" type="text" required placeholder="Cyber Security Intern"></div>
+          <div class="field"><label for="aCompany">Company</label><input id="aCompany" type="text" required></div>
+          <div class="field"><label for="aLoc">Location</label><input id="aLoc" type="text" value="Jakarta"></div>
+          <div class="field"><label for="aPosted">Posted on (if shown)</label><input id="aPosted" type="date"></div>
+          <div class="field"><label for="aText">Paste the description (optional, for skill match)</label><textarea id="aText"></textarea></div>
+          <div class="field" style="align-self:end"><button class="btn primary" type="submit">Add job</button></div>
+        </form>
+      </details>
+    </div>
+    <div id="jobs"></div>
+  </section>
+
+  <!-- OTHER SITES -->
+  <section id="tab-sites" hidden>
+    <div class="panel sites">
+      <p class="note" style="margin-top:0">These sites don't let tools read their listings, so these are one-click searches set to Jakarta and internships, newest first. Found something? Use <b>+ Add a job from a link</b> on the Jobs tab to track it. Filters may need one extra click on some sites.</p>
+      <div id="siteLinks"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="tab-exp" hidden>
+    <div class="panel">
+      <p class="note" style="margin-top:0">Real cyber experience he can build now, alongside applying. Tick items off as he does them: each one is a line for his CV.</p>
+      <div id="expList"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="tab-skills" hidden>
+    <div class="panel">
+      <div class="field"><label for="skillsBox">His skills (one per line or comma-separated). Saved only in this browser.</label>
+        <textarea id="skillsBox" rows="8" placeholder="Python&#10;JavaScript&#10;Linux&#10;Networking"></textarea></div>
+      <div class="row">
+        <button class="btn primary" id="saveSkills">Save skills</button>
+        <label class="btn" for="skillsFile" style="cursor:pointer">Import skills file…</label>
+        <input id="skillsFile" type="file" accept=".json,.txt" hidden>
+      </div>
+      <div id="skillsRecognized" class="note" style="margin-top:8px"></div>
+    </div>
+    <div class="panel">
+      <h3 style="margin:0 0 4px;font-size:1rem">Skills to learn next</h3>
+      <p class="note" style="margin:0">Skills the current cyber and tech listings ask for most that aren't on his list.</p>
+      <div id="gaps" class="chiplist"></div>
+    </div>
+  </section>
+
+  <!-- BACKUP -->
+  <section id="tab-backup" hidden>
+    <div class="panel">
+      <p style="margin-top:0">Progress (statuses, notes, added jobs, skills) is saved <b>only in this browser</b>. Export a backup to move it to another phone or laptop, or to share it.</p>
+      <div class="row">
+        <button class="btn primary" id="exportBtn">Export backup</button>
+        <label class="btn" for="importFile" style="cursor:pointer">Import backup…</label>
+        <input id="importFile" type="file" accept=".json" hidden>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="field" style="max-width:260px"><label for="fuDays">Remind to follow up after (days)</label><input id="fuDays" type="number" min="2" max="30" value="7"></div>
+      <div class="field" style="max-width:260px;margin-top:10px"><label for="theme">Theme</label>
+        <select id="theme"><option value="">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+    </div>
+    <div class="panel note" id="sourcesInfo"></div>
+  </section>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="skills.js"></script>
+<script>
+(function () {
+  "use strict";
+  const KEY = "internship-finder.v1";
+  const STATUSES = ["", "Saved", "Applied", "Interview", "Offer", "Rejected", "Closed"];
+  const DAY = 86400000;
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  // ---------- state (browser storage, wrapped so the page still works without it) ----------
+  function loadState() {
+    try { const s = JSON.parse(localStorage.getItem(KEY) || "{}"); return s && typeof s === "object" ? s : {}; }
+    catch (e) { return {}; }
+  }
+  const state = Object.assign({ tracked: {}, manual: [], skills: [], done: {}, settings: { followUpDays: 7 }, lastVisit: null }, loadState());
+  state.settings = Object.assign({ followUpDays: 7, theme: "" }, state.settings);
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode: keep in memory */ } }
+  const prevVisit = state.lastVisit;
+  state.lastVisit = new Date().toISOString();
+  save();
+
+  let DATA = { jobs: [], closed: [], sources: [], generated_at: null };
+  let closedIds = new Set();
+
+  function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2200); }
+  function daysAgo(iso) { if (!iso) return null; const d = Date.parse(iso); return isNaN(d) ? null : Math.max(0, Math.floor((Date.now() - d) / DAY)); }
+  function ago(iso) { const d = daysAgo(iso); return d == null ? "date unknown" : d === 0 ? "today" : d === 1 ? "yesterday" : d + " days ago"; }
+  function today() { return new Date().toISOString().slice(0, 10); }
+
+  // ---------- client-side checks for jobs added by hand ----------
+  const CYBER_RE = /security|cyber|infosec|\bsoc\b|pen ?test|penetration|threat|incident|\bgrc\b|it audit|vulnerab|forensic|keamanan/i;
+  const TECH_RE = /software|engineer|developer|back-?end|front-?end|full-?stack|mobile|android|\bios\b|\bweb\b|\bdata\b|\bqa\b|devops|cloud|network|\bit\b|system|tech|programmer/i;
+  const EVERGREEN_RE = /talent (pool|community)|general application|future (opportunit|opening)|always hiring|open application/i;
+  function manualJob(m) {
+    const cat = CYBER_RE.test(m.title) ? "cyber" : TECH_RE.test(m.title) ? "tech" : "other";
+    const age = daysAgo(m.posted_at);
+    const reasons = []; let pts = 1;
+    reasons.push("Added from another site: check the company is real and the post is recent");
+    if (age != null && age > 60) { pts += 3; reasons.push("Posted " + age + " days ago"); }
+    else if (age != null && age > 30) { pts += 2; reasons.push("Posted " + age + " days ago"); }
+    if (EVERGREEN_RE.test(m.title)) { pts += 3; reasons.push("Title says talent pool / future openings"); }
+    const risk = pts >= 3 ? "high" : pts >= 2 ? "medium" : "low";
+    let score = { cyber: 50, tech: 30, other: 0 }[cat] + 8 + (age == null ? 0 : age <= 7 ? 15 : age <= 14 ? 10 : age <= 30 ? 5 : 0) - { low: 0, medium: 8, high: 20 }[risk];
+    return Object.assign({ category: cat, ghost_risk: risk, ghost_reasons: reasons, timing: "unknown", flags: [], score: Math.max(0, score),
+      source: "manual", is_new: false, first_seen: m.added_at }, m);
+  }
+
+  // ---------- combine board jobs, hand-added jobs and tracked jobs that disappeared ----------
+  function allJobs() {
+    const byId = new Map();
+    for (const j of DATA.jobs) byId.set(j.id, j);
+    for (const m of state.manual) byId.set(m.id, manualJob(m));
+    for (const [id, t] of Object.entries(state.tracked)) {
+      if (!byId.has(id) && t.snapshot) byId.set(id, Object.assign({ id, gone: true, flags: [], ghost_reasons: [], ghost_risk: "low", timing: "unknown", score: 0 }, t.snapshot));
+    }
+    return [...byId.values()].map((j) => {
+      const t = state.tracked[j.id] || {};
+      const closed = closedIds.has(j.id) || (j.gone && !j.manual);
+      return Object.assign({}, j, { st: t.status || (closed ? "Closed" : ""), t, closedByBoard: closed });
+    });
+  }
+
+  function followUpDue(j) {
+    if (j.st !== "Applied" || !j.t.appliedAt) return null;
+    const last = j.t.followedUpAt || j.t.appliedAt;
+    const d = daysAgo(last + "T00:00:00");
+    return d != null && d >= Number(state.settings.followUpDays || 7) ? d : null;
+  }
+
+  function isNewSinceVisit(j) {
+    if (j.source === "manual") return false;
+    if (!prevVisit) return !!j.is_new;
+    return j.first_seen && Date.parse(j.first_seen) > Date.parse(prevVisit);
+  }
+
+  // ---------- render jobs ----------
+  function render() {
+    const q = $("#q").value.trim().toLowerCase();
+    const cat = $("#cat").value, status = $("#status").value, sort = $("#sort").value;
+    const hideGhost = $("#hideGhost").checked, fits = $("#fitsBreak").checked, newOnly = $("#newOnly").checked;
+    const all = allJobs();
+    const skills = state.skills || [];
+    for (const j of all) j.match = skills.length ? window.matchSkills(j.title + "\n" + (j.text || ""), skills) : null;
+
+    let list = all.filter((j) => {
+      if (cat === "ct" && j.category === "other") return false;
+      if (cat === "cyber" && j.category !== "cyber") return false;
+      if (hideGhost && j.ghost_risk === "high" && !j.st) return false;
+      if (fits && !["good", "unknown", "check"].includes(j.timing)) return false;
+      if (newOnly && !isNewSinceVisit(j)) return false;
+      if (status === "active" && ["Rejected", "Closed"].includes(j.st)) return false;
+      if (status === "active" && j.gone && !j.st) return false;
+      if (status === "untracked" && j.st) return false;
+      if (status === "action" && followUpDue(j) == null) return false;
+      if (STATUSES.includes(status) && status && j.st !== status) return false;
+      if (q && !(j.title + " " + j.company + " " + j.location + " " + (j.text || "")).toLowerCase().includes(q)) return false;
+      return true;
+    });
+    const rank = (j) => j.score + (j.match && j.match.pct != null ? j.match.pct * 0.2 : 0);
+    if (sort === "best") list.sort((a, b) => rank(b) - rank(a));
+    if (sort === "new") list.sort((a, b) => (Date.parse(b.posted_at || b.first_seen || 0) || 0) - (Date.parse(a.posted_at || a.first_seen || 0) || 0));
+    if (sort === "company") list.sort((a, b) => a.company.localeCompare(b.company) || rank(b) - rank(a));
+
+    const action = all.filter((j) => followUpDue(j) != null).length;
+    $("#stats").innerHTML = [
+      ["Showing", list.length], ["Cyber", all.filter((j) => j.category === "cyber" && !j.gone).length],
+      ["Tech", all.filter((j) => j.category === "tech" && !j.gone).length],
+      ["Applied", all.filter((j) => ["Applied", "Interview", "Offer"].includes(j.st)).length],
+      ["Needs follow-up", action],
+    ].map(([k, v]) => `<div class="stat">${k} <b>${v}</b></div>`).join("");
+
+    $("#jobs").innerHTML = list.length ? list.map(card).join("") :
+      `<div class="empty panel">No jobs match these filters.<br>Try <b>Everything</b>, untick <b>Hide high ghost risk</b>, or check the <b>Other job sites</b> tab.</div>`;
+    renderGaps(all);
+  }
+
+  function timingBadge(j) {
+    return { good: ["ok", "Fits his break"], check: ["warn", "Check dates"], long: ["warn", "Longer than his break"],
+      later: ["warn", "Starts later"], unknown: ["", "Dates not stated"] }[j.timing] || ["", ""];
+  }
+
+  function card(j) {
+    const gr = { low: ["ok", "Ghost risk: low"], medium: ["warn", "Ghost risk: medium"], high: ["bad", "Ghost risk: high"] }[j.ghost_risk] || ["", ""];
+    const tb = timingBadge(j);
+    const catB = j.category === "cyber" ? `<span class="badge cyber">Cyber</span>` : j.category === "tech" ? `<span class="badge tech">Tech</span>` : `<span class="badge">Non-tech</span>`;
+    const due = followUpDue(j);
+    const fu = due != null ? `<div class="followup">No reply for ${due} days: time to follow up.
+        <button class="btn" data-act="copyEN" data-id="${esc(j.id)}">Copy message (EN)</button>
+        <button class="btn" data-act="copyID" data-id="${esc(j.id)}">Salin pesan (ID)</button>
+        <button class="btn" data-act="followed" data-id="${esc(j.id)}">I followed up</button></div>` : "";
+    const m = j.match;
+    const skillsHtml = m ? `<div class="skills">${m.matched.length ? `<span class="have">✓ ${m.matched.map(esc).join(", ")}</span>` : ""}
+        ${m.missing.length ? `${m.matched.length ? " · " : ""}<span class="miss">✗ ${m.missing.slice(0, 8).map(esc).join(", ")}</span>` : ""}
+        ${!m.matched.length && !m.missing.length ? `<span class="miss">No listed skills found in the description</span>` : ""}</div>` : "";
+    const opts = STATUSES.map((s) => `<option value="${s}" ${s === j.st ? "selected" : ""}>${s || "Not saved"}</option>`).join("");
+    const applied = ["Applied", "Interview", "Offer", "Rejected"].includes(j.st)
+      ? `<label class="note">Applied on <input type="date" data-act="appliedAt" data-id="${esc(j.id)}" value="${esc(j.t.appliedAt || "")}"></label>` : "";
+    const gone = j.gone ? `<span class="badge bad">${j.closedByBoard ? "Removed from company site" : "No longer listed"}</span>` :
+      j.closedByBoard ? `<span class="badge bad">Closed</span>` : "";
+    return `<article class="job ${["Rejected", "Closed"].includes(j.st) || j.gone ? "dim" : ""}">
+      <div class="score"><b>${Math.round(j.score)}</b>${m && m.pct != null ? m.pct + "% skills" : "score"}</div>
+      <h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
+      <div class="meta">${esc(j.company)} · ${esc((j.location || "").split(";").slice(0, 2).join(", "))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
+      <div class="badges">${catB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
+        <button class="badge ${gr[0]}" data-act="why" data-id="${esc(j.id)}" aria-expanded="false" title="Why?">${gr[1]} ▾</button>
+        ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${gone}</div>
+      <ul class="reasons" id="why-${esc(j.id)}" hidden>${(j.ghost_reasons || []).map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+      ${(j.flags || []).length ? `<ul class="flags">${j.flags.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
+      ${skillsHtml}
+      <div class="row">
+        <select data-act="status" data-id="${esc(j.id)}" aria-label="Status">${opts}</select>${applied}
+        <a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener" style="text-decoration:none">Open posting ↗</a>
+        ${j.source === "manual" ? `<button class="btn" data-act="delete" data-id="${esc(j.id)}">Remove</button>` : ""}
+      </div>
+      ${fu}
+      <details style="margin-top:8px" ${j.t.notes ? "open" : ""}><summary>Notes${j.t.notes ? " ✎" : ""}</summary>
+        <textarea data-act="notes" data-id="${esc(j.id)}" placeholder="Contact person, interview date, what to prepare…">${esc(j.t.notes || "")}</textarea></details>
+    </article>`;
+  }
+
+  function track(id) {
+    const j = allJobs().find((x) => x.id === id);
+    const t = state.tracked[id] = state.tracked[id] || {};
+    if (j && !t.snapshot) t.snapshot = { title: j.title, company: j.company, location: j.location, url: j.url, posted_at: j.posted_at, category: j.category, manual: j.source === "manual", source: j.source };
+    return t;
+  }
+
+  function template(lang, j) {
+    const role = j.title, company = j.company;
+    const date = j.t.appliedAt ? new Date(j.t.appliedAt + "T00:00:00").toLocaleDateString(lang === "ID" ? "id-ID" : "en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
+    if (lang === "ID") return `Halo [Nama recruiter],\n\nSemoga sehat selalu. Saya telah melamar posisi ${role} di ${company}${date ? " pada " + date : ""} dan ingin menindaklanjuti lamaran tersebut. Saya sangat tertarik dengan posisi ini dan siap mengirimkan informasi tambahan jika diperlukan. Saya bisa mulai segera di Jakarta.\n\nTerima kasih atas waktunya,\n[Nama Anda]`;
+    return `Hi [Recruiter name],\n\nI hope you're well. I applied for the ${role} position at ${company}${date ? " on " + date : ""} and wanted to follow up. I'm very interested in the role and happy to share anything else you need. I'm available to start right away in Jakarta.\n\nThank you for your time,\n[Your name]`;
+  }
+  async function copy(text) {
+    try { await navigator.clipboard.writeText(text); toast("Copied. Paste it into email or LinkedIn"); }
+    catch (e) { window.prompt("Copy this message:", text); }
+  }
+
+  $("#jobs").addEventListener("click", (e) => {
+    const el = e.target.closest("[data-act]"); if (!el) return;
+    const id = el.dataset.id, act = el.dataset.act;
+    if (act === "why") { const u = document.getElementById("why-" + id); u.hidden = !u.hidden; el.setAttribute("aria-expanded", String(!u.hidden)); return; }
+    const j = allJobs().find((x) => x.id === id); if (!j) return;
+    if (act === "copyEN" || act === "copyID") copy(template(act === "copyID" ? "ID" : "EN", j));
+    if (act === "followed") { track(id).followedUpAt = today(); save(); render(); toast("Nice. Next reminder in " + state.settings.followUpDays + " days"); }
+    if (act === "delete") { state.manual = state.manual.filter((m) => m.id !== id); delete state.tracked[id]; save(); render(); }
+  });
+  $("#jobs").addEventListener("change", (e) => {
+    const el = e.target.closest("[data-act]"); if (!el) return;
+    const id = el.dataset.id, t = track(id);
+    if (el.dataset.act === "status") {
+      t.status = el.value;
+      if (el.value === "Applied" && !t.appliedAt) t.appliedAt = today();
+      t.updatedAt = new Date().toISOString();
+      if (!el.value && !t.notes) delete state.tracked[id];
+      save(); render();
+    }
+    if (el.dataset.act === "appliedAt") { t.appliedAt = el.value; t.followedUpAt = null; save(); render(); }
+    if (el.dataset.act === "notes") { t.notes = el.value; save(); }
+  });
+  ["#q", "#cat", "#status", "#sort", "#hideGhost", "#fitsBreak", "#newOnly"].forEach((s) => $(s).addEventListener(s === "#q" ? "input" : "change", render));
+
+  $("#addForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const m = { id: "manual:" + Date.now().toString(36), url: $("#aUrl").value.trim(), title: $("#aTitle").value.trim(), company: $("#aCompany").value.trim(),
+      location: $("#aLoc").value.trim() || "Jakarta", posted_at: $("#aPosted").value ? $("#aPosted").value + "T00:00:00Z" : null,
+      text: $("#aText").value.trim(), added_at: new Date().toISOString(), manual: true };
+    state.manual.push(m); track(m.id).status = "Saved"; save();
+    e.target.reset(); $("#aLoc").value = "Jakarta"; $("#addBox").open = false;
+    render(); toast("Added and saved");
+  });
+
+  // ---------- tabs ----------
+  document.querySelectorAll("nav [data-tab]").forEach((b) => b.addEventListener("click", () => {
+    document.querySelectorAll("nav [data-tab]").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
+    document.querySelectorAll("main > section").forEach((s) => (s.hidden = s.id !== "tab-" + b.dataset.tab));
+    try { sessionStorage.setItem(KEY + ".tab", b.dataset.tab); } catch (e) {}
+  }));
+  try { const t = sessionStorage.getItem(KEY + ".tab"); if (t) { const b = document.querySelector(`nav [data-tab="${t}"]`); if (b) b.click(); } } catch (e) {}
+
+  // ---------- other job sites ----------
+  const KEYWORDS = ["cyber security intern", "SOC analyst intern", "IT security intern", "magang cyber security", "IT intern", "software engineer intern", "magang IT"];
+  function siteLinks(kw) {
+    const e = encodeURIComponent, slug = kw.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    return [
+      ["LinkedIn · past 24h", `https://www.linkedin.com/jobs/search/?keywords=${e(kw)}&location=${e("Jakarta, Indonesia")}&f_E=1&f_TPR=r86400&sortBy=DD`],
+      ["LinkedIn · past week", `https://www.linkedin.com/jobs/search/?keywords=${e(kw)}&location=${e("Jakarta, Indonesia")}&f_E=1&f_TPR=r604800&sortBy=DD`],
+      ["Glints", `https://glints.com/id/opportunities/jobs/explore?keyword=${e(kw)}&country=ID&locationName=${e("DKI Jakarta")}&jobTypes=INTERNSHIP&sortBy=LATEST`],
+      ["JobStreet", `https://id.jobstreet.com/id/${slug}-jobs/in-Jakarta-Raya?sortmode=ListedDate&daterange=14`],
+      ["Indeed ID", `https://id.indeed.com/jobs?q=${e(kw)}&l=Jakarta&sort=date&fromage=14`],
+      ["Kalibrr", `https://www.google.com/search?q=${e("site:kalibrr.com " + kw + " Jakarta")}&tbs=qdr:m`],
+      ["Dealls", `https://www.google.com/search?q=${e("site:dealls.com " + kw + " Jakarta")}&tbs=qdr:m`],
+      ["Google Jobs", `https://www.google.com/search?q=${e(kw + " Jakarta")}&ibp=htl;jobs`],
+    ];
+  }
+  $("#siteLinks").innerHTML = KEYWORDS.map((kw) => `<h3>${esc(kw)}</h3><div class="links">${siteLinks(kw).map(([n, u]) =>
+    `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join("")}</div>`).join("");
+
+  // ---------- experience ----------
+  async function loadExperience() {
+    let items = [], status = {};
+    try { items = (await (await fetch("../config/experience.json", { cache: "no-cache" })).json()).items || []; } catch (e) {}
+    try { status = (await (await fetch("../data/experience_status.json", { cache: "no-cache" })).json()).status || {}; } catch (e) {}
+    const groups = {};
+    items.forEach((it) => (groups[it.group] = groups[it.group] || []).push(it));
+    $("#expList").innerHTML = Object.entries(groups).map(([g, list]) => `<h3 style="font-size:.95rem;margin:12px 0 2px">${esc(g)}</h3>` + list.map((it) => {
+      const key = it.url || it.title, done = !!state.done[key];
+      const dead = status[it.url] === "dead" ? ` <span class="badge bad">Link looks dead</span>` : "";
+      return `<div class="exp-item ${done ? "done" : ""}"><input type="checkbox" data-key="${esc(key)}" ${done ? "checked" : ""} aria-label="Done: ${esc(it.title)}">
+        <div><span class="t">${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)} ↗</a>` : esc(it.title)}</span>${dead}<p>${esc(it.why)}</p></div></div>`;
+    }).join("")).join("") || `<p class="note">Couldn't load the list.</p>`;
+  }
+  $("#expList").addEventListener("change", (e) => {
+    const k = e.target.dataset.key; if (!k) return;
+    if (e.target.checked) state.done[k] = today(); else delete state.done[k];
+    save(); e.target.closest(".exp-item").classList.toggle("done", e.target.checked);
+  });
+
+  // ---------- skills ----------
+  function parseSkills(text) { return [...new Set(String(text).split(/[\n,;]+/).map((s) => s.trim()).filter(Boolean))]; }
+  function showSkills() {
+    $("#skillsBox").value = (state.skills || []).join("\n");
+    const rec = (state.skills || []).map((s) => [s, window.canonicalSkill(s)]);
+    $("#skillsRecognized").innerHTML = rec.length ? "Matched as: " + rec.map(([s, c]) => esc(c) + (c !== s ? ` <span class="note">(${esc(s)})</span>` : "")).join(", ") : "No skills yet. Add some to see matches on each job.";
+  }
+  function renderGaps(all) {
+    const el = $("#gaps"); if (!el) return;
+    if (!(state.skills || []).length) { el.innerHTML = `<span class="note">Add his skills above first.</span>`; return; }
+    const counts = {};
+    all.filter((j) => j.category !== "other" && !j.gone).forEach((j) => (j.match ? j.match.missing : []).forEach((s) => (counts[s] = (counts[s] || 0) + 1)));
+    const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    el.innerHTML = top.length ? top.map(([s, n]) => `<span class="badge warn">${esc(s)} · ${n} job${n > 1 ? "s" : ""}</span>`).join("") : `<span class="note">No gaps in the current listings.</span>`;
+  }
+  $("#saveSkills").addEventListener("click", () => { state.skills = parseSkills($("#skillsBox").value); save(); showSkills(); render(); toast("Skills saved"); });
+  $("#skillsFile").addEventListener("change", async (e) => {
+    const f = e.target.files[0]; if (!f) return;
+    const text = await f.text(); let list;
+    try { const j = JSON.parse(text); list = Array.isArray(j) ? j : j.skills; } catch (err) { list = parseSkills(text); }
+    if (!Array.isArray(list)) { toast("Couldn't read skills from that file"); return; }
+    state.skills = [...new Set([...(state.skills || []), ...list.map(String)])]; save(); showSkills(); render(); toast(list.length + " skills imported");
+    e.target.value = "";
+  });
+
+  // ---------- backup & settings ----------
+  $("#exportBtn").addEventListener("click", () => {
+    const blob = new Blob([JSON.stringify({ app: "internship-finder", exported_at: new Date().toISOString(), state }, null, 1)], { type: "application/json" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "internship-tracker-backup-" + today() + ".json"; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  $("#importFile").addEventListener("change", async (e) => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const j = JSON.parse(await f.text()); const s = j.state || j;
+      if (!s || typeof s.tracked !== "object") throw new Error("not a backup");
+      Object.assign(state.tracked, s.tracked || {});
+      const ids = new Set(state.manual.map((m) => m.id)); (s.manual || []).forEach((m) => ids.has(m.id) || state.manual.push(m));
+      state.skills = [...new Set([...(state.skills || []), ...(s.skills || [])])];
+      Object.assign(state.done, s.done || {});
+      save(); showSkills(); render(); loadExperience(); toast("Backup imported");
+    } catch (err) { toast("That file isn't a tracker backup"); }
+    e.target.value = "";
+  });
+  $("#fuDays").value = state.settings.followUpDays;
+  $("#fuDays").addEventListener("change", (e) => { state.settings.followUpDays = Math.max(2, Math.min(30, Number(e.target.value) || 7)); save(); render(); });
+  function applyTheme() { if (state.settings.theme) document.documentElement.dataset.theme = state.settings.theme; else delete document.documentElement.dataset.theme; }
+  $("#theme").value = state.settings.theme || ""; applyTheme();
+  $("#theme").addEventListener("change", (e) => { state.settings.theme = e.target.value; save(); applyTheme(); });
+
+  // ---------- load data ----------
+  async function init() {
+    showSkills();
+    try {
+      const r = await fetch("../data/jobs.json", { cache: "no-cache" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      DATA = await r.json();
+    } catch (e) {
+      $("#subtitle").textContent = "Couldn't load job data (" + e.message + "). Hand-added jobs still work.";
+    }
+    closedIds = new Set((DATA.closed || []).flatMap((c) => c.ids || []));
+    if (DATA.generated_at) {
+      const d = new Date(DATA.generated_at);
+      $("#subtitle").textContent = `Jakarta · cybersecurity first, then any tech role · updated ${d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+    }
+    const src = DATA.sources || [];
+    const c = DATA.counts || {};
+    $("#sourcesInfo").innerHTML = `<b>Where listings come from</b><br>${c.postings_scanned || 0} postings scanned on ${src.filter((s) => s.ok).length}/${src.length} company hiring pages; ${c.internships || 0} are Jakarta internships.` +
+      (src.some((s) => !s.ok) ? `<br>Couldn't load: ${src.filter((s) => !s.ok).map((s) => esc(s.company)).join(", ")}.` : "") +
+      `<br>Companies: ${src.map((s) => esc(s.company)).join(", ")}.`;
+    render();
+    loadExperience();
+  }
+  init();
+})();
+</script>
+</body>
+</html>
