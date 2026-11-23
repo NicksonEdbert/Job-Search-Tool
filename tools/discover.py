@@ -116,6 +116,26 @@ def try_workday(spec):
     return [r]
 
 
+def try_workday_tenant(tenant):
+    """Find a company's Workday career site(s) without knowing the site name: look at where the root redirects."""
+    out = []
+    for wd in ("wd1", "wd3", "wd5", "wd10", "wd12", "wd102", "wd103", "wd105"):
+        host = f"https://{tenant}.{wd}.myworkdayjobs.com"
+        try:
+            with urllib.request.urlopen(urllib.request.Request(host + "/", headers={"User-Agent": UA}), timeout=15) as r:
+                final, body = r.geturl(), r.read(400_000).decode("utf-8", "replace")
+        except Exception:  # noqa: BLE001
+            continue
+        sites = set(re.findall(r"myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)", final))
+        sites |= set(re.findall(r'(?:href|content)="/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]{3,})/?(?:job|login)?["/]', body))
+        sites -= {"wday", "en-US", "static", "assets"}
+        for site in list(sites)[:4]:
+            out += try_workday(f"{tenant}|{wd}|{site}")
+        if sites:
+            break
+    return out or [{"kind": "workday-tenant", "name": tenant, "error": "no site found"}]
+
+
 def try_url(url):
     """Any career page: count JobPosting JSON-LD blocks and job-looking links."""
     s, b, ct = req(url)
@@ -131,7 +151,7 @@ def main():
     ap.add_argument("names", nargs="*")
     ap.add_argument("--file")
     a = ap.parse_args()
-    cand = {"slugs": [], "successfactors": [], "workday": [], "urls": []}
+    cand = {"slugs": [], "successfactors": [], "workday": [], "urls": [], "workday_tenants": []}
     if a.file:
         cand.update(json.loads(Path(a.file).read_text()))
     for n in a.names:
@@ -141,6 +161,7 @@ def main():
     jobs += [(try_successfactors, d) for d in cand["successfactors"]]
     jobs += [(try_workday, w) for w in cand["workday"]]
     jobs += [(try_url, u) for u in cand["urls"]]
+    jobs += [(try_workday_tenant, t) for t in cand["workday_tenants"]]
     def safe(fj):
         try:
             return fj[0](fj[1])
