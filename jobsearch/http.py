@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Optional
 from urllib.parse import urlsplit
 
-USER_AGENT = "internship-finder/0.2 (personal job-search helper; +https://github.com/NicksonEdbert/Job-Search-Tool)"
+USER_AGENT = "internship-finder/0.2 (personal job-search helper)"
 ROBOTS_AGENT = "internship-finder"
 FIXTURE_DIR = Path(__file__).resolve().parent.parent / "tests" / "fixtures" / "http"
 
