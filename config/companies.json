@@ -1,26 +1,316 @@
 {
-  "_help": "Companies whose public hiring boards are checked every day. ats = greenhouse | lever | ashby | smartrecruiters. slug = the name in the board's URL (e.g. jobs.lever.co/<slug>, boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, jobs.smartrecruiters.com/<slug>). Set \"enabled\": false to pause one. Boards that don't exist are reported and skipped.",
+  "_help": "Sources checked every day. ats = greenhouse | lever | ashby | smartrecruiters | workable | recruitee | teamtailor | workday (slug tenant|wdN|Site) | successfactors (slug = domain) | jsonld (slug = careers page URL) | amazon | remoteboard | email. Find a company's slug with: python tools/discover.py \"name\". Set \"enabled\": false to pause one. Sources that fail are reported and skipped.",
   "companies": [
-    {"name": "Grab", "ats": "smartrecruiters", "slug": "grab", "note": "Runs the Grab Internship Programme (GIP) in Jakarta"},
-    {"name": "Xendit", "ats": "greenhouse", "slug": "xendit", "note": "Payments; Jakarta HQ"},
-    {"name": "Stockbit / Bibit", "ats": "smartrecruiters", "slug": "stockbit", "note": "Investing app; Jakarta"},
-    {"name": "JULO", "ats": "smartrecruiters", "slug": "julo", "note": "Fintech lending; Jakarta"},
-    {"name": "Alodokter", "ats": "smartrecruiters", "slug": "alodokter", "note": "Health tech; Jakarta"},
-    {"name": "Sayurbox", "ats": "smartrecruiters", "slug": "sayurbox", "note": "Grocery e-commerce; Jakarta"},
-    {"name": "PasarPolis", "ats": "smartrecruiters", "slug": "pasarpolis", "note": "Insurtech; Jakarta"},
-    {"name": "Blibli", "ats": "smartrecruiters", "slug": "bliblicom", "note": "E-commerce; Jakarta"},
-    {"name": "GDP Venture / GDP Labs", "ats": "smartrecruiters", "slug": "gdp", "note": "Tech group; Jakarta"},
-    {"name": "HM Sampoerna", "ats": "smartrecruiters", "slug": "hmsampoerna", "note": "Large employer with IT and digital internships"},
-    {"name": "Biznet", "ats": "smartrecruiters", "slug": "biznet", "note": "Internet provider; network roles"},
-    {"name": "SEEK / JobStreet", "ats": "smartrecruiters", "slug": "seek", "note": "Has a Jakarta office"},
-    {"name": "Binance", "ats": "greenhouse", "slug": "binance", "note": "Crypto; security-heavy hiring"},
-    {"name": "OKX", "ats": "greenhouse", "slug": "okx", "note": "Crypto; security-heavy hiring"},
-    {"name": "Lalamove", "ats": "lever", "slug": "lalamove", "note": "Logistics; Jakarta office"},
-    {"name": "Ninja Van", "ats": "lever", "slug": "ninjavan", "note": "Logistics; Indonesia operations"},
-    {"name": "Lamudi", "ats": "lever", "slug": "lamudi", "note": "Property portal; Jakarta"},
-    {"name": "Nium", "ats": "lever", "slug": "nium", "note": "Payments; Jakarta office"},
-    {"name": "Airwallex", "ats": "ashby", "slug": "airwallex", "note": "Payments; APAC hiring"},
-    {"name": "Sophos", "ats": "ashby", "slug": "sophos", "note": "Cybersecurity vendor; APAC roles"},
-    {"name": "Agoda", "ats": "greenhouse", "slug": "agoda", "note": "Large intern programme (mostly Bangkok); Jakarta roles appear sometimes"}
+    {
+      "name": "Grab",
+      "ats": "smartrecruiters",
+      "slug": "grab",
+      "note": "Runs the Grab Internship Programme (GIP) in Jakarta"
+    },
+    {
+      "name": "Xendit",
+      "ats": "greenhouse",
+      "slug": "xendit",
+      "note": "Payments; Jakarta HQ"
+    },
+    {
+      "name": "Stockbit / Bibit",
+      "ats": "smartrecruiters",
+      "slug": "stockbit",
+      "note": "Investing app; Jakarta"
+    },
+    {
+      "name": "JULO",
+      "ats": "smartrecruiters",
+      "slug": "julo",
+      "note": "Fintech lending; Jakarta"
+    },
+    {
+      "name": "Alodokter",
+      "ats": "smartrecruiters",
+      "slug": "alodokter",
+      "note": "Health tech; Jakarta"
+    },
+    {
+      "name": "Sayurbox",
+      "ats": "smartrecruiters",
+      "slug": "sayurbox",
+      "note": "Grocery e-commerce; Jakarta"
+    },
+    {
+      "name": "PasarPolis",
+      "ats": "smartrecruiters",
+      "slug": "pasarpolis",
+      "note": "Insurtech; Jakarta"
+    },
+    {
+      "name": "Blibli",
+      "ats": "smartrecruiters",
+      "slug": "bliblicom",
+      "note": "E-commerce; Jakarta"
+    },
+    {
+      "name": "GDP Venture / GDP Labs",
+      "ats": "smartrecruiters",
+      "slug": "gdp",
+      "note": "Tech group; Jakarta"
+    },
+    {
+      "name": "HM Sampoerna",
+      "ats": "smartrecruiters",
+      "slug": "hmsampoerna",
+      "note": "Large employer with IT and digital internships"
+    },
+    {
+      "name": "Biznet",
+      "ats": "smartrecruiters",
+      "slug": "biznet",
+      "note": "Internet provider; network roles"
+    },
+    {
+      "name": "SEEK / JobStreet",
+      "ats": "smartrecruiters",
+      "slug": "seek",
+      "note": "Has a Jakarta office"
+    },
+    {
+      "name": "Binance",
+      "ats": "greenhouse",
+      "slug": "binance",
+      "note": "Crypto; security-heavy hiring"
+    },
+    {
+      "name": "OKX",
+      "ats": "greenhouse",
+      "slug": "okx",
+      "note": "Crypto; security-heavy hiring"
+    },
+    {
+      "name": "Lalamove",
+      "ats": "lever",
+      "slug": "lalamove",
+      "note": "Logistics; Jakarta office"
+    },
+    {
+      "name": "Ninja Van",
+      "ats": "lever",
+      "slug": "ninjavan",
+      "note": "Logistics; Indonesia operations"
+    },
+    {
+      "name": "Lamudi",
+      "ats": "lever",
+      "slug": "lamudi",
+      "note": "Property portal; Jakarta"
+    },
+    {
+      "name": "Nium",
+      "ats": "lever",
+      "slug": "nium",
+      "note": "Payments; Jakarta office"
+    },
+    {
+      "name": "Airwallex",
+      "ats": "ashby",
+      "slug": "airwallex",
+      "note": "Payments; APAC hiring"
+    },
+    {
+      "name": "Sophos",
+      "ats": "ashby",
+      "slug": "sophos",
+      "note": "Cybersecurity vendor; APAC roles"
+    },
+    {
+      "name": "Agoda",
+      "ats": "greenhouse",
+      "slug": "agoda",
+      "note": "Large intern programme (mostly Bangkok); Jakarta roles appear sometimes"
+    },
+    {
+      "name": "Bibit",
+      "ats": "smartrecruiters",
+      "slug": "bibitid",
+      "note": "Investing app; Jakarta"
+    },
+    {
+      "name": "BCA",
+      "ats": "smartrecruiters",
+      "slug": "bankbca",
+      "note": "Bank Central Asia (some roles)"
+    },
+    {
+      "name": "Pahamify",
+      "ats": "smartrecruiters",
+      "slug": "pahamify",
+      "note": "Edtech; Jakarta"
+    },
+    {
+      "name": "Bosch",
+      "ats": "smartrecruiters",
+      "slug": "BoschGroup",
+      "note": "Has Indonesian roles"
+    },
+    {
+      "name": "99 Group (Rumah123)",
+      "ats": "smartrecruiters",
+      "slug": "99group",
+      "note": "Property portals"
+    },
+    {
+      "name": "Group-IB",
+      "ats": "greenhouse",
+      "slug": "groupib",
+      "note": "Cybersecurity company with an Indonesia presence"
+    },
+    {
+      "name": "Ajaib",
+      "ats": "workable",
+      "slug": "ajaib",
+      "note": "Investing app; Jakarta; posts internships"
+    },
+    {
+      "name": "Bobobox",
+      "ats": "teamtailor",
+      "slug": "bobobox",
+      "note": "Hospitality tech; posts internships"
+    },
+    {
+      "name": "Fuse",
+      "ats": "teamtailor",
+      "slug": "fuse",
+      "note": "Insurtech; Jakarta"
+    },
+    {
+      "name": "P&G",
+      "ats": "workday",
+      "slug": "pg|wd5|1000",
+      "note": "Runs Indonesia internship programmes"
+    },
+    {
+      "name": "PwC (campus)",
+      "ats": "workday",
+      "slug": "pwc|wd3|Global_Campus_Careers",
+      "note": "Indonesia internships incl. IT risk"
+    },
+    {
+      "name": "PwC (experienced)",
+      "ats": "workday",
+      "slug": "pwc|wd3|Global_Experienced_Careers"
+    },
+    {
+      "name": "Mastercard",
+      "ats": "workday",
+      "slug": "mastercard|wd1|CorporateCareers",
+      "note": "Jakarta office"
+    },
+    {
+      "name": "Visa",
+      "ats": "workday",
+      "slug": "visa|wd5|Visa",
+      "note": "Jakarta office"
+    },
+    {
+      "name": "Salesforce",
+      "ats": "workday",
+      "slug": "salesforce|wd12|External_Career_Site",
+      "note": "Jakarta office"
+    },
+    {
+      "name": "Manulife",
+      "ats": "workday",
+      "slug": "manulife|wd3|MFCJH_Jobs",
+      "note": "Jakarta"
+    },
+    {
+      "name": "AIA",
+      "ats": "workday",
+      "slug": "aia|wd3|External",
+      "note": "Jakarta"
+    },
+    {
+      "name": "Unilever",
+      "ats": "workday",
+      "slug": "unilever|wd3|Unilever_Experienced_Professionals"
+    },
+    {
+      "name": "Abbott",
+      "ats": "workday",
+      "slug": "abbott|wd5|abbottcareers"
+    },
+    {
+      "name": "3M",
+      "ats": "workday",
+      "slug": "3m|wd1|Search"
+    },
+    {
+      "name": "GSK",
+      "ats": "workday",
+      "slug": "gsk|wd5|GSKCareers"
+    },
+    {
+      "name": "Pfizer",
+      "ats": "workday",
+      "slug": "pfizer|wd1|PfizerCareers"
+    },
+    {
+      "name": "Motorola Solutions",
+      "ats": "workday",
+      "slug": "motorolasolutions|wd5|Careers"
+    },
+    {
+      "name": "Kyndryl",
+      "ats": "workday",
+      "slug": "kyndryl|wd5|KyndrylProfessionalCareers",
+      "note": "IT infrastructure & security services"
+    },
+    {
+      "name": "EY",
+      "ats": "successfactors",
+      "slug": "careers.ey.com",
+      "note": "Jakarta cyber/SOC team hires juniors and interns"
+    },
+    {
+      "name": "Deloitte (SEA)",
+      "ats": "successfactors",
+      "slug": "jobs.sea.deloitte.com",
+      "note": "Jakarta internships incl. cyber & IT audit"
+    },
+    {
+      "name": "Reckitt",
+      "ats": "successfactors",
+      "slug": "careers.reckitt.com"
+    },
+    {
+      "name": "SAP",
+      "ats": "successfactors",
+      "slug": "careers.sap.com"
+    },
+    {
+      "name": "Amazon / AWS",
+      "ats": "amazon",
+      "slug": "amazon",
+      "note": "AWS has a Jakarta region and office"
+    },
+    {
+      "name": "Remotive",
+      "ats": "remoteboard",
+      "slug": "remotive"
+    },
+    {
+      "name": "Arbeitnow",
+      "ats": "remoteboard",
+      "slug": "arbeitnow"
+    },
+    {
+      "name": "RemoteOK",
+      "ats": "remoteboard",
+      "slug": "remoteok"
+    },
+    {
+      "name": "Job-alert emails",
+      "ats": "email",
+      "slug": "imap.gmail.com"
+    }
   ]
 }

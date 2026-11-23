@@ -48,6 +48,8 @@ def update(history: dict, jobs: list, now: datetime = None, fetched_companies: s
         if entry is None:
             entry = roles[key] = {"first_seen": stamp, "ids": [job.id], "reposts": 0,
                                   "company": job.company, "title": job.title}
+            if job.origin and job.origin != job.company:
+                entry["origin"] = job.origin
             job.is_new = True
         else:
             if job.id not in entry["ids"]:
@@ -71,7 +73,7 @@ def update(history: dict, jobs: list, now: datetime = None, fetched_companies: s
             continue
         if key in seen_keys:
             continue
-        if fetched_companies is not None and entry.get("company") not in fetched_companies:
+        if fetched_companies is not None and entry.get("origin", entry.get("company")) not in fetched_companies:
             continue
         entry.setdefault("closed_at", stamp)
         closed_at = parse_iso(entry["closed_at"])

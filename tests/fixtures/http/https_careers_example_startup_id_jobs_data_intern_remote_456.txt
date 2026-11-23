@@ -1,0 +1,6 @@
+<html><head><script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebPage"}, {"@type": "JobPosting", "title": "Data Intern",
+ "identifier": "456", "datePosted": "2026-11-15", "description": "SQL and Python.", "jobLocationType": "TELECOMMUTE",
+ "applicantLocationRequirements": {"@type": "Country", "name": "Indonesia"},
+ "hiringOrganization": {"name": "Example Startup"}}]}
+</script></head></html>

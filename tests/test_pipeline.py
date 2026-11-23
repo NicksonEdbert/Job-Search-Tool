@@ -245,7 +245,7 @@ class TestEndToEnd(unittest.TestCase):
             self.assertNotIn("Software Engineer Intern", titles)  # Singapore
             self.assertNotIn("Intern, Finance", titles)  # Bandung
             missing = [s for s in res["sources"] if not s["ok"]]
-            self.assertEqual([s["company"] for s in missing], ["Missing Co"])
+            self.assertEqual(sorted(s["company"] for s in missing), ["Job-alert emails", "Missing Co"])
             soc = next(j for j in res["jobs"] if j["title"] == "SOC Analyst Intern")
             self.assertEqual(soc["ghost_risk"], "high")
             saved = json.loads((Path(tmp) / "jobs.json").read_text())

@@ -1,0 +1,32 @@
+{
+ "name": "Example Fin",
+ "jobs": [
+  {
+   "title": "IT Security Intern",
+   "shortcode": "AB12",
+   "url": "https://apply.workable.com/j/AB12",
+   "published_on": "2026-11-18",
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "telecommuting": false,
+   "locations": [
+    {
+     "city": "Jakarta",
+     "region": "DKI Jakarta",
+     "country": "Indonesia",
+     "hidden": false
+    }
+   ],
+   "description": "<p>Help our security team with access reviews and phishing tests.</p>"
+  },
+  {
+   "title": "Product Intern",
+   "shortcode": "CD34",
+   "url": "https://apply.workable.com/j/CD34",
+   "published_on": "2026-11-10",
+   "country": "Indonesia",
+   "telecommuting": true,
+   "locations": []
+  }
+ ]
+}

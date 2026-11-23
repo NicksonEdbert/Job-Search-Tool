@@ -43,7 +43,7 @@ def build(jobs: list, first_run: bool = False, env=os.environ) -> dict:
     items = pick(jobs)
     shown = items[:MAX_ITEMS]
     url = tracker_url(env)
-    head = (f"{len(items)} new internship{'s' if len(items) != 1 else ''} in Jakarta"
+    head = (f"{len(items)} new internship{'s' if len(items) != 1 else ''} (Jakarta + remote)"
             + (" (first run: everything counts as new)" if first_run else ""))
     md = [f"# {head}", ""]
     txt = [head, ""]
@@ -52,7 +52,8 @@ def build(jobs: list, first_run: bool = False, env=os.environ) -> dict:
         tag = "🔐 Cyber" if j["category"] == "cyber" else "💻 Tech"
         risk = {"low": "", "medium": " · ⚠️ check ghost risk"}.get(j["ghost_risk"], "")
         flags = f" · {j['flags'][0]}" if j.get("flags") else ""
-        line = f"{tag} · {j['title']} — {j['company']} ({j['location'].split(';')[0]}){risk}{flags}"
+        place = "Remote" if j.get("where") == "remote" else j['location'].split(';')[0]
+        line = f"{tag} · {j['title']} — {j['company']} ({place}){risk}{flags}"
         md.append(f"- [{j['title']} — {j['company']}]({j['url']}) · {tag}{risk}{flags}")
         txt.append(f"- {line}\n  {j['url']}")
         htm.append(f"{html.escape(tag)} · <a href=\"{html.escape(j['url'])}\">{html.escape(j['title'])}</a> — "

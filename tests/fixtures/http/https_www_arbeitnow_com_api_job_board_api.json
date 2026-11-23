@@ -1,0 +1,18 @@
+{
+ "data": [
+  {
+   "slug": "werkstudent-intern-berlin",
+   "title": "IT Intern (Werkstudent)",
+   "company_name": "Berlin GmbH",
+   "remote": true,
+   "location": "Berlin",
+   "created_at": 1795600000,
+   "url": "https://www.arbeitnow.com/jobs/x",
+   "description": "",
+   "job_types": []
+  }
+ ],
+ "links": {
+  "next": null
+ }
+}

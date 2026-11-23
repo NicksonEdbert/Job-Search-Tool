@@ -13,7 +13,8 @@ EVERGREEN_RE = re.compile(
     r"kirim(kan)? cv (anda )?untuk (posisi|kebutuhan) (mendatang|masa depan)",
     re.I,
 )
-COMPANY_BOARDS = {"greenhouse", "lever", "ashby", "smartrecruiters", "workable"}
+COMPANY_BOARDS = {"greenhouse", "lever", "ashby", "smartrecruiters", "workable", "recruitee", "teamtailor",
+                  "workday", "successfactors", "careerpage", "amazon"}
 
 
 def assess(job, now: datetime = None, open_days: int = None) -> None:

@@ -22,6 +22,8 @@ def fetch(company: dict, get_json) -> list:
             parts += [loc.get("city") or "", COUNTRY_NAMES.get(country, country.upper())]
             if loc.get("remote"):
                 parts.append("Remote")
+            elif loc.get("hybrid"):
+                parts.append("Hybrid")
             ident = (j.get("company") or {}).get("identifier") or company["slug"]
             jobs.append(Job(
                 id=f"smartrecruiters:{company['slug']}:{j['id']}",

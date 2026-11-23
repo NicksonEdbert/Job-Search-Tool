@@ -1,6 +1,7 @@
 {
-  "_help": "Search settings. Nothing personal goes here (this file is public). The student's own skills are entered in the tracker page and stay in their browser.",
+  "_help": "Search settings. include_remote: also list remote internships open to someone in Indonesia. Nothing personal goes here (this file is public). The student's own skills are entered in the tracker page and stay in their browser.",
   "max_months": 3,
+  "include_remote": true,
   "available": "Now (December) to about February",
   "extra_places": [],
   "cyber_keywords": [],

@@ -1,0 +1,22 @@
+{
+ "jobs": [
+  {
+   "id_icims": "300001",
+   "title": "Cloud Support Associate Intern",
+   "company_name": "Amazon Web Services Indonesia",
+   "normalized_location": "Jakarta, Jakarta, IDN",
+   "location": "ID, JK, Jakarta",
+   "posted_date": "November 17, 2026",
+   "job_path": "/en/jobs/300001/cloud-support-associate-intern",
+   "description": "Linux, networking, AWS."
+  },
+  {
+   "id_icims": "300002",
+   "title": "Software Development Engineer",
+   "company_name": "Amazon",
+   "normalized_location": "Jakarta, IDN",
+   "posted_date": "November 17, 2026",
+   "job_path": "/en/jobs/300002/sde"
+  }
+ ]
+}

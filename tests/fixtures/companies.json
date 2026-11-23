@@ -24,6 +24,61 @@
    "name": "Missing Co",
    "ats": "lever",
    "slug": "missingco"
+  },
+  {
+   "name": "Example Bank",
+   "ats": "workday",
+   "slug": "examplebank|wd3|Careers"
+  },
+  {
+   "name": "Example Audit",
+   "ats": "successfactors",
+   "slug": "careers.example-audit.com"
+  },
+  {
+   "name": "Example Startup",
+   "ats": "jsonld",
+   "slug": "https://careers.example-startup.id/jobs"
+  },
+  {
+   "name": "Example Fin",
+   "ats": "workable",
+   "slug": "examplefin"
+  },
+  {
+   "name": "Example HR",
+   "ats": "recruitee",
+   "slug": "examplehr"
+  },
+  {
+   "name": "Example Hotel",
+   "ats": "teamtailor",
+   "slug": "examplehotel"
+  },
+  {
+   "name": "Amazon",
+   "ats": "amazon",
+   "slug": "amazon"
+  },
+  {
+   "name": "Remotive",
+   "ats": "remoteboard",
+   "slug": "remotive"
+  },
+  {
+   "name": "Arbeitnow",
+   "ats": "remoteboard",
+   "slug": "arbeitnow"
+  },
+  {
+   "name": "RemoteOK",
+   "ats": "remoteboard",
+   "slug": "remoteok"
+  },
+  {
+   "name": "Job-alert emails",
+   "ats": "email",
+   "slug": "imap.gmail.com"
   }
  ]
 }

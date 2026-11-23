@@ -15,6 +15,10 @@ def fetch(company: dict, get_json) -> list:
         locs += [s.get("location", "") for s in j.get("secondaryLocations") or [] if isinstance(s, dict)]
         addr = ((j.get("address") or {}).get("postalAddress") or {})
         locs += [addr.get("addressLocality") or "", addr.get("addressCountry") or ""]
+        if j.get("isRemote") or (j.get("workplaceType") or "").lower() == "remote":
+            locs.append("Remote")
+        elif (j.get("workplaceType") or "").lower() == "hybrid":
+            locs.append("Hybrid")
         jobs.append(Job(
             id=f"ashby:{company['slug']}:{j['id']}",
             title=(j.get("title") or "").strip(),

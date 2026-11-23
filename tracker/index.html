@@ -110,7 +110,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
 <body>
 <header>
   <h1>Internship Finder</h1>
-  <p class="sub" id="subtitle">Jakarta · cybersecurity first, then any tech role · loading…</p>
+  <p class="sub" id="subtitle">Jakarta &amp; remote · cybersecurity first, then any tech role · loading…</p>
 </header>
 <nav><div class="inner" role="tablist">
   <button role="tab" data-tab="jobs" aria-selected="true">Jobs</button>
@@ -135,6 +135,8 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
             <option value="Offer">Offer</option><option value="action">Needs action (follow up)</option>
             <option value="Rejected">Rejected</option><option value="Closed">Closed</option><option value="any">Any</option>
           </select></div>
+        <div><label for="where">Where</label>
+          <select id="where"><option value="all">Jakarta + remote</option><option value="jakarta">Jakarta only</option><option value="remote">Remote only</option></select></div>
         <div><label for="sort">Sort</label>
           <select id="sort"><option value="best">Best match</option><option value="new">Newest</option><option value="company">Company</option></select></div>
       </div>
@@ -258,7 +260,8 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     if (EVERGREEN_RE.test(m.title)) { pts += 3; reasons.push("Title says talent pool / future openings"); }
     const risk = pts >= 3 ? "high" : pts >= 2 ? "medium" : "low";
     let score = { cyber: 50, tech: 30, other: 0 }[cat] + 8 + (age == null ? 0 : age <= 7 ? 15 : age <= 14 ? 10 : age <= 30 ? 5 : 0) - { low: 0, medium: 8, high: 20 }[risk];
-    return Object.assign({ category: cat, ghost_risk: risk, ghost_reasons: reasons, timing: "unknown", flags: [], score: Math.max(0, score),
+    const where = /remote|wfh|anywhere/i.test(m.location || "") ? "remote" : "jakarta";
+    return Object.assign({ category: cat, ghost_risk: risk, where, work_mode: where === "remote" ? "remote" : (/hybrid/i.test(m.location || "") ? "hybrid" : "onsite"), ghost_reasons: reasons, timing: "unknown", flags: [], score: Math.max(0, score),
       source: "manual", is_new: false, first_seen: m.added_at }, m);
   }
 
@@ -293,13 +296,15 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
   // ---------- render jobs ----------
   function render() {
     const q = $("#q").value.trim().toLowerCase();
-    const cat = $("#cat").value, status = $("#status").value, sort = $("#sort").value;
+    const cat = $("#cat").value, status = $("#status").value, sort = $("#sort").value, where = $("#where").value;
     const hideGhost = $("#hideGhost").checked, fits = $("#fitsBreak").checked, newOnly = $("#newOnly").checked;
     const all = allJobs();
     const skills = state.skills || [];
     for (const j of all) j.match = skills.length ? window.matchSkills(j.title + "\n" + (j.text || ""), skills) : null;
 
     let list = all.filter((j) => {
+      if (where === "jakarta" && j.where === "remote") return false;
+      if (where === "remote" && j.where !== "remote" && j.work_mode !== "remote") return false;
       if (cat === "ct" && j.category === "other") return false;
       if (cat === "cyber" && j.category !== "cyber") return false;
       if (hideGhost && j.ghost_risk === "high" && !j.st) return false;
@@ -322,6 +327,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     $("#stats").innerHTML = [
       ["Showing", list.length], ["Cyber", all.filter((j) => j.category === "cyber" && !j.gone).length],
       ["Tech", all.filter((j) => j.category === "tech" && !j.gone).length],
+      ["Remote", all.filter((j) => j.where === "remote" && !j.gone && j.category !== "other").length],
       ["Applied", all.filter((j) => ["Applied", "Interview", "Offer"].includes(j.st)).length],
       ["Needs follow-up", action],
     ].map(([k, v]) => `<div class="stat">${k} <b>${v}</b></div>`).join("");
@@ -334,6 +340,18 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
   function timingBadge(j) {
     return { good: ["ok", "Fits his break"], check: ["warn", "Check dates"], long: ["warn", "Longer than his break"],
       later: ["warn", "Starts later"], unknown: ["", "Dates not stated"] }[j.timing] || ["", ""];
+  }
+
+  const SOURCE_NAMES = { "linkedin-alert": "LinkedIn alert", "jobstreet-alert": "JobStreet alert", "glints-alert": "Glints alert",
+    "kalibrr-alert": "Kalibrr alert", "indeed-alert": "Indeed alert", remotive: "Remotive", arbeitnow: "Arbeitnow", remoteok: "Remote OK" };
+  function modeBadge(j) {
+    if (j.work_mode === "remote") return `<span class="badge tech">Remote</span>`;
+    if (j.work_mode === "hybrid") return `<span class="badge">Hybrid</span>`;
+    return "";
+  }
+  function sourceBadge(j) {
+    const n = SOURCE_NAMES[j.source];
+    return n ? `<span class="badge">via ${esc(n)}</span>` : "";
   }
 
   function card(j) {
@@ -360,7 +378,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
       <div class="meta">${esc(j.company)} · ${esc((j.location || "").split(";").slice(0, 2).join(", "))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
       <div class="badges">${catB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
         <button class="badge ${gr[0]}" data-act="why" data-id="${esc(j.id)}" aria-expanded="false" title="Why?">${gr[1]} ▾</button>
-        ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${gone}</div>
+        ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${modeBadge(j)}${sourceBadge(j)}${gone}</div>
       <ul class="reasons" id="why-${esc(j.id)}" hidden>${(j.ghost_reasons || []).map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
       ${(j.flags || []).length ? `<ul class="flags">${j.flags.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
       ${skillsHtml}
@@ -415,7 +433,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     if (el.dataset.act === "appliedAt") { t.appliedAt = el.value; t.followedUpAt = null; save(); render(); }
     if (el.dataset.act === "notes") { t.notes = el.value; save(); }
   });
-  ["#q", "#cat", "#status", "#sort", "#hideGhost", "#fitsBreak", "#newOnly"].forEach((s) => $(s).addEventListener(s === "#q" ? "input" : "change", render));
+  ["#q", "#cat", "#status", "#where", "#sort", "#hideGhost", "#fitsBreak", "#newOnly"].forEach((s) => $(s).addEventListener(s === "#q" ? "input" : "change", render));
 
   $("#addForm").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -536,12 +554,14 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     closedIds = new Set((DATA.closed || []).flatMap((c) => c.ids || []));
     if (DATA.generated_at) {
       const d = new Date(DATA.generated_at);
-      $("#subtitle").textContent = `Jakarta · cybersecurity first, then any tech role · updated ${d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+      $("#subtitle").textContent = `Jakarta & remote · cybersecurity first, then any tech role · updated ${d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
     }
     const src = DATA.sources || [];
     const c = DATA.counts || {};
-    $("#sourcesInfo").innerHTML = `<b>Where listings come from</b><br>${c.postings_scanned || 0} postings scanned on ${src.filter((s) => s.ok).length}/${src.length} company hiring pages; ${c.internships || 0} are Jakarta internships.` +
-      (src.some((s) => !s.ok) ? `<br>Couldn't load: ${src.filter((s) => !s.ok).map((s) => esc(s.company)).join(", ")}.` : "") +
+    const alerts = src.find((s) => s.ats === "email");
+    $("#sourcesInfo").innerHTML = `<b>Where listings come from</b><br>${c.postings_scanned || 0} postings scanned on ${src.filter((s) => s.ok).length}/${src.length} sources; ${c.internships || 0} are internships (${c.jakarta || 0} Jakarta, ${c.remote || 0} remote).` +
+      (alerts ? `<br>Job-alert emails (LinkedIn, JobStreet, Glints…): ${alerts.ok ? alerts.postings + " jobs read this run" : "not set up yet. See the README to connect them"}.` : "") +
+      (src.some((s) => !s.ok && s.ats !== "email") ? `<br>Couldn't load today: ${src.filter((s) => !s.ok && s.ats !== "email").map((s) => esc(s.company)).join(", ")}.` : "") +
       `<br>Companies: ${src.map((s) => esc(s.company)).join(", ")}.`;
     render();
     loadExperience();
