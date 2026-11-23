@@ -14,7 +14,9 @@ INTERN_RE = re.compile(
 VOLUNTEER_RE = re.compile(r"\b(volunteers?|volunteering|relawan)\b", re.I)
 STUDENT_RE = re.compile(
     r"\b(student|casual academic|peer (mentor|leader|assisted)|pass leader|sessional tutor|tutor|"
-    r"research assistant|werkstudent|ambassador)\b", re.I)
+    r"research assistant|ambassador)\b", re.I)
+TEST_POSTING_RE = re.compile(r"\btest (job|posting|requisition|role|position)\b|\bmultiple test\b|\bdo not apply\b|"
+                             r"\bdummy\b|\bplaceholder\b|\bwerkstudent\b", re.I)
 ENTRY_RE = re.compile(
     r"\b(junior|jr\.?|graduate|grad|entry[- ]level|cadet|associate|level 1|l1|tier 1|t1|casual|part[- ]time)\b|"
     r"\b((it|technical|tech|desktop|deskside|end[- ]user|customer|application|computer) support)\b|"
@@ -191,6 +193,8 @@ def remote_eligibility(job) -> tuple:
 def keep(job, extra_places: tuple = (), include_remote: bool = True, cities: tuple = ("jakarta", "melbourne"),
          role_types: tuple = ROLE_TYPES) -> bool:
     kind = role_type(job.title)
+    if TEST_POSTING_RE.search(job.title or ""):
+        return False  # recruiters' test postings; German student jobs that need German enrolment
     if kind is None or kind not in role_types or BASED_ELSEWHERE_RE.search(job.title or ""):
         return False
     if kind in ("entry", "student") and max_years(job.text) >= 3:

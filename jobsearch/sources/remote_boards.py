@@ -38,7 +38,7 @@ def _arbeitnow(company, get_json):
             jobs.append(Job(
                 id=f"arbeitnow:{j.get('slug')}", title=(j.get("title") or "").strip(),
                 company=j.get("company_name") or "Unknown",
-                location=f"Remote ({loc})" if j.get("remote") else loc,
+                location=f"Remote ({loc}, Germany)" if j.get("remote") else f"{loc}, Germany",  # German job board
                 url=j.get("url", ""), source="arbeitnow",
                 posted_at=to_iso((j.get("created_at") or 0) * 1000) if j.get("created_at") else None,
                 text=html_to_text(j.get("description") or "")))

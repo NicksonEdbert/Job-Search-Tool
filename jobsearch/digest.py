@@ -43,7 +43,7 @@ def build(jobs: list, first_run: bool = False, env=os.environ) -> dict:
     items = pick(jobs)
     shown = items[:MAX_ITEMS]
     url = tracker_url(env)
-    head = (f"{len(items)} new internship{'s' if len(items) != 1 else ''} (Jakarta + remote)"
+    head = (f"{len(items)} new opportunit{'ies' if len(items) != 1 else 'y'} (Jakarta + Melbourne + remote)"
             + (" (first run: everything counts as new)" if first_run else ""))
     md = [f"# {head}", ""]
     txt = [head, ""]

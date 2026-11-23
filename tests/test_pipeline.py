@@ -251,7 +251,7 @@ class TestEndToEnd(unittest.TestCase):
             saved = json.loads((Path(tmp) / "jobs.json").read_text())
             self.assertEqual(saved["counts"]["internships"], len(titles))
             self.assertTrue((Path(tmp) / "jobs.csv").exists())
-            self.assertIn("new internship", (Path(tmp) / "digest.md").read_text())
+            self.assertIn("new opportunit", (Path(tmp) / "digest.md").read_text())
 
             # Second run a day later: nothing is new, nothing closed.
             res2 = cli.run(args, now=NOW + timedelta(days=1))

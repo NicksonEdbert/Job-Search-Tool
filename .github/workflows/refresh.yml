@@ -67,7 +67,7 @@ jobs:
           mkdir -p _site/config
           cp -r tracker data _site/
           rm -f _site/data/history.json
-          cp config/experience.json _site/config/
+          cp config/experience.json config/opportunities.json _site/config/
           printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=tracker/"><title>Internship Finder</title><a href="tracker/">Open the tracker</a>\n' > _site/index.html
 
       - uses: actions/upload-pages-artifact@v4

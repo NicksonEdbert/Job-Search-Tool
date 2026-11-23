@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Internship Finder</title>
-<meta name="description" content="Jakarta tech and cybersecurity internships, ranked, with ghost-listing checks and an application tracker.">
+<title>Work Experience Finder</title>
+<meta name="description" content="Internships, casual IT jobs, student jobs and volunteering in Jakarta and Melbourne, ranked for a cybersecurity student, with an application tracker.">
 <style>
 :root {
   --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --text: #17202a; --muted: #5b6673;
@@ -125,11 +125,12 @@ body.has-sendbar .toast { bottom: 84px; }
 </head>
 <body>
 <header>
-  <h1>Internship Finder</h1>
-  <p class="sub" id="subtitle">Jakarta &amp; remote · cybersecurity first, then any tech role · loading…</p>
+  <h1>Work Experience Finder</h1>
+  <p class="sub" id="subtitle">Jakarta &amp; Melbourne · internships, casual IT, student jobs, volunteering · loading…</p>
 </header>
 <nav><div class="inner" role="tablist">
   <button role="tab" data-tab="jobs" aria-selected="true">Jobs</button>
+  <button role="tab" data-tab="opps" aria-selected="false">Opportunities</button>
   <button role="tab" data-tab="sites" aria-selected="false">Other job sites</button>
   <button role="tab" data-tab="exp" aria-selected="false">Experience</button>
   <button role="tab" data-tab="skills" aria-selected="false">My skills</button>
@@ -162,13 +163,15 @@ body.has-sendbar .toast { bottom: 84px; }
             <option value="Rejected">Rejected</option><option value="Closed">Closed</option><option value="any">Any</option>
           </select></div>
         <div><label for="where">Where</label>
-          <select id="where"><option value="all">Jakarta + remote</option><option value="jakarta">Jakarta only</option><option value="remote">Remote only</option></select></div>
+          <select id="where"><option value="all">All places</option><option value="jakarta">Jakarta</option><option value="melbourne">Melbourne</option><option value="remote">Remote</option></select></div>
+        <div><label for="rtype">Type</label>
+          <select id="rtype"><option value="all">All types</option><option value="internship">Internships</option><option value="entry">Entry-level &amp; casual</option><option value="student">Student jobs</option><option value="volunteer">Volunteer</option></select></div>
         <div><label for="sort">Sort</label>
           <select id="sort"><option value="best">Best match</option><option value="new">Newest</option><option value="company">Company</option></select></div>
       </div>
       <div class="checks">
         <label><input type="checkbox" id="hideGhost" checked> Hide high ghost risk</label>
-        <label><input type="checkbox" id="fitsBreak"> Fits his break only (Dec–Feb)</label>
+        <label><input type="checkbox" id="fitsBreak"> Fits his break only (Dec–Feb, or casual)</label>
         <label><input type="checkbox" id="newOnly"> New since last visit</label>
       </div>
       <details id="addBox" style="margin-top:10px">
@@ -187,10 +190,13 @@ body.has-sendbar .toast { bottom: 84px; }
     <div id="jobs"></div>
   </section>
 
+  <!-- OPPORTUNITIES (filled by opportunities.js) -->
+  <section id="tab-opps" hidden></section>
+
   <!-- OTHER SITES -->
   <section id="tab-sites" hidden>
     <div class="panel sites">
-      <p class="note" style="margin-top:0">These sites don't let tools read their listings, so these are one-click searches set to Jakarta and internships, newest first. Found something? Use <b>+ Add a job from a link</b> on the Jobs tab to track it. Filters may need one extra click on some sites.</p>
+      <p class="note" style="margin-top:0">These sites don't let tools read their listings, so these are one-click searches set to Jakarta or Melbourne, newest first. Found something? Use <b>+ Add a job from a link</b> on the Jobs tab to track it. Filters may need one extra click on some sites.</p>
       <div id="siteLinks"></div>
     </div>
   </section>
@@ -333,15 +339,17 @@ body.has-sendbar .toast { bottom: 84px; }
   // ---------- render jobs ----------
   function render() {
     const q = $("#q").value.trim().toLowerCase();
-    const cat = $("#cat").value, status = $("#status").value, sort = $("#sort").value, where = $("#where").value;
+    const cat = $("#cat").value, status = $("#status").value, sort = $("#sort").value, where = $("#where").value, rtype = $("#rtype").value;
     const hideGhost = $("#hideGhost").checked, fits = $("#fitsBreak").checked, newOnly = $("#newOnly").checked;
     const all = allJobs();
     const skills = state.skills || [];
     for (const j of all) j.match = skills.length ? window.matchSkills(j.title + "\n" + (j.text || ""), skills) : null;
 
     let list = all.filter((j) => {
-      if (where === "jakarta" && j.where === "remote") return false;
+      if (where === "jakarta" && !["jakarta", "indonesia"].includes(j.where)) return false;
+      if (where === "melbourne" && j.where !== "melbourne") return false;
       if (where === "remote" && j.where !== "remote" && j.work_mode !== "remote") return false;
+      if (rtype !== "all" && (j.role_type || "internship") !== rtype) return false;
       if (cat === "ct" && j.category === "other") return false;
       if (cat === "cyber" && j.category !== "cyber") return false;
       if (hideGhost && j.ghost_risk === "high" && !j.st) return false;
@@ -365,6 +373,7 @@ body.has-sendbar .toast { bottom: 84px; }
     $("#stats").innerHTML = [
       ["Showing", list.length], ["Cyber", all.filter((j) => j.category === "cyber" && !j.gone).length],
       ["Tech", all.filter((j) => j.category === "tech" && !j.gone).length],
+      ["Melbourne", all.filter((j) => j.where === "melbourne" && !j.gone && j.category !== "other").length],
       ["Remote", all.filter((j) => j.where === "remote" && !j.gone && j.category !== "other").length],
       ["Applied", all.filter((j) => ["Applied", "Interview", "Offer"].includes(j.st)).length],
       ["Needs follow-up", action],
@@ -383,7 +392,7 @@ body.has-sendbar .toast { bottom: 84px; }
   }
 
   const SOURCE_NAMES = { "linkedin-alert": "LinkedIn alert", "jobstreet-alert": "JobStreet alert", "glints-alert": "Glints alert",
-    "kalibrr-alert": "Kalibrr alert", "indeed-alert": "Indeed alert", remotive: "Remotive", arbeitnow: "Arbeitnow", remoteok: "Remote OK" };
+    "kalibrr-alert": "Kalibrr alert", "indeed-alert": "Indeed alert", "seek-alert": "SEEK alert", remotive: "Remotive", arbeitnow: "Arbeitnow", remoteok: "Remote OK" };
   function modeBadge(j) {
     if (j.work_mode === "remote") return `<span class="badge tech">Remote</span>`;
     if (j.work_mode === "hybrid") return `<span class="badge">Hybrid</span>`;
@@ -404,6 +413,10 @@ body.has-sendbar .toast { bottom: 84px; }
   function card(j) {
     const gr = { low: ["ok", "Ghost risk: low"], medium: ["warn", "Ghost risk: medium"], high: ["bad", "Ghost risk: high"] }[j.ghost_risk] || ["", ""];
     const tb = timingBadge(j);
+    const typeB = { entry: "Entry-level / casual", student: "Student job", volunteer: "Volunteer" }[j.role_type]
+      ? `<span class="badge">${{ entry: "Entry-level / casual", student: "Student job", volunteer: "Volunteer" }[j.role_type]}</span>` : "";
+    const askB = ["long", "check"].includes(j.timing)
+      ? `<button class="btn" data-act="askShort" data-id="${esc(j.id)}" title="Copy a note asking for a shorter or casual arrangement">Ask for ${j.role_type === "internship" ? "3 months" : "casual/summer"} ✎</button>` : "";
     const catB = j.category === "cyber" ? `<span class="badge cyber">Cyber</span>` : j.category === "tech" ? `<span class="badge tech">Tech</span>` : `<span class="badge">Non-tech</span>`;
     const due = followUpDue(j);
     const fu = due != null ? `<div class="followup">No reply for ${due} days: time to follow up.
@@ -423,7 +436,7 @@ body.has-sendbar .toast { bottom: 84px; }
       <div class="score"><b>${Math.round(j.score)}</b>${m && m.pct != null ? m.pct + "% skills" : "score"}</div>
       <h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
       <div class="meta">${esc(j.company)} · ${esc(placeText(j.location))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
-      <div class="badges">${catB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
+      <div class="badges">${catB}${typeB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
         <button class="badge ${gr[0]}" data-act="why" data-id="${esc(j.id)}" aria-expanded="false" title="Why?">${gr[1]} ▾</button>
         ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${modeBadge(j)}${sourceBadge(j)}${gone}
         ${j.t.sentAt ? `<span class="badge ok">Sent to him ${esc(ago(j.t.sentAt))}</span>` : ""}</div>
@@ -435,6 +448,7 @@ body.has-sendbar .toast { bottom: 84px; }
         <a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener" style="text-decoration:none">Open posting ↗</a>
         <label class="pick ${state.picks.includes(j.id) ? "on" : ""}"><input type="checkbox" data-act="pick" data-id="${esc(j.id)}" ${state.picks.includes(j.id) ? "checked" : ""}> Send</label>
         <button class="btn" data-act="share" data-id="${esc(j.id)}" title="Send just this job on WhatsApp">Share ↗</button>
+        ${askB}
         ${j.source === "manual" ? `<button class="btn" data-act="delete" data-id="${esc(j.id)}">Remove</button>` : ""}
       </div>
       ${fu}
@@ -468,6 +482,7 @@ body.has-sendbar .toast { bottom: 84px; }
     const j = allJobs().find((x) => x.id === id); if (!j) return;
     if (act === "copyEN" || act === "copyID") copy(template(act === "copyID" ? "ID" : "EN", j));
     if (act === "share") sendJobs([j], "wa");
+    if (act === "askShort") copy(askShorter(j, state.settings.msgLang), "Copied. Paste it into the application or send it to the recruiter");
     if (act === "followed") { track(id).followedUpAt = today(); save(); render(); toast("Nice. Next reminder in " + state.settings.followUpDays + " days"); }
     if (act === "delete") { state.manual = state.manual.filter((m) => m.id !== id); delete state.tracked[id]; save(); render(); }
   });
@@ -492,7 +507,7 @@ body.has-sendbar .toast { bottom: 84px; }
     if (el.dataset.act === "appliedAt") { t.appliedAt = el.value; t.followedUpAt = null; save(); render(); }
     if (el.dataset.act === "notes") { t.notes = el.value; save(); }
   });
-  ["#q", "#cat", "#status", "#where", "#sort", "#hideGhost", "#fitsBreak", "#newOnly"].forEach((s) => $(s).addEventListener(s === "#q" ? "input" : "change", render));
+  ["#q", "#cat", "#status", "#where", "#rtype", "#sort", "#hideGhost", "#fitsBreak", "#newOnly"].forEach((s) => $(s).addEventListener(s === "#q" ? "input" : "change", render));
 
   $("#addForm").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -507,21 +522,32 @@ body.has-sendbar .toast { bottom: 84px; }
   // ---------- send jobs to him on WhatsApp ----------
   const CHUNK = 8; // WhatsApp links get unreliable when very long
   const T = {
-    EN: { hi: (n) => `Hi! ${n} internship${n > 1 ? "s" : ""} for you to apply to:`, part: "Part", why: "Why", note: "Note", apply: "Apply",
+    EN: { hi: (n) => `Hi! ${n} opportunit${n > 1 ? "ies" : "y"} for you to apply to:`, part: "Part", why: "Why", note: "Note", apply: "Apply",
       tip: "Tip: apply today, early applicants get more replies. Reply \"done\" when you've applied 🙂",
       cyber: "cybersecurity role", tech: "tech role", fits: "fits your break (Dec–Feb)", remote: "remote",
       hybrid: "hybrid", fresh: (d) => d === 0 ? "posted today" : d === 1 ? "posted yesterday" : `posted ${d} days ago`,
-      real: "on the company's own site" },
-    ID: { hi: (n) => `Halo! Ada ${n} lowongan magang untuk kamu lamar:`, part: "Bagian", why: "Kenapa", note: "Catatan", apply: "Lamar",
+      real: "on the company's own site", askIntern: "Ask if 2–3 months is OK (ready note in the tracker)",
+      askCasual: "Ask if casual / summer-only work is OK (ready note in the tracker)" },
+    ID: { hi: (n) => `Halo! Ada ${n} lowongan untuk kamu lamar:`, part: "Bagian", why: "Kenapa", note: "Catatan", apply: "Lamar",
       tip: "Tips: lamar hari ini, pelamar awal lebih sering dibalas. Balas \"done\" kalau sudah melamar 🙂",
       cyber: "posisi cyber security", tech: "posisi IT", fits: "cocok dengan liburanmu (Des–Feb)", remote: "remote",
       hybrid: "hybrid", fresh: (d) => d === 0 ? "baru diposting hari ini" : d === 1 ? "diposting kemarin" : `diposting ${d} hari lalu`,
-      real: "di situs resmi perusahaan" },
+      real: "di situs resmi perusahaan", askIntern: "Tanyakan apakah magang 2–3 bulan bisa (catatan siap di tracker)",
+      askCasual: "Tanyakan apakah kerja casual / musim libur bisa (catatan siap di tracker)" },
   };
   const COMPANY_SITES = new Set(["greenhouse", "lever", "ashby", "smartrecruiters", "workable", "recruitee", "teamtailor",
     "workday", "successfactors", "careerpage", "amazon"]);
   function toYou(text) {
     return String(text).replace(/\bhe's\b/gi, "you're").replace(/\bhe is\b/gi, "you are").replace(/\bhis\b/gi, "your").replace(/\bhim\b/gi, "you").replace(/\bhe\b/gi, "you");
+  }
+  function askShorter(j, lang) {
+    const intern = j.role_type === "internship";
+    if (lang === "ID") return intern
+      ? `Halo [Nama],\n\nSaya sudah melamar posisi ${j.title} di ${j.company} dan sangat tertarik. Saya mahasiswa yang sedang libur semester dan bisa bekerja penuh waktu dari Desember sampai akhir Februari. Apakah memungkinkan magang selama 2–3 bulan, atau proyek yang lebih singkat dalam program ini? Jika berguna, saya juga bisa lanjut paruh waktu setelahnya.\n\nTerima kasih,\n[Nama Anda]`
+      : `Halo [Nama],\n\nSaya tertarik dengan posisi ${j.title} di ${j.company}. Saya mahasiswa yang bisa bekerja penuh waktu dari Desember sampai Februari, lalu paruh waktu selama semester. Apakah memungkinkan pengaturan kerja casual atau kontrak musim liburan?\n\nTerima kasih,\n[Nama Anda]`;
+    return intern
+      ? `Hi [Name],\n\nI've applied for the ${j.title} role at ${j.company} and I'm very interested. I'm a university student on my summer break and available full-time from December to late February. Would a 2–3 month internship, or a shorter project within the programme, be possible? If useful, I could also continue part-time afterwards.\n\nThank you,\n[Your name]`
+      : `Hi [Name],\n\nI'm interested in the ${j.title} role at ${j.company}. I'm a university student available full-time from December to February and part-time during semester. Would a casual or fixed-term summer arrangement be possible?\n\nThank you,\n[Your name]`;
   }
   function jobLines(j, i, t) {
     const where = [placeText(j.location).split(",")[0], j.work_mode === "remote" ? t.remote : j.work_mode === "hybrid" ? t.hybrid : ""]
@@ -535,6 +561,7 @@ body.has-sendbar .toast { bottom: 84px; }
     const lines = [`${i}) ${j.title}, ${j.company}${where ? ` (${where})` : ""}`];
     if (why.length) lines.push(`   ${t.why}: ${why.join(", ")}`);
     if ((j.flags || []).length) lines.push(`   ${t.note}: ${toYou(j.flags[0])}`);
+    if (["long", "check"].includes(j.timing)) lines.push(`   ${j.role_type === "internship" ? t.askIntern : t.askCasual}`);
     lines.push(`   ${t.apply}: ${j.url}`);
     return lines.join("\n");
   }
@@ -622,6 +649,19 @@ body.has-sendbar .toast { bottom: 84px; }
 
   // ---------- other job sites ----------
   const KEYWORDS = ["cyber security intern", "SOC analyst intern", "IT security intern", "magang cyber security", "IT intern", "software engineer intern", "magang IT"];
+  const MEL_KEYWORDS = ["cyber security intern", "IT support casual", "service desk", "junior SOC analyst", "graduate cyber security", "IT volunteer"];
+  function melLinks(kw) {
+    const e = encodeURIComponent, slug = kw.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const links = [
+      ["SEEK", `https://www.seek.com.au/${slug}-jobs/in-All-Melbourne-VIC?sortmode=ListedDate`],
+      ["LinkedIn · past week", `https://www.linkedin.com/jobs/search/?keywords=${e(kw)}&location=${e("Melbourne, Victoria, Australia")}&f_E=1%2C2&f_TPR=r604800&sortBy=DD`],
+      ["Indeed AU", `https://au.indeed.com/jobs?q=${e(kw)}&l=${e("Melbourne VIC")}&sort=date&fromage=14`],
+    ];
+    if (/intern|graduate/.test(kw)) links.push(["SEEK Grad", "https://au.gradconnection.com/internships/cyber-security/melbourne/"]);
+    if (/volunteer/.test(kw)) links.push(["SEEK Volunteer", `https://www.google.com/search?q=${e("site:volunteer.com.au IT Melbourne")}`]);
+    links.push(["Google Jobs", `https://www.google.com/search?q=${e(kw + " Melbourne")}&ibp=htl;jobs`]);
+    return links;
+  }
   function siteLinks(kw) {
     const e = encodeURIComponent, slug = kw.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     return [
@@ -635,8 +675,11 @@ body.has-sendbar .toast { bottom: 84px; }
       ["Google Jobs", `https://www.google.com/search?q=${e(kw + " Jakarta")}&ibp=htl;jobs`],
     ];
   }
-  $("#siteLinks").innerHTML = KEYWORDS.map((kw) => `<h3>${esc(kw)}</h3><div class="links">${siteLinks(kw).map(([n, u]) =>
-    `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join("")}</div>`).join("");
+  const linkRow = (links) => `<div class="links">${links.map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join("")}</div>`;
+  $("#siteLinks").innerHTML = `<h2 style="font-size:1.05rem;margin:4px 0 0">Jakarta</h2>` +
+    KEYWORDS.map((kw) => `<h3>${esc(kw)}</h3>${linkRow(siteLinks(kw))}`).join("") +
+    `<h2 style="font-size:1.05rem;margin:18px 0 0">Melbourne</h2><p class="note" style="margin:4px 0 0">Also check Monash's student jobs on the <b>Opportunities</b> tab.</p>` +
+    MEL_KEYWORDS.map((kw) => `<h3>${esc(kw)}</h3>${linkRow(melLinks(kw))}`).join("");
 
   // ---------- experience ----------
   async function loadExperience() {
@@ -685,7 +728,7 @@ body.has-sendbar .toast { bottom: 84px; }
 
   // ---------- backup & settings ----------
   $("#exportBtn").addEventListener("click", () => {
-    const blob = new Blob([JSON.stringify({ app: "internship-finder", exported_at: new Date().toISOString(), state }, null, 1)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify({ app: "work-experience-finder", exported_at: new Date().toISOString(), state }, null, 1)], { type: "application/json" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "internship-tracker-backup-" + today() + ".json"; a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
@@ -698,7 +741,10 @@ body.has-sendbar .toast { bottom: 84px; }
       const ids = new Set(state.manual.map((m) => m.id)); (s.manual || []).forEach((m) => ids.has(m.id) || state.manual.push(m));
       state.skills = [...new Set([...(state.skills || []), ...(s.skills || [])])];
       Object.assign(state.done, s.done || {});
-      save(); showSkills(); render(); loadExperience(); toast("Backup imported");
+      state.opps = Object.assign(state.opps || {}, s.opps || {});
+      const oids = new Set((state.customOpps || []).map((o) => o.id));
+      state.customOpps = (state.customOpps || []).concat((s.customOpps || []).filter((o) => !oids.has(o.id)));
+      save(); showSkills(); render(); loadExperience(); if (window.renderOpps) window.renderOpps(); toast("Backup imported");
     } catch (err) { toast("That file isn't a tracker backup"); }
     e.target.value = "";
   });
@@ -711,6 +757,9 @@ body.has-sendbar .toast { bottom: 84px; }
   function applyTheme() { if (state.settings.theme) document.documentElement.dataset.theme = state.settings.theme; else delete document.documentElement.dataset.theme; }
   $("#theme").value = state.settings.theme || ""; applyTheme();
   $("#theme").addEventListener("change", (e) => { state.settings.theme = e.target.value; save(); applyTheme(); });
+
+  // ---------- shared with opportunities.js ----------
+  window.TRACKER = { state, save, esc, toast, copy, daysAgo, ago, today, waLink, $ };
 
   // ---------- load data ----------
   async function init() {
@@ -725,12 +774,12 @@ body.has-sendbar .toast { bottom: 84px; }
     closedIds = new Set((DATA.closed || []).flatMap((c) => c.ids || []));
     if (DATA.generated_at) {
       const d = new Date(DATA.generated_at);
-      $("#subtitle").textContent = `Jakarta & remote · cybersecurity first, then any tech role · updated ${d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+      $("#subtitle").textContent = `Jakarta & Melbourne · internships, casual IT, student jobs, volunteering · updated ${d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
     }
     const src = DATA.sources || [];
     const c = DATA.counts || {};
     const alerts = src.find((s) => s.ats === "email");
-    $("#sourcesInfo").innerHTML = `<b>Where listings come from</b><br>${c.postings_scanned || 0} postings scanned on ${src.filter((s) => s.ok).length}/${src.length} sources; ${c.internships || 0} are internships (${c.jakarta || 0} Jakarta, ${c.remote || 0} remote).` +
+    $("#sourcesInfo").innerHTML = `<b>Where listings come from</b><br>${c.postings_scanned || 0} postings scanned on ${src.filter((s) => s.ok).length}/${src.length} sources; ${c.internships || 0} are work-experience roles (${c.jakarta || 0} Jakarta, ${c.melbourne || 0} Melbourne, ${c.remote || 0} remote).` +
       (alerts ? `<br>Job-alert emails (LinkedIn, JobStreet, Glints…): ${alerts.ok ? alerts.postings + " jobs read this run" : "not set up yet. See the README to connect them"}.` : "") +
       (src.some((s) => !s.ok && s.ats !== "email") ? `<br>Couldn't load today: ${src.filter((s) => !s.ok && s.ats !== "email").map((s) => esc(s.company)).join(", ")}.` : "") +
       `<br>Companies: ${src.map((s) => esc(s.company)).join(", ")}.`;
@@ -740,5 +789,6 @@ body.has-sendbar .toast { bottom: 84px; }
   init();
 })();
 </script>
+<script src="opportunities.js"></script>
 </body>
 </html>

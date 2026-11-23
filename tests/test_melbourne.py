@@ -105,5 +105,23 @@ class TestEndToEndMelbourne(unittest.TestCase):
             self.assertIn("Cyber Security Intern", {j["title"] for j in res["jobs"] if j["where"] == "jakarta"})
 
 
+
+
+class TestCleanups(unittest.TestCase):
+    def test_test_postings_and_werkstudent_dropped(self):
+        self.assertFalse(keep(job("Grad Campaign Test Job")))
+        self.assertFalse(keep(job("Max Term Graduate Multiple Test")))
+        self.assertFalse(keep(job("Werkstudent IT Support", "Remote (Bonn)")))
+
+    def test_seek_alert_email(self):
+        from jobsearch.sources import email_alerts
+        html = ('<a href="https://www.seek.com.au/job/81234567?type=standard&ref=alert">IT Support Officer (Casual)</a>'
+                '<div>Example Pty Ltd</div><div>Melbourne VIC</div>')
+        found = email_alerts.parse_html(html)
+        self.assertEqual((found[0]["site"], found[0]["url"]), ("SEEK", "https://www.seek.com.au/job/81234567"))
+        jobs = email_alerts.to_jobs([dict(found[0], location="")], {"name": "alerts"})
+        self.assertTrue(jobs[0].location.startswith("Melbourne"))  # SEEK alerts default to Melbourne
+
+
 if __name__ == "__main__":
     unittest.main()
