@@ -96,7 +96,7 @@ class Client:
             req = urllib.request.Request(url, data=data, headers=headers)
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 charset = resp.headers.get_content_charset() or "utf-8"
-                return resp.read(8_000_000).decode(charset, "replace")
+                return resp.read(60_000_000).decode(charset, "replace")
         except urllib.error.HTTPError as e:
             raise FetchError(url, e.code, f"HTTP {e.code}") from None
 

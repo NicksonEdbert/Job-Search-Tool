@@ -354,6 +354,13 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     return n ? `<span class="badge">via ${esc(n)}</span>` : "";
   }
 
+  function placeText(loc) {
+    const parts = String(loc || "").split(/[;,]/).map((x) => x.trim()).filter(Boolean);
+    const seen = new Set(), out = [];
+    for (const p of parts) { const k = p.toLowerCase(); if (!seen.has(k)) { seen.add(k); out.push(p); } }
+    return out.slice(0, 3).join(", ");
+  }
+
   function card(j) {
     const gr = { low: ["ok", "Ghost risk: low"], medium: ["warn", "Ghost risk: medium"], high: ["bad", "Ghost risk: high"] }[j.ghost_risk] || ["", ""];
     const tb = timingBadge(j);
@@ -375,7 +382,7 @@ details > summary { cursor: pointer; color: var(--muted); font-size: .86rem; }
     return `<article class="job ${["Rejected", "Closed"].includes(j.st) || j.gone ? "dim" : ""}">
       <div class="score"><b>${Math.round(j.score)}</b>${m && m.pct != null ? m.pct + "% skills" : "score"}</div>
       <h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
-      <div class="meta">${esc(j.company)} · ${esc((j.location || "").split(";").slice(0, 2).join(", "))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
+      <div class="meta">${esc(j.company)} · ${esc(placeText(j.location))} · posted ${esc(ago(j.posted_at || j.first_seen))}${j.source === "manual" ? " · added by you" : ""}</div>
       <div class="badges">${catB}${isNewSinceVisit(j) ? `<span class="badge ok">New</span>` : ""}
         <button class="badge ${gr[0]}" data-act="why" data-id="${esc(j.id)}" aria-expanded="false" title="Why?">${gr[1]} ▾</button>
         ${tb[1] ? `<span class="badge ${tb[0]}">${tb[1]}</span>` : ""}${modeBadge(j)}${sourceBadge(j)}${gone}</div>
