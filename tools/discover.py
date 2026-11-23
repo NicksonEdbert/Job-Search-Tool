@@ -33,7 +33,7 @@ def req(url, data=None, timeout=20):
         headers["Content-Type"] = "application/json"
     try:
         with urllib.request.urlopen(urllib.request.Request(url, data=body, headers=headers), timeout=timeout) as r:
-            raw = r.read(3_000_000)
+            raw = r.read(40_000_000)
             ct = r.headers.get("Content-Type", "")
             return r.status, raw.decode("utf-8", "replace"), ct
     except urllib.error.HTTPError as e:
@@ -141,13 +141,19 @@ def main():
     jobs += [(try_successfactors, d) for d in cand["successfactors"]]
     jobs += [(try_workday, w) for w in cand["workday"]]
     jobs += [(try_url, u) for u in cand["urls"]]
+    def safe(fj):
+        try:
+            return fj[0](fj[1])
+        except Exception as e:  # noqa: BLE001
+            return [{"kind": fj[0].__name__, "name": str(fj[1]), "error": f"crash: {e}"[:120]}]
+
     with cf.ThreadPoolExecutor(12) as ex:
-        for res in ex.map(lambda fj: fj[0](fj[1]), jobs):
+        for res in ex.map(safe, jobs):
             for r in res:
-                if r.get("error") is not None and r["kind"] in ("workday", "successfactors", "url"):
-                    print("MISS", json.dumps(r))
+                if r.get("error") is not None:
+                    print("MISS", json.dumps(r), flush=True)
                 elif r.get("total") or r.get("jsonld_jobposting") or r.get("kind") == "url":
-                    print("HIT ", json.dumps(r, ensure_ascii=False))
+                    print("HIT ", json.dumps(r, ensure_ascii=False), flush=True)
 
 
 if __name__ == "__main__":

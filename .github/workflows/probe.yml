@@ -18,6 +18,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Discover career boards
-        run: python tools/discover.py --file tools/candidates.json | sort
+        run: python tools/discover.py --file tools/candidates.json
       - name: Full run (no commit, no alert)
         run: python -m jobsearch --out /tmp/out --top 60
