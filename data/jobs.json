@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-23T16:46:43+00:00",
+ "generated_at": "2026-11-24T06:06:00+00:00",
  "counts": {
-  "postings_scanned": 6929,
+  "postings_scanned": 6926,
   "internships": 78,
   "cyber": 3,
   "tech": 12,
@@ -14,7 +14,7 @@
    "student": 0,
    "volunteer": 0
   },
-  "new": 50
+  "new": 1
  },
  "sources": [
   {
@@ -46,7 +46,7 @@
    "ats": "greenhouse",
    "slug": "agoda",
    "ok": true,
-   "postings": 333,
+   "postings": 334,
    "error": null
   },
   {
@@ -62,7 +62,7 @@
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 497,
+   "postings": 501,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
    "ats": "workable",
    "slug": "ajaib",
    "ok": true,
-   "postings": 89,
+   "postings": 94,
    "error": null
   },
   {
@@ -86,7 +86,7 @@
    "ats": "amazon",
    "slug": "amazon",
    "ok": true,
-   "postings": 97,
+   "postings": 95,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
    "ats": "remoteboard",
    "slug": "arbeitnow",
    "ok": true,
-   "postings": 189,
+   "postings": 184,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
    "ats": "greenhouse",
    "slug": "binance",
    "ok": true,
-   "postings": 225,
+   "postings": 221,
    "error": null
   },
   {
@@ -142,7 +142,7 @@
    "ats": "greenhouse",
    "slug": "block",
    "ok": true,
-   "postings": 183,
+   "postings": 184,
    "error": null
   },
   {
@@ -150,7 +150,7 @@
    "ats": "teamtailor",
    "slug": "bobobox",
    "ok": true,
-   "postings": 45,
+   "postings": 46,
    "error": null
   },
   {
@@ -166,7 +166,7 @@
    "ats": "smartrecruiters",
    "slug": "canva",
    "ok": true,
-   "postings": 29,
+   "postings": 26,
    "error": null
   },
   {
@@ -174,7 +174,7 @@
    "ats": "smartrecruiters",
    "slug": "carsales",
    "ok": true,
-   "postings": 20,
+   "postings": 19,
    "error": null
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "slug": "cultureamp",
    "ok": true,
-   "postings": 31,
+   "postings": 29,
    "error": null
   },
   {
@@ -190,7 +190,7 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "ok": true,
-   "postings": 386,
+   "postings": 383,
    "error": null
   },
   {
@@ -230,7 +230,7 @@
    "ats": "smartrecruiters",
    "slug": "grab",
    "ok": true,
-   "postings": 438,
+   "postings": 441,
    "error": null
   },
   {
@@ -238,7 +238,7 @@
    "ats": "greenhouse",
    "slug": "groupib",
    "ok": true,
-   "postings": 17,
+   "postings": 19,
    "error": null
   },
   {
@@ -310,7 +310,7 @@
    "ats": "lever",
    "slug": "lalamove",
    "ok": true,
-   "postings": 154,
+   "postings": 151,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
    "ats": "greenhouse",
    "slug": "mongodb",
    "ok": true,
-   "postings": 418,
+   "postings": 421,
    "error": null
   },
   {
@@ -358,7 +358,7 @@
    "ats": "lever",
    "slug": "ninjavan",
    "ok": true,
-   "postings": 137,
+   "postings": 138,
    "error": null
   },
   {
@@ -438,7 +438,7 @@
    "ats": "successfactors",
    "slug": "careers.reckitt.com",
    "ok": true,
-   "postings": 2,
+   "postings": 1,
    "error": null
   },
   {
@@ -494,7 +494,7 @@
    "ats": "smartrecruiters",
    "slug": "seek",
    "ok": true,
-   "postings": 41,
+   "postings": 40,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "ats": "ashby",
    "slug": "sophos",
    "ok": true,
-   "postings": 64,
+   "postings": 65,
    "error": null
   },
   {
@@ -518,7 +518,7 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "ok": true,
-   "postings": 779,
+   "postings": 771,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
    "ats": "ashby",
    "slug": "xero",
    "ok": true,
-   "postings": 107,
+   "postings": 115,
    "error": null
   }
  ],
@@ -577,7 +577,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -629,7 +629,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -679,7 +679,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -706,11 +706,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 132 days ago"
+    "Posted 133 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -731,11 +731,11 @@
    "work_mode": "onsite",
    "role_type": "internship",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 285 days ago"
+    "Posted 286 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -758,11 +758,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 34 days ago"
+    "Posted 35 days ago"
    ],
    "category": "tech",
    "timing": "good",
@@ -869,7 +869,7 @@
    "work_mode": "hybrid",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -948,7 +948,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -973,7 +973,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1050,7 +1050,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1075,7 +1075,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1100,7 +1100,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1127,7 +1127,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1152,7 +1152,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1177,7 +1177,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1360,11 +1360,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 152 days ago"
+    "Posted 153 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1387,11 +1387,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 720 days ago",
+    "Posted 721 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1413,11 +1413,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 720 days ago",
+    "Posted 721 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1439,16 +1439,43 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 62 days ago"
+    "Posted 63 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
    "flags": [],
    "score": 24
+  },
+  {
+   "id": "smartrecruiters:grab:744000163377740",
+   "title": "Operations Associate, Expansion",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163377740-operations-associate-expansion",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-24T03:11:49+00:00",
+   "text": "Job Description\nGet to Know the Team \n GrabMart is Grab's on-demand daily essentials and grocery delivery service. We bring products from various stores to our customers' doorsteps. As part of Grab's ecosystem, we focus on speed, convenience, and reliability for millions of customers across Indonesia.\n Get to Know the Role \n You will handle the expansion process, covering both central warehouses and dark stores across Indonesia. Your primary goal of this role is to ensure that project timelines are executed effectively, cost efficient, and.This role is critical for scaling GrabMart in Indonesia.\n You will report to the Lead of Operations. You will be based onsite, with regular travel to operating sites, hubs, and partner facilities as required.\n The Critical Tasks You Will Perform \n You will manage site survey and feasibility location, including analysis location, review legality of location, and meet our requirements.\n You will own planning, budgeting, and timeline management. Including creating a timeline project from start until Go Live, Control budget to estimate fit-out, and design and layouting warehouse/Store.\n You will manage fit-out and renovation. Including coordination with vendors and contractors to ensure they do as our requirement.\n You will define asset procurement for the warehouse and all stores. Including ensuring all asset operations arrive on time, e.g laptop, AC, Wifi, printer, signage, freezer, chiller, etc.\n You will manage operational readiness and licensing. Including Manage local operational permits (e.g. NIB, permits from the area management, local security, etc.) to prevent any social issues. Coordinate with cross-functional teams, e.g the legal team regarding permits and other related matters.\n You will lead testing the location before Go Live. including dry run process for Inbound and display product in store, checking all facility works fine, etc\n You will lead for handover and Go live for a new warehouse or Store. Including handover key for warehouse or store, and ensure can smooth Go live for new Warehouse or Store\nQualifications\nWhat Essential Skills You Will Need \n A minimum of Bachelor's degree in Supply Chain Management, Logistics, Engineering, Business, or a related field.\n 5+ years of experience in expansion projects, warehouse, transportation, logistics, distribution, or supply chain operations within e-commerce, retail, FMCG, or a related sector.\n Proven expertise managing end-to-end projects base, start site survey, negotiation, review legality, preparation set up warehouse or store, and Go Live warehouse/store\n Demonstrated experience on how to create expansion projects to ensure on schedule and smooth until Go Live.\n Experience on identify root causes, and translate insights into practical improvements in service, cost, capacity, and quality.\n Experience with WMS, end to end process in warehouse, store groceries, and quick commerce.\n Strong stakeholder-management, with the ability to coordinate across vendors, landlords, warehouses, stores, business, and regional teams.\n Fluency in Bahasa Indonesia and English.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For At Grab \n We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their be",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-24T06:06:00+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Asks for 5+ years of experience"
+   ],
+   "score": 19
   },
   {
    "id": "smartrecruiters:grab:744000163137314",
@@ -1464,7 +1491,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1491,7 +1518,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1502,31 +1529,6 @@
    "flags": [
     "Asks for 2+ years of experience"
    ],
-   "score": 19
-  },
-  {
-   "id": "successfactors:careers.reckitt.com:1453621233",
-   "title": "Jr. KAM Emerging Channel",
-   "company": "Reckitt",
-   "location": "Jakarta Raya, Jawa, ID, N/A",
-   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Jr_-KAM-Emerging-Channel-Jawa-NA/1453621233/",
-   "source": "successfactors",
-   "posted_at": "2026-11-03T00:00:00+00:00",
-   "text": "We are Reckitt\n Home to the world's best loved and trusted hygiene, health, and nutrition brands. Our purpose defines why we exist: to protect, heal and nurture in the relentless pursuit of a cleaner, healthier world. We are a global team united by this purpose. Join us in our fight to make access to the highest quality hygiene, wellness, and nourishment a right and not a privilege.",
-   "origin": "Reckitt",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
    "score": 19
   },
   {
@@ -1570,11 +1572,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 52 days ago"
+    "Posted 53 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -1680,7 +1682,7 @@
    "work_mode": "hybrid",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1707,7 +1709,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1734,7 +1736,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1761,7 +1763,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1788,7 +1790,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
@@ -1840,7 +1842,7 @@
    "work_mode": "remote",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1867,11 +1869,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 53 days ago"
+    "Posted 54 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -1894,7 +1896,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -2034,7 +2036,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 66 days ago",
+    "Posted 67 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2058,11 +2060,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 132 days ago"
+    "Posted 133 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2083,11 +2085,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 291 days ago"
+    "Posted 292 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2110,7 +2112,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
@@ -2137,7 +2139,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
@@ -2164,7 +2166,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
@@ -2191,11 +2193,11 @@
    "work_mode": "hybrid",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 2044 days ago"
+    "Posted 2045 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2222,7 +2224,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 406 days ago"
+    "Posted 407 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2245,11 +2247,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 40 days ago",
+    "Posted 41 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2275,7 +2277,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 61 days ago"
+    "Posted 62 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2299,11 +2301,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 70 days ago"
+    "Posted 71 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2324,11 +2326,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 81 days ago"
+    "Posted 82 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2353,7 +2355,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 105 days ago",
+    "Posted 106 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2377,11 +2379,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 235 days ago"
+    "Posted 236 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2402,11 +2404,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 423 days ago",
+    "Posted 424 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2431,11 +2433,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 530 days ago",
+    "Posted 531 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2459,11 +2461,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 720 days ago",
+    "Posted 721 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2485,11 +2487,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 40 days ago",
+    "Posted 41 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2511,11 +2513,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 70 days ago"
+    "Posted 71 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2536,11 +2538,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 235 days ago"
+    "Posted 236 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2561,11 +2563,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 530 days ago",
+    "Posted 531 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2589,11 +2591,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 720 days ago",
+    "Posted 721 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2615,11 +2617,11 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 33 days ago"
+    "Posted 34 days ago"
    ],
    "category": "other",
    "timing": "long",
@@ -2630,5 +2632,15 @@
    "score": 0
   }
  ],
- "closed": []
+ "closed": [
+  {
+   "ids": [
+    "successfactors:careers.reckitt.com:1453621233"
+   ],
+   "company": "Reckitt",
+   "title": "Jr. KAM Emerging Channel",
+   "closed_at": "2026-11-24T06:06:00+00:00",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Jr_-KAM-Emerging-Channel-Jawa-NA/1453621233/"
+  }
+ ]
 }

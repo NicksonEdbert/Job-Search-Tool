@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T16:47:31+00:00",
+ "checked_at": "2026-11-24T06:06:51+00:00",
  "status": {
   "https://picoctf.org/": "ok",
   "https://ctftime.org/event/list/upcoming": "ok",
@@ -34,7 +34,7 @@
   "https://www.nexon.com.au/careers": "unknown",
   "https://relawantik.or.id/": "ok",
   "https://www.indorelawan.org/": "ok",
-  "https://siberkreasi.id/": "ok",
+  "https://siberkreasi.id/": "unknown",
   "https://itsec.asia/": "ok",
   "https://www.defenxor.com/": "ok",
   "https://spentera.id/": "ok",
