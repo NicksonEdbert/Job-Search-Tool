@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-24T06:06:00+00:00",
+ "generated_at": "2026-11-25T04:54:20+00:00",
  "counts": {
-  "postings_scanned": 6926,
+  "postings_scanned": 6898,
   "internships": 78,
   "cyber": 3,
   "tech": 12,
@@ -14,7 +14,7 @@
    "student": 0,
    "volunteer": 0
   },
-  "new": 1
+  "new": 2
  },
  "sources": [
   {
@@ -46,7 +46,7 @@
    "ats": "greenhouse",
    "slug": "agoda",
    "ok": true,
-   "postings": 334,
+   "postings": 336,
    "error": null
   },
   {
@@ -62,7 +62,7 @@
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 501,
+   "postings": 502,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
    "ats": "workable",
    "slug": "ajaib",
    "ok": true,
-   "postings": 94,
+   "postings": 93,
    "error": null
   },
   {
@@ -86,7 +86,7 @@
    "ats": "amazon",
    "slug": "amazon",
    "ok": true,
-   "postings": 95,
+   "postings": 91,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
    "ats": "remoteboard",
    "slug": "arbeitnow",
    "ok": true,
-   "postings": 184,
+   "postings": 147,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
    "ats": "greenhouse",
    "slug": "binance",
    "ok": true,
-   "postings": 221,
+   "postings": 225,
    "error": null
   },
   {
@@ -142,7 +142,7 @@
    "ats": "greenhouse",
    "slug": "block",
    "ok": true,
-   "postings": 184,
+   "postings": 183,
    "error": null
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "slug": "cultureamp",
    "ok": true,
-   "postings": 29,
+   "postings": 30,
    "error": null
   },
   {
@@ -190,7 +190,7 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "ok": true,
-   "postings": 383,
+   "postings": 388,
    "error": null
   },
   {
@@ -230,7 +230,7 @@
    "ats": "smartrecruiters",
    "slug": "grab",
    "ok": true,
-   "postings": 441,
+   "postings": 451,
    "error": null
   },
   {
@@ -238,7 +238,7 @@
    "ats": "greenhouse",
    "slug": "groupib",
    "ok": true,
-   "postings": 19,
+   "postings": 18,
    "error": null
   },
   {
@@ -310,7 +310,7 @@
    "ats": "lever",
    "slug": "lalamove",
    "ok": true,
-   "postings": 151,
+   "postings": 150,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
    "ats": "greenhouse",
    "slug": "mongodb",
    "ok": true,
-   "postings": 421,
+   "postings": 419,
    "error": null
   },
   {
@@ -358,7 +358,7 @@
    "ats": "lever",
    "slug": "ninjavan",
    "ok": true,
-   "postings": 138,
+   "postings": 139,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
    "ats": "lever",
    "slug": "nium",
    "ok": true,
-   "postings": 31,
+   "postings": 30,
    "error": null
   },
   {
@@ -374,7 +374,7 @@
    "ats": "greenhouse",
    "slug": "okx",
    "ok": true,
-   "postings": 391,
+   "postings": 384,
    "error": null
   },
   {
@@ -422,7 +422,7 @@
    "ats": "workday",
    "slug": "pwc|wd3|Global_Campus_Careers",
    "ok": true,
-   "postings": 24,
+   "postings": 23,
    "error": null
   },
   {
@@ -438,7 +438,7 @@
    "ats": "successfactors",
    "slug": "careers.reckitt.com",
    "ok": true,
-   "postings": 1,
+   "postings": 2,
    "error": null
   },
   {
@@ -494,7 +494,7 @@
    "ats": "smartrecruiters",
    "slug": "seek",
    "ok": true,
-   "postings": 40,
+   "postings": 39,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "ats": "ashby",
    "slug": "sophos",
    "ok": true,
-   "postings": 65,
+   "postings": 68,
    "error": null
   },
   {
@@ -518,7 +518,7 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "ok": true,
-   "postings": 771,
+   "postings": 772,
    "error": null
   },
   {
@@ -710,7 +710,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 133 days ago"
+    "Posted 134 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -735,7 +735,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 286 days ago"
+    "Posted 287 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -762,7 +762,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 35 days ago"
+    "Posted 36 days ago"
    ],
    "category": "tech",
    "timing": "good",
@@ -856,31 +856,6 @@
    "score": 40
   },
   {
-   "id": "smartrecruiters:seek:744000161737899",
-   "title": "Marketing Associate, Events & Sponsorships",
-   "company": "SEEK / JobStreet",
-   "location": "Cremorne, Victoria, Australia, Hybrid",
-   "url": "https://jobs.smartrecruiters.com/SEEK/744000161737899-marketing-associate-events-sponsorships",
-   "source": "smartrecruiters",
-   "posted_at": "2026-11-16T07:29:42+00:00",
-   "text": "Job Description\nAbout the role \nYou will support customer events and sponsorships across Australia and New Zealand in a clearly defined three-day-per-week role. Based in Melbourne, you’ll spend two of your three working days in the office.\nReporting to the Marketing Manager – Events & Sponsorships, you’ll work with marketing, sales, product, commercial and external agency partners. You’ll help deliver events, webinars and sponsorship activities that strengthen customer relationships and support market share growth.\nThis part-time role has no direct reports and sits within the ANZ Customer Marketing team. It’s suited to someone building their marketing career or seeking a stable three-day schedule with corporate events and sponsorship experience.\n Key responsibilities \n Support event and sponsorship strategy by identifying valuable opportunities\n Plan and deliver customer, partner and webinar events\n Manage allocated events and sponsorship projects on time and within budget\n Coordinate stakeholder briefings, schedules and content development\n Prepare progress reports and post-event evaluations\n Support partner activities with industry associations and recruitment software providers\n Develop event communications that encourage attendance and generate leads\n Maintain event calendars, timelines and deliverables\n Monitor competitor activity and share insights to support innovation\nQualifications\nTwo to four years’ experience in event management, marketing or a related field\n Experience supporting conferences, events, roadshows or webinars\n Experience delivering straightforward projects independently\n Experience working with internal stakeholders, suppliers and external partners\n Understanding of marketing channels, customer segments and business outcomes\n Some experience managing budgets and coordinating resources\nAdditional Information\nAt SEEK we offer:\n Annual Performance Bonus Plan\n Support of flexible working, including a mix of office and work from home days depending on your role.\n Paid and unpaid leave benefits including Personal Flexi Days and Volunteer Days, as well as the opportunity to purchase additional leave\n Support for parents with 14 weeks paid primary carers leave and 2 weeks paid leave for partners\n At SEEK, we are passionate about fostering a culture of inclusion and wellbeing that embraces and values the diversity of our people. We are a purpose driven business that works with heart.\n We know teams with diverse ideas, experiences and perspectives are more creative and are critical to ensuring effective delivery and innovating to enable our future success. As such, we welcome applications from people with diverse backgrounds and life experiences, especially as they relate to gender, sexual identity, culture, faith, disability and life stages. If you have the skills, curiosity and an adaptable mindset but don't meet every responsibility or qualification listed in this advertisement, please still get in touch with us.\n Should you require any specific support or adjustments throughout the recruitment process and beyond, please advise us and we will be happy to assist.\n For this role, only those candidates with the eligible right to work will be considered.\n SEEK kindly requests no unsolicited resumes or approaches from recruitment agencies and will not be responsible for any associated fees.",
-   "origin": "SEEK / JobStreet",
-   "where": "melbourne",
-   "work_mode": "hybrid",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "good",
-   "flags": [],
-   "score": 37
-  },
-  {
    "id": "workable:ajaib:1A67D61CEA",
    "title": "Multimedia Designer Intern",
    "company": "Ajaib",
@@ -935,31 +910,6 @@
    "score": 37
   },
   {
-   "id": "smartrecruiters:grab:744000160561403",
-   "title": "Large Area Associate (Contract)",
-   "company": "Grab",
-   "location": "Jakarta, Indonesia",
-   "url": "https://jobs.smartrecruiters.com/Grab/744000160561403-large-area-associate-contract-",
-   "source": "smartrecruiters",
-   "posted_at": "2026-11-09T09:32:21+00:00",
-   "text": "Job Description\nGet to Know the Role \n We are looking for a field-oriented Large Area Associate (LAA) to join our team. In this role, you will work on the ground to build strong relationships with merchants in strategically identified, high-density areas. Your core mission is to help these merchants grow their businesses through data-backed engagement, campaign participation, and the adoption of high-impact commercial solutions. You will report to the Large Area Manager Lead and work onsite in our Jakarta office.\n The Critical Tasks You Will Perform \n Identify high-potential merchants based on cuisine relevance, performance, and offline traffic.\n Act as a dedicated monthly growth consultant for merchants within your assigned zone.\n Build trust through frequent in-person visits and strategic follow-up calls.\n Serve as the primary advisor for merchants upgrading their delivery and digital presence.\n Drive high merchant campaign participation to beat city-level benchmarks.\n Increase the take-up of ads, new products, and exclusive \"bet deals\" or pilots.\n Operate effectively within a tightly defined, high-density geographic territory.\n Prioritize and hit targeted business growth and campaign metrics.\nQualifications\nWhat Essential Skills You Will Need \n 3+ years in sales, business development, or account management, specifically within food/on-demand delivery, e-commerce, retail, F&B, or logistics.\n Hands-on experience in field sales or territory management, with the willingness to maintain high mobility across Jabodetabek.\n Proven track record of managing partners, driving revenue through partnerships, and balancing multiple sales opportunities.\n Great at listening to partners, solving their unique challenges, and explaining product benefits in a way that truly clicks with them.\n Comfortable diving into Excel data & SQL to find practical solutions and turn insights into clear actions.\n Loves taking ownership of projects and seeing them through to success.\n Comfortable communicating in English.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that enables diverse Grabbers to grow and perform at their best. As an equal opportunity employer, we consider all candidates fairly and equally regardless of nationality, ethnicity, religion, age, gender identity, sexual orientation, family commitments, physical and mental impairments or disabilities, and other attributes that make them unique.",
-   "origin": "Grab",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "good",
-   "flags": [],
-   "score": 32
-  },
-  {
    "id": "smartrecruiters:grab:744000162427979",
    "title": "Supply Chain In-Stock Associate",
    "company": "Grab",
@@ -985,20 +935,20 @@
    "score": 29
   },
   {
-   "id": "smartrecruiters:BoschGroup:744000161985250",
-   "title": "Finance, Accounting & Tax Intern",
-   "company": "Bosch",
-   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161985250-finance-accounting-tax-intern",
+   "id": "smartrecruiters:seek:744000163412949",
+   "title": "Marketing Associate, Customer Research & Insights",
+   "company": "SEEK / JobStreet",
+   "location": "Cremorne, Victoria, Australia, Remote",
+   "url": "https://jobs.smartrecruiters.com/SEEK/744000163412949-marketing-associate-customer-research-insights",
    "source": "smartrecruiters",
-   "posted_at": "2026-11-17T02:21:10+00:00",
-   "text": "Job Description\nCheck submission status, advances, payment requisitions, and travel requests in PowerApps\n Check and verify documents in SmartFix\n Post all invoices and tax invoices to SAP\n Follow up on INAP SIIM\n Assist with IDS payments/Swift payment\n Reconcile FEBAN (Bank Statements)\n Prepare monthly listings of sales tax invoices for Trading Goods (TG) and Customer Services (CS)\n Daily check price settings\n Handling transaction invoices for BSH Hausgeräte GmbH and Robert Bosch GmbH\nQualifications\nStrong knowledge and hands-on experience in SAP\n Able to support and assist team members effectively\n Available to work five days per week\n Detail-oriented with strong accuracy\n Fast learner and highly reliable\n Proficient in Microsoft Excel (formulas, VLOOKUP/XLOOKUP, Pivot Tables, SUMIF)\n Ability to handle data entry accurately\n Eager to learn and highly inquisitive\nAdditional Information\nFull-time paid internship.\n Will not graduate during the internship program.\n Open for COLLEGE STUDENTS ONLY.\n HR Contact Person: Aqila Shekina Putri",
-   "origin": "Bosch",
-   "where": "jakarta",
-   "work_mode": "hybrid",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
+   "posted_at": "2026-11-24T09:22:42+00:00",
+   "text": "Job Description\nThe APAC Marketing Strategy team is responsible for shaping the overarching marketing and brand strategy, working closely with segment, product, channel, and country teams to ensure alignment with company objectives. The team manages a diverse portfolio of research studies and market/customer focused data analytics to uncover valuable customer insights, ensuring the voice of the customer is integrated throughout the organisation. Additionally, the team leads end-to-end marketing operational alignment, driving effective planning, coordination, and performance across the APAC Marketing team.\n Key stakeholders include the Executive and Commercial Leadership Teams, Marketing, Product, Technology, Sales and Service, Commercial Growth, and Strategy.\n Our team members are based in Melbourne, Singapore, Indonesia and Kuala Lumpur, providing an international perspective and collaboration across SEEK’s key markets.\n This role is part of the Customer Research & Insights focus within the broader APAC Marketing Strategy team and will support markets across the APAC region.\nQualifications\nSolid understanding of market research and data fundamentals, including a broad range of research methodologies.\n Successful history effectively managing ongoing brand health tracking research programs.\n Proven track record of making an impact working in customer insights either in-house or at a research agency.\n Strong interpersonal and stakeholder management skills.\n Strong Microsoft Office skills, particularly PowerPoint, Excel and Word.\n Strong analytical skills and great attention to detail.\n Possess the skills to build concise, meaningful and impactful PowerPoint presentations, efficiently and effectively.\n Other Qualifications, Skills, and Experience\n Bachelor’s degree in business / marketing or related field e.g. psychology or behavioral economics.\n Experience using Q research software is advantageous, but not mandatory.\n Experience using Qualtrics also advantageous, but not mandatory.",
+   "origin": "SEEK / JobStreet",
+   "where": "melbourne",
+   "work_mode": "remote",
+   "role_type": "entry",
+   "first_seen": "2026-11-25T04:54:20+00:00",
+   "is_new": true,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1062,31 +1012,6 @@
    "score": 29
   },
   {
-   "id": "successfactors:careers.ey.com:1427779133",
-   "title": "Climate Change and Sustainability Services - Associate",
-   "company": "EY",
-   "location": "Jakarta, ID, 12190",
-   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
-   "source": "successfactors",
-   "posted_at": null,
-   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
-   "origin": "EY",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
    "id": "successfactors:careers.ey.com:1243950601",
    "title": "Junior Consultant - Supply Chain & Operations",
    "company": "EY",
@@ -1111,6 +1036,31 @@
    "flags": [
     "Mentions final-year students or graduates; check eligibility"
    ],
+   "score": 29
+  },
+  {
+   "id": "successfactors:careers.ey.com:1427779133",
+   "title": "Climate Change and Sustainability Services - Associate",
+   "company": "EY",
+   "location": "Jakarta, ID, 12190",
+   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
+   "origin": "EY",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
    "score": 29
   },
   {
@@ -1241,20 +1191,20 @@
    "score": 29
   },
   {
-   "id": "successfactors:careers.reckitt.com:1457859133",
-   "title": "Marketing - Content Creator Intern",
+   "id": "successfactors:careers.reckitt.com:1460461033",
+   "title": "Human Resources Intern",
    "company": "Reckitt",
    "location": "Jakarta Raya, Jawa, ID, N/A",
-   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Human-Resources-Intern-Jawa-NA/1460461033/",
    "source": "successfactors",
-   "posted_at": "2026-11-17T00:00:00+00:00",
-   "text": "Marketing - Content Creator Intern, Placement Head Office Jakarta. \n We're looking for an Intern to join our team and create engaging contents across our various segments.\n In Summary, you will :\n Idea generation :\n You are expected to gather current trends and insights in TikTok and social commerce space.\n You are then expected to use collected trends and insight to create short video brief after discussion and approval with line manager.\n Video Creation :\n You are expected to create 15 videos / week for Dettol segments.\n Quantity of each segment is subject to be approved according to business needs.\n Video Review :\n You are expected to review and analyse created video with KPI that was set by the supervisor.\n KPI include: GMV, Impression, view rate (subject to be discussed).\n The experience we're looking for :\n Final-year student (6th semester or above) from any major.\n Passionate about content creation and social media trends.\n Familiar with basic video editing tools (e.g., Canva, In Shot, Cap Cut, etc.).\n Creative, proactive, and eager to experiment new ideas.Comfortable working in a hybrid set up (must be able to work from the office periodically).\n Strong communication skills and a collaborative mindset.\n Learning & Benefit:Experience working in a multinational company with diverse teams and global standards.\n Exposure to how a global brand is built and managed in real world markets.\n Opportunity to present your ideas and results directly to the Marketing Director.\n Be part of a team that contributes to shaping a global brand’s presence.\n Hands on exposure to creative marketing strategies and digital content trends.\n Here's a little bonus : if you have a cat or dog at home, even better! some of the contents you'll work on will be around pet related products, so having a furry friend could make the experience even more engaging! no pets? absolutely no problem! we're looking for creativity, curiosity and a passion for content creation.\n Recruitment Process: CV Screening -> HR Interview -> Video Submission -> User Interview (Brand Manager) -> Offering",
+   "posted_at": "2026-11-25T00:00:00+00:00",
+   "text": "Human Resources Intern, Placement Head Office Jakarta. \n As an intern under HR function, you’ll have the opportunity to gain an extensive view of how the Human Resources team partners the business and speeds up your career! You will have full involvement from Day 1 on key HR processes and activities. The focus will be on ‘learning through doing’ but with the support and mentoring of our experienced team. \n In summary, you will: \n Learning and Development (Training) – in charge of event management and coordination for the Learning & Development activities that are organized under Human Resources program. In scope but not limited to: In house Program “Jam Belajar”, L&D Trackers and Reporting, Speed Mentoring\n Employee Engagement and Communication – Prepare communication materials such as emails & newsletters to inform stakeholders about upcoming activities and driving employee engagement activities. In scope but not limited to: Wellbeing Activities, Events & Townhalls\n External Recognition – in charge for the implementation of employee and external recognition program.\n Organize and maintain HR documents and databases, ensuring all information is accurate and up to date.\n Perform ad-hoc assigned projects* as required in a high-quality, timely basis.\n The experience we're looking for :\n Final-year student (6th semester or above) from any major.\n Familiarity with design and content creation tools such as Canva, CapCut, or similar platforms is an advantage.\n Highly proactive, independent and initiative.\n Strong written and verbal communication skills in English and Bahasa Indonesia.\n Proactive, detail-oriented, and eager to learn.\n Strong problem-solving and analytical skills.\n Able to handle changing task priorities and work situations.\n Recruitment Process: CV Screening -> HR Interview -> User Interview -> Offering.",
    "origin": "Reckitt",
    "where": "jakarta",
    "work_mode": "onsite",
    "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
+   "first_seen": "2026-11-25T04:54:20+00:00",
+   "is_new": true,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1266,6 +1216,31 @@
     "Mentions final-year students or graduates; check eligibility"
    ],
    "score": 29
+  },
+  {
+   "id": "smartrecruiters:grab:744000160561403",
+   "title": "Large Area Associate (Contract)",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000160561403-large-area-associate-contract-",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-09T09:32:21+00:00",
+   "text": "Job Description\nGet to Know the Role \n We are looking for a field-oriented Large Area Associate (LAA) to join our team. In this role, you will work on the ground to build strong relationships with merchants in strategically identified, high-density areas. Your core mission is to help these merchants grow their businesses through data-backed engagement, campaign participation, and the adoption of high-impact commercial solutions. You will report to the Large Area Manager Lead and work onsite in our Jakarta office.\n The Critical Tasks You Will Perform \n Identify high-potential merchants based on cuisine relevance, performance, and offline traffic.\n Act as a dedicated monthly growth consultant for merchants within your assigned zone.\n Build trust through frequent in-person visits and strategic follow-up calls.\n Serve as the primary advisor for merchants upgrading their delivery and digital presence.\n Drive high merchant campaign participation to beat city-level benchmarks.\n Increase the take-up of ads, new products, and exclusive \"bet deals\" or pilots.\n Operate effectively within a tightly defined, high-density geographic territory.\n Prioritize and hit targeted business growth and campaign metrics.\nQualifications\nWhat Essential Skills You Will Need \n 3+ years in sales, business development, or account management, specifically within food/on-demand delivery, e-commerce, retail, F&B, or logistics.\n Hands-on experience in field sales or territory management, with the willingness to maintain high mobility across Jabodetabek.\n Proven track record of managing partners, driving revenue through partnerships, and balancing multiple sales opportunities.\n Great at listening to partners, solving their unique challenges, and explaining product benefits in a way that truly clicks with them.\n Comfortable diving into Excel data & SQL to find practical solutions and turn insights into clear actions.\n Loves taking ownership of projects and seeing them through to success.\n Comfortable communicating in English.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that enables diverse Grabbers to grow and perform at their best. As an equal opportunity employer, we consider all candidates fairly and equally regardless of nationality, ethnicity, religion, age, gender identity, sexual orientation, family commitments, physical and mental impairments or disabilities, and other attributes that make them unique.",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [],
+   "score": 27
   },
   {
    "id": "workday:pg:R000162236",
@@ -1347,6 +1322,31 @@
    "score": 27
   },
   {
+   "id": "smartrecruiters:BoschGroup:744000161985250",
+   "title": "Finance, Accounting & Tax Intern",
+   "company": "Bosch",
+   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161985250-finance-accounting-tax-intern",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-17T02:21:10+00:00",
+   "text": "Job Description\nCheck submission status, advances, payment requisitions, and travel requests in PowerApps\n Check and verify documents in SmartFix\n Post all invoices and tax invoices to SAP\n Follow up on INAP SIIM\n Assist with IDS payments/Swift payment\n Reconcile FEBAN (Bank Statements)\n Prepare monthly listings of sales tax invoices for Trading Goods (TG) and Customer Services (CS)\n Daily check price settings\n Handling transaction invoices for BSH Hausgeräte GmbH and Robert Bosch GmbH\nQualifications\nStrong knowledge and hands-on experience in SAP\n Able to support and assist team members effectively\n Available to work five days per week\n Detail-oriented with strong accuracy\n Fast learner and highly reliable\n Proficient in Microsoft Excel (formulas, VLOOKUP/XLOOKUP, Pivot Tables, SUMIF)\n Ability to handle data entry accurately\n Eager to learn and highly inquisitive\nAdditional Information\nFull-time paid internship.\n Will not graduate during the internship program.\n Open for COLLEGE STUDENTS ONLY.\n HR Contact Person: Aqila Shekina Putri",
+   "origin": "Bosch",
+   "where": "jakarta",
+   "work_mode": "hybrid",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 24
+  },
+  {
    "id": "workday:pwc:739552WD",
    "title": "IT Governance Associate FY27",
    "company": "PwC (campus)",
@@ -1364,7 +1364,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 153 days ago"
+    "Posted 154 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1391,7 +1391,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 721 days ago",
+    "Posted 722 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1417,7 +1417,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 721 days ago",
+    "Posted 722 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1443,11 +1443,38 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 63 days ago"
+    "Posted 64 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
    "flags": [],
+   "score": 24
+  },
+  {
+   "id": "successfactors:careers.reckitt.com:1457859133",
+   "title": "Marketing - Content Creator Intern",
+   "company": "Reckitt",
+   "location": "Jakarta Raya, Jawa, ID, N/A",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/",
+   "source": "successfactors",
+   "posted_at": "2026-11-17T00:00:00+00:00",
+   "text": "Marketing - Content Creator Intern, Placement Head Office Jakarta. \n We're looking for an Intern to join our team and create engaging contents across our various segments.\n In Summary, you will :\n Idea generation :\n You are expected to gather current trends and insights in TikTok and social commerce space.\n You are then expected to use collected trends and insight to create short video brief after discussion and approval with line manager.\n Video Creation :\n You are expected to create 15 videos / week for Dettol segments.\n Quantity of each segment is subject to be approved according to business needs.\n Video Review :\n You are expected to review and analyse created video with KPI that was set by the supervisor.\n KPI include: GMV, Impression, view rate (subject to be discussed).\n The experience we're looking for :\n Final-year student (6th semester or above) from any major.\n Passionate about content creation and social media trends.\n Familiar with basic video editing tools (e.g., Canva, In Shot, Cap Cut, etc.).\n Creative, proactive, and eager to experiment new ideas.Comfortable working in a hybrid set up (must be able to work from the office periodically).\n Strong communication skills and a collaborative mindset.\n Learning & Benefit:Experience working in a multinational company with diverse teams and global standards.\n Exposure to how a global brand is built and managed in real world markets.\n Opportunity to present your ideas and results directly to the Marketing Director.\n Be part of a team that contributes to shaping a global brand’s presence.\n Hands on exposure to creative marketing strategies and digital content trends.\n Here's a little bonus : if you have a cat or dog at home, even better! some of the contents you'll work on will be around pet related products, so having a furry friend could make the experience even more engaging! no pets? absolutely no problem! we're looking for creativity, curiosity and a passion for content creation.\n Recruitment Process: CV Screening -> HR Interview -> Video Submission -> User Interview (Brand Manager) -> Offering",
+   "origin": "Reckitt",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
    "score": 24
   },
   {
@@ -1464,7 +1491,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-24T06:06:00+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1794,7 +1821,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 35 days ago"
+    "Posted 36 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1819,7 +1846,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 42 days ago"
+    "Posted 43 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1907,31 +1934,6 @@
    "flags": [
     "Asks for 1+ years of experience"
    ],
-   "score": 4
-  },
-  {
-   "id": "workday:pwc:637601WD",
-   "title": "Intern - IFS - Human Capital (Talent Pool)",
-   "company": "PwC (campus)",
-   "location": "Jakarta",
-   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Intern---IFS---Human-Capital--Talent-Pool-_637601WD",
-   "source": "workday",
-   "posted_at": "2026-11-12T00:00:00+00:00",
-   "text": "Line of Service \nInternal Firm Services \n Industry/Sector \nNot Applicable \n Specialism \nIFS - Human Capital (HC) \n Management Level \nIntern/Trainee \n Job Description & Summary \nAt PwC, our people in talent and development focus on finding, deploying, training and enabling talent through talent identification and enhancing employee skills and knowledge, fostering a culture of continuous learning and professional growth. These individuals collaborate with subject matter specialists and project teams to strategize effective ways to locate, assess, educate and train employees, in line with market developments and firm strategy.\nIn recruitment and talent acquisition at PwC, you will focus on attracting and selecting top talent to join the organisation. You will play a crucial role in identifying and hiring individuals who align with PwC's values and contribute to its success. \n Driven by curiosity, you are a reliable, contributing member of a team. In our fast-paced environment, you will have the chance to work on a variety of assignments, each presenting varying challenges and scope. Every experience is an opportunity to learn and grow. You are encouraged to ask questions, take initiative, and produce quality work that adds value for our clients and contributes to our team’s success. During your time at the Firm, you start to establish your personal brand, paving the way to more opportunities.\n Examples of the skills, knowledge, and experiences you need to lead and deliver value at this level include but are not limited to:\n Apply a learning mindset and take ownership for your own development.\n Appreciate diverse perspectives, needs, and feelings of others.\n Adopt habits to sustain high performance and develop your potential.\n Actively listen, ask questions to check understanding, and clearly express ideas.\n Seek, reflect, act on, and give feedback.\n Gather information from a range of sources to analyse facts and discern patterns.\n Commit to understanding how the business works and building commercial awareness.\n Learn and apply professional and technical standards (e.g. refer to specific PwC tax and audit guidance), uphold the Firm's code of conduct and independence requirements.\n Talent Acquisition: \n Currently pursuing a Bachelor’s or Master’s degree in Human Resources, Psychology, Business Administration, Communications, or related fields.\n Strong interest in recruitment, talent acquisition, and employer branding within a professional services environment.\n Excellent verbal and written communication skills in English and Bahasa Indonesia.\n Proficient with Microsoft Office Suite (Word, Excel, PowerPoint); familiarity with Applicant Tracking Systems (Workday) or HRIS is a plus.\n Strong interpersonal skills with an ability to engage and build relationships with candidates and internal stakeholders.\n Detail-oriented, organized, and able to manage multiple tasks with a proactive attitude.\n Ability to work collaboratively in a fast-paced, team-oriented environment.\n Analytical mindset with the ability to assist in data collection and reporting to support recruitment strategy.\n Enthusiastic about learning and developing new skills within talent acquisition and HR operations.\n Employer Branding: \n Currently enrolled in a Bachelor’s or Master’s degree program in Marketing, Communications, or a related field.\n Strong passion and interest in employer branding, recruitment marketing, and talent engagement.\n Excellent written and verbal communication skills in English and Bahasa Indonesia.\n Creative mindset with the ability to support the development of engaging content for social media, career sites, and other employer branding activities (roadshow, company visit, etc.).\n Proficiency in Microsoft Office; familiarity with graphic design tools (e.g., Canva, Adobe Creative Suite) or video editing software is a plus.\n Understanding of social media platforms and ability to assist in managing content calendars or campaigns.\n Strong organization",
-   "origin": "PwC (campus)",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "high",
-   "ghost_reasons": [
-    "Title says talent pool / future openings: likely collecting CVs"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
    "score": 4
   },
   {
@@ -2036,7 +2038,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 67 days ago",
+    "Posted 68 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2064,7 +2066,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 133 days ago"
+    "Posted 134 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2089,7 +2091,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 292 days ago"
+    "Posted 293 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2116,7 +2118,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 32 days ago"
+    "Posted 33 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2143,7 +2145,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 199 days ago"
+    "Posted 200 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2170,7 +2172,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 34 days ago"
+    "Posted 35 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2197,7 +2199,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 2045 days ago"
+    "Posted 2046 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2224,7 +2226,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 407 days ago"
+    "Posted 408 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2251,7 +2253,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 41 days ago",
+    "Posted 42 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2277,7 +2279,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 62 days ago"
+    "Posted 63 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2305,7 +2307,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 71 days ago"
+    "Posted 72 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2330,7 +2332,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 82 days ago"
+    "Posted 83 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2355,7 +2357,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 106 days ago",
+    "Posted 107 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2383,7 +2385,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 236 days ago"
+    "Posted 237 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2408,7 +2410,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 424 days ago",
+    "Posted 425 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2437,7 +2439,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 531 days ago",
+    "Posted 532 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2465,7 +2467,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 721 days ago",
+    "Posted 722 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2491,7 +2493,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 41 days ago",
+    "Posted 42 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2517,7 +2519,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 71 days ago"
+    "Posted 72 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2542,7 +2544,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 236 days ago"
+    "Posted 237 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2567,7 +2569,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 531 days ago",
+    "Posted 532 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2595,7 +2597,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 721 days ago",
+    "Posted 722 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2621,7 +2623,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 34 days ago"
+    "Posted 35 days ago"
    ],
    "category": "other",
    "timing": "long",
@@ -2635,12 +2637,30 @@
  "closed": [
   {
    "ids": [
+    "workday:pwc:637601WD"
+   ],
+   "company": "PwC (campus)",
+   "title": "Intern - IFS - Human Capital (Talent Pool)",
+   "closed_at": "2026-11-25T04:54:20+00:00",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Intern---IFS---Human-Capital--Talent-Pool-_637601WD"
+  },
+  {
+   "ids": [
     "successfactors:careers.reckitt.com:1453621233"
    ],
    "company": "Reckitt",
    "title": "Jr. KAM Emerging Channel",
    "closed_at": "2026-11-24T06:06:00+00:00",
    "url": "https://careers.reckitt.com/job/Jakarta-Raya-Jr_-KAM-Emerging-Channel-Jawa-NA/1453621233/"
+  },
+  {
+   "ids": [
+    "smartrecruiters:seek:744000161737899"
+   ],
+   "company": "SEEK / JobStreet",
+   "title": "Marketing Associate, Events & Sponsorships",
+   "closed_at": "2026-11-25T04:54:20+00:00",
+   "url": "https://jobs.smartrecruiters.com/SEEK/744000161737899-marketing-associate-events-sponsorships"
   }
  ]
 }
