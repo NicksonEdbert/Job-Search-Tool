@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-25T04:54:20+00:00",
+ "generated_at": "2026-11-26T04:10:44+00:00",
  "counts": {
-  "postings_scanned": 6898,
-  "internships": 78,
+  "postings_scanned": 6929,
+  "internships": 81,
   "cyber": 3,
   "tech": 12,
-  "jakarta": 70,
-  "melbourne": 7,
+  "jakarta": 72,
+  "melbourne": 8,
   "remote": 1,
   "by_type": {
    "internship": 29,
-   "entry": 49,
+   "entry": 52,
    "student": 0,
    "volunteer": 0
   },
-  "new": 2
+  "new": 3
  },
  "sources": [
   {
@@ -46,7 +46,7 @@
    "ats": "greenhouse",
    "slug": "agoda",
    "ok": true,
-   "postings": 336,
+   "postings": 335,
    "error": null
   },
   {
@@ -62,7 +62,7 @@
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 502,
+   "postings": 506,
    "error": null
   },
   {
@@ -86,7 +86,7 @@
    "ats": "amazon",
    "slug": "amazon",
    "ok": true,
-   "postings": 91,
+   "postings": 97,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
    "ats": "remoteboard",
    "slug": "arbeitnow",
    "ok": true,
-   "postings": 147,
+   "postings": 142,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
    "ats": "greenhouse",
    "slug": "binance",
    "ok": true,
-   "postings": 225,
+   "postings": 230,
    "error": null
   },
   {
@@ -166,7 +166,7 @@
    "ats": "smartrecruiters",
    "slug": "canva",
    "ok": true,
-   "postings": 26,
+   "postings": 29,
    "error": null
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "slug": "cultureamp",
    "ok": true,
-   "postings": 30,
+   "postings": 28,
    "error": null
   },
   {
@@ -190,7 +190,7 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "ok": true,
-   "postings": 388,
+   "postings": 392,
    "error": null
   },
   {
@@ -230,7 +230,7 @@
    "ats": "smartrecruiters",
    "slug": "grab",
    "ok": true,
-   "postings": 451,
+   "postings": 452,
    "error": null
   },
   {
@@ -286,7 +286,7 @@
    "ats": "lever",
    "slug": "kogan",
    "ok": true,
-   "postings": 21,
+   "postings": 20,
    "error": null
   },
   {
@@ -310,7 +310,7 @@
    "ats": "lever",
    "slug": "lalamove",
    "ok": true,
-   "postings": 150,
+   "postings": 153,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
    "ats": "lever",
    "slug": "lamudi",
    "ok": true,
-   "postings": 11,
+   "postings": 12,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
    "ats": "greenhouse",
    "slug": "mongodb",
    "ok": true,
-   "postings": 419,
+   "postings": 422,
    "error": null
   },
   {
@@ -358,7 +358,7 @@
    "ats": "lever",
    "slug": "ninjavan",
    "ok": true,
-   "postings": 139,
+   "postings": 138,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
    "ats": "lever",
    "slug": "nium",
    "ok": true,
-   "postings": 30,
+   "postings": 31,
    "error": null
   },
   {
@@ -374,7 +374,7 @@
    "ats": "greenhouse",
    "slug": "okx",
    "ok": true,
-   "postings": 384,
+   "postings": 388,
    "error": null
   },
   {
@@ -422,7 +422,7 @@
    "ats": "workday",
    "slug": "pwc|wd3|Global_Campus_Careers",
    "ok": true,
-   "postings": 23,
+   "postings": 24,
    "error": null
   },
   {
@@ -430,7 +430,7 @@
    "ats": "workday",
    "slug": "pwc|wd3|Global_Experienced_Careers",
    "ok": true,
-   "postings": 8,
+   "postings": 9,
    "error": null
   },
   {
@@ -454,7 +454,7 @@
    "ats": "remoteboard",
    "slug": "remoteok",
    "ok": true,
-   "postings": 3,
+   "postings": 5,
    "error": null
   },
   {
@@ -494,7 +494,7 @@
    "ats": "smartrecruiters",
    "slug": "seek",
    "ok": true,
-   "postings": 39,
+   "postings": 38,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "ats": "ashby",
    "slug": "sophos",
    "ok": true,
-   "postings": 68,
+   "postings": 74,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
    "ats": "ashby",
    "slug": "xero",
    "ok": true,
-   "postings": 115,
+   "postings": 112,
    "error": null
   }
  ],
@@ -710,7 +710,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 134 days ago"
+    "Posted 135 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -735,7 +735,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 287 days ago"
+    "Posted 288 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -762,7 +762,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 36 days ago"
+    "Posted 37 days ago"
    ],
    "category": "tech",
    "timing": "good",
@@ -907,7 +907,7 @@
    "flags": [
     "Mentions final-year students or graduates; check eligibility"
    ],
-   "score": 37
+   "score": 32
   },
   {
    "id": "smartrecruiters:grab:744000162427979",
@@ -935,6 +935,31 @@
    "score": 29
   },
   {
+   "id": "smartrecruiters:seek:744000163608929",
+   "title": "Marketing Associate, Events & Sponsorships",
+   "company": "SEEK / JobStreet",
+   "location": "Cremorne, Victoria, Australia, Hybrid",
+   "url": "https://jobs.smartrecruiters.com/SEEK/744000163608929-marketing-associate-events-sponsorships",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-25T05:24:08+00:00",
+   "text": "Job Description\nAbout the role \nYou will support customer events and sponsorships across Australia and New Zealand in a clearly defined three-day-per-week role. Based in Melbourne, you’ll spend two of your three working days in the office.\nReporting to the Marketing Manager – Events & Sponsorships, you’ll work with marketing, sales, product, commercial and external agency partners. You’ll help deliver events, webinars and sponsorship activities that strengthen customer relationships and support market share growth.\nThis part-time role has no direct reports and sits within the ANZ Customer Marketing team. It’s suited to someone building their marketing career or seeking a stable three-day schedule with corporate events and sponsorship experience.\n Key responsibilities \n Support event and sponsorship strategy by identifying valuable opportunities\n Plan and deliver customer, partner and webinar events\n Manage allocated events and sponsorship projects on time and within budget\n Coordinate stakeholder briefings, schedules and content development\n Prepare progress reports and post-event evaluations\n Support partner activities with industry associations and recruitment software providers\n Develop event communications that encourage attendance and generate leads\n Maintain event calendars, timelines and deliverables\n Monitor competitor activity and share insights to support innovation\nQualifications\nTwo to four years’ experience in event management, marketing or a related field\n Experience supporting conferences, events, roadshows or webinars\n Experience delivering straightforward projects independently\n Experience working with internal stakeholders, suppliers and external partners\n Understanding of marketing channels, customer segments and business outcomes\n Some experience managing budgets and coordinating resources\nAdditional Information\nAt SEEK we offer:\n Annual Performance Bonus Plan\n Support of flexible working, including a mix of office and work from home days depending on your role.\n Paid and unpaid leave benefits including Personal Flexi Days and Volunteer Days, as well as the opportunity to purchase additional leave\n Support for parents with 14 weeks paid primary carers leave and 2 weeks paid leave for partners\n At SEEK, we are passionate about fostering a culture of inclusion and wellbeing that embraces and values the diversity of our people. We are a purpose driven business that works with heart.\n We know teams with diverse ideas, experiences and perspectives are more creative and are critical to ensuring effective delivery and innovating to enable our future success. As such, we welcome applications from people with diverse backgrounds and life experiences, especially as they relate to gender, sexual identity, culture, faith, disability and life stages. If you have the skills, curiosity and an adaptable mindset but don't meet every responsibility or qualification listed in this advertisement, please still get in touch with us.\n Should you require any specific support or adjustments throughout the recruitment process and beyond, please advise us and we will be happy to assist.\n For this role, only those candidates with the eligible right to work will be considered.\n SEEK kindly requests no unsolicited resumes or approaches from recruitment agencies and will not be responsible for any associated fees.",
+   "origin": "SEEK / JobStreet",
+   "where": "melbourne",
+   "work_mode": "hybrid",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": true,
+   "reposts": 1,
+   "ghost_risk": "medium",
+   "ghost_reasons": [
+    "Taken down and reposted"
+   ],
+   "category": "other",
+   "timing": "good",
+   "flags": [],
+   "score": 29
+  },
+  {
    "id": "smartrecruiters:seek:744000163412949",
    "title": "Marketing Associate, Customer Research & Insights",
    "company": "SEEK / JobStreet",
@@ -948,7 +973,7 @@
    "work_mode": "remote",
    "role_type": "entry",
    "first_seen": "2026-11-25T04:54:20+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -987,6 +1012,81 @@
    "score": 29
   },
   {
+   "id": "workday:pwc:776561WD-1",
+   "title": "Associate - Advisory Deals - Corporate Valuation Advisory",
+   "company": "PwC (campus)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Associate---Advisory-Deals---Corporate-Valuation-Advisory_776561WD-1",
+   "source": "workday",
+   "posted_at": "2026-11-26T00:00:00+00:00",
+   "text": "Line of Service \nAdvisory \n Industry/Sector \nNot Applicable \n Specialism \nValuation \n Management Level \nAssociate \n Job Description & Summary \nAt PwC, our people in Deals focus on providing strategic advice and support to clients in areas such as mergers and acquisitions, divestitures, and restructuring. They help clients navigate complex transactions and maximize value in their business deals. \nIn Deal Valuation at PwC, you will focus on providing analysis and valuation services for mergers, acquisitions, and other financial transactions. You will help clients make informed decisions by assessing the worth and potential risks of various deals. \n PwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be treated fairly and assessed solely based on job requirements and competencies. \n To really stand out and make us fit for the future in a constantly changing world, each and every one of us at PwC needs to be an authentic and inclusive leader, at all grades/levels and in all lines of service.   To help us achieve this we have the PwC  Professional;  our global leadership development framework. It gives us a single set of expectations across our lines,   geographies   and career paths, and provides transparency on the skills we need as individuals to be successful and progress in our careers, now and in the future.     \n As an  Associate , you'll work as part of a team of problem solvers, helping to solve complex business issues from strategy to execution.   PwC Professional skills and responsibilities for this management level include but are not limited to:     \n Invite and provide evidence-based feedback in   a timely   and constructive manner.     \n Share and collaborate effectively with others.     \n Work with existing processes/systems whilst making constructive suggestions for improvements.     \n Validate data and analysis for accuracy and relevance.     \n Follow risk management and compliance procedures.     \n Keep  up-to-date  with technical developments for the business area.     \n Communicate confidently in a clear,   concise   and articulate manner - verbally and in written form.     \n Seek opportunities to learn about other cultures and other parts of the business across the Network of PwC firms.     \n Uphold the firm's code of ethics and business conduct     \n Requirements   \n Bachelor's degree in Finance , Accounting, Business Administration, Economics, or related field; advanced degree (e.g., MBA, CFA) preferred.   \n GPA above 3.0 out of 4.0 / Second Class Upper Honours / Distinction average from top public and private universities in Indonesia and overseas.   \n Associate : fresh graduates are welcome to apply   \n Strong analytical skills with the ability to interpret complex financial data and develop actionable insights.   \n Excellent communication and interpersonal skills, with the ability to effectively   engage with   clients and internal teams at all levels.   \n Proven ability to work effectively in a fast-paced, dynamic environment, managing multiple priorities and deadlines with a high degree of accuracy and attention to detail.   \n Proficiency   in financial modeling, valuation techniques, and Microsoft Excel ; familiarity   with data visualization tools (e.g., Tableau) is a plus.   \n Commitment to continuous learning and professional development, with a proactive approach to staying informed about industry trends and best practices.   \n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: \n Certifications (if blank, certifications not specified) \n Required Skills \n Optional Skills \nAccepting Feedback, Accepting Feedback, Active Listening, AI Interaction, Alteryx (Automation Platform), Asset Valuation, Balance Sheet Analysis, Business Valuations, Business Value Analysis, Capital Modeling, Communication, Corpo",
+   "origin": "PwC (campus)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-26T04:10:44+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
+   "id": "workday:pwc:776561WD",
+   "title": "Associate - Advisory Deals - Corporate Valuation Advisory",
+   "company": "PwC (experienced)",
+   "location": "Jakarta",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Jakarta/Associate---Advisory-Deals---Corporate-Valuation-Advisory_776561WD",
+   "source": "workday",
+   "posted_at": "2026-11-26T00:00:00+00:00",
+   "text": "Line of Service \nAdvisory \n Industry/Sector \nNot Applicable \n Specialism \nValuation \n Management Level \nAssociate \n Job Description & Summary \nAt PwC, our people in Deals focus on providing strategic advice and support to clients in areas such as mergers and acquisitions, divestitures, and restructuring. They help clients navigate complex transactions and maximize value in their business deals. \nIn Deal Valuation at PwC, you will focus on providing analysis and valuation services for mergers, acquisitions, and other financial transactions. You will help clients make informed decisions by assessing the worth and potential risks of various deals. \n PwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be treated fairly and assessed solely based on job requirements and competencies. \n To really stand out and make us fit for the future in a constantly changing world, each and every one of us at PwC needs to be an authentic and inclusive leader, at all grades/levels and in all lines of service.   To help us achieve this we have the PwC  Professional;  our global leadership development framework. It gives us a single set of expectations across our lines,   geographies   and career paths, and provides transparency on the skills we need as individuals to be successful and progress in our careers, now and in the future.     \n As an  Associate , you'll work as part of a team of problem solvers, helping to solve complex business issues from strategy to execution.   PwC Professional skills and responsibilities for this management level include but are not limited to:     \n Invite and provide evidence-based feedback in   a timely   and constructive manner.     \n Share and collaborate effectively with others.     \n Work with existing processes/systems whilst making constructive suggestions for improvements.     \n Validate data and analysis for accuracy and relevance.     \n Follow risk management and compliance procedures.     \n Keep  up-to-date  with technical developments for the business area.     \n Communicate confidently in a clear,   concise   and articulate manner - verbally and in written form.     \n Seek opportunities to learn about other cultures and other parts of the business across the Network of PwC firms.     \n Uphold the firm's code of ethics and business conduct     \n Requirements   \n Bachelor's degree in Finance , Accounting, Business Administration, Economics, or related field; advanced degree (e.g., MBA, CFA) preferred.   \n GPA above 3.0 out of 4.0 / Second Class Upper Honours / Distinction average from top public and private universities in Indonesia and overseas.   \n Associate : fresh graduates are welcome to apply   \n Strong analytical skills with the ability to interpret complex financial data and develop actionable insights.   \n Excellent communication and interpersonal skills, with the ability to effectively   engage with   clients and internal teams at all levels.   \n Proven ability to work effectively in a fast-paced, dynamic environment, managing multiple priorities and deadlines with a high degree of accuracy and attention to detail.   \n Proficiency   in financial modeling, valuation techniques, and Microsoft Excel ; familiarity   with data visualization tools (e.g., Tableau) is a plus.   \n Commitment to continuous learning and professional development, with a proactive approach to staying informed about industry trends and best practices.   \n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: \n Certifications (if blank, certifications not specified) \n Required Skills \n Optional Skills \nAccepting Feedback, Accepting Feedback, Active Listening, AI Interaction, Alteryx (Automation Platform), Asset Valuation, Balance Sheet Analysis, Business Valuations, Business Value Analysis, Capital Modeling, Communication, Corpo",
+   "origin": "PwC (experienced)",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-26T04:10:44+00:00",
+   "is_new": true,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
+   "id": "successfactors:careers.ey.com:1442246633",
+   "title": "CBS - Finance - Account Receivable (AR) Associate",
+   "company": "EY",
+   "location": "Jakarta, ID, 12190",
+   "url": "https://careers.ey.com/ey/job/Jakarta-CBS-Finance-Account-Receivable-%28AR%29-Associate-12190/1442246633/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "Join our Core Business Services (CBS) team and you will help support the important business enablement functions that keep our organization running strong. As a CBS professional, you will work across teams to provide the knowledge, resources and tools that help EY deliver exceptional quality service to our clients, win in the marketplace and support EY’s growth and profitability. Major teams within CBS include Finance, Information Technology, Talent, Legal, Brand Marketing and Communications, Business Development, and Risk Management.\nJoin our Finance team and you will help enable EY client account teams and management to run the business effectively, by participating in one of our services (i.e. Billing, Payroll, Account Payable, etc). You’ll help to improve engagement profitability, manage enterprise wide risk and support market development activities. You will support EY planning, reporting and forecasting and analysis, or help EY people manage day-to-day activities, such as managing engagements, process and auditing time and expense or invoice processing. You’ll also work with other parts of our organisation, sharing your financial experience and insights to achieve specific goals. You’ll get all the support you need to stay on top of regulations — and the advice and help you‘ll need to meet your own professional goals.\nWith so many offerings, you have the opportunity to develop your career through a broad scope of engagements, mentoring and formal learning. That’s how we develop outstanding leaders who team to deliver on our promises to all of our stakeholders, and in so doing, play a critical role in building a better working world for our people, for our clients and for our communities. Sound interesting? Well this is just the beginning. Because whenever you join, however long you stay, the exceptional EY experience lasts a lifetime.\n Job Description :\n Prepare and issue client invoices accurately and in a timely manner.Monitor and maintain accounts receivable records to ensure all payments are properly recorded and reconciled.\n Follow up on outstanding invoices and coordinate with clients to ensure timely collection of payments.Investigate and resolve billing discrepancies, payment issues, and account-related inquiries.\n Prepare aging reports and analyze overdue accounts to support collection efforts and minimize bad debt risks.\n Collaborate with internal teams to ensure accurate billing information and proper revenue recognition.\n Assist in month-end and year-end closing activities, including reconciliations and receivable reporting.\n Maintain compliance with company policies, accounting standards, and internal controls while supporting continuous process improvement initiatives.\n Requirements:\n Candidate must possess at least a Bachelor's Degree in Accounting, Finance, or related field with a minimum GPA of 3.20 out of 4.00 from reputable universities (local or overseas).\n Have strong knowledge of Accounts Receivable processes, invoicing, collections, and reconciliation.Proficient in Microsoft Excel, including financial formulas and data analysis.\n Have good communication and interpersonal skills, with the ability to interact effectively with clients and internal stakeholders.\n Ability to communicate both written and oral in English.\n Have a strong understanding of accounting principles and financial reporting.\n Detail-oriented, organized, and able to work under tight deadlines.",
+   "origin": "EY",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
    "id": "successfactors:careers.ey.com:1032490801",
    "title": "Risk Transformation (FSO) - Junior Consultant",
    "company": "EY",
@@ -995,6 +1095,31 @@
    "source": "successfactors",
    "posted_at": null,
    "text": "Who we are",
+   "origin": "EY",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 29
+  },
+  {
+   "id": "successfactors:careers.ey.com:1427779133",
+   "title": "Climate Change and Sustainability Services - Associate",
+   "company": "EY",
+   "location": "Jakarta, ID, 12190",
+   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
    "origin": "EY",
    "where": "jakarta",
    "work_mode": "onsite",
@@ -1039,31 +1164,6 @@
    "score": 29
   },
   {
-   "id": "successfactors:careers.ey.com:1427779133",
-   "title": "Climate Change and Sustainability Services - Associate",
-   "company": "EY",
-   "location": "Jakarta, ID, 12190",
-   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
-   "source": "successfactors",
-   "posted_at": null,
-   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
-   "origin": "EY",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
    "id": "successfactors:careers.ey.com:1268656101",
    "title": "Mandarin-Speaking Junior Tax Consultant",
    "company": "EY",
@@ -1097,31 +1197,6 @@
    "source": "successfactors",
    "posted_at": null,
    "text": "As part of our FAAS team, you will play a key role in helping clients navigate complex accounting, financial reporting, and regulatory challenges. You will deliver insights and solutions that strengthen their control functions, increase transparency, and support compliance reporting. Working as a trusted advisor, our FAAS professionals combine deep technical expertise with practical business experience to help clients adapt and thrive in an ever-changing economic and regulatory environment.\n What we're looking for? \n Bachelor's degree in Accounting with a minimum GPA of 3.20 from an accredited college/university. \n Fresh graduates are welcome, a minimum of one year of experience in a public accounting firm is an advantage.\n Proficiency in Mandarin (spoken and written) is an advantage\n Strong technical knowledge, with a focus on PSAK and IFRS, is preferred.\n Excellent communication skills in both English and Indonesian.\n High intellectual curiosity and a strong willingness to learn.\n Strong analytical skills and attention to detail.\n Ability to work effectively under pressure in a fast-paced environment, manage multiple tasks, and consistently deliver high-quality work.\n How to be shortlisted? \n Have the qualifications we need \n Apply by submitting your latest CV, academic transcript, and graduation certificate compiled in 1 PDF file",
-   "origin": "EY",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
-   "id": "successfactors:careers.ey.com:1442246633",
-   "title": "CBS - Finance - Account Receivable (AR) Associate",
-   "company": "EY",
-   "location": "Jakarta, ID, 12190",
-   "url": "https://careers.ey.com/ey/job/Jakarta-CBS-Finance-Account-Receivable-%28AR%29-Associate-12190/1442246633/",
-   "source": "successfactors",
-   "posted_at": null,
-   "text": "Join our Core Business Services (CBS) team and you will help support the important business enablement functions that keep our organization running strong. As a CBS professional, you will work across teams to provide the knowledge, resources and tools that help EY deliver exceptional quality service to our clients, win in the marketplace and support EY’s growth and profitability. Major teams within CBS include Finance, Information Technology, Talent, Legal, Brand Marketing and Communications, Business Development, and Risk Management.\nJoin our Finance team and you will help enable EY client account teams and management to run the business effectively, by participating in one of our services (i.e. Billing, Payroll, Account Payable, etc). You’ll help to improve engagement profitability, manage enterprise wide risk and support market development activities. You will support EY planning, reporting and forecasting and analysis, or help EY people manage day-to-day activities, such as managing engagements, process and auditing time and expense or invoice processing. You’ll also work with other parts of our organisation, sharing your financial experience and insights to achieve specific goals. You’ll get all the support you need to stay on top of regulations — and the advice and help you‘ll need to meet your own professional goals.\nWith so many offerings, you have the opportunity to develop your career through a broad scope of engagements, mentoring and formal learning. That’s how we develop outstanding leaders who team to deliver on our promises to all of our stakeholders, and in so doing, play a critical role in building a better working world for our people, for our clients and for our communities. Sound interesting? Well this is just the beginning. Because whenever you join, however long you stay, the exceptional EY experience lasts a lifetime.\n Job Description :\n Prepare and issue client invoices accurately and in a timely manner.Monitor and maintain accounts receivable records to ensure all payments are properly recorded and reconciled.\n Follow up on outstanding invoices and coordinate with clients to ensure timely collection of payments.Investigate and resolve billing discrepancies, payment issues, and account-related inquiries.\n Prepare aging reports and analyze overdue accounts to support collection efforts and minimize bad debt risks.\n Collaborate with internal teams to ensure accurate billing information and proper revenue recognition.\n Assist in month-end and year-end closing activities, including reconciliations and receivable reporting.\n Maintain compliance with company policies, accounting standards, and internal controls while supporting continuous process improvement initiatives.\n Requirements:\n Candidate must possess at least a Bachelor's Degree in Accounting, Finance, or related field with a minimum GPA of 3.20 out of 4.00 from reputable universities (local or overseas).\n Have strong knowledge of Accounts Receivable processes, invoicing, collections, and reconciliation.Proficient in Microsoft Excel, including financial formulas and data analysis.\n Have good communication and interpersonal skills, with the ability to interact effectively with clients and internal stakeholders.\n Ability to communicate both written and oral in English.\n Have a strong understanding of accounting principles and financial reporting.\n Detail-oriented, organized, and able to work under tight deadlines.",
    "origin": "EY",
    "where": "jakarta",
    "work_mode": "onsite",
@@ -1204,7 +1279,7 @@
    "work_mode": "onsite",
    "role_type": "internship",
    "first_seen": "2026-11-25T04:54:20+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1364,7 +1439,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 154 days ago"
+    "Posted 155 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1391,7 +1466,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 722 days ago",
+    "Posted 723 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1417,7 +1492,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 722 days ago",
+    "Posted 723 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1443,7 +1518,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 64 days ago"
+    "Posted 65 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1603,7 +1678,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 53 days ago"
+    "Posted 54 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -1821,7 +1896,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 36 days ago"
+    "Posted 37 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1846,7 +1921,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 43 days ago"
+    "Posted 44 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1900,7 +1975,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 54 days ago"
+    "Posted 55 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2038,7 +2113,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 68 days ago",
+    "Posted 69 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2066,7 +2141,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 134 days ago"
+    "Posted 135 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2091,7 +2166,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 293 days ago"
+    "Posted 294 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2118,7 +2193,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 33 days ago"
+    "Posted 34 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2145,7 +2220,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 200 days ago"
+    "Posted 201 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2172,7 +2247,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 35 days ago"
+    "Posted 36 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2226,7 +2301,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 408 days ago"
+    "Posted 409 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2253,7 +2328,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 42 days ago",
+    "Posted 43 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2279,7 +2354,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 63 days ago"
+    "Posted 64 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2307,7 +2382,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 72 days ago"
+    "Posted 73 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2332,7 +2407,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 83 days ago"
+    "Posted 84 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2357,7 +2432,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 107 days ago",
+    "Posted 108 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2385,7 +2460,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 237 days ago"
+    "Posted 238 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2410,7 +2485,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 425 days ago",
+    "Posted 426 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2439,7 +2514,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 532 days ago",
+    "Posted 533 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2467,7 +2542,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 722 days ago",
+    "Posted 723 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2493,7 +2568,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 42 days ago",
+    "Posted 43 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2519,7 +2594,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 72 days ago"
+    "Posted 73 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2544,7 +2619,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 237 days ago"
+    "Posted 238 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2569,7 +2644,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 532 days ago",
+    "Posted 533 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2597,7 +2672,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 722 days ago",
+    "Posted 723 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2623,7 +2698,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 35 days ago"
+    "Posted 36 days ago"
    ],
    "category": "other",
    "timing": "long",
@@ -2652,15 +2727,6 @@
    "title": "Jr. KAM Emerging Channel",
    "closed_at": "2026-11-24T06:06:00+00:00",
    "url": "https://careers.reckitt.com/job/Jakarta-Raya-Jr_-KAM-Emerging-Channel-Jawa-NA/1453621233/"
-  },
-  {
-   "ids": [
-    "smartrecruiters:seek:744000161737899"
-   ],
-   "company": "SEEK / JobStreet",
-   "title": "Marketing Associate, Events & Sponsorships",
-   "closed_at": "2026-11-25T04:54:20+00:00",
-   "url": "https://jobs.smartrecruiters.com/SEEK/744000161737899-marketing-associate-events-sponsorships"
   }
  ]
 }

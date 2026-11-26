@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-25T04:55:10+00:00",
+ "checked_at": "2026-11-26T04:11:29+00:00",
  "status": {
   "https://picoctf.org/": "ok",
   "https://ctftime.org/event/list/upcoming": "ok",
@@ -35,7 +35,7 @@
   "https://relawantik.or.id/": "ok",
   "https://www.indorelawan.org/": "ok",
   "https://siberkreasi.id/": "ok",
-  "https://itsec.asia/": "unknown",
+  "https://itsec.asia/": "ok",
   "https://www.defenxor.com/": "ok",
   "https://spentera.id/": "ok",
   "https://www.xynexis.com/": "ok",
