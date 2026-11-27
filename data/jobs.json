@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-26T04:10:44+00:00",
+ "generated_at": "2026-11-27T04:17:41+00:00",
  "counts": {
-  "postings_scanned": 6929,
-  "internships": 81,
+  "postings_scanned": 6933,
+  "internships": 77,
   "cyber": 3,
   "tech": 12,
-  "jakarta": 72,
+  "jakarta": 68,
   "melbourne": 8,
   "remote": 1,
   "by_type": {
-   "internship": 29,
-   "entry": 52,
+   "internship": 28,
+   "entry": 49,
    "student": 0,
    "volunteer": 0
   },
-  "new": 3
+  "new": 0
  },
  "sources": [
   {
@@ -46,7 +46,7 @@
    "ats": "greenhouse",
    "slug": "agoda",
    "ok": true,
-   "postings": 335,
+   "postings": 334,
    "error": null
   },
   {
@@ -62,7 +62,7 @@
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 506,
+   "postings": 511,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
    "ats": "workable",
    "slug": "ajaib",
    "ok": true,
-   "postings": 93,
+   "postings": 94,
    "error": null
   },
   {
@@ -86,7 +86,7 @@
    "ats": "amazon",
    "slug": "amazon",
    "ok": true,
-   "postings": 97,
+   "postings": 95,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
    "ats": "remoteboard",
    "slug": "arbeitnow",
    "ok": true,
-   "postings": 142,
+   "postings": 146,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
    "ats": "greenhouse",
    "slug": "binance",
    "ok": true,
-   "postings": 230,
+   "postings": 226,
    "error": null
   },
   {
@@ -166,7 +166,7 @@
    "ats": "smartrecruiters",
    "slug": "canva",
    "ok": true,
-   "postings": 29,
+   "postings": 33,
    "error": null
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "slug": "cultureamp",
    "ok": true,
-   "postings": 28,
+   "postings": 27,
    "error": null
   },
   {
@@ -190,7 +190,7 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "ok": true,
-   "postings": 392,
+   "postings": 391,
    "error": null
   },
   {
@@ -206,7 +206,7 @@
    "ats": "successfactors",
    "slug": "careers.ey.com",
    "ok": true,
-   "postings": 10,
+   "postings": 9,
    "error": null
   },
   {
@@ -214,7 +214,7 @@
    "ats": "teamtailor",
    "slug": "fuse",
    "ok": true,
-   "postings": 29,
+   "postings": 30,
    "error": null
   },
   {
@@ -230,7 +230,7 @@
    "ats": "smartrecruiters",
    "slug": "grab",
    "ok": true,
-   "postings": 452,
+   "postings": 450,
    "error": null
   },
   {
@@ -310,7 +310,7 @@
    "ats": "lever",
    "slug": "lalamove",
    "ok": true,
-   "postings": 153,
+   "postings": 152,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
    "ats": "greenhouse",
    "slug": "mongodb",
    "ok": true,
-   "postings": 422,
+   "postings": 421,
    "error": null
   },
   {
@@ -358,7 +358,7 @@
    "ats": "lever",
    "slug": "ninjavan",
    "ok": true,
-   "postings": 138,
+   "postings": 137,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
    "ats": "lever",
    "slug": "nium",
    "ok": true,
-   "postings": 31,
+   "postings": 36,
    "error": null
   },
   {
@@ -422,7 +422,7 @@
    "ats": "workday",
    "slug": "pwc|wd3|Global_Campus_Careers",
    "ok": true,
-   "postings": 24,
+   "postings": 22,
    "error": null
   },
   {
@@ -438,7 +438,7 @@
    "ats": "successfactors",
    "slug": "careers.reckitt.com",
    "ok": true,
-   "postings": 2,
+   "postings": 1,
    "error": null
   },
   {
@@ -454,7 +454,7 @@
    "ats": "remoteboard",
    "slug": "remoteok",
    "ok": true,
-   "postings": 5,
+   "postings": 3,
    "error": null
   },
   {
@@ -494,7 +494,7 @@
    "ats": "smartrecruiters",
    "slug": "seek",
    "ok": true,
-   "postings": 38,
+   "postings": 39,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "ats": "ashby",
    "slug": "sophos",
    "ok": true,
-   "postings": 74,
+   "postings": 76,
    "error": null
   },
   {
@@ -518,7 +518,7 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "ok": true,
-   "postings": 772,
+   "postings": 767,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
    "ats": "ashby",
    "slug": "xero",
    "ok": true,
-   "postings": 112,
+   "postings": 118,
    "error": null
   }
  ],
@@ -587,33 +587,6 @@
    "timing": "unknown",
    "flags": [],
    "score": 79
-  },
-  {
-   "id": "workday:pg:R000160622",
-   "title": "PRIMA Internship Program",
-   "company": "P&G",
-   "location": "JAKARTA PLANT",
-   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/PRIMA-Internship-Program_R000160622",
-   "source": "workday",
-   "posted_at": "2026-11-19T00:00:00+00:00",
-   "text": "Job Location \nJAKARTA PLANT \n Job Description \n Are you ready to develop new skills by mastering the latest production technology for the world’s biggest brands? We invite you to join PRIMA (Plant Technician Ready Makers Academy) Internship Program at PT Procter & Gamble Operations Indonesia.\n This program is designed to equip aspiring plant technicians like you with the essential skills, knowledge, and hands-on experience required for success career in the industry. At P&G, we are committed to investing in and nurturing talented individuals, providing invaluable theoretical and practical experiences right within our plant.\n As a participant in the PRIMA program, you will gain extensive work competencies through a balanced approach: 70% hands-on experience in production operations, 20% guided mentorship from the experts, and 10% engaging classroom training and workshop. You will immerse yourself in P&G’s high standards and methods, enhancing your capabilities and preparing you for future challenges. Plus, you will have the opportunity to lead impactful projects that directly contribute to our business objectives.\n Are you ready to take on this challenge? \n You may be placed in one of the packing or making operations. Your mission will include:\n Supporting the operation as an area operator while following high standards of P&G Jakarta Plant's Foundation (safety, quality, stewardship, and citizenship) to deliver the perfect quality product to our consumers and maintain high performance of production lines\n Contributing to the daily management system\n Leading one or more key projects aimed at eliminating losses in operations\n Job Qualifications \n We are seeking candidates who possess the following qualification and we will prioritize the candidate from Karawang City. \n Willingness to complete a 1-year PRIMA program\n Willingness to follow rotating shift schedule at Jakarta Plant\n Currently enrolled in the penultimate year of a diploma program or a recent graduate in Electrical Engineering, Mechanical Engineering, or Mechatronic Engineering\n Strong academic performance (minimum GPA of 3.2 out of 4.0)\n Active participation in campus activities or external organization\n Proficient in English (writing, reading, and speaking)\n Computer literacy\n Willingness to be based at PT P&G Operations Indonesia in the Karawang Industrial Area, West Java\n ABOUT US \n We produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\n Visit http://www.pg.com to know more.\n Our consumers are diverse and our talents - internally - mirror this diversity to best serve it. That is why we’re committed to building a winning culture based on Inclusion and our ideal candidate is passionate about the same principle: you will join our daily effort of being “in touch” so we craft brands and products to improve the lives of the world’s consumers now and in the future. We want you to inspire us with your unrivaled ideas.\n We are committed to providing equal opportunities in employment. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, veteran status, HIV/AIDS status, or any other legally protected factor.\n Job Schedule \nFull time \n Job Number \nR000160622 \n Job Segmentation \nPlant Technicians",
-   "origin": "P&G",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "tech",
-   "timing": "unknown",
-   "flags": [
-    "Mentions final-year students or graduates; check eligibility"
-   ],
-   "score": 59
   },
   {
    "id": "successfactors:careers.ey.com:1073580001",
@@ -666,6 +639,33 @@
    "score": 57
   },
   {
+   "id": "workday:pg:R000160622",
+   "title": "PRIMA Internship Program",
+   "company": "P&G",
+   "location": "JAKARTA PLANT",
+   "url": "https://pg.wd5.myworkdayjobs.com/1000/job/JAKARTA-PLANT/PRIMA-Internship-Program_R000160622",
+   "source": "workday",
+   "posted_at": "2026-11-19T00:00:00+00:00",
+   "text": "Job Location \nJAKARTA PLANT \n Job Description \n Are you ready to develop new skills by mastering the latest production technology for the world’s biggest brands? We invite you to join PRIMA (Plant Technician Ready Makers Academy) Internship Program at PT Procter & Gamble Operations Indonesia.\n This program is designed to equip aspiring plant technicians like you with the essential skills, knowledge, and hands-on experience required for success career in the industry. At P&G, we are committed to investing in and nurturing talented individuals, providing invaluable theoretical and practical experiences right within our plant.\n As a participant in the PRIMA program, you will gain extensive work competencies through a balanced approach: 70% hands-on experience in production operations, 20% guided mentorship from the experts, and 10% engaging classroom training and workshop. You will immerse yourself in P&G’s high standards and methods, enhancing your capabilities and preparing you for future challenges. Plus, you will have the opportunity to lead impactful projects that directly contribute to our business objectives.\n Are you ready to take on this challenge? \n You may be placed in one of the packing or making operations. Your mission will include:\n Supporting the operation as an area operator while following high standards of P&G Jakarta Plant's Foundation (safety, quality, stewardship, and citizenship) to deliver the perfect quality product to our consumers and maintain high performance of production lines\n Contributing to the daily management system\n Leading one or more key projects aimed at eliminating losses in operations\n Job Qualifications \n We are seeking candidates who possess the following qualification and we will prioritize the candidate from Karawang City. \n Willingness to complete a 1-year PRIMA program\n Willingness to follow rotating shift schedule at Jakarta Plant\n Currently enrolled in the penultimate year of a diploma program or a recent graduate in Electrical Engineering, Mechanical Engineering, or Mechatronic Engineering\n Strong academic performance (minimum GPA of 3.2 out of 4.0)\n Active participation in campus activities or external organization\n Proficient in English (writing, reading, and speaking)\n Computer literacy\n Willingness to be based at PT P&G Operations Indonesia in the Karawang Industrial Area, West Java\n ABOUT US \n We produce globally recognized brands and we grow the best business leaders in the industry. With a portfolio of trusted brands as diverse as ours, it is paramount our leaders are able to lead with courage the vast array of brands, categories and functions. We serve consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always®, Ariel®, Gillette®, Head & Shoulders®, Herbal Essences®, Oral-B®, Pampers®, Pantene®, Tampax® and more. Our community includes operations in approximately 70 countries worldwide.\n Visit http://www.pg.com to know more.\n Our consumers are diverse and our talents - internally - mirror this diversity to best serve it. That is why we’re committed to building a winning culture based on Inclusion and our ideal candidate is passionate about the same principle: you will join our daily effort of being “in touch” so we craft brands and products to improve the lives of the world’s consumers now and in the future. We want you to inspire us with your unrivaled ideas.\n We are committed to providing equal opportunities in employment. We do not discriminate against individuals on the basis of race, color, gender, age, national origin, religion, sexual orientation, gender identity or expression, marital status, citizenship, disability, veteran status, HIV/AIDS status, or any other legally protected factor.\n Job Schedule \nFull time \n Job Number \nR000160622 \n Job Segmentation \nPlant Technicians",
+   "origin": "P&G",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "tech",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 54
+  },
+  {
    "id": "workday:pwc:767821WD",
    "title": "FY27 - Associate 1 - Risk Assurance - IT Governance",
    "company": "PwC (experienced)",
@@ -710,7 +710,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 135 days ago"
+    "Posted 136 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -735,7 +735,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 288 days ago"
+    "Posted 289 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -762,7 +762,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 37 days ago"
+    "Posted 38 days ago"
    ],
    "category": "tech",
    "timing": "good",
@@ -910,31 +910,6 @@
    "score": 32
   },
   {
-   "id": "smartrecruiters:grab:744000162427979",
-   "title": "Supply Chain In-Stock Associate",
-   "company": "Grab",
-   "location": "Jakarta, Indonesia",
-   "url": "https://jobs.smartrecruiters.com/Grab/744000162427979-supply-chain-in-stock-associate",
-   "source": "smartrecruiters",
-   "posted_at": "2026-11-19T02:24:03+00:00",
-   "text": "Job Description\nYou will support day-to-day in-stock execution for fresh products, including produce, meat, and dairy. Your work will help fulfillment teams maintain accurate stock, respond quickly to shortages, and manage products with short shelf lives. You will report to the Supply Chain Manager and work within established replenishment and inventory procedures, escalating exceptions to the right partners.\n This role is suited to someone who enjoys hands-on operations, accurate follow-through, and solving practical inventory issues. You will build experience across replenishment, stock control, and fulfillment operations.\n Review daily stock and availability trackers for fresh products across fulfillment locations, flag stock-outs, low stock, and data gaps, and keep follow-up actions current.\n Support replenishment execution using agreed forecasts and reorder guidelines, including preparing routine order inputs and following up on purchase order confirmations and receipts.\n Track supplier fill rates, delivery delays, and short or incorrect deliveries, maintain an issue log, and escalate urgent or recurring gaps to the Supply Chain Manager.\n Complete routine stock checks and cycle counts, compare physical inventory with system records, document discrepancies, and follow through with the authorized teams on corrections.\n Check product age, expiry dates, and handling records; follow first-expiry, first-out and cold-chain procedures, and flag quality or shelf-life concerns promptly.\n Coordinate approved actions for near-expiry or excess stock with category and fulfillment teams, following existing promotion, transfer, and disposition procedures.\n Maintain routine KPI reports on availability, inventory days, ageing, supplier fill rate, and waste. Use approved AI and productivity tools to summarize data or draft routine updates, and verify all outputs before use.\nQualifications\nA diploma or bachelor's degree in supply chain, logistics, operations, business, or a related field, or equivalent practical experience, plus 1 to 3 years in inventory, replenishment, or supply chain operations.\n Practical understanding of stock replenishment, inventory accuracy, receiving, and expiry or ageing control.\n Working proficiency in Excel or Google Sheets, including formulas, lookups, and pivot tables, to maintain trackers and reconcile inventory data.\n Ability to read operational metrics, keep accurate records, prioritize exceptions, and follow issues through to resolution.\n Fluency in Bahasa Indonesia and working proficiency in English for coordination with local and regional teams.\n Experience engaging with AI tools and emerging technologies to enhance productivity, improve workflows, and contribute new ideas, with care to verify outputs before acting.\n Experience in fresh grocery, FMCG, e-commerce, or quick-commerce operations.\n Exposure to an inventory, enterprise resource planning, or warehouse management system.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that enables diverse Grabbers to grow and perform at their best. As an equal opportunity employer, we consider all candidates fairly and equally regardless of nationality, ethnicity, religion, age, gender identity, sexual orientation",
-   "origin": "Grab",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
    "id": "smartrecruiters:seek:744000163608929",
    "title": "Marketing Associate, Events & Sponsorships",
    "company": "SEEK / JobStreet",
@@ -948,7 +923,7 @@
    "work_mode": "hybrid",
    "role_type": "entry",
    "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 1,
    "ghost_risk": "medium",
    "ghost_reasons": [
@@ -985,33 +960,6 @@
    "score": 29
   },
   {
-   "id": "workable:ajaib:4C891418D5",
-   "title": "Community Partnership Intern",
-   "company": "Ajaib",
-   "location": "Jakarta, Indonesia",
-   "url": "https://apply.workable.com/j/4C891418D5",
-   "source": "workable",
-   "posted_at": "2026-11-19T00:00:00+00:00",
-   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n We are looking for a proactive and detail-oriented Community Partnership Intern to support our team in managing community partner relationships, monitoring performance, and coordinating various community activities. In this role, you will gain hands-on experience in partnership operations, performance reporting, and community engagement while supporting the execution of content campaigns, live trading sessions, webinars, and other activations.\n Requirements \n Currently pursuing or recently graduated with a degree in Business, Marketing, Communications, or a related field.\n Able to use in Microsoft Excel or Google Sheets for data tracking, reporting, and maintaining trackers.\n Interested in financial markets, trading, investment, and community engagement.\n Detail-oriented and organized, with the ability to manage partnership documents and administrative tasks accurately.\n Good communication and coordination skills to work with community partners and internal teams.\n Proactive, eager to learn, and willing to support recurring operational tasks and community activities.\n Key Responsibilities \n Compile and maintain regular reports on community business performance, including key metrics and trends.\n Track and recap content and live trading performance across community partners.\n Coordinate and communicate content and live trading briefs to community partners.\n Maintain and organize partnership documents, agreements, trackers, and other administrative records.\n Distribute relevant market updates and campaign information to community groups.\n Support the preparation and execution of webinars, live trading sessions, offline events, and other community activations.\n Support coordination with relevant internal teams for community-related operational needs.\n Assist with other recurring operational and administrative tasks required to support the Community Partnership team.\n Benefits \n Join us as we make magic happen to increase Indonesia’s financial inclusion!",
-   "origin": "Ajaib",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [
-    "Mentions final-year students or graduates; check eligibility"
-   ],
-   "score": 29
-  },
-  {
    "id": "workday:pwc:776561WD-1",
    "title": "Associate - Advisory Deals - Corporate Valuation Advisory",
    "company": "PwC (campus)",
@@ -1025,7 +973,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-26T04:10:44+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1050,7 +998,7 @@
    "work_mode": "onsite",
    "role_type": "entry",
    "first_seen": "2026-11-26T04:10:44+00:00",
-   "is_new": true,
+   "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
    "ghost_reasons": [
@@ -1172,31 +1120,6 @@
    "source": "successfactors",
    "posted_at": null,
    "text": "As a member of staff within the Tax practice, you'll join a globally-integrated team that helps leading organizations identify risk areas and sustainable planning opportunities for indirect taxes throughout the tax life cycle. Your work will impact to client needs. You'll assist in devising and providing recommendations to address a wide range of issues and problems. In doing so, you'll help clients meet their compliance obligations and business goals around the world.\n In Tax, we have more than 35,000 people globally who help our clients understand and manage their tax compliance and reporting obligations responsibly and proactively. We help them assess, improve and monitor their tax function’s processes, controls and risk management and maintain effective relationships with the tax authorities.\n Tax has sub-service lines which cover a wide range of issues: Business Tax Services, Global Compliance and Reporting, Human Capital, Indirect Tax, International Tax and Transaction Services.\n Client responsibilities  \n Work effectively as a member of a worldwide network of professional advisors, sharing responsibility, providing support, maintaining communication and updating senior team members on progress\n Collaborate with a team of tax professionals to combine diverse cross-border  experience with local tax knowledge across a broad spectrum of industries  \n Participate and assist in preparing for meetings with management teams\n Assist in preparing reports and schedules that will be delivered to clients and other parties\n Develop and maintain productive working relationships with client personnel\n Build strong internal relationships within Tax and across other service lines \n People responsibilities  \n Contribute to people initiatives, including recruiting and retaining tax professionals\n Maintain an educational program to develop personal skills on an ongoing basis\n Understand and follow workplace policies and procedures\n Requirements \n Bachelor's Degree, preferably in Accounting, Fiscal Administration, Finance, Business, Economics  from reputable overseas or local Universities, with minimum GPA 3.20 out of 4.00 or equivalent.\n Proficient in Mandarin, English, and Indonesian, both verbal and written. \n Brevet certification will be a distinct advantage\n Should be capable of working effectively under pressure and meeting established goals & objectives within the specific deadline, while maintaining high quality at all times.\n Excellent communication, presentation and interpersonal skills in dealing with people at all professional levels will also be highly valued.\n Should be proactive, highly motivated and able to work effectively in a team.\n Familiarity with MS Office application (Excel, Word, PowerPoint) is essential.\n Experience in a similar role in another reputable accounting firm will be a distinct advantage.",
-   "origin": "EY",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
-   "id": "successfactors:careers.ey.com:1264399001",
-   "title": "Associate Financial Accounting Advisory Services (FAAS)",
-   "company": "EY",
-   "location": "Jakarta, ID, 12190",
-   "url": "https://careers.ey.com/ey/job/Jakarta-Associate-Financial-Accounting-Advisory-Services-%28FAAS%29-12190/1264399001/",
-   "source": "successfactors",
-   "posted_at": null,
-   "text": "As part of our FAAS team, you will play a key role in helping clients navigate complex accounting, financial reporting, and regulatory challenges. You will deliver insights and solutions that strengthen their control functions, increase transparency, and support compliance reporting. Working as a trusted advisor, our FAAS professionals combine deep technical expertise with practical business experience to help clients adapt and thrive in an ever-changing economic and regulatory environment.\n What we're looking for? \n Bachelor's degree in Accounting with a minimum GPA of 3.20 from an accredited college/university. \n Fresh graduates are welcome, a minimum of one year of experience in a public accounting firm is an advantage.\n Proficiency in Mandarin (spoken and written) is an advantage\n Strong technical knowledge, with a focus on PSAK and IFRS, is preferred.\n Excellent communication skills in both English and Indonesian.\n High intellectual curiosity and a strong willingness to learn.\n Strong analytical skills and attention to detail.\n Ability to work effectively under pressure in a fast-paced environment, manage multiple tasks, and consistently deliver high-quality work.\n How to be shortlisted? \n Have the qualifications we need \n Apply by submitting your latest CV, academic transcript, and graduation certificate compiled in 1 PDF file",
    "origin": "EY",
    "where": "jakarta",
    "work_mode": "onsite",
@@ -1397,6 +1320,31 @@
    "score": 27
   },
   {
+   "id": "smartrecruiters:grab:744000162427979",
+   "title": "Supply Chain In-Stock Associate",
+   "company": "Grab",
+   "location": "Jakarta, Indonesia",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000162427979-supply-chain-in-stock-associate",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-19T02:24:03+00:00",
+   "text": "Job Description\nYou will support day-to-day in-stock execution for fresh products, including produce, meat, and dairy. Your work will help fulfillment teams maintain accurate stock, respond quickly to shortages, and manage products with short shelf lives. You will report to the Supply Chain Manager and work within established replenishment and inventory procedures, escalating exceptions to the right partners.\n This role is suited to someone who enjoys hands-on operations, accurate follow-through, and solving practical inventory issues. You will build experience across replenishment, stock control, and fulfillment operations.\n Review daily stock and availability trackers for fresh products across fulfillment locations, flag stock-outs, low stock, and data gaps, and keep follow-up actions current.\n Support replenishment execution using agreed forecasts and reorder guidelines, including preparing routine order inputs and following up on purchase order confirmations and receipts.\n Track supplier fill rates, delivery delays, and short or incorrect deliveries, maintain an issue log, and escalate urgent or recurring gaps to the Supply Chain Manager.\n Complete routine stock checks and cycle counts, compare physical inventory with system records, document discrepancies, and follow through with the authorized teams on corrections.\n Check product age, expiry dates, and handling records; follow first-expiry, first-out and cold-chain procedures, and flag quality or shelf-life concerns promptly.\n Coordinate approved actions for near-expiry or excess stock with category and fulfillment teams, following existing promotion, transfer, and disposition procedures.\n Maintain routine KPI reports on availability, inventory days, ageing, supplier fill rate, and waste. Use approved AI and productivity tools to summarize data or draft routine updates, and verify all outputs before use.\nQualifications\nA diploma or bachelor's degree in supply chain, logistics, operations, business, or a related field, or equivalent practical experience, plus 1 to 3 years in inventory, replenishment, or supply chain operations.\n Practical understanding of stock replenishment, inventory accuracy, receiving, and expiry or ageing control.\n Working proficiency in Excel or Google Sheets, including formulas, lookups, and pivot tables, to maintain trackers and reconcile inventory data.\n Ability to read operational metrics, keep accurate records, prioritize exceptions, and follow issues through to resolution.\n Fluency in Bahasa Indonesia and working proficiency in English for coordination with local and regional teams.\n Experience engaging with AI tools and emerging technologies to enhance productivity, improve workflows, and contribute new ideas, with care to verify outputs before acting.\n Experience in fresh grocery, FMCG, e-commerce, or quick-commerce operations.\n Exposure to an inventory, enterprise resource planning, or warehouse management system.\nAdditional Information\nLife at Grab \n We care about your well-being at Grab, here are some of the global benefits we offer:\n We have your back with Term Life Insurance and comprehensive Medical Insurance. \n With GrabFlex, create a benefits package that suits your needs and aspirations.\n Celebrate moments that matter in life with loved ones through Parental and Birthday leave , and give back to your communities through Love-all-Serve-all (LASA) volunteering leave\n We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.\n Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours\n What We Stand For at Grab \n We are committed to building an inclusive and equitable workplace that enables diverse Grabbers to grow and perform at their best. As an equal opportunity employer, we consider all candidates fairly and equally regardless of nationality, ethnicity, religion, age, gender identity, sexual orientation",
+   "origin": "Grab",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
+   "score": 24
+  },
+  {
    "id": "smartrecruiters:BoschGroup:744000161985250",
    "title": "Finance, Accounting & Tax Intern",
    "company": "Bosch",
@@ -1422,6 +1370,33 @@
    "score": 24
   },
   {
+   "id": "workable:ajaib:4C891418D5",
+   "title": "Community Partnership Intern",
+   "company": "Ajaib",
+   "location": "Jakarta, Indonesia",
+   "url": "https://apply.workable.com/j/4C891418D5",
+   "source": "workable",
+   "posted_at": "2026-11-19T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n We are looking for a proactive and detail-oriented Community Partnership Intern to support our team in managing community partner relationships, monitoring performance, and coordinating various community activities. In this role, you will gain hands-on experience in partnership operations, performance reporting, and community engagement while supporting the execution of content campaigns, live trading sessions, webinars, and other activations.\n Requirements \n Currently pursuing or recently graduated with a degree in Business, Marketing, Communications, or a related field.\n Able to use in Microsoft Excel or Google Sheets for data tracking, reporting, and maintaining trackers.\n Interested in financial markets, trading, investment, and community engagement.\n Detail-oriented and organized, with the ability to manage partnership documents and administrative tasks accurately.\n Good communication and coordination skills to work with community partners and internal teams.\n Proactive, eager to learn, and willing to support recurring operational tasks and community activities.\n Key Responsibilities \n Compile and maintain regular reports on community business performance, including key metrics and trends.\n Track and recap content and live trading performance across community partners.\n Coordinate and communicate content and live trading briefs to community partners.\n Maintain and organize partnership documents, agreements, trackers, and other administrative records.\n Distribute relevant market updates and campaign information to community groups.\n Support the preparation and execution of webinars, live trading sessions, offline events, and other community activations.\n Support coordination with relevant internal teams for community-related operational needs.\n Assist with other recurring operational and administrative tasks required to support the Community Partnership team.\n Benefits \n Join us as we make magic happen to increase Indonesia’s financial inclusion!",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 24
+  },
+  {
    "id": "workday:pwc:739552WD",
    "title": "IT Governance Associate FY27",
    "company": "PwC (campus)",
@@ -1439,7 +1414,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 155 days ago"
+    "Posted 156 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1466,7 +1441,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 723 days ago",
+    "Posted 724 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1492,7 +1467,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 723 days ago",
+    "Posted 724 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1518,38 +1493,11 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 65 days ago"
+    "Posted 66 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
    "flags": [],
-   "score": 24
-  },
-  {
-   "id": "successfactors:careers.reckitt.com:1457859133",
-   "title": "Marketing - Content Creator Intern",
-   "company": "Reckitt",
-   "location": "Jakarta Raya, Jawa, ID, N/A",
-   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/",
-   "source": "successfactors",
-   "posted_at": "2026-11-17T00:00:00+00:00",
-   "text": "Marketing - Content Creator Intern, Placement Head Office Jakarta. \n We're looking for an Intern to join our team and create engaging contents across our various segments.\n In Summary, you will :\n Idea generation :\n You are expected to gather current trends and insights in TikTok and social commerce space.\n You are then expected to use collected trends and insight to create short video brief after discussion and approval with line manager.\n Video Creation :\n You are expected to create 15 videos / week for Dettol segments.\n Quantity of each segment is subject to be approved according to business needs.\n Video Review :\n You are expected to review and analyse created video with KPI that was set by the supervisor.\n KPI include: GMV, Impression, view rate (subject to be discussed).\n The experience we're looking for :\n Final-year student (6th semester or above) from any major.\n Passionate about content creation and social media trends.\n Familiar with basic video editing tools (e.g., Canva, In Shot, Cap Cut, etc.).\n Creative, proactive, and eager to experiment new ideas.Comfortable working in a hybrid set up (must be able to work from the office periodically).\n Strong communication skills and a collaborative mindset.\n Learning & Benefit:Experience working in a multinational company with diverse teams and global standards.\n Exposure to how a global brand is built and managed in real world markets.\n Opportunity to present your ideas and results directly to the Marketing Director.\n Be part of a team that contributes to shaping a global brand’s presence.\n Hands on exposure to creative marketing strategies and digital content trends.\n Here's a little bonus : if you have a cat or dog at home, even better! some of the contents you'll work on will be around pet related products, so having a furry friend could make the experience even more engaging! no pets? absolutely no problem! we're looking for creativity, curiosity and a passion for content creation.\n Recruitment Process: CV Screening -> HR Interview -> Video Submission -> User Interview (Brand Manager) -> Offering",
-   "origin": "Reckitt",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [
-    "Mentions final-year students or graduates; check eligibility"
-   ],
    "score": 24
   },
   {
@@ -1634,33 +1582,6 @@
    "score": 19
   },
   {
-   "id": "teamtailor:bobobox:1f855918-0387-4c2c-a67d-d8f9d8b5f670",
-   "title": "On The Job Training - Trainee Staff Bobopod Malioboro",
-   "company": "Bobobox",
-   "location": "Gedong Tengen, Indonesia",
-   "url": "https://bobobox.teamtailor.com/jobs/8620732-on-the-job-training-trainee-staff-bobopod-malioboro",
-   "source": "teamtailor",
-   "posted_at": "2026-10-27T08:41:37+07:00",
-   "text": "Our On the Job Training (OJT) programme at Bobopod Malioboro gives SMA/SMK students and recent graduates hands-on experience in both Front Office and Housekeeping, working alongside our hosts in a tech-driven capsule hotel.\n What you will do: \n Front Office: Guest Experience & Hospitality \n Assist the main host in welcoming guests during check-in and check-out using the Bobobox HCS system.\n Support the main host in greeting guests and verifying reservations in a professional and courteous manner.\n Help respond promptly and professionally to guest inquiries, complaints and special requests, under supervision.\n Operate guest-facing technology (self check-in, smart door access, room control system) with help from the main host.\n Help guests use the Bobobox app and digital platforms for booking, payment and feedback, and encourage them to share feedback.\n Housekeeping: Room & Facility Care \n Clean and prepare pods to Bobobox cleanliness and hygiene standards.\n Deep-clean pods as scheduled (including walls, flooring, air vents and control panels).\n Keep public areas (communal spaces, hallways, reception, bathrooms) clean and tidy, and restock toiletries, tissues and other guest supplies.\n Handle pod interiors and control panels with care, and follow sanitisation procedures, especially for high-touch surfaces.\n Use cleaning chemicals and tools safely and follow all health, safety and hygiene rules.\n Greet and assist guests during cleaning rounds, and respond to requests for extra amenities, linens or urgent cleaning.\n You will fit in this job if you: \n Are an SMA/SMK student or recent graduate, ideally from a Hospitality or Tourism programme.\n Have basic computer skills and can use hospitality software, mobile apps and smart devices.\n Communicate clearly in Bahasa Indonesia and have basic English; other languages are a plus.\n Are friendly, professional and guest-oriented.\n Are flexible, proactive and willing to work shifts, weekends and public holidays.\n Adapt quickly to new procedures and technology, and are eager to learn.\n What we offer: \n Pocket allowance of Rp500,000/month\n Certificate on completion of the programme\n Mentorship\n Career opportunities\n Placement: Bobopod Malioboro, Yogyakarta",
-   "origin": "Bobobox",
-   "where": "indonesia",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [
-    "Mentions final-year students or graduates; check eligibility"
-   ],
-   "score": 14
-  },
-  {
    "id": "lever:kogan:73459c41-5840-4df6-a7d8-816f37d26145",
    "title": "Customer Service Representative - Part Time",
    "company": "Kogan",
@@ -1678,7 +1599,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 54 days ago"
+    "Posted 55 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -1896,7 +1817,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 37 days ago"
+    "Posted 38 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1921,7 +1842,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 44 days ago"
+    "Posted 45 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1975,7 +1896,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 55 days ago"
+    "Posted 56 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2113,7 +2034,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 69 days ago",
+    "Posted 70 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2141,7 +2062,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 135 days ago"
+    "Posted 136 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2149,31 +2070,31 @@
    "score": 2
   },
   {
-   "id": "workday:pwc:703307WD",
-   "title": "Digital Audit Associate FY27",
-   "company": "PwC (campus)",
-   "location": "Jakarta",
-   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Digital-Audit-Associate-FY27_703307WD",
-   "source": "workday",
-   "posted_at": "2026-02-05T00:00:00+00:00",
-   "text": "Line of Service \nAssurance \n Industry/Sector \nNot Applicable \n Specialism \nAssurance \n Management Level \nAssociate \n Job Description & Summary \nPwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be treated fairly and assessed solely based on job requirements and competencies.\nA career within External Audit services, will provide you with the opportunity to provide a range of Assurance services and business advice to a variety of clients from small, fast growing clients to large entities. Our clients are often well known brands and many have broad international reach. We focus on using the latest technology to reduce the level of manual testing ensuring you’ll focus on the most valuable areas of client service and on enhancing corporate governance and the reliability of our clients’ information. \n Hey there, Recent Graduates ! 🎓 \n Are you ready to kickstart your career? PwC Indonesia is looking for future Auditor Associates to join us in the 2026 batch.\n Why Join Us? \n As a Digital Audit Associate, you'll help us maintain our high standards of quality and regulatory compliance. You’ll get to work with a variety of clients, from small startups to big corporations, offering digital audit services and business advice.\n If you… \n Are an Accounting or Information System major in your 8th semester or have graduated\n Have a minimum GPA of 3.00/4.00\n Are fluent in English (both written and spoken)\n Are expected to graduate in 2026 and able to join PwC between July - September 2026\n … You are welcome to apply! Please note that you are expected to attain a Bachelor degree in Accounting with no more classes to attend and submit the Statement of Graduation (SKL) before the joining date in 2026. \n What's the Selection Process? \n Apply: Click the link and apply.\n Selection: If you're shortlisted, you'll go through our recruitment process, which includes tests and an interview. Make sure you can set aside some time for this.\n Get Hired: If you pass, you'll be hired and enrolled in our training program to get all the skills and info you need before starting the job.\n We can't wait to see your enthusiasm! Sign up now and let’s build trust in society and solve important problems together.\n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: Bachelor Degree - Information System \n Certifications (if blank, certifications not specified) \n Required Skills \nAccounting, Auditing Standards, Business Process Auditing, Communication, Teamwork \n Optional Skills \nAccepting Feedback, Accepting Feedback, Accounting and Financial Reporting Standards, Accounting Policies, Active Listening, Artificial Intelligence (AI) Platform, Auditing, Auditing Methodologies, Client Management, Communication, Compliance Auditing, Complying With Regulations, Data Analysis and Interpretation, Data Ingestion, Data Modeling, Data Quality, Data Security, Data Transformation, Data Visualization, Emotional Regulation, Empathy, External Audit, Financial Accounting, Financial Audit, Financial Disclosure Report {+ 19 more} \n Desired Languages (If blank, desired languages not specified) \nEnglish, Indonesian \n Travel Requirements \nUp to 40% \n Available for Work Visa Sponsorship? \nNo \n Government Clearance Required? \nNo \n Job Posting End Date",
-   "origin": "PwC (campus)",
-   "where": "jakarta",
+   "id": "teamtailor:bobobox:1f855918-0387-4c2c-a67d-d8f9d8b5f670",
+   "title": "On The Job Training - Trainee Staff Bobopod Malioboro",
+   "company": "Bobobox",
+   "location": "Gedong Tengen, Indonesia",
+   "url": "https://bobobox.teamtailor.com/jobs/8620732-on-the-job-training-trainee-staff-bobopod-malioboro",
+   "source": "teamtailor",
+   "posted_at": "2026-10-27T08:41:37+07:00",
+   "text": "Our On the Job Training (OJT) programme at Bobopod Malioboro gives SMA/SMK students and recent graduates hands-on experience in both Front Office and Housekeeping, working alongside our hosts in a tech-driven capsule hotel.\n What you will do: \n Front Office: Guest Experience & Hospitality \n Assist the main host in welcoming guests during check-in and check-out using the Bobobox HCS system.\n Support the main host in greeting guests and verifying reservations in a professional and courteous manner.\n Help respond promptly and professionally to guest inquiries, complaints and special requests, under supervision.\n Operate guest-facing technology (self check-in, smart door access, room control system) with help from the main host.\n Help guests use the Bobobox app and digital platforms for booking, payment and feedback, and encourage them to share feedback.\n Housekeeping: Room & Facility Care \n Clean and prepare pods to Bobobox cleanliness and hygiene standards.\n Deep-clean pods as scheduled (including walls, flooring, air vents and control panels).\n Keep public areas (communal spaces, hallways, reception, bathrooms) clean and tidy, and restock toiletries, tissues and other guest supplies.\n Handle pod interiors and control panels with care, and follow sanitisation procedures, especially for high-touch surfaces.\n Use cleaning chemicals and tools safely and follow all health, safety and hygiene rules.\n Greet and assist guests during cleaning rounds, and respond to requests for extra amenities, linens or urgent cleaning.\n You will fit in this job if you: \n Are an SMA/SMK student or recent graduate, ideally from a Hospitality or Tourism programme.\n Have basic computer skills and can use hospitality software, mobile apps and smart devices.\n Communicate clearly in Bahasa Indonesia and have basic English; other languages are a plus.\n Are friendly, professional and guest-oriented.\n Are flexible, proactive and willing to work shifts, weekends and public holidays.\n Adapt quickly to new procedures and technology, and are eager to learn.\n What we offer: \n Pocket allowance of Rp500,000/month\n Certificate on completion of the programme\n Mentorship\n Career opportunities\n Placement: Bobopod Malioboro, Yogyakarta",
+   "origin": "Bobobox",
+   "where": "indonesia",
    "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
    "is_new": false,
    "reposts": 0,
-   "ghost_risk": "high",
+   "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 294 days ago"
+    "Posted 31 days ago"
    ],
    "category": "other",
-   "timing": "good",
+   "timing": "unknown",
    "flags": [
     "Mentions final-year students or graduates; check eligibility"
    ],
-   "score": 2
+   "score": 1
   },
   {
    "id": "smartrecruiters:grab:744000157043359",
@@ -2193,7 +2114,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 34 days ago"
+    "Posted 35 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2220,7 +2141,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 201 days ago"
+    "Posted 202 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2247,7 +2168,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 36 days ago"
+    "Posted 37 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2274,7 +2195,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 2046 days ago"
+    "Posted 2047 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2301,7 +2222,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 409 days ago"
+    "Posted 410 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2328,7 +2249,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 43 days ago",
+    "Posted 44 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2354,7 +2275,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 64 days ago"
+    "Posted 65 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2382,32 +2303,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 73 days ago"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 0
-  },
-  {
-   "id": "workday:pwc:692759WD",
-   "title": "Young Talent Program - Assurance Associate FY27",
-   "company": "PwC (campus)",
-   "location": "Jakarta",
-   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Young-Talent-Program---Assurance-Associate-FY27_692759WD",
-   "source": "workday",
-   "posted_at": "2026-09-03T00:00:00+00:00",
-   "text": "Line of Service \nAssurance \n Industry/Sector \nNot Applicable \n Specialism \nAssurance \n Management Level \nAssociate \n Job Description & Summary \nPwC Indonesia is an inclusive and equal-opportunity employer that does not discriminate based on physical disabilities, gender, race, religion, or age. Your application will be treated fairly and assessed solely based on job requirements and competencies.\nA career within External Audit services, will provide you with the opportunity to provide a range of Assurance services and business advice to a variety of clients from small, fast growing clients to large entities. Our clients are often well known brands and many have broad international reach. We focus on using the latest technology to reduce the level of manual testing ensuring you’ll focus on the most valuable areas of client service and on enhancing corporate governance and the reliability of our clients’ information. \n Hey there, Recent Graduates ! 🎓 \n Are you ready to kickstart your career? PwC Indonesia is looking for future Auditor Associates to join us in the 2026 batch.\n Why Join Us? \n As an Auditor Associate, you'll help us maintain our high standards of quality and regulatory compliance. You’ll get to work with a variety of clients, from small startups to big corporations, offering audit services and business advice.\n If you… \n Are an Accounting major and last year students.\n Have a minimum GPA of 3.00/4.00\n Are fluent in English (both written and spoken)\n Are expected to graduate in 2026 and able to join PwC starting in May 2026\n … You are welcome to apply! Please note that you are expected to attain a Bachelor degree in Accounting with no more classes to attend and submit the Statement of Graduation (SKL) before the joining date in 2026. \n What's the Selection Process? \n Apply: Click the link and apply.\n Selection: If you're shortlisted, you'll go through our recruitment process, which includes tests and an interview. Make sure you can set aside some time for this.\n Get Hired: If you pass, you'll be hired and enrolled in our special curated program to get all the skills and info you need before starting the job.\n We can't wait to see your enthusiasm! Sign up now and let’s build trust in society and solve important problems together.\n Education (if blank, degree and/or field of study not specified) \nDegrees/Field of Study required: \nDegrees/Field of Study preferred: Bachelor Degree - Accounting \n Certifications (if blank, certifications not specified) \n Required Skills \nAccounting, Auditing Standards, Business Process Auditing, Communication, Teamwork \n Optional Skills \nAccepting Feedback, Accepting Feedback, Accounting and Financial Reporting Standards, Accounting Policies, Active Listening, Artificial Intelligence (AI) Platform, Auditing, Auditing Methodologies, Client Management, Communication, Compliance Auditing, Complying With Regulations, Data Analysis and Interpretation, Data Ingestion, Data Modeling, Data Quality, Data Security, Data Transformation, Data Visualization, Emotional Regulation, Empathy, External Audit, Financial Accounting, Financial Audit, Financial Disclosure Report {+ 19 more} \n Desired Languages (If blank, desired languages not specified) \nEnglish, Indonesian \n Travel Requirements \nUp to 40% \n Available for Work Visa Sponsorship? \nNo \n Government Clearance Required? \nNo \n Job Posting End Date",
-   "origin": "PwC (campus)",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "high",
-   "ghost_reasons": [
-    "Posted 84 days ago"
+    "Posted 74 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2432,7 +2328,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 108 days ago",
+    "Posted 109 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2460,7 +2356,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 238 days ago"
+    "Posted 239 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2485,7 +2381,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 426 days ago",
+    "Posted 427 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2514,7 +2410,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 533 days ago",
+    "Posted 534 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2542,7 +2438,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 723 days ago",
+    "Posted 724 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2568,7 +2464,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 43 days ago",
+    "Posted 44 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2594,7 +2490,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 73 days ago"
+    "Posted 74 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2619,7 +2515,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 238 days ago"
+    "Posted 239 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2644,7 +2540,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 533 days ago",
+    "Posted 534 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2672,7 +2568,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 723 days ago",
+    "Posted 724 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2698,7 +2594,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 36 days ago"
+    "Posted 37 days ago"
    ],
    "category": "other",
    "timing": "long",
@@ -2712,6 +2608,24 @@
  "closed": [
   {
    "ids": [
+    "successfactors:careers.ey.com:1264399001"
+   ],
+   "company": "EY",
+   "title": "Associate Financial Accounting Advisory Services (FAAS)",
+   "closed_at": "2026-11-27T04:17:41+00:00",
+   "url": "https://careers.ey.com/ey/job/Jakarta-Associate-Financial-Accounting-Advisory-Services-%28FAAS%29-12190/1264399001/"
+  },
+  {
+   "ids": [
+    "workday:pwc:703307WD"
+   ],
+   "company": "PwC (campus)",
+   "title": "Digital Audit Associate FY27",
+   "closed_at": "2026-11-27T04:17:41+00:00",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Digital-Audit-Associate-FY27_703307WD"
+  },
+  {
+   "ids": [
     "workday:pwc:637601WD"
    ],
    "company": "PwC (campus)",
@@ -2721,12 +2635,30 @@
   },
   {
    "ids": [
+    "workday:pwc:692759WD"
+   ],
+   "company": "PwC (campus)",
+   "title": "Young Talent Program - Assurance Associate FY27",
+   "closed_at": "2026-11-27T04:17:41+00:00",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Jakarta/Young-Talent-Program---Assurance-Associate-FY27_692759WD"
+  },
+  {
+   "ids": [
     "successfactors:careers.reckitt.com:1453621233"
    ],
    "company": "Reckitt",
    "title": "Jr. KAM Emerging Channel",
    "closed_at": "2026-11-24T06:06:00+00:00",
    "url": "https://careers.reckitt.com/job/Jakarta-Raya-Jr_-KAM-Emerging-Channel-Jawa-NA/1453621233/"
+  },
+  {
+   "ids": [
+    "successfactors:careers.reckitt.com:1457859133"
+   ],
+   "company": "Reckitt",
+   "title": "Marketing - Content Creator Intern",
+   "closed_at": "2026-11-27T04:17:41+00:00",
+   "url": "https://careers.reckitt.com/job/Jakarta-Raya-Marketing-Content-Creator-Intern-Jawa-NA/1457859133/"
   }
  ]
 }
