@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-27T04:17:41+00:00",
+ "generated_at": "2026-11-28T03:56:10+00:00",
  "counts": {
-  "postings_scanned": 6933,
+  "postings_scanned": 6956,
   "internships": 77,
   "cyber": 3,
   "tech": 12,
@@ -46,7 +46,7 @@
    "ats": "greenhouse",
    "slug": "agoda",
    "ok": true,
-   "postings": 334,
+   "postings": 328,
    "error": null
   },
   {
@@ -62,7 +62,7 @@
    "ats": "ashby",
    "slug": "airwallex",
    "ok": true,
-   "postings": 511,
+   "postings": 502,
    "error": null
   },
   {
@@ -86,7 +86,7 @@
    "ats": "amazon",
    "slug": "amazon",
    "ok": true,
-   "postings": 95,
+   "postings": 99,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
    "ats": "remoteboard",
    "slug": "arbeitnow",
    "ok": true,
-   "postings": 146,
+   "postings": 183,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
    "ats": "greenhouse",
    "slug": "binance",
    "ok": true,
-   "postings": 226,
+   "postings": 223,
    "error": null
   },
   {
@@ -150,7 +150,7 @@
    "ats": "teamtailor",
    "slug": "bobobox",
    "ok": true,
-   "postings": 46,
+   "postings": 45,
    "error": null
   },
   {
@@ -174,7 +174,7 @@
    "ats": "smartrecruiters",
    "slug": "carsales",
    "ok": true,
-   "postings": 19,
+   "postings": 18,
    "error": null
   },
   {
@@ -190,7 +190,7 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "ok": true,
-   "postings": 391,
+   "postings": 390,
    "error": null
   },
   {
@@ -230,7 +230,7 @@
    "ats": "smartrecruiters",
    "slug": "grab",
    "ok": true,
-   "postings": 450,
+   "postings": 449,
    "error": null
   },
   {
@@ -238,7 +238,7 @@
    "ats": "greenhouse",
    "slug": "groupib",
    "ok": true,
-   "postings": 18,
+   "postings": 17,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
    "ats": "greenhouse",
    "slug": "mongodb",
    "ok": true,
-   "postings": 421,
+   "postings": 424,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
    "ats": "lever",
    "slug": "nium",
    "ok": true,
-   "postings": 36,
+   "postings": 37,
    "error": null
   },
   {
@@ -374,7 +374,7 @@
    "ats": "greenhouse",
    "slug": "okx",
    "ok": true,
-   "postings": 388,
+   "postings": 386,
    "error": null
   },
   {
@@ -454,7 +454,7 @@
    "ats": "remoteboard",
    "slug": "remoteok",
    "ok": true,
-   "postings": 3,
+   "postings": 2,
    "error": null
   },
   {
@@ -494,7 +494,7 @@
    "ats": "smartrecruiters",
    "slug": "seek",
    "ok": true,
-   "postings": 39,
+   "postings": 41,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "ats": "ashby",
    "slug": "sophos",
    "ok": true,
-   "postings": 76,
+   "postings": 75,
    "error": null
   },
   {
@@ -518,7 +518,7 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "ok": true,
-   "postings": 767,
+   "postings": 771,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
    "ats": "ashby",
    "slug": "xero",
    "ok": true,
-   "postings": 118,
+   "postings": 117,
    "error": null
   }
  ],
@@ -710,7 +710,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 136 days ago"
+    "Posted 137 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -735,7 +735,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 289 days ago"
+    "Posted 290 days ago"
    ],
    "category": "cyber",
    "timing": "unknown",
@@ -762,7 +762,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 38 days ago"
+    "Posted 39 days ago"
    ],
    "category": "tech",
    "timing": "good",
@@ -880,7 +880,7 @@
    "flags": [
     "Mentions final-year students or graduates; check eligibility"
    ],
-   "score": 37
+   "score": 32
   },
   {
    "id": "workday:pg:R000162972",
@@ -1060,31 +1060,6 @@
    "score": 29
   },
   {
-   "id": "successfactors:careers.ey.com:1427779133",
-   "title": "Climate Change and Sustainability Services - Associate",
-   "company": "EY",
-   "location": "Jakarta, ID, 12190",
-   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
-   "source": "successfactors",
-   "posted_at": null,
-   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
-   "origin": "EY",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "entry",
-   "first_seen": "2026-11-23T16:46:43+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "unknown",
-   "flags": [],
-   "score": 29
-  },
-  {
    "id": "successfactors:careers.ey.com:1243950601",
    "title": "Junior Consultant - Supply Chain & Operations",
    "company": "EY",
@@ -1109,6 +1084,31 @@
    "flags": [
     "Mentions final-year students or graduates; check eligibility"
    ],
+   "score": 29
+  },
+  {
+   "id": "successfactors:careers.ey.com:1427779133",
+   "title": "Climate Change and Sustainability Services - Associate",
+   "company": "EY",
+   "location": "Jakarta, ID, 12190",
+   "url": "https://careers.ey.com/ey/job/Jakarta-Climate-Change-and-Sustainability-Services-Associate-12190/1427779133/",
+   "source": "successfactors",
+   "posted_at": null,
+   "text": "EY’s global Climate Change and Sustainability Services (CCaSS) teams understand the evolving pressures surrounding sustainability and climate-related issues. As a response, CCaSS helps companies navigate these challenges by understanding and evaluating broader impacts and outcomes, identifying opportunities, and supporting the reporting of non-financial performance risks to their stakeholders. Our professionals are highly qualified and trained, with deep industry knowledge and a global presence. \n Join EY Indonesia’s CCaSS to be a member of a multidisciplinary team working to empower clients in understanding and managing their environmental and social impacts, as well as the risks and opportunities arising from climate change and sustainability issues. With long-term experience in the Indonesian market as sustainability professionals, being a part of the team will enable you to experience continuous professional development through diverse experiences, world-class learning, and individually tailored coaching. That’s how we develop outstanding leaders to deliver on our promises to our stakeholders, and in so doing, play a critical role in building a better working world for our people, our clients, and our communities.\n About the opportunity \n CCaSS is part of our Assurance group, which is one of the most trusted, respected, and influential organizations in the industry. As part of our team, you can take part in both advisory and assurance engagements, both enabling institutional progress in sustainability and ensuring the integrity of critical sustainability-related information. Our services span climate and decarbonization, sustainability, environment, health and safety (EHS), as well as sustainability reporting and assurance. \n Your key responsibilities \n You’ll spend most of your time assisting clients to identify, measure, and manage impact, risks, and opportunities as they transition their organizations in alignment with global and national climate ambitions. As a sustainability practitioner, the development of your skills and capabilities are important to us amid rapidly expanding science and knowledge in sustainability. You will also actively contribute to the growth and development of the CCaSS practice by taking operational responsibility and accountability for engagement team support and delivery. \n Skills and attributes for success  \n Assisting, analyzing, and conducting customized research to support clients in sustainability/ESG transformation, decarbonization, climate change risks and opportunities, EHS, sustainability reporting and other related services.\n Supporting and conducting assurance engagements over non-financial information and sustainability disclosures, including reporting prepared in accordance with GRI Standards, IFRS S1 and S2, TCFD, SASB, and other relevant frameworks.\n Assisting clients in enhancing their sustainability reporting through materiality assessments, gap assessments against applicable reporting standards and frameworks, benchmarking analyses, and recommendations to strengthen reporting processes, governance, risk management, and internal controls.\n Maintaining strong working relationships with key business decision-makers, both internally and externally.\n Communicating EY’s scope of services and supporting the delivery of CCaSS projects, with an emphasis on complex and/or specialized issues within assurance and advisory capacities.\n Identifying and communicating trends, developments, and key performance drivers relevant to clients, while demonstrating a deep understanding of the industry and marketplace.\n Supporting client relationships, business development activities, and account management initiatives through the development of thought leadership, client and internal materials, as well as training.\n To qualify for the role, you must have:  \n A Bachelor’s or Master’s degree in environmental studies /engineering /sustainable development /management or business with a sustainability ",
+   "origin": "EY",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "entry",
+   "first_seen": "2026-11-23T16:46:43+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "unknown",
+   "flags": [],
    "score": 29
   },
   {
@@ -1414,7 +1414,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 156 days ago"
+    "Posted 157 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1441,7 +1441,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 724 days ago",
+    "Posted 725 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1467,7 +1467,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 724 days ago",
+    "Posted 725 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "tech",
@@ -1493,7 +1493,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 66 days ago"
+    "Posted 67 days ago"
    ],
    "category": "tech",
    "timing": "unknown",
@@ -1599,7 +1599,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 55 days ago"
+    "Posted 56 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -1622,61 +1622,6 @@
    "work_mode": "onsite",
    "role_type": "internship",
    "first_seen": "2026-11-23T12:47:05+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "long",
-   "flags": [
-    "Asks for 6 months; he's free about 3",
-    "Mentions final-year students or graduates; check eligibility"
-   ],
-   "score": 10
-  },
-  {
-   "id": "smartrecruiters:BoschGroup:744000162475699",
-   "title": "Sales and Business Development Intern",
-   "company": "Bosch",
-   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162475699-sales-and-business-development-intern",
-   "source": "smartrecruiters",
-   "posted_at": "2026-11-19T09:54:12+00:00",
-   "text": "Job Description\n1. Order & Delivery Monitoring\n Monitor dealer order and delivery status.\n Act as the contact point for promoters and dealer staff regarding order status.\n Coordinate with internal teams to ensure timely delivery.\n 2. Daily Free Stock Report\n Prepare and update the free stock list report.\n 3. Brand Store Event Support\n Checklist all preparation and attendees of routine brand store events to ensure the event run smoothly.\n Willing to support or be on-site during Saturday events when needed.\n 4. Employee Purchase Handling\n Assist in managing the employee purchase (EP) process—from request and approval to follow-ups.\n Ensure proper documentation and coordination with all related party\n 5. Update Sell Out and PO Tracker & Administration Support\n Update sell out data in the sell-out tracker regularly\n Update and maintain the PO Tracker regularly.\n Support in other related sales administration topic.\nQualifications\nActive university student from Business, Management, Marketing, Supply Chain, or related fields.\n Comfortable working with numbers and administrative tasks.\n Organized, responsible, and willing to learn.\n Able to work with multiple stakeholders.\n Willing to support weekend events when required.\n Good communication and coordination skills.\n Strong attention to detail and accuracy.\n Basic data management skills (Excel/Google Sheets).\n Able to multitask and manage timelines.\n Proactive, willing to follow up, and problem-solving oriented.\nAdditional Information\nFor Desember 2026 - June 2027 period\n Open for COLLEGE STUDENTS ONLY (will not graduate during the internship program)\n Contact Person: Aqila Shekina Putri",
-   "origin": "Bosch",
-   "where": "jakarta",
-   "work_mode": "hybrid",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
-   "is_new": false,
-   "reposts": 0,
-   "ghost_risk": "low",
-   "ghost_reasons": [
-    "Fresh posting on the company's own hiring page"
-   ],
-   "category": "other",
-   "timing": "long",
-   "flags": [
-    "Asks for 7 months; he's free about 3"
-   ],
-   "score": 10
-  },
-  {
-   "id": "workable:ajaib:19D8AD74B2",
-   "title": "Business Growth Intern",
-   "company": "Ajaib",
-   "location": "Jakarta, Indonesia",
-   "url": "https://apply.workable.com/j/19D8AD74B2",
-   "source": "workable",
-   "posted_at": "2026-11-20T00:00:00+00:00",
-   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n Role Overview \n We’re looking for Business Growth Intern to join our team! In this role, you’ll support various business growth initiatives through data analysis, market research, and campaign execution. This is a great opportunity for those who are passionate about fintech, investments, and scaling products through data-driven strategies\n Data Analysis & Insights: Supporting deep-dive analysis related to overall business growth initiatives\n Market Research & Analysis: Conduct deep-dive research on market trends.\n Campaign Execution: Assist in the end-to-end execution of growth campaigns.\n Competitor Benchmarking: Monitor and report on the product features and promotional activities of local and global wealth-tech competitors.\n Reporting: Track and report on Key Performance Indicators (KPIs) such as TPV, growth rate, etc.\n Requirements \n Education: Final year student or recent graduate from Finance, Economics, Business, Management, or a related quantitative field.\n Investment Literacy: A strong fundamental understanding of how ID Stocks, US Stocks, and Mutual Funds work.\n Analytical Mindset: Proficiency in Microsoft Excel/Google Sheets (vlookup, pivot tables, data visualization).\n Growth Curiosity: A \"growth hacker\" mindset—you enjoy testing hypotheses and are obsessed with finding ways to scale a product.\n Communication: Excellent written and verbal communication skills in both Indonesian and English.\n Adaptability: Ability to thrive in a fast-paced fintech environment and manage multiple projects across different asset classes simultaneously.\n Available for 3-6 months internship period\n Benefits \n Hybrid Work Arrangement - Enjoy the flexibility of working both remotely and from the office\n Career Growth - Work closely with experienced leaders and take on meaningful ownership as we scale\n Collaborative & High-Ownership Culture - Work with smart, driven people in cross-functional teams, take ownership, and make a meaningful impact for our users.",
-   "origin": "Ajaib",
-   "where": "jakarta",
-   "work_mode": "onsite",
-   "role_type": "internship",
-   "first_seen": "2026-11-23T14:04:15+00:00",
    "is_new": false,
    "reposts": 0,
    "ghost_risk": "low",
@@ -1817,7 +1762,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 38 days ago"
+    "Posted 39 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1842,7 +1787,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 45 days ago"
+    "Posted 46 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -1879,6 +1824,61 @@
    "score": 5
   },
   {
+   "id": "smartrecruiters:BoschGroup:744000162475699",
+   "title": "Sales and Business Development Intern",
+   "company": "Bosch",
+   "location": "South Jakarta, DKI Jakarta, Indonesia, Hybrid",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162475699-sales-and-business-development-intern",
+   "source": "smartrecruiters",
+   "posted_at": "2026-11-19T09:54:12+00:00",
+   "text": "Job Description\n1. Order & Delivery Monitoring\n Monitor dealer order and delivery status.\n Act as the contact point for promoters and dealer staff regarding order status.\n Coordinate with internal teams to ensure timely delivery.\n 2. Daily Free Stock Report\n Prepare and update the free stock list report.\n 3. Brand Store Event Support\n Checklist all preparation and attendees of routine brand store events to ensure the event run smoothly.\n Willing to support or be on-site during Saturday events when needed.\n 4. Employee Purchase Handling\n Assist in managing the employee purchase (EP) process—from request and approval to follow-ups.\n Ensure proper documentation and coordination with all related party\n 5. Update Sell Out and PO Tracker & Administration Support\n Update sell out data in the sell-out tracker regularly\n Update and maintain the PO Tracker regularly.\n Support in other related sales administration topic.\nQualifications\nActive university student from Business, Management, Marketing, Supply Chain, or related fields.\n Comfortable working with numbers and administrative tasks.\n Organized, responsible, and willing to learn.\n Able to work with multiple stakeholders.\n Willing to support weekend events when required.\n Good communication and coordination skills.\n Strong attention to detail and accuracy.\n Basic data management skills (Excel/Google Sheets).\n Able to multitask and manage timelines.\n Proactive, willing to follow up, and problem-solving oriented.\nAdditional Information\nFor Desember 2026 - June 2027 period\n Open for COLLEGE STUDENTS ONLY (will not graduate during the internship program)\n Contact Person: Aqila Shekina Putri",
+   "origin": "Bosch",
+   "where": "jakarta",
+   "work_mode": "hybrid",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 7 months; he's free about 3"
+   ],
+   "score": 5
+  },
+  {
+   "id": "workable:ajaib:19D8AD74B2",
+   "title": "Business Growth Intern",
+   "company": "Ajaib",
+   "location": "Jakarta, Indonesia",
+   "url": "https://apply.workable.com/j/19D8AD74B2",
+   "source": "workable",
+   "posted_at": "2026-11-20T00:00:00+00:00",
+   "text": "Founded to transform retail finance, Ajaib Group is an Indonesian fintech unicorn breaking barriers to financial access. Having recently secured a $270M Series C—the single largest funding round in Southeast Asia over the past four years—we are backed by premier global investors including Y Combinator, Ribbit Capital, SoftBank, and SBI Holdings.  \n To build world-class products, we assemble world-class talent. Supported by our fully remote work arrangement, our team spans Eastern Europe, the Middle East, India, and Southeast Asia, allowing you to work with brilliant engineers and builders from around the globe from wherever you are. We operate with an impact-driven purpose where everyone is the owner of our customers' satisfaction. Driven by a growth mindset and a fierce will to win, we refuse to settle and constantly push engineering boundaries.\n Role Overview \n We’re looking for Business Growth Intern to join our team! In this role, you’ll support various business growth initiatives through data analysis, market research, and campaign execution. This is a great opportunity for those who are passionate about fintech, investments, and scaling products through data-driven strategies\n Data Analysis & Insights: Supporting deep-dive analysis related to overall business growth initiatives\n Market Research & Analysis: Conduct deep-dive research on market trends.\n Campaign Execution: Assist in the end-to-end execution of growth campaigns.\n Competitor Benchmarking: Monitor and report on the product features and promotional activities of local and global wealth-tech competitors.\n Reporting: Track and report on Key Performance Indicators (KPIs) such as TPV, growth rate, etc.\n Requirements \n Education: Final year student or recent graduate from Finance, Economics, Business, Management, or a related quantitative field.\n Investment Literacy: A strong fundamental understanding of how ID Stocks, US Stocks, and Mutual Funds work.\n Analytical Mindset: Proficiency in Microsoft Excel/Google Sheets (vlookup, pivot tables, data visualization).\n Growth Curiosity: A \"growth hacker\" mindset—you enjoy testing hypotheses and are obsessed with finding ways to scale a product.\n Communication: Excellent written and verbal communication skills in both Indonesian and English.\n Adaptability: Ability to thrive in a fast-paced fintech environment and manage multiple projects across different asset classes simultaneously.\n Available for 3-6 months internship period\n Benefits \n Hybrid Work Arrangement - Enjoy the flexibility of working both remotely and from the office\n Career Growth - Work closely with experienced leaders and take on meaningful ownership as we scale\n Collaborative & High-Ownership Culture - Work with smart, driven people in cross-functional teams, take ownership, and make a meaningful impact for our users.",
+   "origin": "Ajaib",
+   "where": "jakarta",
+   "work_mode": "onsite",
+   "role_type": "internship",
+   "first_seen": "2026-11-23T14:04:15+00:00",
+   "is_new": false,
+   "reposts": 0,
+   "ghost_risk": "low",
+   "ghost_reasons": [
+    "Fresh posting on the company's own hiring page"
+   ],
+   "category": "other",
+   "timing": "long",
+   "flags": [
+    "Asks for 6 months; he's free about 3",
+    "Mentions final-year students or graduates; check eligibility"
+   ],
+   "score": 5
+  },
+  {
    "id": "smartrecruiters:grab:744000152827460",
    "title": "S&P Budgeting and Monitoring, Associate",
    "company": "Grab",
@@ -1896,7 +1896,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 56 days ago"
+    "Posted 57 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2034,7 +2034,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 70 days ago",
+    "Posted 71 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2062,7 +2062,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 136 days ago"
+    "Posted 137 days ago"
    ],
    "category": "other",
    "timing": "good",
@@ -2087,7 +2087,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 31 days ago"
+    "Posted 32 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2114,7 +2114,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 35 days ago"
+    "Posted 36 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2141,7 +2141,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 202 days ago"
+    "Posted 203 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2168,7 +2168,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 37 days ago"
+    "Posted 38 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2195,7 +2195,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 2047 days ago"
+    "Posted 2048 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2222,7 +2222,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 410 days ago"
+    "Posted 411 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2249,7 +2249,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 44 days ago",
+    "Posted 45 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2275,7 +2275,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 65 days ago"
+    "Posted 66 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2303,7 +2303,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 74 days ago"
+    "Posted 75 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2328,7 +2328,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 109 days ago",
+    "Posted 110 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2356,7 +2356,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 239 days ago"
+    "Posted 240 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2381,7 +2381,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 427 days ago",
+    "Posted 428 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2410,7 +2410,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 534 days ago",
+    "Posted 535 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2438,7 +2438,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 724 days ago",
+    "Posted 725 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2464,7 +2464,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 44 days ago",
+    "Posted 45 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2490,7 +2490,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 74 days ago"
+    "Posted 75 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2515,7 +2515,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 239 days ago"
+    "Posted 240 days ago"
    ],
    "category": "other",
    "timing": "unknown",
@@ -2540,7 +2540,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 534 days ago",
+    "Posted 535 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2568,7 +2568,7 @@
    "reposts": 0,
    "ghost_risk": "high",
    "ghost_reasons": [
-    "Posted 724 days ago",
+    "Posted 725 days ago",
     "Title says talent pool / future openings: likely collecting CVs"
    ],
    "category": "other",
@@ -2594,7 +2594,7 @@
    "reposts": 0,
    "ghost_risk": "medium",
    "ghost_reasons": [
-    "Posted 37 days ago"
+    "Posted 38 days ago"
    ],
    "category": "other",
    "timing": "long",
